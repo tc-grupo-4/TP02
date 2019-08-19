@@ -108,6 +108,47 @@ reference "1_a_t_1"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/Circuito1a.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito a analizar
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -401,47 +442,6 @@ V_{in}-IR_{1}=v^{-}
 \begin{equation}
 H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}}{1+\frac{s}{\omega_{p}\left(\frac{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}{R_{1}R_{2}+R_{3}R_{1}-R_{3}R_{2}}\right)}}\label{eq:1_a_1}
 \end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/Circuito1a.png
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito a analizar
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_a_1"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

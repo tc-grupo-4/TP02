@@ -602,10 +602,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -631,6 +627,50 @@ name "1_a_3"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Consideraciones para utilizar un modelo lineal del OpAmp
+\end_layout
+
+\begin_layout Standard
+Consecuentemente, decidimos aclarar cuales son las consideraciones para
+ caracterizar a nuestro circuito de manera lineal.
+ Para esto poseemos varias consideraciones que son descriptas a continuación.
+\end_layout
+
+\begin_layout Subsubsection
+Saturación
+\end_layout
+
+\begin_layout Standard
+Si tenemos en cuenta un OpAmp ideal, nuestro primer contacto con un circuito
+ alineal se da cuando se entra en saturación, es decir, 
+\begin_inset Formula $\left|V_{out}\right|>\left|V_{cc}\right|$
+\end_inset
+
+.
+ Si consideramos una tension de entrada de la forma 
+\begin_inset Formula $V_{in}=sin(2\pi ft)$
+\end_inset
+
+, es decir, con amplitud 
+\emph on
+1(V)
+\emph default
+ 
+\emph on
+, 
+\emph default
+solo nos basta con analizar el valor del modulo de la transferencia vista
+ en la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_a_1"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body

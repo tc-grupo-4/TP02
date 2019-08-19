@@ -27,6 +27,14 @@ ideal y real del amplificador operacional \emph{LM324 }conectado como
 se muestra en la figura \ref{1_a_1}. Considerando los valores de
 los componentes como se puede ver en la tabla \ref{1_a_t_1}.
 
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.75]{Resources1a/Circuito1a}
+\par\end{centering}
+\caption{Circuito a analizar}
+\label{1_a_1}
+\end{figure}
+
 \begin{table}[H]
 \begin{centering}
 \begin{tabular}{|c|c|c|c|}
@@ -69,14 +77,6 @@ V_{in}-IR_{1}=v^{-}
 \begin{equation}
 H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}}{1+\frac{s}{\omega_{p}\left(\frac{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}{R_{1}R_{2}+R_{3}R_{1}-R_{3}R_{2}}\right)}}\label{eq:1_a_1}
 \end{equation}
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[scale=0.75]{Resources1a/Circuito1a}
-\par\end{centering}
-\caption{Circuito a analizar}
-\label{1_a_1}
-\end{figure}
 
 Como podemos ver, tenemos un polo en nuestra transferencia por lo
 cual, el circuito se deberia comportar a grandes rasgos como un pasabajos.
