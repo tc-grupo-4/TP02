@@ -578,6 +578,44 @@ L=\frac{\left(R_{2}+R_{3}\right)\omega_{p}\left(a_{0}-1\right)-R_{2}a_{0}\omega_
 \end_layout
 
 \begin_layout Standard
+Por lo tanto, para cada caso tendremos una impedancia de entrada como se
+ muestra en las siguientes formulas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{in}=\frac{131946.78if+999790000}{6.911498if+99989}\,Caso\,1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{in}=\frac{9424.77if+499985000}{0.628318if+49999}\,Caso\,2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{in}=\frac{753981.6if+99998800000}{6.911498if+999989}\,Caso\,3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Graficando la impedancia de entrada con respecto a la frecuencia de entrada,
  se puede ver en la figura 
 \begin_inset CommandInset ref
@@ -600,6 +638,18 @@ reference "1_a_3"
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinp.png
+	lyxscale 50
+	scale 65
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
