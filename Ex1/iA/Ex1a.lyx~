@@ -717,5 +717,16 @@ f\geq\frac{\sqrt{-\left(V_{cc}\omega_{p}L\left|K\right|-\left|{R_{2}}\right|\lef
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\therefore\,f\geq26.5(kHz)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

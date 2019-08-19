@@ -7,6 +7,30 @@ from sympy import re, im
 from sympy.solvers.inequalities import solve_rational_inequalities
 from sympy.solvers.inequalities import reduce_rational_inequalities
 from sympy.solvers import solve
+
+def substitute(express, case):
+    express = express.subs(w,10)        ##check
+    express = express.subs(vcc,15)      ##check
+    express = express.subs(a0,100000)        ##check
+    express = express.subs(pi,3.14159)
+    if case == 1:
+        express = express.subs(r1,10000)
+        express = express.subs(r3,10000)
+        express = express.subs(r2,100000)
+        express = express.subs(r4,40000)
+    elif case == 2:
+        express = express.subs(r1,10000)
+        express = express.subs(r3,10000)
+        express = express.subs(r2,10000)
+        express = express.subs(r4,40000)
+    elif case == 3:
+        express = express.subs(r1,100000)
+        express = express.subs(r3,100000)
+        express = express.subs(r2,10000)
+        express = express.subs(r4,400000)
+    express = simplify(express)
+    return express
+
 init_printing()
 a0 = Symbol('a0',real = True)
 r1 = Symbol('R1',real = True)
@@ -23,4 +47,7 @@ h = simplify(h)
 mod = sqrt(re(h)**2 + im(h)**2)
 mod = simplify(mod)
 
-print(latex(simplify(solve(mod-vcc,f))))
+#print(latex(simplify(solve(mod-vcc,f))))
+fcr = simplify(solve(mod-vcc,f))
+fcr=substitute(fcr[1],3)
+print(fcr.evalf())
