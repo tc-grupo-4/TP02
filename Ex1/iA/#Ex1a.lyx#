@@ -108,6 +108,47 @@ reference "1_a_t_1"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/Circuito1a.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito a analizar
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -408,47 +449,6 @@ H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/Circuito1a.png
-	scale 75
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito a analizar
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_a_1"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Como podemos ver, tenemos un polo en nuestra transferencia por lo cual,
  el circuito se deberia comportar a grandes rasgos como un pasabajos.
  Es importante notar, que el valor de 
@@ -661,6 +661,16 @@ Si tenemos en cuenta un OpAmp ideal, nuestro primer contacto con un circuito
  
 \emph on
 , 
+\emph default
+solo nos basta con analizar el valor del modulo de la transferencia vista
+ en la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_a_1"
+
+\end_inset
+
+).
 \end_layout
 
 \end_body
