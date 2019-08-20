@@ -74,7 +74,6 @@
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
-\author 139173381 "Ian Diaz"
 \end_header
 
 \begin_body
@@ -821,8 +820,129 @@ sinusoidal de la forma
 \begin_inset Formula $x(t)=V_{p}sin(2\pi ft)$
 \end_inset
 
- le corresponde una salida
-\change_deleted 139173381 1566262684
+ le corresponde una salida 
+\begin_inset Formula $v_{out}(t)=\left|A(\omega)\right|V_{p}sin(2\pi ft+\phi(\omega))$
+\end_inset
+
+ siendo 
+\begin_inset Formula $A(\omega)=\left|A(\omega)\right|e^{i\phi(\omega)}$
+\end_inset
+
+.
+ Por lo tanto, derivando la salida nos queda la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_a_3"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial v_{out}}{\partial t}=\left|A(\omega)\right|V_{p}2\pi f\,cos\left(2\pi ft+\phi(\omega)\right)\label{eq:1_a_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A su vez, sabemos que, siempre y cuando 
+\begin_inset Formula $\phi(\omega)=0$
+\end_inset
+
+ esa expresión será máxima cuando 
+\emph on
+t=0
+\emph default
+.
+ Por lo tanto;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial v_{out}}{\partial t}\mid_{t=0}=\left|A(\omega)\right|V_{p}2\pi f\leq SR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ende aproximando que 
+\begin_inset Formula $\left|A(\omega)\right|=a_{0}$
+\end_inset
+
+ obtenemos que la frecuencia de trabajo de nuestro circuito debe cumplir
+ la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_a_4"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f\leq\frac{SR}{a_{0}2\pi V_{p}}\label{eq:1_a_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para el caso donde la tensión de entrada tenga un valor pico de 1(V), 
+\begin_inset Formula $a_{0}=100000$
+\end_inset
+
+ y 
+\begin_inset Formula $SR=...$
+\end_inset
+
+ nos queda que para cada caso se deben cumplir las siguientes ecuaciones.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\leq...\,Caso\,1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\leq...\,Caso\,2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\leq...\,Caso\,3
+\]
+
+\end_inset
+
 
 \end_layout
 

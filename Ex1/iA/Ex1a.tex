@@ -196,7 +196,44 @@ Otro problema con el cual nos topamos a la hora te poner limites a
 nuestro circuito será el Slew Rate (SR), que indica el valor máximo
 que puede tener $\frac{\partial V_{out}}{\partial t}$. Esto significa
 que a una entrada \emph{x(t) }sinusoidal de la forma $x(t)=V_{p}sin(2\pi ft)$
-le corresponde una salida
+le corresponde una salida $v_{out}(t)=\left|A(\omega)\right|V_{p}sin(2\pi ft+\phi(\omega))$
+siendo $A(\omega)=\left|A(\omega)\right|e^{i\phi(\omega)}$. Por lo
+tanto, derivando la salida nos queda la ecuación (\ref{eq:1_a_3}).
+
+\begin{equation}
+\frac{\partial v_{out}}{\partial t}=\left|A(\omega)\right|V_{p}2\pi f\,cos\left(2\pi ft+\phi(\omega)\right)\label{eq:1_a_3}
+\end{equation}
+
+A su vez, sabemos que, siempre y cuando $\phi(\omega)=0$ esa expresión
+será máxima cuando \emph{t=0}. Por lo tanto;
+
+\[
+\frac{\partial v_{out}}{\partial t}\mid_{t=0}=\left|A(\omega)\right|V_{p}2\pi f\leq SR
+\]
+
+Por ende aproximando que $\left|A(\omega)\right|=a_{0}$ obtenemos
+que la frecuencia de trabajo de nuestro circuito debe cumplir la ecuación
+(\ref{eq:1_a_4}).
+
+\begin{equation}
+f\leq\frac{SR}{a_{0}2\pi V_{p}}\label{eq:1_a_4}
+\end{equation}
+
+Para el caso donde la tensión de entrada tenga un valor pico de 1(V),
+$a_{0}=100000$ y $SR=...$ nos queda que para cada caso se deben
+cumplir las siguientes ecuaciones.
+
+\[
+f\leq...\,Caso\,1
+\]
+
+\[
+f\leq...\,Caso\,2
+\]
+
+\[
+f\leq...\,Caso\,3
+\]
 
 \subsubsection{Corriente de BIAS}
 

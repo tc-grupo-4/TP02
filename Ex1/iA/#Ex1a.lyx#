@@ -814,7 +814,88 @@ Otro problema con el cual nos topamos a la hora te poner limites a nuestro
 .
  Esto significa que a una entrada 
 \emph on
-x(t)
+x(t) 
+\emph default
+sinusoidal de la forma 
+\begin_inset Formula $x(t)=V_{p}sin(2\pi ft)$
+\end_inset
+
+ le corresponde una salida 
+\begin_inset Formula $v_{out}(t)=\left|A(\omega)\right|V_{p}sin(2\pi ft+\phi(\omega))$
+\end_inset
+
+ siendo 
+\begin_inset Formula $A(\omega)=\left|A(\omega)\right|e^{i\phi(\omega)}$
+\end_inset
+
+.
+ Por lo tanto, derivando la salida nos queda la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_a_3"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial v_{out}}{\partial t}=\left|A(\omega)\right|V_{p}2\pi f\,cos\left(2\pi ft+\phi(\omega)\right)\label{eq:1_a_3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A su vez, sabemos que, siempre y cuando 
+\begin_inset Formula $\phi(\omega)=0$
+\end_inset
+
+ esa expresión será máxima cuando 
+\emph on
+t=0
+\emph default
+.
+ Por lo tanto;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial v_{out}}{\partial t}\mid_{t=0}=\left|A(\omega)\right|V_{p}2\pi f\leq SR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por ende aproximando que 
+\begin_inset Formula $\left|A(\omega)\right|=a_{0}$
+\end_inset
+
+ obtenemos que la frecuencia de trabajo de nuestro circuito debe cumplir
+ la ecuación .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\leq\frac{SR}{a_{0}2\pi V_{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsubsection
