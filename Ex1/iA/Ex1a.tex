@@ -150,11 +150,11 @@ podemos observar como esta impedancia no es afectada por $R_{4}$.
 
 \subsection{Consideraciones para utilizar un modelo lineal del OpAmp}
 
-Consecuentemente, decidimos aclarar cuales son las consideraciones
+A continuación, se decidió aclarar cuales son las consideraciones
 para caracterizar a nuestro circuito de manera lineal. Para esto poseemos
 varias consideraciones que son descriptas a continuación.
 
-\subsubsection{Saturación}
+\subsubsection{Saturación y polo dominante}
 
 Si tenemos en cuenta un OpAmp ideal, nuestro primer contacto con un
 circuito alineal se da cuando se entra en saturación, es decir, $\left|V_{out}\right|>\left|V_{cc}\right|$.
@@ -190,4 +190,29 @@ f\geq2.6(kHz)\,Caso\,2
 f\geq265(Hz)\,Caso\,3
 \]
 
+\subsubsection{Slew Rate}
+
+Otro problema con el cual nos topamos a la hora te poner limites a
+nuestro circuito será el Slew Rate (SR), que indica el valor máximo
+que puede tener $\frac{\partial V_{out}}{\partial t}$. Esto significa
+que a una entrada \emph{x(t) }sinusoidal de la forma $x(t)=V_{p}sin(2\pi ft)$
+le corresponde una salida
+
+\subsubsection{Corriente de BIAS}
+
+Falta escribir y desarrollar...
+
+\subsubsection{OFFSET}
+
+Falta escribir y desarrollar...
+
+\subsubsection{Disipación de Potencia}
+
+Falta escribir y desarrollar...
+
+\subsubsection{Generalizando}
+
+Falta escribir y desarrollar...
+
+\subsection{Aplicaciones y caracerísticas}
 \end{document}

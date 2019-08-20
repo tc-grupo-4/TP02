@@ -596,7 +596,7 @@ Z_{in}=\frac{131946.78if+999790000}{6.911498if+99989}\,Caso\,1
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Z_{in}=\frac{131946.78if+999790000}{6.911498if+99989}\,Caso\,2
+Z_{in}=\frac{9424.77if+499985000}{0.628318if+49999}\,Caso\,2
 \]
 
 \end_inset
@@ -684,13 +684,13 @@ Consideraciones para utilizar un modelo lineal del OpAmp
 \end_layout
 
 \begin_layout Standard
-Consecuentemente, decidimos aclarar cuales son las consideraciones para
- caracterizar a nuestro circuito de manera lineal.
+A continuación, se decidió aclarar cuales son las consideraciones para caracteri
+zar a nuestro circuito de manera lineal.
  Para esto poseemos varias consideraciones que son descriptas a continuación.
 \end_layout
 
 \begin_layout Subsubsection
-Saturación
+Saturación y polo dominante
 \end_layout
 
 \begin_layout Standard
@@ -798,6 +798,50 @@ f\geq265(Hz)\,Caso\,3
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+SlewRate
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsubsection
+Corriente de BIAS
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsubsection
+OFFSET
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsubsection
+Disipación de Potencia
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsubsection
+Generalizando
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones y caracerísticas
 \end_layout
 
 \end_body

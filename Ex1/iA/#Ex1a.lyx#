@@ -578,6 +578,44 @@ L=\frac{\left(R_{2}+R_{3}\right)\omega_{p}\left(a_{0}-1\right)-R_{2}a_{0}\omega_
 \end_layout
 
 \begin_layout Standard
+Por lo tanto, para cada caso tendremos una impedancia de entrada como se
+ muestra en las siguientes formulas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{in}=\frac{131946.78if+999790000}{6.911498if+99989}\,Caso\,1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{in}=\frac{9424.77if+499985000}{0.628318if+49999}\,Caso\,2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{in}=\frac{753981.6if+99998800000}{6.911498if+999989}\,Caso\,3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Graficando la impedancia de entrada con respecto a la frecuencia de entrada,
  se puede ver en la figura 
 \begin_inset CommandInset ref
@@ -600,6 +638,18 @@ reference "1_a_3"
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinp.png
+	lyxscale 50
+	scale 65
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -634,13 +684,13 @@ Consideraciones para utilizar un modelo lineal del OpAmp
 \end_layout
 
 \begin_layout Standard
-Consecuentemente, decidimos aclarar cuales son las consideraciones para
- caracterizar a nuestro circuito de manera lineal.
+A continuación, se decidió aclarar cuales son las consideraciones para caracteri
+zar a nuestro circuito de manera lineal.
  Para esto poseemos varias consideraciones que son descriptas a continuación.
 \end_layout
 
 \begin_layout Subsubsection
-Saturación
+Saturación y polo dominante
 \end_layout
 
 \begin_layout Standard
@@ -687,12 +737,120 @@ reference "eq:1_a_1"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\left[-\frac{\sqrt{-\left(Vccw\left(R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}\right)\left|{R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}}\right|-\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|{R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}}\right|\right)\left(Vccw\left(R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}\right)\left|{R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}}\right|+\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|{R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}}\right|\right)}}{2\pi\left(R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}\right)\left|{Vcc}\right|\left|{R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}}\right|},\ \frac{\sqrt{-\left(Vccw\left(R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}\right)\left|{R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}}\right|-\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|{R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}}\right|\right)\left(Vccw\left(R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}\right)\left|{R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}}\right|+\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|{R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}}\right|\right)}}{2\pi\left(R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}\right)\left|{Vcc}\right|\left|{R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}}\right|}\right]
+K=R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\geq\frac{\sqrt{-\left(V_{cc}\omega_{p}L\left|K\right|-\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|L\right|\right)\left(V_{cc}\omega_{p}\left(L\right)\left|K\right|+\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|L\right|\right)}}{2\pi\left(K\right)\left|{V_{cc}}\right|\left|K\right|}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\therefore\,f\geq26.5(kHz)\,Caso\,1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\geq2.6(kHz)\,Caso\,2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\geq265(Hz)\,Caso\,3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Slew Rate
+\end_layout
+
+\begin_layout Standard
+Otro problema con el cual nos topamos a la hora te poner limites a nuestro
+ circuito será el Slew Rate (SR), que indica el valor máximo que puede tener
+ 
+\begin_inset Formula $\frac{\partial V_{out}}{\partial t}$
+\end_inset
+
+.
+ Esto significa que a una entrada 
+\emph on
+x(t)
+\end_layout
+
+\begin_layout Subsubsection
+Corriente de BIAS
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsubsection
+OFFSET
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsubsection
+Disipación de Potencia
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsubsection
+Generalizando
+\end_layout
+
+\begin_layout Standard
+Falta escribir y desarrollar...
+\end_layout
+
+\begin_layout Subsection
+Aplicaciones y caracerísticas
 \end_layout
 
 \end_body
