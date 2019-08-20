@@ -1,0 +1,8 @@
+Added Component: Designator=vOUT(SIP6)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=vOUT-1
+Added Pin To Net: NetName=GND Pin=vOUT-2
+Added Pin To Net: NetName=OUT1 Pin=vOUT-5
+Added Pin To Net: NetName=OUT1 Pin=vOUT-6
+Added Member To Class: ClassName=Esquematico Member=Component vOUT CON6
+Added Room: Name=Esquematico

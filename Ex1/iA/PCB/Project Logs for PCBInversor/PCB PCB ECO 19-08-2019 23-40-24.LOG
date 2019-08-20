@@ -1,0 +1,74 @@
+Added Component: Designator=BORN(BORNERA3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(JUMPER3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J2(JUMPER3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J3(JUMPER3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=LM324(DIP14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1*(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2*(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3*(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R4*(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R4(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=VIN(SIP6)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=BORN-2
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J3-1
+Added Pin To Net: NetName=GND Pin=LM324-2
+Added Pin To Net: NetName=GND Pin=LM324-3
+Added Pin To Net: NetName=GND Pin=R1*-2
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R3*-1
+Added Pin To Net: NetName=GND Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R4*-1
+Added Pin To Net: NetName=GND Pin=VIN-1
+Added Pin To Net: NetName=GND Pin=VIN-2
+Added Pin To Net: NetName=GND Pin=VIN-5
+Added Pin To Net: NetName=GND Pin=VIN-6
+Added Net: Name=GND
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=R2*-1
+Added Pin To Net: NetName=NetJ2_2 Pin=R2-2
+Added Net: Name=NetJ2_2
+Added Pin To Net: NetName=NetJ3_2 Pin=J3-2
+Added Pin To Net: NetName=NetJ3_2 Pin=R4*-2
+Added Pin To Net: NetName=NetJ3_2 Pin=R4-1
+Added Net: Name=NetJ3_2
+Added Pin To Net: NetName=OUT1 Pin=J2-3
+Added Pin To Net: NetName=OUT1 Pin=J3-3
+Added Pin To Net: NetName=OUT1 Pin=LM324-1
+Added Pin To Net: NetName=OUT1 Pin=R2*-2
+Added Pin To Net: NetName=OUT1 Pin=R4-2
+Added Net: Name=OUT1
+Added Pin To Net: NetName=tst1 Pin=J1-2
+Added Pin To Net: NetName=tst1 Pin=R1*-1
+Added Pin To Net: NetName=tst1 Pin=R1-2
+Added Pin To Net: NetName=tst1 Pin=R3*-2
+Added Pin To Net: NetName=tst1 Pin=R3-1
+Added Net: Name=tst1
+Added Pin To Net: NetName=VCC Pin=BORN-1
+Added Pin To Net: NetName=VCC Pin=LM324-4
+Added Net: Name=VCC
+Added Pin To Net: NetName=VEE Pin=BORN-3
+Added Pin To Net: NetName=VEE Pin=LM324-11
+Added Net: Name=VEE
+Added Class: Name=Esquematico
+Added Room: Name=Esquematico

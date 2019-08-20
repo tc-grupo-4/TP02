@@ -1,0 +1,34 @@
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=LM324-2
+Removed Pin From Net: NetName=GND Pin=R1*-2
+Removed Pin From Net: NetName=GND Pin=R1-1
+Removed Pin From Net: NetName=GND Pin=R2-1
+Removed Pin From Net: NetName=tst1 Pin=R3*-2
+Removed Pin From Net: NetName=tst1 Pin=R3-1
+Removed Pin From Net: NetName=GND Pin=R3-2
+Removed Pin From Net: NetName=GND Pin=VIN-1
+Removed Pin From Net: NetName=GND Pin=VIN-2
+Added Component: Designator=J4(JUMPER3)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=J4-1
+Added Pin To Net: NetName=NetJ4_2 Pin=J4-2
+Added Pin To Net: NetName=NetJ4_2 Pin=R3*-2
+Added Pin To Net: NetName=NetJ4_2 Pin=R3-1
+Added Net: Name=NetJ4_2
+Added Pin To Net: NetName=V-1 Pin=J1-3
+Added Pin To Net: NetName=V-1 Pin=J2-1
+Added Pin To Net: NetName=V-1 Pin=J4-3
+Added Pin To Net: NetName=V-1 Pin=LM324-2
+Added Pin To Net: NetName=V-1 Pin=R1*-2
+Added Pin To Net: NetName=V-1 Pin=R2-1
+Added Pin To Net: NetName=V-1 Pin=R3-2
+Added Net: Name=V-1
+Added Pin To Net: NetName=VIN Pin=J1-1
+Added Pin To Net: NetName=VIN Pin=R1-1
+Added Pin To Net: NetName=VIN Pin=VIN-1
+Added Pin To Net: NetName=VIN Pin=VIN-2
+Added Net: Name=VIN
+Added Member To Class: ClassName=Esquematico Member=Component J4 JUMPER
+Added Room: Name=Esquematico
