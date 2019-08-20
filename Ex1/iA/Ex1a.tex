@@ -56,7 +56,7 @@ Caso & $R_{1}=R_{3}$ & $R_{2}$ & $R_{4}$\tabularnewline
 
 \end{table}
 
-\subsection{Transferencia}
+\subsection{Transferencia\label{subsec:1_a_1}}
 
 Comenzando por el analisis ideal, se pidió calcular y graficar la
 relación $\frac{V_{out}}{V_{in}}$, esto quiere decir, considerando
@@ -95,7 +95,7 @@ figura \ref{1_a_2}.
 \label{1_a_2}CHEQUEARR SI STO ESTA BIENN
 \end{figure}
 
-\subsection{Impedancia de entrada}
+\subsection{Impedancia de entrada\label{subsec:1_a_2}}
 
 Consecuentemente, se nos instó a calcular la impedancia de entrada
 vista por el generador hacia nuestro circuito. Nuevamente, utilizando
@@ -235,21 +235,40 @@ f\leq...\,Caso\,2
 f\leq...\,Caso\,3
 \]
 
-\subsubsection{Corriente de BIAS}
-
-Falta escribir y desarrollar...
-
-\subsubsection{OFFSET}
-
-Falta escribir y desarrollar...
-
-\subsubsection{Disipación de Potencia}
-
-Falta escribir y desarrollar...
-
-\subsubsection{Generalizando}
-
-Falta escribir y desarrollar...
-
 \subsection{Aplicaciones y caracerísticas}
+
+Como pudimos observar anteriormente, nuestro circuito es un pasabajos
+inversor con un rango de frecuencias determinadas para cada caso,
+durante esta sección nos centraremos en explicar algunas características
+de nuestro circuito.
+
+\subsubsection{Efecto de la resistencia R4 en el circuito inversor}
+
+Como pudimos ver en las las subsecciones \ref{subsec:1_a_1} y \ref{subsec:1_a_2},
+la transferencia y la impedancia de entrada no dependen del valor
+de $R_{4}$, lo cual nos hace pregutarnos cual es el propósito de
+esta resistencia. En principio, la resistencia tiene el objetivo de
+cargar nuestro circuito para que funcione adecuadamente, esto querría
+decir que la resistencia $R_{4}$ podría tomar cualquier valor entre
+$0\,e\,\infty$, sin embargo, nuestro circuito presenta una corriente
+de salida máxima y si hacemos tender $R_{4}\longrightarrow0$, la
+corriente necesaria tendería a infinito, lo cual no es posible. El
+otro caso posible es que $R_{4}\longrightarrow\infty$, esto significaria
+que la corriente de salida del OpAmp sea la mínima, y es necesario
+verificar que esa corriente no sea menor a la corriente minima de
+salida del OpAmp. Sin embargo, como el segundo caso no suele traer
+problemas, nos enfocaremos en procurar que la corriente de salida
+no supere la corriente máxima nominal del amplificador operacional.
+Para esto, y aproximando $i_{2}\approx0$, podemos decir que $R_{4}>\frac{V_{out}}{i_{max}}$.
+
+\subsubsection{Efecto de la resistencia R3}
+
+Por otro lado, podemos ver como, en la figura \ref{1_a_1}, la resistencia
+$R_{3}$nos determina la tensión $v^{-}$. Sabiendo que $v^{+}=0(V)$,
+significa que en cierta medida, la ganancia de nuestro circuito va
+a estar dada por el valor de $R_{3}$ y en particular , si $R_{3}\longrightarrow0$,
+entonces $v^{-}=0(v)$, por lo tanto $V_{out}=A(\omega)\,\left(v^{+}-v^{-}\right)=0(v)$,
+con lo cual nuestra ganancia sería nula. De la misma manera, podemos
+ver que si $R_{3}\longrightarrow\infty$, entonces la ganancia es
+máxima.
 \end{document}

@@ -388,6 +388,13 @@ name "1_a_t_1"
 
 \begin_layout Subsection
 Transferencia
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:1_a_1"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -516,6 +523,13 @@ CHEQUEARR SI STO ESTA BIENN
 
 \begin_layout Subsection
 Impedancia de entrada
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:1_a_2"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -946,40 +960,125 @@ f\leq...\,Caso\,3
 
 \end_layout
 
-\begin_layout Subsubsection
-Corriente de BIAS
-\end_layout
-
-\begin_layout Standard
-Falta escribir y desarrollar...
-\end_layout
-
-\begin_layout Subsubsection
-OFFSET
-\end_layout
-
-\begin_layout Standard
-Falta escribir y desarrollar...
-\end_layout
-
-\begin_layout Subsubsection
-Disipación de Potencia
-\end_layout
-
-\begin_layout Standard
-Falta escribir y desarrollar...
-\end_layout
-
-\begin_layout Subsubsection
-Generalizando
-\end_layout
-
-\begin_layout Standard
-Falta escribir y desarrollar...
-\end_layout
-
 \begin_layout Subsection
 Aplicaciones y caracerísticas
+\end_layout
+
+\begin_layout Standard
+Como pudimos observar anteriormente, nuestro circuito es un pasabajos inversor
+ con un rango de frecuencias determinadas para cada caso, durante esta sección
+ nos centraremos en explicar algunas características de nuestro circuito.
+\end_layout
+
+\begin_layout Subsubsection
+Efecto de la resistencia R4 en el circuito inversor
+\end_layout
+
+\begin_layout Standard
+Como pudimos ver en las las subsecciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:1_a_1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:1_a_2"
+
+\end_inset
+
+, la transferencia y la impedancia de entrada no dependen del valor de 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+, lo cual nos hace pregutarnos cual es el propósito de esta resistencia.
+ En principio, la resistencia tiene el objetivo de cargar nuestro circuito
+ para que funcione adecuadamente, esto querría decir que la resistencia
+ 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+ podría tomar cualquier valor entre 
+\begin_inset Formula $0\,e\,\infty$
+\end_inset
+
+, sin embargo, nuestro circuito presenta una corriente de salida máxima
+ y si hacemos tender 
+\begin_inset Formula $R_{4}\longrightarrow0$
+\end_inset
+
+, la corriente necesaria tendería a infinito, lo cual no es posible.
+ El otro caso posible es que 
+\begin_inset Formula $R_{4}\longrightarrow\infty$
+\end_inset
+
+, esto significaria que la corriente de salida del OpAmp sea la mínima,
+ y es necesario verificar que esa corriente no sea menor a la corriente
+ minima de salida del OpAmp.
+ Sin embargo, como el segundo caso no suele traer problemas, nos enfocaremos
+ en procurar que la corriente de salida no supere la corriente máxima nominal
+ del amplificador operacional.
+ Para esto, y aproximando 
+\begin_inset Formula $i_{2}\approx0$
+\end_inset
+
+, podemos decir que 
+\begin_inset Formula $R_{4}>\frac{V_{out}}{i_{max}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Efecto de la resistencia R3
+\end_layout
+
+\begin_layout Standard
+Por otro lado, podemos ver como, en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_1"
+
+\end_inset
+
+, la resistencia 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+nos determina la tensión 
+\begin_inset Formula $v^{-}$
+\end_inset
+
+.
+ Sabiendo que 
+\begin_inset Formula $v^{+}=0(V)$
+\end_inset
+
+, significa que en cierta medida, la ganancia de nuestro circuito va a estar
+ dada por el valor de 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ y en particular , si 
+\begin_inset Formula $R_{3}\longrightarrow0$
+\end_inset
+
+, entonces 
+\begin_inset Formula $v^{-}=0(v)$
+\end_inset
+
+, por lo tanto 
+\begin_inset Formula $V_{out}=A(\omega)\,\left(v^{+}-v^{-}\right)=0(v)$
+\end_inset
+
+, con lo cual nuestra ganancia sería nula.
+ De la misma manera, podemos ver que si 
+\begin_inset Formula $R_{3}\longrightarrow\infty$
+\end_inset
+
+, entonces la ganancia es máxima.
 \end_layout
 
 \end_body

@@ -388,6 +388,13 @@ name "1_a_t_1"
 
 \begin_layout Subsection
 Transferencia
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:1_a_1"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -516,6 +523,13 @@ CHEQUEARR SI STO ESTA BIENN
 
 \begin_layout Subsection
 Impedancia de entrada
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:1_a_2"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -880,13 +894,43 @@ Por ende aproximando que
 \end_inset
 
  obtenemos que la frecuencia de trabajo de nuestro circuito debe cumplir
- la ecuación .
+ la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_a_4"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f\leq\frac{SR}{a_{0}2\pi V_{p}}\label{eq:1_a_4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para el caso donde la tensión de entrada tenga un valor pico de 1(V), 
+\begin_inset Formula $a_{0}=100000$
+\end_inset
+
+ y 
+\begin_inset Formula $SR=...$
+\end_inset
+
+ nos queda que para cada caso se deben cumplir las siguientes ecuaciones.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\leq\frac{SR}{a_{0}2\pi V_{p}}
+f\leq...\,Caso\,1
 \]
 
 \end_inset
@@ -895,6 +939,24 @@ f\leq\frac{SR}{a_{0}2\pi V_{p}}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+f\leq...\,Caso\,2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\leq...\,Caso\,3
+\]
+
+\end_inset
+
 
 \end_layout
 
@@ -932,6 +994,59 @@ Falta escribir y desarrollar...
 
 \begin_layout Subsection
 Aplicaciones y caracerísticas
+\end_layout
+
+\begin_layout Standard
+Como pudimos observar anteriormente, nuestro circuito es un pasabajos inversor
+ con un rango de frecuencias determinadas para cada caso, durante esta sección
+ nos centraremos en explicar algunas características de nuestro circuito.
+\end_layout
+
+\begin_layout Subsubsection
+Efecto de la resistencia R4 en el circuito inversor
+\end_layout
+
+\begin_layout Standard
+Como pudimos ver en las las subsecciones 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:1_a_1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:1_a_2"
+
+\end_inset
+
+, la transferencia y la impedancia de entrada no dependen del valor de 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+, lo cual nos hace pregutarnos cual es el propósito de esta resistencia.
+ En principio, la resistencia tiene el objetivo de cargar nuestro circuito
+ para que funcione adecuadamente, esto querría decir que la resistencia
+ 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+ podría tomar cualquier valor entre 
+\begin_inset Formula $0\,e\,\infty$
+\end_inset
+
+, sin embargo, nuestro circuito presenta una corriente de salida máxima
+ y si hacemos tender 
+\begin_inset Formula $R_{4}\longrightarrow0$
+\end_inset
+
+, la corriente necesaria tendería a infinito, lo cual no es posible.
+ El otro caso posible es que 
+\begin_inset Formula $R_{4}\longrightarrow\infty$
+\end_inset
+
+, esto significari
 \end_layout
 
 \end_body
