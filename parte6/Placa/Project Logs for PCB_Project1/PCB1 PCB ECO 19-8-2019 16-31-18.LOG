@@ -1,0 +1,129 @@
+Added Component: Designator=J_O1(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J_O2(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J_VT(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=LM35_OUT(SIP2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=OPAMP1_OUT(SIP2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=OPAMP2_OUT(SIP2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=POWER(MOLEX3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2_F(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2_V(PRESET H)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RA_F(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RA_V(PRESET H)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RB_F(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RB_V(PRESET H)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RF(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U1(*TO127P254X495-3P)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM35DZ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-92 Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM35DZ/Texas%20Instruments/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(*DIP254P762X508-14)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LM324N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "PDIP-14 Motorola"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LM324N/STMicroelectronics/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Voff(MOLEX2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Vout(SIP2)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+IN_1 Pin=LM35_OUT-2
+Added Pin To Net: NetName=+IN_1 Pin=OPAMP1_OUT-2
+Added Pin To Net: NetName=+IN_1 Pin=OPAMP2_OUT-2
+Added Pin To Net: NetName=+IN_1 Pin=POWER-3
+Added Pin To Net: NetName=+IN_1 Pin=U1-3
+Added Pin To Net: NetName=+IN_1 Pin=U2-3
+Added Pin To Net: NetName=+IN_1 Pin=U2-6
+Added Pin To Net: NetName=+IN_1 Pin=U2-10
+Added Pin To Net: NetName=+IN_1 Pin=U2-13
+Added Pin To Net: NetName=+IN_1 Pin=Voff-2
+Added Pin To Net: NetName=+IN_1 Pin=Vout-2
+Added Net: Name=+IN_1
+Added Pin To Net: NetName=+IN_B1 Pin=J_O1-2
+Added Pin To Net: NetName=+IN_B1 Pin=U2-5
+Added Net: Name=+IN_B1
+Added Pin To Net: NetName=+IN_B2 Pin=J_O2-2
+Added Pin To Net: NetName=+IN_B2 Pin=U2-12
+Added Net: Name=+IN_B2
+Added Pin To Net: NetName=+Vcc Pin=POWER-1
+Added Pin To Net: NetName=+Vcc Pin=U1-1
+Added Pin To Net: NetName=+Vcc Pin=U2-4
+Added Net: Name=+Vcc
+Added Pin To Net: NetName=-IN_1 Pin=R1-2
+Added Pin To Net: NetName=-IN_1 Pin=R2_F-1
+Added Pin To Net: NetName=-IN_1 Pin=U2-2
+Added Net: Name=-IN_1
+Added Pin To Net: NetName=-IN_2 Pin=RA_V-2
+Added Pin To Net: NetName=-IN_2 Pin=RA_V-2
+Added Pin To Net: NetName=-IN_2 Pin=RB_V-2
+Added Pin To Net: NetName=-IN_2 Pin=RB_V-2
+Added Pin To Net: NetName=-IN_2 Pin=RF-1
+Added Pin To Net: NetName=-IN_2 Pin=U2-9
+Added Net: Name=-IN_2
+Added Pin To Net: NetName=-Vcc Pin=POWER-2
+Added Pin To Net: NetName=-Vcc Pin=U2-11
+Added Net: Name=-Vcc
+Added Pin To Net: NetName=IN_1 Pin=J_VT-2
+Added Pin To Net: NetName=IN_1 Pin=R1-1
+Added Net: Name=IN_1
+Added Pin To Net: NetName=NetR2_F_2 Pin=R2_F-2
+Added Pin To Net: NetName=NetR2_F_2 Pin=R2_V-1
+Added Pin To Net: NetName=NetR2_F_2 Pin=R2_V-1
+Added Net: Name=NetR2_F_2
+Added Pin To Net: NetName=NetRA_F_2 Pin=RA_F-2
+Added Pin To Net: NetName=NetRA_F_2 Pin=RA_V-1
+Added Pin To Net: NetName=NetRA_F_2 Pin=RA_V-1
+Added Net: Name=NetRA_F_2
+Added Pin To Net: NetName=NetRB_F_2 Pin=RB_F-2
+Added Pin To Net: NetName=NetRB_F_2 Pin=RB_V-1
+Added Pin To Net: NetName=NetRB_F_2 Pin=RB_V-1
+Added Net: Name=NetRB_F_2
+Added Pin To Net: NetName=OUT_1 Pin=J_O1-1
+Added Pin To Net: NetName=OUT_1 Pin=OPAMP1_OUT-1
+Added Pin To Net: NetName=OUT_1 Pin=R2_V-2
+Added Pin To Net: NetName=OUT_1 Pin=R2_V-2
+Added Pin To Net: NetName=OUT_1 Pin=U2-1
+Added Net: Name=OUT_1
+Added Pin To Net: NetName=OUT_2 Pin=J_O2-1
+Added Pin To Net: NetName=OUT_2 Pin=OPAMP2_OUT-1
+Added Pin To Net: NetName=OUT_2 Pin=RF-2
+Added Pin To Net: NetName=OUT_2 Pin=U2-8
+Added Net: Name=OUT_2
+Added Pin To Net: NetName=OUT_B1 Pin=RA_F-1
+Added Pin To Net: NetName=OUT_B1 Pin=U2-7
+Added Net: Name=OUT_B1
+Added Pin To Net: NetName=V_Off Pin=RB_F-1
+Added Pin To Net: NetName=V_Off Pin=Voff-1
+Added Net: Name=V_Off
+Added Pin To Net: NetName=Vout Pin=U2-14
+Added Pin To Net: NetName=Vout Pin=Vout-1
+Added Net: Name=Vout
+Added Pin To Net: NetName=Vt Pin=J_VT-1
+Added Pin To Net: NetName=Vt Pin=LM35_OUT-1
+Added Pin To Net: NetName=Vt Pin=U1-2
+Added Net: Name=Vt
+Added Class: Name=TC-TP02-EJ6
+Added Room: Name=TC-TP02-EJ6
