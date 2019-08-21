@@ -1296,5 +1296,74 @@ nos determina la tensión
 , entonces la ganancia es máxima.
 \end_layout
 
+\begin_layout Subsection
+DC Sweep a la entrada
+\end_layout
+
+\begin_layout Standard
+Para probar el efecto de la saturacion, se aplico un DC Sweep a la entrada
+ para observar la salida, lo que se observo se muestra en las figura , y
+ lo simulado en la figura .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/dcswp1sim.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/dcswp2sim.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/dcswp3sim.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulacion de DC Sweep para cada caso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
