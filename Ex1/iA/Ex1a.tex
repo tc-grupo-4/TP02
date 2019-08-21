@@ -9,7 +9,6 @@
 \usepackage{float}
 \usepackage{textcomp}
 \usepackage{amstext}
-\usepackage{amssymb}
 \usepackage{graphicx}
 
 \makeatletter
@@ -82,15 +81,15 @@ H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}
 \end{equation}
 
 \[
-H(s)=\frac{5\,10^{14}}{2\,10^{8}s+1\,10^{9}}\,Caso\,1
+H(s)=-\frac{5\cdot10^{15}}{100\,10^{6}s+502\text{\texttimes}10^{12}}\,Caso\,1
 \]
 
 \[
-H(s)=\frac{5\,10^{13}}{2\,10^{8}s+1\,10^{9}}\,Caso\,2
+H(s)=-\frac{502\text{\texttimes}10^{12}}{100\text{\texttimes}10^{6}s+502\text{\texttimes}10^{12}}\,Caso\,2
 \]
 
 \[
-H(s)=\frac{5\,10^{14}}{2\,10^{10}s+1\,10^{11}}\,Caso\,3
+H(s)=-\frac{5.0272\cdot10^{15}}{10\text{\texttimes}10^{9}s+5\cdot10^{16}}\,Caso\,3
 \]
 
 Como podemos ver, tenemos un polo en nuestra transferencia por lo
@@ -99,7 +98,11 @@ Es importante notar, que el valor de $R_{4}$ no afecta a la transferencia
 del circuito. Si graficamos la transferencia de el circuito para los
 distintos casos, podemos ver que, en efecto, se comporta como un pasabajos,
 con diferente frecuencia de corte $f_{0}$, esto se puede ver en la
-figura \ref{1_a_2}.
+figura \ref{1_a_2}. La diferencia con lo simulado se debe a que la
+frecuencia del polo dominante dada por la hoja de datos no esta bien
+especificada, y en la calculada se uso un polo dominante de 8 (Hz)
+(Que era lo que se observaba aproximadamente en el grafico provisto
+por el graficante) y en el simulado se uso el modelo real del LM324.
 
 \begin{figure}[H]
 \begin{centering}
@@ -110,16 +113,6 @@ figura \ref{1_a_2}.
 \par\end{centering}
 \caption{Comportamiento del circuito para los diferentes valores de impedancias}
 \label{1_a_2}
-\end{figure}
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[scale=0.5]{Resources1a/montecarlo1a_1}\includegraphics[scale=0.5]{Resources1a/montecarlo1a_2}
-\par\end{centering}
-\begin{centering}
-\includegraphics[scale=0.5]{Resources1a/montecarlo1a_3}
-\par\end{centering}
-\caption{Simulacion Montecarlo Caso 1, 2 y 3 en su respectivo orden}
 \end{figure}
 
 \subsection{Impedancia de entrada\label{subsec:1_a_2}}
@@ -190,32 +183,38 @@ es decir, con amplitud \emph{1(V)} \emph{, }solo nos basta con analizar
 el valor del modulo de la transferencia vista en la ecuación (\ref{eq:1_a_1}).
 
 \[
-\left|H(f)\right|=\frac{\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|\omega_{p}\right|\left|{R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}}\right|}{\sqrt{4\pi^{2}f^{2}\left(R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}\right)^{2}+\omega_{p}^{2}\left(R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}\right)^{2}}\left|{R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}}\right|}\leq V_{cc}
+\left|H(f)\right|\times V_{in}=\frac{R_{2}R_{3}\omega_{p}a_{0}}{\sqrt{\omega_{p}^{2}\left(-R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}+4\pi^{2}f^{2}\left(-R_{1}R_{2}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}}}\times V_{in}\leq V_{cc}
 \]
 
 \[
-K=R_{1}R_{2}+2R_{1}R_{3}-R_{2}R_{3}
+f\geq2.7\sqrt{40\,10^{9}Vin^{2}-90\,10^{9}}\,\,\,Caso\,1
 \]
 
 \[
-L=R_{1}R_{2}+R_{1}R_{3}-R_{2}R_{3}
+f\geq2.7\sqrt{400\,10^{6}Vin^{2}-90\,10^{9}}\,\,\,Caso\,2
 \]
 
 \[
-f\geq\frac{\sqrt{-\left(V_{cc}\omega_{p}L\left|K\right|-\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|L\right|\right)\left(V_{cc}\omega_{p}\left(L\right)\left|K\right|+\left|{R_{2}}\right|\left|{R_{3}}\right|\left|{a_{0}}\right|\left|{w}\right|\left|L\right|\right)}}{2\pi\left(K\right)\left|{V_{cc}}\right|\left|K\right|}
+f\geq2.7\sqrt{4\,10^{6}Vin^{2}-90\,10^{9}}\,\,\,Caso\,3
 \]
 
-\[
-\therefore\,f\geq26.5(kHz)\,Caso\,1
-\]
+Con estas ecuaciones, podemos ver, que el efecto de saturacion no
+afecta en ninguno de los casos para tensiones de entrada igual a 1(V),
+sin embargo, hay que tener cuidado cuando se trabaja con tensines
+de entrada superiores ya que la frecuencia minima de operacion a la
+cual no satura el OpAmp podria empezar a afectar nuestro circuito.
 
-\[
-f\geq2.6(kHz)\,Caso\,2
-\]
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/sat1}\includegraphics[scale=0.5]{Resources1a/sat2}
+\par\end{centering}
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/sat3}
+\par\end{centering}
+\caption{Tension maxima en funcion de la frecuencia de operacion para que el
+circuito no entre en saturacion}
 
-\[
-f\geq265(Hz)\,Caso\,3
-\]
+\end{figure}
 
 \subsubsection{Slew Rate}
 
@@ -223,44 +222,55 @@ Otro problema con el cual nos topamos a la hora te poner limites a
 nuestro circuito será el Slew Rate (SR), que indica el valor máximo
 que puede tener $\frac{\partial V_{out}}{\partial t}$. Esto significa
 que a una entrada \emph{x(t) }sinusoidal de la forma $x(t)=V_{p}sin(2\pi ft)$
-le corresponde una salida $v_{out}(t)=\left|A(\omega)\right|V_{p}sin(2\pi ft+\phi(\omega))$
-siendo $A(\omega)=\left|A(\omega)\right|e^{i\phi(\omega)}$. Por lo
-tanto, derivando la salida nos queda la ecuación (\ref{eq:1_a_3}).
+le corresponde una salida $v_{out}(t)=\left|H(f)\right|V_{p}sin(2\pi ft+\phi(\omega))$
+siendo $H(f)=\left|H(h)\right|e^{i\phi(\omega)}$. Por lo tanto, derivando
+la salida nos queda la ecuación (\ref{eq:1_a_3}).
 
 \begin{equation}
-\frac{\partial v_{out}}{\partial t}=\left|A(\omega)\right|V_{p}2\pi f\,cos\left(2\pi ft+\phi(\omega)\right)\label{eq:1_a_3}
+\frac{\partial v_{out}}{\partial t}=\left|H(f)\right|V_{p}2\pi f\,cos\left(2\pi ft+\phi(\omega)\right)\label{eq:1_a_3}
 \end{equation}
 
-A su vez, sabemos que, siempre y cuando $\phi(\omega)=0$ esa expresión
-será máxima cuando \emph{t=0}. Por lo tanto;
+A su vez, sabemos que, $cos(\alpha)\leq1$, por lo tanto;
 
 \[
-\frac{\partial v_{out}}{\partial t}\mid_{t=0}=\left|A(\omega)\right|V_{p}2\pi f\leq SR
+\frac{\partial v_{out}}{\partial t}\leq\left|H(f)\right|V_{p}2\pi f\leq SR
 \]
-
-Por ende aproximando que $\left|A(\omega)\right|=a_{0}$ obtenemos
-que la frecuencia de trabajo de nuestro circuito debe cumplir la ecuación
-(\ref{eq:1_a_4}).
 
 \begin{equation}
-f\leq\frac{SR}{a_{0}2\pi V_{p}}\label{eq:1_a_4}
+f\leq\frac{SR}{\left|H(f)\right|2\pi V_{p}}\label{eq:1_a_4}
 \end{equation}
 
-Para el caso donde la tensión de entrada tenga un valor pico de 1(V),
-$a_{0}=100000$ y $SR=...$ nos queda que para cada caso se deben
-cumplir las siguientes ecuaciones.
+\[
+f\leq250SR\omega\sqrt{\frac{1}{\left(-1571R_{1}R_{2}SR+1571R_{1}R_{3}SR+1571R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)\left(1571R_{1}R_{2}SR-1571.0R_{1}R_{3}SR-1571.0R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)}}\left(-R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)
+\]
+
+Para el caso donde $SR=0.5\left(\frac{V}{\mu s}\right)$ nos queda
+que para cada caso se deben cumplir las siguientes ecuaciones. Estas
+ecuaciones se pueden ver en la figura \ref{1_a_4}.
 
 \[
-f\leq...\,Caso\,1
+f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{16}}}}{\sqrt{7.9\cdot10^{18}Vp+7.9\cdot10^{16}}}\,\,\,Caso\,1
 \]
 
 \[
-f\leq...\,Caso\,2
+f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{17}Vp-7.9\cdot10^{16}}}}{\sqrt{7.9\cdot10^{17}Vp+7.9\cdot10^{16}}}\,\,\,Caso\,2
 \]
 
 \[
-f\leq...\,Caso\,3
+f\leq\frac{6.3\cdot10^{24}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{18}}}}{\sqrt{7.9\cdot10^{18}Vp+7.9\cdot10^{18}}}\,\,\,Caso\,3
 \]
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/SlewRate12}\includegraphics[scale=0.5]{Resources1a/SlewRate3}
+\par\end{centering}
+\caption{Calculo de tension pico maxima en funcion de la frecuencia para que
+no haya slew rate}
+\label{1_a_4}
+
+\end{figure}
+
+\subsection{Otros fenomenos que afectan el comportamiento del OpAmp}
 
 \subsubsection{Corriente de BIAS y Offset de entrada}
 
