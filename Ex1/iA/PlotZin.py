@@ -7,6 +7,8 @@ from sympy import re, im
 from sympy.solvers.inequalities import solve_rational_inequalities
 from sympy.solvers.inequalities import reduce_rational_inequalities
 from sympy.solvers import solve
+from scipy import signal
+import matplotlib.pyplot as plt
 
 def substitute(express, case):
     express = express.subs(w,10)        ##check
@@ -51,5 +53,46 @@ zinp = K*(1+I*2*pi*f/C)/(1+I*2*pi*f/L)
 zinp1 = substitute(zinp,1)
 zinp2 = substitute(zinp,2)
 zinp3 = substitute(zinp,3)
+zinp1 = re(zinp1) + I * im(zinp1)
+zinp2 = re(zinp2) + I * im(zinp2)
+zinp3 = re(zinp3) + I * im(zinp3)
+zinp1 = simplify(zinp1)
+zinp2 = simplify(zinp2)
+zinp3 = simplify(zinp3)
 
 print(latex(zinp3))
+'''
+freq = []
+zio1m = []
+zio1p = []
+zio2m = []
+zio2p = []
+zio3m = []
+zio3p = []
+
+for i in range(0,50):
+    freq.append(float(2.71828182**float(i)))
+    temp = zinp1.subs(f,freq[i])
+    temp = temp.evalf()
+    temp2 = sqrt(re(temp.evalf())**2 + im(temp)**2)
+    zio1m.append(temp2)
+    temp2 = tan(im(temp)/re(temp))
+    zio1p.append(temp2)
+
+    temp = zinp2.subs(f,freq[i])
+    temp = temp.evalf()
+    temp2 = sqrt(re(temp.evalf())**2 + im(temp)**2)
+    zio2m.append(temp2)
+    temp2 = tan(im(temp)/re(temp))
+    zio2p.append(temp2)
+
+    temp = zinp3.subs(f,freq[i])
+    temp = temp.evalf()
+    temp2 = sqrt(re(temp.evalf())**2 + im(temp)**2)
+    zio3m.append(temp2)
+    temp2 = tan(im(temp)/re(temp))
+    zio3p.append(temp2)
+
+print (freq[10], zio1m[10], zio1p[10])
+
+'''

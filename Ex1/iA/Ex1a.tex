@@ -7,6 +7,8 @@
 \geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=2cm}
 \setlength{\parindent}{0bp}
 \usepackage{float}
+\usepackage{textcomp}
+\usepackage{amstext}
 \usepackage{amssymb}
 \usepackage{graphicx}
 
@@ -79,6 +81,18 @@ V_{in}-IR_{1}=v^{-}
 H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}}{1+\frac{s}{\omega_{p}\left(\frac{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}{R_{1}R_{2}+R_{3}R_{1}-R_{3}R_{2}}\right)}}\label{eq:1_a_1}
 \end{equation}
 
+\[
+H(s)=\frac{5\,10^{14}}{2\,10^{8}s+1\,10^{9}}\,Caso\,1
+\]
+
+\[
+H(s)=\frac{5\,10^{13}}{2\,10^{8}s+1\,10^{9}}\,Caso\,2
+\]
+
+\[
+H(s)=\frac{5\,10^{14}}{2\,10^{10}s+1\,10^{11}}\,Caso\,3
+\]
+
 Como podemos ver, tenemos un polo en nuestra transferencia por lo
 cual, el circuito se deberia comportar a grandes rasgos como un pasabajos.
 Es importante notar, que el valor de $R_{4}$ no afecta a la transferencia
@@ -89,10 +103,23 @@ figura \ref{1_a_2}.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{\string"Resources1a/transferencias a(w)\string".pdf}
+\includegraphics[scale=0.5]{Resources1a/H1}\includegraphics[scale=0.5]{Resources1a/H2}
+\par\end{centering}
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/H3}
 \par\end{centering}
 \caption{Comportamiento del circuito para los diferentes valores de impedancias}
-\label{1_a_2}CHEQUEARR SI STO ESTA BIENN
+\label{1_a_2}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/montecarlo1a_1}\includegraphics[scale=0.5]{Resources1a/montecarlo1a_2}
+\par\end{centering}
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/montecarlo1a_3}
+\par\end{centering}
+\caption{Simulacion Montecarlo Caso 1, 2 y 3 en su respectivo orden}
 \end{figure}
 
 \subsection{Impedancia de entrada\label{subsec:1_a_2}}
@@ -123,15 +150,15 @@ Por lo tanto, para cada caso tendremos una impedancia de entrada como
 se muestra en las siguientes formulas:
 
 \[
-Z_{in}=\frac{131946.78if+999790000}{6.911498if+99989}\,Caso\,1
+Z_{in}=\frac{912\times10^{3}f^{2}+100\times10^{12}}{47.77f^{2}+10\text{\texttimes}10^{9}}+i\frac{6.28\text{\texttimes}10^{9}f}{47.77f^{2}+10\text{\texttimes}10^{9}}\,\,\,Caso\,1
 \]
 
 \[
-Z_{in}=\frac{9424.77if+499985000}{0.628318if+49999}\,Caso\,2
+Z_{in}=\frac{5.92\times10^{3}f^{2}+25\text{\texttimes}10^{12}}{0.39f^{2}+2.5\text{\texttimes}10^{9}}+i\frac{157\text{\texttimes}10^{6}f}{0.39f^{2}+2.5\text{\texttimes}10^{9}}\,\,\,Caso\,2
 \]
 
 \[
-Z_{in}=\frac{753981.6if+99998800000}{6.911498if+999989}\,Caso\,3
+Z_{in}=\frac{5.21\text{\texttimes}10^{6}f^{2}+100\text{\texttimes}10^{15}}{47.77f+999.98\text{\texttimes}10^{9}}+i\frac{62.83\text{\texttimes}10^{9}f}{47.77f+999.98\text{\texttimes}10^{9}}\,\,\,Caso\,3
 \]
 
 Graficando la impedancia de entrada con respecto a la frecuencia de
@@ -233,6 +260,36 @@ f\leq...\,Caso\,2
 
 \[
 f\leq...\,Caso\,3
+\]
+
+\subsubsection{Corriente de BIAS y Offset de entrada}
+
+El siguiente inconveniente se da debido a que el amplificado operacional
+esta compuesto por transistores BJT internamente, por ende, cada terminal
+$v^{+}$ y $v^{-}$ tiene una corriente necesaria para polarizar a
+los transistores internamente que debe ser tenida en cuenta. A su
+vez, debe ser tenido en cuenta el offset de entrada, que generara
+una salida del tipo $V_{out}=A(\omega)\left(v^{+}-v^{-}+v_{io}\right)$
+siendo $v_{io}$ la tensión de offset de entrada. En el caso del Amplificador
+Operacional LM324, las caracteristicas dadas por el fabricante son
+las siguientes:
+
+\[
+I_{bias}\approx45(nA)
+\]
+ 
+\[
+v_{io}\approx2(mV)
+\]
+
+Sin embargo, hay que tener en cuenta que en la hoja de datos se aclara
+que la corriente de Bias puede llegar a valer hasta 100 (nA) y que
+la tension de offset de entrada puede llegar a valer 3 (mV), los valores
+dichos previamente son valores tipicos, y estos son valores máximos.
+A su vez, la corriente de offset de entrada sera:
+
+\[
+I_{io}\approx5(nA)
 \]
 
 \subsection{Aplicaciones y caracerísticas}

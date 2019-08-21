@@ -456,6 +456,39 @@ H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=\frac{5\,10^{14}}{2\,10^{8}s+1\,10^{9}}\,Caso\,1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=\frac{5\,10^{13}}{2\,10^{8}s+1\,10^{9}}\,Caso\,2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=\frac{5\,10^{14}}{2\,10^{10}s+1\,10^{11}}\,Caso\,3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Como podemos ver, tenemos un polo en nuestra transferencia por lo cual,
  el circuito se deberia comportar a grandes rasgos como un pasabajos.
  Es importante notar, que el valor de 
@@ -488,7 +521,27 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Resources1a/transferencias a(w).pdf
+	filename Resources1a/H1.png
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/H2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/H3.png
 	lyxscale 50
 	scale 50
 
@@ -513,7 +566,62 @@ name "1_a_2"
 
 \end_inset
 
-CHEQUEARR SI STO ESTA BIENN
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/montecarlo1a_1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/montecarlo1a_2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/montecarlo1a_3.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulacion Montecarlo Caso 1, 2 y 3 en su respectivo orden
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -599,7 +707,7 @@ Por lo tanto, para cada caso tendremos una impedancia de entrada como se
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Z_{in}=\frac{131946.78if+999790000}{6.911498if+99989}\,Caso\,1
+Z_{in}=\frac{912×10^{3}f^{2}+100×10^{12}}{47.77f^{2}+10\text{×}10^{9}}+i\frac{6.28\text{×}10^{9}f}{47.77f^{2}+10\text{×}10^{9}}\,\,\,Caso\,1
 \]
 
 \end_inset
@@ -610,7 +718,7 @@ Z_{in}=\frac{131946.78if+999790000}{6.911498if+99989}\,Caso\,1
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Z_{in}=\frac{9424.77if+499985000}{0.628318if+49999}\,Caso\,2
+Z_{in}=\frac{5.92×10^{3}f^{2}+25\text{×}10^{12}}{0.39f^{2}+2.5\text{×}10^{9}}+i\frac{157\text{×}10^{6}f}{0.39f^{2}+2.5\text{×}10^{9}}\,\,\,Caso\,2
 \]
 
 \end_inset
@@ -621,7 +729,7 @@ Z_{in}=\frac{9424.77if+499985000}{0.628318if+49999}\,Caso\,2
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Z_{in}=\frac{753981.6if+99998800000}{6.911498if+999989}\,Caso\,3
+Z_{in}=\frac{5.21\text{×}10^{6}f^{2}+100\text{×}10^{15}}{47.77f+999.98\text{×}10^{9}}+i\frac{62.83\text{×}10^{9}f}{47.77f+999.98\text{×}10^{9}}\,\,\,Caso\,3
 \]
 
 \end_inset
@@ -953,6 +1061,75 @@ f\leq...\,Caso\,2
 \begin_inset Formula 
 \[
 f\leq...\,Caso\,3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Corriente de BIAS y Offset de entrada
+\end_layout
+
+\begin_layout Standard
+El siguiente inconveniente se da debido a que el amplificado operacional
+ esta compuesto por transistores BJT internamente, por ende, cada terminal
+ 
+\begin_inset Formula $v^{+}$
+\end_inset
+
+ y 
+\begin_inset Formula $v^{-}$
+\end_inset
+
+ tiene una corriente necesaria para polarizar a los transistores internamente
+ que debe ser tenida en cuenta.
+ A su vez, debe ser tenido en cuenta el offset de entrada, que generara
+ una salida del tipo 
+\begin_inset Formula $V_{out}=A(\omega)\left(v^{+}-v^{-}+v_{io}\right)$
+\end_inset
+
+ siendo 
+\begin_inset Formula $v_{io}$
+\end_inset
+
+ la tensión de offset de entrada.
+ En el caso del Amplificador Operacional LM324, las caracteristicas dadas
+ por el fabricante son las siguientes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{bias}\approx45(nA)
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+v_{io}\approx2(mV)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sin embargo, hay que tener en cuenta que en la hoja de datos se aclara que
+ la corriente de Bias puede llegar a valer hasta 100 (nA) y que la tension
+ de offset de entrada puede llegar a valer 3 (mV), los valores dichos previament
+e son valores tipicos, y estos son valores máximos.
+ A su vez, la corriente de offset de entrada sera:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I_{io}\approx5(nA)
 \]
 
 \end_inset

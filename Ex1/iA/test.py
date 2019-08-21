@@ -47,7 +47,13 @@ h = simplify(h)
 mod = sqrt(re(h)**2 + im(h)**2)
 mod = simplify(mod)
 
+temp1 = substitute(h,1)
+temp2 = substitute(h,2)
+temp3 = substitute(h,3)
+
+print(latex(temp3))
+
 #print(latex(simplify(solve(mod-vcc,f))))
-fcr = simplify(solve(mod-vcc,f))
-fcr=substitute(fcr[1],3)
-print(fcr.evalf())
+#fcr = simplify(solve(mod-vcc,f))
+#fcr=substitute(fcr[1],3)
+#print(fcr.evalf())

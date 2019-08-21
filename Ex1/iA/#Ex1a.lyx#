@@ -521,29 +521,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Resources1a/H1.png
-	lyxscale 40
-	scale 40
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename Resources1a/H2.png
+	filename Resources1a/transferencias a(w).pdf
 	lyxscale 50
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/H3.png
-	lyxscale 50
-	scale 40
+	scale 50
 
 \end_inset
 
