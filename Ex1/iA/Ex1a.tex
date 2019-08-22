@@ -77,7 +77,7 @@ V_{in}-IR_{1}=v^{-}
 \]
 
 \begin{equation}
-H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}}{1+\frac{s}{\omega_{p}\left(\frac{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}{R_{1}R_{2}+R_{3}R_{1}-R_{3}R_{2}}\right)}}\label{eq:1_a_1}
+H(s)=\frac{V_{out}}{V_{in}}=--\frac{R_{2}R_{3}\omega_{p}a_{0}}{-R_{1}R_{2}\left(\omega_{p}+s\right)+R_{1}R_{3}\omega_{p}a_{0}+R_{1}R_{3}\left(\omega_{p}+s\right)+R_{2}R_{3}\left(\omega_{p}+s\right)}\label{eq:1_a_1}
 \end{equation}
 
 \[
@@ -267,6 +267,43 @@ f\leq\frac{6.3\cdot10^{24}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{18}}}}{\s
 \caption{Calculo de tension pico maxima en funcion de la frecuencia para que
 no haya slew rate}
 \label{1_a_4}
+
+\end{figure}
+
+\subsubsection{Crossover distortion}
+
+La crossover distortion o distorsión de cruce por cero, es una distorsion
+que se da en Amplificadores Operacionales que tienen a la salida una
+etapa ``Push-Pull'', una de estas etapas se muestra en la Figura
+\ref{1_a_6}. Esta alinialidad se produce por las corrientes de BIAS
+de los transistores BJT en esta etapa, que generan una caida de tension
+de 0.7(V), por lo tanto, la salida del circuito sera 0(V), siempre
+que $\left|v_{in}\right|\leq0.7(V)$, por lo tanto, la salida del
+amplificador a una estrada senoidal sera la mostrada en la Figura
+\ref{1_a_7}. Como el amplificador LM324 posee una etapa push-pull,
+es necesario solucionar este problema, para esto, la primera solucion
+fue crear un offset a la entrada de amplitud $V_{offset}\approx V_{p}+0.7(V)$,
+siendo $V_{p}$ la amplitud de la tension de entrada. De esta manera,
+nos aseguramos que el minimo valor de la senoidal de entrada se encuentra
+por arriba de los 0.7(V) y por lo tanto, uno de los transistores de
+la etapa ``push-pull'' se mantendra siempre en modo activo, por
+lo cual, no abra una zona alineal en la transferencia.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/push-pull}
+\par\end{centering}
+\caption{Etapa Push-Pull con transistores PNP y NPN}
+\label{1_a_6}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/crossover}
+\par\end{centering}
+\caption{Crossover Distortion}
+\emph{\label{1_a_7}}
 
 \end{figure}
 

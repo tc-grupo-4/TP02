@@ -14,7 +14,7 @@ def substitute(express, case):
     express = express.subs(w,8* 2 * 3.142)        ##check
     express = express.subs(vcc,15)      ##check
     express = express.subs(a0,100000)        ##check
-    express = express.subs(pi,3.14159)
+    #express = express.subs(pi,3.14159)
     express = express.subs(SR,0.5*10**6)
     if case == 1:
         express = express.subs(r1,10000)
@@ -47,12 +47,14 @@ SR = Symbol('SR',real = True, positive = True)
 Vp = Symbol('Vp',real = True, positive = True)
 Vin = Symbol('Vin',real = True, positive = True)
 
-#s = Symbol('s')
-s = I*2*3.142*f
+s = Symbol('s')
+#s = I*2*3.142*f
 Aw = a0 / (1+s/w)
 
 h = (-r2 / r1) * 1 / (1 + 1/Aw - r2/(r3*Aw) + r2/(r1*Aw))
 h = simplify(h)
+
+print(latex(h))
 mod = sqrt(re(h)**2 + im(h)**2)
 mod = simplify(mod)
 
@@ -89,7 +91,7 @@ plt.show()
 #temp2 = substitute(h,2)
 #temp3 = substitute(h,3)
 
-
+'''
 temp = mod * Vin - vcc
 temp = simplify(temp)
 fcr = simplify(solve(temp,Vin))
@@ -114,3 +116,4 @@ plt.grid()
 plt.xlabel("Frecuencia minima")
 plt.ylabel("Amplitud de entrada")
 plt.show()
+'''

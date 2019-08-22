@@ -447,7 +447,7 @@ V_{in}-IR_{1}=v^{-}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H(s)=\frac{V_{out}}{V_{int}}=\frac{\frac{a_{0}R_{3}R_{2}}{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}}{1+\frac{s}{\omega_{p}\left(\frac{R_{1}R_{2}+2R_{3}R_{1}-R_{3}R_{2}}{R_{1}R_{2}+R_{3}R_{1}-R_{3}R_{2}}\right)}}\label{eq:1_a_1}
+H(s)=\frac{V_{out}}{V_{in}}=--\frac{R_{2}R_{3}\omega_{p}a_{0}}{-R_{1}R_{2}\left(\omega_{p}+s\right)+R_{1}R_{3}\omega_{p}a_{0}+R_{1}R_{3}\left(\omega_{p}+s\right)+R_{2}R_{3}\left(\omega_{p}+s\right)}\label{eq:1_a_1}
 \end{equation}
 
 \end_inset
@@ -854,6 +854,34 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/sat1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/sat2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/sat3.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -1074,6 +1102,153 @@ name "1_a_4"
 
 \end_layout
 
+\begin_layout Subsubsection
+Crossover distortion
+\end_layout
+
+\begin_layout Standard
+La crossover distortion o distorsión de cruce por cero, es una distorsion
+ que se da en Amplificadores Operacionales que tienen a la salida una etapa
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Push-Pull
+\begin_inset Quotes erd
+\end_inset
+
+, una de estas etapas se muestra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_6"
+
+\end_inset
+
+.
+ Esta alinialidad se produce por las corrientes de BIAS de los transistores
+ BJT en esta etapa, que generan una caida de tension de 0.7(V), por lo tanto,
+ la salida del circuito sera 0(V), siempre que 
+\begin_inset Formula $\left|v_{in}\right|\leq0.7(V)$
+\end_inset
+
+, por lo tanto, la salida del amplificador a una estrada senoidal sera la
+ mostrada en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_7"
+
+\end_inset
+
+.
+ Como el amplificador LM324 posee una etapa push-pull, es necesario solucionar
+ este problema, para esto, la primera solucion fue crear un offset a la
+ entrada de amplitud 
+\begin_inset Formula $V_{offset}\approx V_{p}+0.7(V)$
+\end_inset
+
+, siendo 
+\begin_inset Formula $V_{p}$
+\end_inset
+
+ la amplitud de la tension de entrada.
+ De esta manera, nos aseguramos que el minimo valor de la senoidal de entrada
+ se encuentra 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/push-pull.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Etapa Push-Pull con transistores PNP y NPN
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_6"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/crossover.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Crossover Distortion
+\end_layout
+
+\end_inset
+
+
+\emph on
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_7"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Otros fenomenos que afectan el comportamiento del OpAmp
 \end_layout
@@ -1266,6 +1441,75 @@ nos determina la tensión
 \end_inset
 
 , entonces la ganancia es máxima.
+\end_layout
+
+\begin_layout Subsection
+DC Sweep a la entrada
+\end_layout
+
+\begin_layout Standard
+Para probar el efecto de la saturacion, se aplico un DC Sweep a la entrada
+ para observar la salida, lo que se observo se muestra en las figura , y
+ lo simulado en la figura .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/dcswp1sim.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/dcswp2sim.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/dcswp3sim.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulacion de DC Sweep para cada caso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
