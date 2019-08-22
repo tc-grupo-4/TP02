@@ -60,7 +60,23 @@ zinp1 = simplify(zinp1)
 zinp2 = simplify(zinp2)
 zinp3 = simplify(zinp3)
 
-print(latex(zinp3))
+mod1 = sqrt(re(zinp1)**2+im(zinp1)**2)
+mod1 = simplify(mod1)
+ph1 = tan(im(zinp1)/re(zinp1))
+ph1 = simplify(ph1)
+
+mod2 = sqrt(re(zinp2)**2+im(zinp2)**2)
+mod2 = simplify(mod2)
+ph2 = tan(im(zinp2)/re(zinp2))
+ph2 = simplify(ph2)
+
+mod3 = sqrt(re(zinp3)**2+im(zinp3)**2)
+mod3 = simplify(mod3)
+ph3 = tan(im(zinp3)/re(zinp3))
+ph3 = simplify(ph3)
+
+
+
 '''
 freq = []
 zio1m = []

@@ -53,8 +53,6 @@ Aw = a0 / (1+s/w)
 
 h = (-r2 / r1) * 1 / (1 + 1/Aw - r2/(r3*Aw) + r2/(r1*Aw))
 h = simplify(h)
-
-print(latex(h))
 mod = sqrt(re(h)**2 + im(h)**2)
 mod = simplify(mod)
 

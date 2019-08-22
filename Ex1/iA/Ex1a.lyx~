@@ -579,6 +579,37 @@ name "1_a_2"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la transferencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Impedancia de entrada
 \begin_inset CommandInset label
@@ -751,6 +782,37 @@ name "1_a_3"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medicion de la impedancia de entrada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Consideraciones para utilizar un modelo lineal del OpAmp
 \end_layout
@@ -891,6 +953,37 @@ status open
 \begin_layout Plain Layout
 Tension maxima en funcion de la frecuencia de operacion para que el circuito
  no entre en saturacion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medicion de la saturación
 \end_layout
 
 \end_inset
@@ -1102,6 +1195,37 @@ name "1_a_4"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medicion de la pendiente del Slew Rate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Crossover distortion
 \end_layout
@@ -1140,6 +1264,29 @@ reference "1_a_7"
 \end_inset
 
 .
+ Como el amplificador LM324 posee una etapa push-pull, es necesario solucionar
+ este problema, para esto, la primera solucion fue crear un offset a la
+ entrada de amplitud 
+\begin_inset Formula $V_{offset}\approx V_{p}+0.7(V)$
+\end_inset
+
+, siendo 
+\begin_inset Formula $V_{p}$
+\end_inset
+
+ la amplitud de la tension de entrada.
+ De esta manera, nos aseguramos que el minimo valor de la senoidal de entrada
+ se encuentra por arriba de los 0.7(V) y por lo tanto, uno de los transistores
+ de la etapa 
+\begin_inset Quotes eld
+\end_inset
+
+push-pull
+\begin_inset Quotes erd
+\end_inset
+
+ se mantendra siempre en modo activo, por lo cual, no abra una zona alineal
+ en la transferencia.
 \end_layout
 
 \begin_layout Standard
@@ -1176,10 +1323,6 @@ name "1_a_6"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1221,6 +1364,33 @@ Crossover Distortion
 \begin_inset CommandInset label
 LatexCommand label
 name "1_a_7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la distorsión de cruce por cero
+\end_layout
 
 \end_inset
 
@@ -1380,6 +1550,37 @@ reference "subsec:1_a_2"
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mediciones del efecto de la resistencia R4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Efecto de la resistencia R3
 \end_layout
@@ -1428,6 +1629,37 @@ nos determina la tensión
 \end_inset
 
 , entonces la ganancia es máxima.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mediciones del efecto de la resistencia R3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1483,6 +1715,37 @@ status open
 
 \begin_layout Plain Layout
 Simulacion de DC Sweep para cada caso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del DC Sweep
 \end_layout
 
 \end_inset

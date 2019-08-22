@@ -1102,6 +1102,37 @@ name "1_a_4"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medicion de la pendiente del Slew Rate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Crossover distortion
 \end_layout
@@ -1152,7 +1183,17 @@ reference "1_a_7"
 
  la amplitud de la tension de entrada.
  De esta manera, nos aseguramos que el minimo valor de la senoidal de entrada
- se encuentra 
+ se encuentra por arriba de los 0.7(V) y por lo tanto, uno de los transistores
+ de la etapa 
+\begin_inset Quotes eld
+\end_inset
+
+push-pull
+\begin_inset Quotes erd
+\end_inset
+
+ se mantendra siempre en modo activo, por lo cual, no abra una zona alineal
+ en la transferencia.
 \end_layout
 
 \begin_layout Standard
@@ -1189,10 +1230,6 @@ name "1_a_6"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1234,6 +1271,33 @@ Crossover Distortion
 \begin_inset CommandInset label
 LatexCommand label
 name "1_a_7"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición 
+\end_layout
 
 \end_inset
 
