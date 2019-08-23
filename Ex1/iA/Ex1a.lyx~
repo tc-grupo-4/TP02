@@ -755,6 +755,12 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+GRAFICAR DE NUEVO, YA EMPEZE LA FUNC.
+ EN PYTHON
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -974,10 +980,6 @@ Tension maxima en funcion de la frecuencia de operacion para que el circuito
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1202,6 +1204,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/slewRatemed.png
+	lyxscale 50
+	scale 30
+
+\end_inset
+
 
 \end_layout
 
@@ -1382,6 +1392,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/CrossDistmed.png
+	lyxscale 50
+	scale 30
+
+\end_inset
+
 
 \end_layout
 
