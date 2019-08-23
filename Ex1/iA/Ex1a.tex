@@ -115,6 +115,12 @@ por el graficante) y en el simulado se uso el modelo real del LM324.
 \label{1_a_2}
 \end{figure}
 
+\begin{figure}[H]
+
+\caption{Medición de la transferencia}
+
+\end{figure}
+
 \subsection{Impedancia de entrada\label{subsec:1_a_2}}
 
 Consecuentemente, se nos instó a calcular la impedancia de entrada
@@ -161,10 +167,16 @@ podemos observar como esta impedancia no es afectada por $R_{4}$.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.65]{Resources1a/zinp}
+\includegraphics[scale=0.5]{Resources1a/zinpm}\includegraphics[scale=0.5]{Resources1a/zinpp}
 \par\end{centering}
-\caption{Impedancia de entrada}
+\caption{Impedancia de entrada Calculada}
 \label{1_a_3}
+
+\end{figure}
+
+\begin{figure}[H]
+
+\caption{Medicion de la impedancia de entrada}
 
 \end{figure}
 
@@ -213,6 +225,13 @@ cual no satura el OpAmp podria empezar a afectar nuestro circuito.
 \par\end{centering}
 \caption{Tension maxima en funcion de la frecuencia de operacion para que el
 circuito no entre en saturacion}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.3]{Resources1a/sat1med}
+\par\end{centering}
+\caption{Medicion de la saturación para el caso 1 a 2(kHz)}
 
 \end{figure}
 
@@ -270,6 +289,14 @@ no haya slew rate}
 
 \end{figure}
 
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.3]{Resources1a/slewRatemed}
+\par\end{centering}
+\caption{Medicion de la pendiente del Slew Rate}
+
+\end{figure}
+
 \subsubsection{Crossover distortion}
 
 La crossover distortion o distorsión de cruce por cero, es una distorsion
@@ -295,7 +322,6 @@ lo cual, no abra una zona alineal en la transferencia.
 \par\end{centering}
 \caption{Etapa Push-Pull con transistores PNP y NPN}
 \label{1_a_6}
-
 \end{figure}
 
 \begin{figure}[H]
@@ -304,6 +330,13 @@ lo cual, no abra una zona alineal en la transferencia.
 \par\end{centering}
 \caption{Crossover Distortion}
 \emph{\label{1_a_7}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.3]{Resources1a/CrossDistmed}
+\par\end{centering}
+\caption{Medición de la distorsión de cruce por cero}
 
 \end{figure}
 
@@ -365,6 +398,12 @@ problemas, nos enfocaremos en procurar que la corriente de salida
 no supere la corriente máxima nominal del amplificador operacional.
 Para esto, y aproximando $i_{2}\approx0$, podemos decir que $R_{4}>\frac{V_{out}}{i_{max}}$.
 
+\begin{figure}[H]
+
+\caption{Mediciones del efecto de la resistencia R4}
+
+\end{figure}
+
 \subsubsection{Efecto de la resistencia R3}
 
 Por otro lado, podemos ver como, en la figura \ref{1_a_1}, la resistencia
@@ -375,6 +414,12 @@ entonces $v^{-}=0(v)$, por lo tanto $V_{out}=A(\omega)\,\left(v^{+}-v^{-}\right)
 con lo cual nuestra ganancia sería nula. De la misma manera, podemos
 ver que si $R_{3}\longrightarrow\infty$, entonces la ganancia es
 máxima.
+
+\begin{figure}[H]
+
+\caption{Mediciones del efecto de la resistencia R3}
+
+\end{figure}
 
 \subsection{DC Sweep a la entrada}
 
@@ -390,6 +435,12 @@ figura , y lo simulado en la figura .
 \includegraphics[scale=0.4]{Resources1a/dcswp3sim}
 \par\end{centering}
 \caption{Simulacion de DC Sweep para cada caso}
+
+\end{figure}
+
+\begin{figure}[H]
+
+\caption{Medición del DC Sweep}
 
 \end{figure}
 

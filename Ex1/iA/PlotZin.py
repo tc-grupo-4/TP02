@@ -9,6 +9,7 @@ from sympy.solvers.inequalities import reduce_rational_inequalities
 from sympy.solvers import solve
 from scipy import signal
 import matplotlib.pyplot as plt
+import numpy as np
 
 def substitute(express, case):
     express = express.subs(w,10)        ##check
@@ -77,7 +78,7 @@ ph3 = simplify(ph3)
 
 
 
-'''
+
 freq = []
 zio1m = []
 zio1p = []
@@ -86,8 +87,9 @@ zio2p = []
 zio3m = []
 zio3p = []
 
-for i in range(0,50):
-    freq.append(float(2.71828182**float(i)))
+freq = np.logspace(1,7,num=100,base = 10)
+for i in range(0,100):
+    #freq.append((i+1)*100000)
     temp = zinp1.subs(f,freq[i])
     temp = temp.evalf()
     temp2 = sqrt(re(temp.evalf())**2 + im(temp)**2)
@@ -109,6 +111,11 @@ for i in range(0,50):
     temp2 = tan(im(temp)/re(temp))
     zio3p.append(temp2)
 
-print (freq[10], zio1m[10], zio1p[10])
-
-'''
+plt.semilogx(freq,zio1m)
+plt.semilogx(freq,zio2m)
+plt.semilogx(freq,zio3m)
+plt.legend(["Caso 1","Caso 2","Caso 3"])
+plt.grid()
+plt.xlabel("Frecuencia (Hz))")
+plt.ylabel("Modulo de la impedancia de entrada (Ohms)")
+plt.show()

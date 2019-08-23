@@ -745,9 +745,17 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Resources1a/zinp.png
+	filename Resources1a/zinpm.png
 	lyxscale 50
-	scale 65
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/zinpp.png
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -755,16 +763,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\align center
-GRAFICAR DE NUEVO, YA EMPEZE LA FUNC.
- EN PYTHON
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impedancia de entrada
+Impedancia de entrada Calculada
 \end_layout
 
 \end_inset

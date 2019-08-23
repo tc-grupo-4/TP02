@@ -745,9 +745,17 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Resources1a/zinp.png
+	filename Resources1a/zinpm.png
 	lyxscale 50
-	scale 65
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/zinpp.png
+	lyxscale 50
+	scale 50
 
 \end_inset
 
@@ -755,16 +763,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\align center
-GRAFICAR DE NUEVO, YA EMPEZE LA FUNC.
- EN PYTHON
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impedancia de entrada
+Impedancia de entrada en modulo
 \end_layout
 
 \end_inset
@@ -966,10 +968,6 @@ Tension maxima en funcion de la frecuencia de operacion para que el circuito
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -982,10 +980,22 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/sat1med.png
+	lyxscale 50
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Medicion de la saturación
+Medicion de la saturación para el caso 1 a 2(kHz)
 \end_layout
 
 \end_inset
