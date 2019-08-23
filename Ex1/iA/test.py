@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import math
 
 def substitute(express, case):
-    express = express.subs(w,8* 2 * 3.142)        ##check
+    express = express.subs(w,8/( 2 * 3.142))        ##check
     express = express.subs(vcc,15)      ##check
     express = express.subs(a0,100000)        ##check
     #express = express.subs(pi,3.14159)
@@ -51,10 +51,15 @@ s = Symbol('s')
 #s = I*2*3.142*f
 Aw = a0 / (1+s/w)
 
-h = (-r2 / r1) * 1 / (1 + 1/Aw - r2/(r3*Aw) + r2/(r1*Aw))
+h = (-r2 / r1) * 1 / (1 + 1/Aw + r2/(r3*Aw) + r2/(r1*Aw))
 h = simplify(h)
 mod = sqrt(re(h)**2 + im(h)**2)
 mod = simplify(mod)
+
+tempo = substitute(h,3)
+
+print(latex(tempo.evalef()))
+
 
 '''
 temp = SR/(mod * 2 * pi*Vp) - f

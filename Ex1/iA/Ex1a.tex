@@ -77,19 +77,19 @@ V_{in}-IR_{1}=v^{-}
 \]
 
 \begin{equation}
-H(s)=\frac{V_{out}}{V_{in}}=--\frac{R_{2}R_{3}\omega_{p}a_{0}}{-R_{1}R_{2}\left(\omega_{p}+s\right)+R_{1}R_{3}\omega_{p}a_{0}+R_{1}R_{3}\left(\omega_{p}+s\right)+R_{2}R_{3}\left(\omega_{p}+s\right)}\label{eq:1_a_1}
+H(s)=\frac{V_{out}}{V_{in}}=-\frac{R_{2}R_{3}Wa_{0}}{R_{1}R_{2}\left(W+s\right)+R_{1}R_{3}Wa_{0}+R_{1}R_{3}\left(W+s\right)+R_{2}R_{3}\left(W+s\right)}\label{eq:1_a_1}
 \end{equation}
 
 \[
-H(s)=-\frac{5\cdot10^{15}}{100\,10^{6}s+502\text{\texttimes}10^{12}}\,Caso\,1
+H(s)=-\frac{5\cdot10^{15}}{2.1\,10^{9}s+502\,10^{12}}\,Caso\,1
 \]
 
 \[
-H(s)=-\frac{502\text{\texttimes}10^{12}}{100\text{\texttimes}10^{6}s+502\text{\texttimes}10^{12}}\,Caso\,2
+H(s)=--\frac{502\,10^{12}}{300\,10^{6}s+502\,10^{12}}\,Caso\,2
 \]
 
 \[
-H(s)=-\frac{5.0272\cdot10^{15}}{10\text{\texttimes}10^{9}s+5\cdot10^{16}}\,Caso\,3
+H(s)=--\frac{5\cdot10^{15}}{12\,10^{9}s+5\cdot10^{16}}\,Caso\,3
 \]
 
 Como podemos ver, tenemos un polo en nuestra transferencia por lo
@@ -115,11 +115,6 @@ por el graficante) y en el simulado se uso el modelo real del LM324.
 \label{1_a_2}
 \end{figure}
 
-\begin{figure}[H]
-
-\caption{Medición de la transferencia}
-
-\end{figure}
 
 \subsection{Impedancia de entrada\label{subsec:1_a_2}}
 
