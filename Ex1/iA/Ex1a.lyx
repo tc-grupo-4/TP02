@@ -1108,6 +1108,30 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tension maxima en funcion de la frecuencia de operacion para que el circuito
+ no entre en saturacion caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Resources1a/sat2.png
@@ -1118,6 +1142,34 @@ status open
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tension maxima en funcion de la frecuencia de operacion para que el circuito
+ no entre en saturacion caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1136,11 +1188,15 @@ status open
 
 \begin_layout Plain Layout
 Tension maxima en funcion de la frecuencia de operacion para que el circuito
- no entre en saturacion
+ no entre en saturacion caso 3
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1177,6 +1233,13 @@ Medicion de la saturación para el caso 1 a 2(kHz)
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_13_asd"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1186,6 +1249,31 @@ Medicion de la saturación para el caso 1 a 2(kHz)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se puede ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_13_asd"
+
+\end_inset
+
+, el efecto de saturacion es muy evidente ya que con una entrada de 8(Vp),
+ si nos fijamos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_21"
+
+\end_inset
+
+, para 2 (kHz), la señal de entrada se encuetra muy excedida respecto al
+ máximo valor permitido para que no sature, por lo tanto, la salida que
+ se puede ver tiene 28(Vpp), que es aproximadamente 
+\begin_inset Formula $2V_{cc}$
+\end_inset
+
+, lo cual se condice con lo predicho.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1271,7 +1359,7 @@ f\leq\frac{SR}{\left|H(f)\right|2\pi V_{p}}\label{eq:1_a_4}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\leq250SR\omega\sqrt{\frac{1}{\left(-1571R_{1}R_{2}SR+1571R_{1}R_{3}SR+1571R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)\left(1571R_{1}R_{2}SR-1571.0R_{1}R_{3}SR-1571.0R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)}}\left(-R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)
+V_{in}\leq\frac{6.37\times10^{-4}SR\,\sqrt{62.5\times10^{3}\omega_{p}^{2}\left(R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}+2.5\times10^{6}f^{2}\left(R_{1}R_{2}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}}}{R_{2}R_{3}\omega_{p}a_{0}f}
 \]
 
 \end_inset
@@ -1293,10 +1381,24 @@ reference "1_a_13"
 
 , por lo tanto nos queda que para cada caso se deben cumplir las siguientes
  ecuaciones.
- Estas ecuaciones se pueden ver en la figura 
+ Estas ecuaciones se pueden ver en la figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "1_a_4"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_15"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_16"
 
 \end_inset
 
@@ -1355,6 +1457,41 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo de tension pico maxima en funcion de la frecuencia para que no haya
+ slew rate Caso 1
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Resources1a/SlewRate2.png
@@ -1365,6 +1502,41 @@ status open
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo de tension pico maxima en funcion de la frecuencia para que no haya
+ slew rate Caso 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_15"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1383,7 +1555,7 @@ status open
 
 \begin_layout Plain Layout
 Calculo de tension pico maxima en funcion de la frecuencia para que no haya
- slew rate
+ slew rate Caso 3
 \end_layout
 
 \end_inset
@@ -1391,7 +1563,7 @@ Calculo de tension pico maxima en funcion de la frecuencia para que no haya
 
 \begin_inset CommandInset label
 LatexCommand label
-name "1_a_4"
+name "1_a_16"
 
 \end_inset
 
@@ -1697,6 +1869,13 @@ status open
 \begin_layout Plain Layout
 Amplitud máxima de entrada en funcion de la frecuencia para el caso 1
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_21"
 
 \end_inset
 
@@ -2080,25 +2259,9 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename Resources1a/dcswp2sim.png
-	lyxscale 50
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/dcswp3sim.png
-	lyxscale 50
+	filename Resources1a/DCSWEEP1MED.png
+	lyxscale 40
 	scale 40
 
 \end_inset
@@ -2110,7 +2273,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulacion de DC Sweep para cada caso
+Simulación y mediciones del DC Sweep para el caso 1
 \end_layout
 
 \end_inset
@@ -2136,33 +2299,17 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Resources1a/DCSWEEP1MED.png
+	filename Resources1a/dcswp2sim.png
 	lyxscale 50
 	scale 50
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename Resources1a/DCSWEEP2MED.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/DCSWEEP3MED.png
-	lyxscale 50
-	scale 50
+	lyxscale 40
+	scale 40
 
 \end_inset
 
@@ -2173,7 +2320,54 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Medición del DC Sweep
+Simulación y mediciones del DC Sweep para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/dcswp3sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/DCSWEEP3MED.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulación y mediciones del DC Sweep para el caso 3
 \end_layout
 
 \end_inset

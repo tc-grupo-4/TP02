@@ -256,14 +256,26 @@ cual no satura el OpAmp podria empezar a afectar nuestro circuito.
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/sat1}
 \par\end{centering}
+\caption{Tension maxima en funcion de la frecuencia de operacion para que el
+circuito no entre en saturacion caso 1}
+\end{figure}
+
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/sat2}
 \par\end{centering}
+\caption{Tension maxima en funcion de la frecuencia de operacion para que el
+circuito no entre en saturacion caso 2}
+
+\end{figure}
+
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/sat3}
 \par\end{centering}
 \caption{Tension maxima en funcion de la frecuencia de operacion para que el
-circuito no entre en saturacion}
+circuito no entre en saturacion caso 3}
+
 \end{figure}
 
 \begin{figure}[H]
@@ -271,8 +283,16 @@ circuito no entre en saturacion}
 \includegraphics[scale=0.3]{Resources1a/sat1med}
 \par\end{centering}
 \caption{Medicion de la saturación para el caso 1 a 2(kHz)}
+\label{1_a_13_asd}
 
 \end{figure}
+
+Como se puede ver en la figura \ref{1_a_13_asd}, el efecto de saturacion
+es muy evidente ya que con una entrada de 8(Vp), si nos fijamos en
+la figura \ref{1_a_21}, para 2 (kHz), la señal de entrada se encuetra
+muy excedida respecto al máximo valor permitido para que no sature,
+por lo tanto, la salida que se puede ver tiene 28(Vpp), que es aproximadamente
+$2V_{cc}$, lo cual se condice con lo predicho.
 
 \subsubsection{Slew Rate}
 
@@ -299,12 +319,13 @@ f\leq\frac{SR}{\left|H(f)\right|2\pi V_{p}}\label{eq:1_a_4}
 \end{equation}
 
 \[
-f\leq250SR\omega\sqrt{\frac{1}{\left(-1571R_{1}R_{2}SR+1571R_{1}R_{3}SR+1571R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)\left(1571R_{1}R_{2}SR-1571.0R_{1}R_{3}SR-1571.0R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)}}\left(-R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)
+V_{in}\leq\frac{6.37\times10^{-4}SR\,\sqrt{62.5\times10^{3}\omega_{p}^{2}\left(R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}+2.5\times10^{6}f^{2}\left(R_{1}R_{2}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}}}{R_{2}R_{3}\omega_{p}a_{0}f}
 \]
 
 Como se puede ver en la Figura \ref{1_a_13}, el valor de $SR=0.55836\left(\frac{V}{\mu s}\right)$,
 por lo tanto nos queda que para cada caso se deben cumplir las siguientes
-ecuaciones. Estas ecuaciones se pueden ver en la figura \ref{1_a_4}.
+ecuaciones. Estas ecuaciones se pueden ver en la figuras \ref{1_a_4},
+\ref{1_a_15} y \ref{1_a_16}.
 
 \[
 V_{in}\leq\frac{7.5\cdot10^{-14}\sqrt{1.1\cdot10^{25}f^{2}+1.4\cdot10^{34}}}{f}\,\,\,Caso\,1
@@ -322,15 +343,29 @@ V_{in}\leq\frac{7.5\cdot10^{-14}\sqrt{3.6\cdot10^{26}f^{2}+1.4\cdot10^{38}}}{f}\
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/SlewRate1}
 \par\end{centering}
+\caption{Calculo de tension pico maxima en funcion de la frecuencia para que
+no haya slew rate Caso 1}
+\label{1_a_4}
+
+\end{figure}
+
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/SlewRate2}
 \par\end{centering}
+\caption{Calculo de tension pico maxima en funcion de la frecuencia para que
+no haya slew rate Caso 2}
+\label{1_a_15}
+
+\end{figure}
+
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/SlewRate3}
 \par\end{centering}
 \caption{Calculo de tension pico maxima en funcion de la frecuencia para que
-no haya slew rate}
-\label{1_a_4}
+no haya slew rate Caso 3}
+\label{1_a_16}
 
 \end{figure}
 
@@ -411,6 +446,7 @@ de las curvas mostradas en las Figuras .
 \par\end{centering}
 \caption{Amplitud máxima de entrada en funcion de la frecuencia para el caso
 1}
+\label{1_a_21}
 
 \end{figure}
 
@@ -528,29 +564,25 @@ figura , y lo simulado en la figura .
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.4]{Resources1a/dcswp1sim}
+\includegraphics[scale=0.4]{Resources1a/dcswp1sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP1MED}
 \par\end{centering}
-\begin{centering}
-\includegraphics[scale=0.4]{Resources1a/dcswp2sim}
-\par\end{centering}
-\begin{centering}
-\includegraphics[scale=0.4]{Resources1a/dcswp3sim}
-\par\end{centering}
-\caption{Simulacion de DC Sweep para cada caso}
+\caption{Simulación y mediciones del DC Sweep para el caso 1}
 
 \end{figure}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/DCSWEEP1MED}
+\includegraphics[scale=0.5]{Resources1a/dcswp2sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP2MED}
 \par\end{centering}
+\caption{Simulación y mediciones del DC Sweep para el caso 2}
+
+\end{figure}
+
+\begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/DCSWEEP2MED}
+\includegraphics[scale=0.5]{Resources1a/dcswp3sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP3MED}
 \par\end{centering}
-\begin{centering}
-\includegraphics[scale=0.5]{Resources1a/DCSWEEP3MED}
-\par\end{centering}
-\caption{Medición del DC Sweep}
+\caption{Simulación y mediciones del DC Sweep para el caso 3}
 
 \end{figure}
 

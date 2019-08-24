@@ -123,4 +123,5 @@ phH = simplify(phH)
 
 expressSat = saturation(modH,Vin,vcc)
 expressSR = slewRate(modH,SR,Vin,f) 
+#print(latex(expressSR))
 plotVinMaxInFreqTotal(expressSR, expressSat, 3)
