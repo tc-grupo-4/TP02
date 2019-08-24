@@ -533,6 +533,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Resources1a/H2.png
 	lyxscale 50
@@ -725,6 +729,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Resources1a/zinpp.png
 	lyxscale 50
@@ -906,6 +914,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Resources1a/sat2.png
 	lyxscale 50
@@ -1141,6 +1153,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Resources1a/SlewRate3.png
 	lyxscale 50
@@ -1689,6 +1705,10 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Resources1a/dcswp2sim.png
 	lyxscale 50
@@ -1739,6 +1759,38 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/DCSWEEP1MED.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/DCSWEEP2MED.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/DCSWEEP3MED.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
 
 \end_layout
 
