@@ -85,11 +85,11 @@ H(s)=-\frac{5\cdot10^{15}}{2.1\,10^{9}s+502\,10^{12}}\,Caso\,1
 \]
 
 \[
-H(s)=--\frac{502\,10^{12}}{300\,10^{6}s+502\,10^{12}}\,Caso\,2
+H(s)=-\frac{502\,10^{12}}{300\,10^{6}s+502\,10^{12}}\,Caso\,2
 \]
 
 \[
-H(s)=--\frac{5\cdot10^{15}}{12\,10^{9}s+5\cdot10^{16}}\,Caso\,3
+H(s)=-\frac{5\cdot10^{15}}{12\,10^{9}s+5\cdot10^{16}}\,Caso\,3
 \]
 
 Como podemos ver, tenemos un polo en nuestra transferencia por lo
@@ -97,27 +97,62 @@ cual, el circuito se deberia comportar a grandes rasgos como un pasabajos.
 Es importante notar, que el valor de $R_{4}$ no afecta a la transferencia
 del circuito. Si graficamos la transferencia de el circuito para los
 distintos casos, podemos ver que, en efecto, se comporta como un pasabajos,
-con diferente frecuencia de corte $f_{0}$, esto se puede ver en la
-figura \ref{1_a_2}. La diferencia con lo simulado se debe a que la
-frecuencia del polo dominante dada por la hoja de datos no esta bien
-especificada, y en la calculada se uso un polo dominante de 8 (Hz)
-(Que era lo que se observaba aproximadamente en el grafico provisto
-por el graficante) y en el simulado se uso el modelo real del LM324.
+con diferente frecuencia de corte $f_{0}$, esto se puede ver en las
+figurar \ref{1_a_2}, \ref{1_a_2_b} y \ref{1_a_2_c}. La diferencia
+con lo simulado se debe a que la frecuencia del polo dominante dada
+por la hoja de datos no esta bien especificada, y en la calculada
+se uso un polo dominante de 8 (Hz) (Que era lo que se observaba aproximadamente
+en el grafico provisto por el graficante) y en el simulado se uso
+el modelo real del LM324.
 
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/H1}
 \par\end{centering}
-\begin{centering}
-\includegraphics[scale=0.5]{Resources1a/H2}
-\par\end{centering}
-\begin{centering}
-\includegraphics[scale=0.5]{Resources1a/H3}
-\par\end{centering}
-\caption{Comportamiento del circuito para los diferentes valores de impedancias}
+\caption{Comportamiento del circuito para el caso 1}
 \label{1_a_2}
 \end{figure}
 
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/montecarlo1a_1}
+\par\end{centering}
+\caption{Análisis montecarlo del circuito para el caso 1}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/H2}
+\par\end{centering}
+\caption{Comportamiento del circuito para el caso 2}
+\label{1_a_2_b}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/montecarlo1a_2}
+\par\end{centering}
+\caption{Análisis montecarlo del circuito para el caso 2}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/H3}
+\par\end{centering}
+\caption{Comportamiento del circuito para el caso 3}
+\label{1_a_2_c}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/montecarlo1a_3}
+\par\end{centering}
+\caption{Análisis montecarlo del circuito para el caso 3}
+
+\end{figure}
 
 \subsection{Impedancia de entrada\label{subsec:1_a_2}}
 
@@ -200,15 +235,15 @@ el valor del modulo de la transferencia vista en la ecuación (\ref{eq:1_a_1}).
 \]
 
 \[
-f\geq2.7\sqrt{40\,10^{9}Vin^{2}-90\,10^{9}}\,\,\,Caso\,1
+V_{in}\leq1.3\cdot10^{-17}\sqrt{1\cdot10^{25}f^{2}+1.4\cdot10^{34}}\,\,\,Caso\,1
 \]
 
 \[
-f\geq2.7\sqrt{400\,10^{6}Vin^{2}-90\,10^{9}}\,\,\,Caso\,2
+V_{in}\leq1.3\cdot10^{-16}\sqrt{2.2\cdot10^{23}f^{2}+1.4\cdot10^{34}}\,\,\,Caso\,2
 \]
 
 \[
-f\geq2.7\sqrt{4\,10^{6}Vin^{2}-90\,10^{9}}\,\,\,Caso\,3
+V_{in}\leq1.3\cdot10^{-17}\sqrt{3.6\cdot10^{26}f^{2}+1.4\cdot10^{38}}\,\,\,Caso\,3
 \]
 
 Con estas ecuaciones, podemos ver, que el efecto de saturacion no
@@ -267,25 +302,28 @@ f\leq\frac{SR}{\left|H(f)\right|2\pi V_{p}}\label{eq:1_a_4}
 f\leq250SR\omega\sqrt{\frac{1}{\left(-1571R_{1}R_{2}SR+1571R_{1}R_{3}SR+1571R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)\left(1571R_{1}R_{2}SR-1571.0R_{1}R_{3}SR-1571.0R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)}}\left(-R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)
 \]
 
-Para el caso donde $SR=0.5\left(\frac{V}{\mu s}\right)$ nos queda
-que para cada caso se deben cumplir las siguientes ecuaciones. Estas
-ecuaciones se pueden ver en la figura \ref{1_a_4}.
+Como se puede ver en la Figura \ref{1_a_13}, el valor de $SR=0.55836\left(\frac{V}{\mu s}\right)$,
+por lo tanto nos queda que para cada caso se deben cumplir las siguientes
+ecuaciones. Estas ecuaciones se pueden ver en la figura \ref{1_a_4}.
 
 \[
-f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{16}}}}{\sqrt{7.9\cdot10^{18}Vp+7.9\cdot10^{16}}}\,\,\,Caso\,1
+V_{in}\leq\frac{7.5\cdot10^{-14}\sqrt{1.1\cdot10^{25}f^{2}+1.4\cdot10^{34}}}{f}\,\,\,Caso\,1
 \]
 
 \[
-f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{17}Vp-7.9\cdot10^{16}}}}{\sqrt{7.9\cdot10^{17}Vp+7.9\cdot10^{16}}}\,\,\,Caso\,2
+V_{in}\leq\frac{7.5\cdot10^{-13}\sqrt{2.2\cdot10^{23}f^{2}+1.4\cdot10^{34}}}{f}\,\,\,Caso\,2
 \]
 
 \[
-f\leq\frac{6.3\cdot10^{24}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{18}}}}{\sqrt{7.9\cdot10^{18}Vp+7.9\cdot10^{18}}}\,\,\,Caso\,3
+V_{in}\leq\frac{7.5\cdot10^{-14}\sqrt{3.6\cdot10^{26}f^{2}+1.4\cdot10^{38}}}{f}\,\,\,Caso\,3
 \]
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/SlewRate12}
+\includegraphics[scale=0.5]{Resources1a/SlewRate1}
+\par\end{centering}
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/SlewRate2}
 \par\end{centering}
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1a/SlewRate3}
@@ -301,6 +339,7 @@ no haya slew rate}
 \includegraphics[scale=0.3]{Resources1a/slewRatemed}
 \par\end{centering}
 \caption{Medicion de la pendiente del Slew Rate}
+\label{1_a_13}
 
 \end{figure}
 
@@ -346,6 +385,59 @@ lo cual, no abra una zona alineal en la transferencia.
 \caption{Medición de la distorsión de cruce por cero}
 
 \end{figure}
+
+Para solucionar este problema, se decidió ingresar al circuito con
+una tensión de la forma $V_{in}=A\,sin(2\pi ft)+V_{offset}$, siendo,
+$V_{offstet}$ una tensión lo suficientemente grande para que alguno
+de los transistores BJT de la etapa push-pull se encuentre siempre
+polarizado. Sin embargo, esta solución nos afectó posteriormente a
+las mediciones de la transferencia, ya que como se va a explicar en
+la siguiente subseccion, la amplitud máxima de entrada al circuito
+esta limitada por ciertas curvas, por lo tanto, al agregarle un offset,
+estamos limitando todavía mas nuestro circuito.
+
+\subsubsection{Conclusión}
+
+En conclusion, teniendo en cuenta los efectos del Slew Rate y de la
+saturacion para diferenctes frecuencias del espectro, los resultados
+para poder medir la transferencia del circuito sin tener efectos alineales
+determinan, que para cierta frecuencia elegida para medir, la amplitud
+maxima de la tensíon de entrada al circuito deberá estar por debajo
+de las curvas mostradas en las Figuras .
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/AmplMaxVsFreq1}
+\par\end{centering}
+\caption{Amplitud máxima de entrada en funcion de la frecuencia para el caso
+1}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/AmplMaxVsFreq2}
+\par\end{centering}
+\caption{Amplitud máxima de entrada en funcion de la frecuencia para el caso
+2}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/AmplMaxVsFreq3}
+\par\end{centering}
+\caption{Amplitud máxima de entrada en funcion de la frecuencia para el caso
+2}
+
+\end{figure}
+
+Como se puede observar, cuando la frecuencia se hace lo suficientemente
+grande, la aplitud de entrada se aproxima a cero, por lo tanto, en
+cada caso, se encontrará una cierta frecuencia máxima para la cual
+no se podrá medir la transferencia del circuito ya que la tensión
+de entrada al mismo será del orden del ruido electromagnetico ambiente
+del laboratorio.
 
 \subsection{Otros fenomenos que afectan el comportamiento del OpAmp}
 

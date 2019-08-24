@@ -35,6 +35,66 @@ def substitute(express, case):
     express = simplify(express)
     return express
 
+def slewRate(module, SR, Vin,f):
+    eq = SR/(module * 2 * pi*Vin) - f
+    eq = simplify(eq)
+    VinMaxSR = simplify(solve(eq,Vin))
+    VinMaxSR = simplify(VinMaxSR[0])
+    return VinMaxSR
+
+def saturation(module,Vin,Vcc):
+    eq = module * Vin - vcc 
+    VinMaxSat = simplify(solve(eq,Vin))
+    VinMaxSat = VinMaxSat[0]
+    return VinMaxSat
+
+def plotVinMaxInFreq(express, case):
+    freq = np.logspace(1,6,num=100,base = 10)
+    VinMax = []
+    express = substitute(express,case)
+    text = ""
+    if case == 1:
+        text = "Caso 1"
+    elif case == 2:
+        text = "Caso 2"
+    elif case == 3:
+        text = "Caso 3"
+    for u in range(0,100):
+        VinMax.append(express.subs(f,freq[u]))
+    plt.semilogx(freq,VinMax)
+    plt.legend([text])
+    plt.grid()
+    plt.xlabel("Frecuencia (Hz)")
+    plt.ylabel("Amplitud máxima de entrada (V)")
+    plt.show()
+    return
+
+def plotVinMaxInFreqTotal(slewRateExpression, saturationExpression,case):
+    freq = np.logspace(1,7,num=100,base = 10)
+    VinMax = []
+    slewRateExpression = substitute(slewRateExpression,case)
+    saturationExpression = substitute(saturationExpression,case)
+    text = ""
+    if case == 1:
+        text = "Caso 1"
+    elif case == 2:
+        text = "Caso 2"
+    elif case == 3:
+        text = "Caso 3"
+    
+    for u in range(0,100):
+        temp = slewRateExpression.subs(f,freq[u])
+        temp2 = saturationExpression.subs(f,freq[u])
+        ans = min(temp,temp2)
+        VinMax.append(ans)
+    plt.semilogx(freq,VinMax)
+    plt.legend([text])
+    plt.grid(which = "both")
+    plt.xlabel("Frecuencia (Hz)")
+    plt.ylabel("Amplitud máxima de entrada (V)")
+    plt.show()
+    return
+
 init_printing()
 a0 = Symbol('a0',real = True, positive = True)
 r1 = Symbol('R1',real = True, positive = True)
@@ -47,78 +107,20 @@ vcc = Symbol('Vcc',real = True, positive = True)
 SR = Symbol('SR',real = True, positive = True)
 Vp = Symbol('Vp',real = True, positive = True)
 Vin = Symbol('Vin',real = True, positive = True)
-
 #s = Symbol('s')
+
 s = I*2*3.142*f
 Aw = a0 / (1+s/w)
-
 h = (-r2 / r1) * 1 / (1 + 1/Aw + r2/(r3*Aw) + r2/(r1*Aw))
 h = simplify(h)
-mod = sqrt(re(h)**2 + im(h)**2)
-mod = simplify(mod)
 
-#tempo = substitute(h,3)
+modH = sqrt(re(h)**2 + im(h)**2)
+modH = simplify(modH)
 
-#print(tempo.evalf())
-
-
-
-temp1 = SR/(mod * 2 * pi*Vp) - f    ##SlewRate
-temp1 = simplify(temp1)
-f = simplify(solve(temp1,Vp))
-f = simplify(f[0])
-f1 = substitute(f,1)
-f1 = simplify(f1)
-f2 = substitute(f,2)
-f3 = substitute(f,3)
-
-'''
-freq = []
-Vp1 = []
-Vp2 = []
-Vp3 = []
-freq = np.logspace(1,6,num=100,base = 10)
-for u in range(0,100):
-    Vp1.append(f1.subs(Vp,freq[u]))
-    Vp2.append(f2.subs(Vp,freq[u]))
-    Vp3.append(f3.subs(Vp,freq[u]))
-
-plt.semilogx(freq,Vp3)
-plt.legend(["Caso 3"])
-plt.grid()
-plt.xlabel("Frecuencia (Hz)")
-plt.ylabel("Amplitud máxima de entrada (V)")
-plt.show()
-
-'''
-#print(latex(mod))
-#temp1 = substitute(h,1)
-#temp2 = substitute(h,2)
-#temp3 = substitute(h,3)
+phH = tan(im(h)/re(h)) * 180 / pi
+phH = simplify(phH)
 
 
-temp2 = mod * Vin - vcc     ##Saturacion
-temp2 = simplify(temp2)
-fcr = simplify(solve(temp2,Vin))
-fcr1=substitute(fcr[0],1)
-fcr2=substitute(fcr[0],2)
-fcr3=substitute(fcr[0],3)
-
-freq = []
-Vp1 = []
-Vp2 = []
-Vp3 = []
-freq = np.logspace(1,6,num=100,base = 10)
-'''
-for u in range(0,100):
-   
-    #temp=min(fcr1.subs(f,freq[u]).evalf(),f1.subs(Vp,freq[u]).evalf())
-    Vp1.append(temp)
-
-plt.semilogx(freq,Vp1)
-plt.legend(["Caso 3"])
-plt.grid()
-plt.xlabel("Frecuencia (Hz)")
-plt.ylabel("Amplitud maxima de de entrada (V)")
-plt.show()
-'''
+expressSat = saturation(modH,Vin,vcc)
+expressSR = slewRate(modH,SR,Vin,f) 
+plotVinMaxInFreqTotal(expressSR, expressSat, 3)
