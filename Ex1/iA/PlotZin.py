@@ -11,6 +11,23 @@ from scipy import signal
 import matplotlib.pyplot as plt
 import numpy as np
 
+def main():
+    #K = (r2*a0*w*(r3+r1)-w*(a0-1)*(r2*r3+r1*r2+r1*r3)) / (r2*a0*w-(r2+r3)*w*(a0-1))
+    #C = (w*(a0-1)*(r2*r3+r1*r2+r1*r3)-r2*a0*w*(r3+r1))/(r2*r3+r1*r2+r1*r3)
+    #L = ((r2+r3)*w*(a0-1)-r2*a0*w)/(r2+r3)
+
+    #zinp = K*(1+I*2*pi*f/C)/(1+I*2*pi*f/L)
+
+    s = I*2*pi*f
+    Aw = a0/(1+s/w)
+    zinp = (r2 * Aw*(r3+r1) -(Aw-1)*(r2*r3+r1*r2+r1*r3)) / (r2*Aw - (r2+r3)*(Aw-1))
+    zinp = simplify(zinp)
+    mod = sqrt(re(zinp)**2 + im(zinp)**2)
+    phase = tan(im(zinp)/re(zinp))
+    plotModule(mod,3)
+    plotPhase(phase,3)
+    return
+
 def substitute(express, case):
     express = express.subs(w,10)        ##check
     express = express.subs(vcc,15)      ##check
@@ -34,7 +51,85 @@ def substitute(express, case):
     express = simplify(express)
     return express
 
+def plotModule(express, case):
+    freq = np.logspace(1,6,num=100,base = 10)
+    ZinpM = []
+    if case != 0:
+        express = substitute(express,case)
+    else:
+        express1 = substitute(express,1)
+        express2 = substitute(express,2)
+        express3 = substitute(express,3)
+    text = ""
+    if case == 1:
+        text = ["Caso 1"]
+    elif case == 2:
+        text = ["Caso 2"]
+    elif case == 3:
+        text = ["Caso 3"]
+    elif case == 0:
+        text = ["Caso 1", "Caso 2", "Caso 3"]
+    if case != 0:
+        for u in range(0,100):
+            ZinpM.append(express.subs(f,freq[u]))
+        plt.semilogx(freq,ZinpM)
+    else:
+        ZinpM1 = []
+        ZinpM2 = []
+        ZinpM3 = []
+        for u in range(0,100):
+            ZinpM1.append(express1.subs(f,freq[u]))
+            ZinpM2.append(express2.subs(f,freq[u]))
+            ZinpM3.append(express3.subs(f,freq[u]))
+        plt.semilogx(freq,ZinpM1)
+        plt.semilogx(freq,ZinpM2)
+        plt.semilogx(freq,ZinpM3)
+    plt.legend(text)
+    plt.grid(which = "both")
+    plt.xlabel("Frecuencia (Hz)")
+    plt.ylabel("Magnitud de Impedancia de entrada (Ohms)")
+    plt.show()
+    return
 
+def plotPhase(express, case):
+    freq = np.logspace(1,6,num=100,base = 10)
+    ZinpP = []
+    if case != 0:
+        express = substitute(express,case)
+    else:
+        express1 = substitute(express,1)
+        express2 = substitute(express,2)
+        express3 = substitute(express,3)
+    text = ""
+    if case == 1:
+        text = ["Caso 1"]
+    elif case == 2:
+        text = ["Caso 2"]
+    elif case == 3:
+        text = ["Caso 3"]
+    elif case == 0:
+        text = ["Caso 1", "Caso 2", "Caso 3"]
+    if case != 0:
+        for u in range(0,100):
+            ZinpP.append(express.subs(f,freq[u]) * 180/3.142)
+        plt.semilogx(freq,ZinpP)
+    else:
+        ZinpP1 = []
+        ZinpP2 = []
+        ZinpP3 = []
+        for u in range(0,100):
+            ZinpP1.append(express1.subs(f,freq[u])* 180/3.142)
+            ZinpP2.append(express2.subs(f,freq[u])* 180/3.142)
+            ZinpP3.append(express3.subs(f,freq[u])* 180/3.142)
+        plt.semilogx(freq,ZinpP1)
+        plt.semilogx(freq,ZinpP2)
+        plt.semilogx(freq,ZinpP3)
+    plt.legend(text)
+    plt.grid(which = "both")
+    plt.xlabel("Frecuencia (Hz)")
+    plt.ylabel("Fase de la impedancia de entrada (°)")
+    plt.show()
+    return
 
 init_printing()
 a0 = Symbol('a0',real = True)
@@ -45,77 +140,4 @@ r4 = Symbol('R4',real = True)
 w = Symbol('W',real = True)
 f = Symbol('f',real = True)
 vcc = Symbol('Vcc',real = True)
-
-K = (r2*a0*w*(r3+r1)-w*(a0-1)*(r2*r3+r1*r2+r1*r3)) / (r2*a0*w-(r2+r3)*w*(a0-1))
-C = (w*(a0-1)*(r2*r3+r1*r2+r1*r3)-r2*a0*w*(r3+r1))/(r2*r3+r1*r2+r1*r3)
-L = ((r2+r3)*w*(a0-1)-r2*a0*w)/(r2+r3)
-
-zinp = K*(1+I*2*pi*f/C)/(1+I*2*pi*f/L)
-zinp1 = substitute(zinp,1)
-zinp2 = substitute(zinp,2)
-zinp3 = substitute(zinp,3)
-zinp1 = re(zinp1) + I * im(zinp1)
-zinp2 = re(zinp2) + I * im(zinp2)
-zinp3 = re(zinp3) + I * im(zinp3)
-zinp1 = simplify(zinp1)
-zinp2 = simplify(zinp2)
-zinp3 = simplify(zinp3)
-
-mod1 = sqrt(re(zinp1)**2+im(zinp1)**2)
-mod1 = simplify(mod1)
-ph1 = tan(im(zinp1)/re(zinp1))
-ph1 = simplify(ph1)
-
-mod2 = sqrt(re(zinp2)**2+im(zinp2)**2)
-mod2 = simplify(mod2)
-ph2 = tan(im(zinp2)/re(zinp2))
-ph2 = simplify(ph2)
-
-mod3 = sqrt(re(zinp3)**2+im(zinp3)**2)
-mod3 = simplify(mod3)
-ph3 = tan(im(zinp3)/re(zinp3))
-ph3 = simplify(ph3)
-
-
-
-
-freq = []
-zio1m = []
-zio1p = []
-zio2m = []
-zio2p = []
-zio3m = []
-zio3p = []
-
-freq = np.logspace(1,7,num=100,base = 10)
-for i in range(0,100):
-    #freq.append((i+1)*100000)
-    temp = zinp1.subs(f,freq[i])
-    temp = temp.evalf()
-    temp2 = sqrt(re(temp.evalf())**2 + im(temp)**2)
-    zio1m.append(temp2)
-    temp2 = tan(im(temp)/re(temp))
-    zio1p.append(temp2)
-
-    temp = zinp2.subs(f,freq[i])
-    temp = temp.evalf()
-    temp2 = sqrt(re(temp.evalf())**2 + im(temp)**2)
-    zio2m.append(temp2)
-    temp2 = tan(im(temp)/re(temp))
-    zio2p.append(temp2)
-
-    temp = zinp3.subs(f,freq[i])
-    temp = temp.evalf()
-    temp2 = sqrt(re(temp.evalf())**2 + im(temp)**2)
-    zio3m.append(temp2)
-    temp2 = tan(im(temp)/re(temp))
-    zio3p.append(temp2)
-
-plt.semilogx(freq,zio1m)
-plt.semilogx(freq,zio2m)
-plt.semilogx(freq,zio3m)
-plt.legend(["Caso 1","Caso 2","Caso 3"])
-plt.grid()
-plt.xlabel("Frecuencia (Hz))")
-plt.ylabel("Modulo de la impedancia de entrada (Ohms)")
-plt.show()
+main()
