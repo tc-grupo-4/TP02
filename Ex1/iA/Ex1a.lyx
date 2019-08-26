@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding utf8
 \fontencoding global
@@ -65,7 +65,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation 0bp
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -105,6 +105,14 @@ reference "1_a_t_1"
 \end_inset
 
 .
+ Es necesario aclarar que para realizar cualquier calculo numérico y simbolico
+ de ecuaciones se utilizo la librería 
+\emph on
+SymPy 
+\emph default
+de python, por lo tanto si no se encuentra el procedimiento para el hallazgo
+ de una ecuación en este informe, es porque se halló mediante programación
+ con variables simbólicas.
 \end_layout
 
 \begin_layout Standard
@@ -469,7 +477,7 @@ H(s)=-\frac{5\cdot10^{15}}{2.1\,10^{9}s+502\,10^{12}}\,Caso\,1
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=--\frac{502\,10^{12}}{300\,10^{6}s+502\,10^{12}}\,Caso\,2
+H(s)=-\frac{502\,10^{12}}{300\,10^{6}s+502\,10^{12}}\,Caso\,2
 \]
 
 \end_inset
@@ -480,7 +488,7 @@ H(s)=--\frac{502\,10^{12}}{300\,10^{6}s+502\,10^{12}}\,Caso\,2
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=--\frac{5\cdot10^{15}}{12\,10^{9}s+5\cdot10^{16}}\,Caso\,3
+H(s)=-\frac{5\cdot10^{15}}{12\,10^{9}s+5\cdot10^{16}}\,Caso\,3
 \]
 
 \end_inset
@@ -502,19 +510,33 @@ Como podemos ver, tenemos un polo en nuestra transferencia por lo cual,
 \begin_inset Formula $f_{0}$
 \end_inset
 
-, esto se puede ver en la figura 
+, esto se puede ver en las figurar 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "1_a_2"
 
 \end_inset
 
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2_b"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2_c"
+
+\end_inset
+
 .
  La diferencia con lo simulado se debe a que la frecuencia del polo dominante
  dada por la hoja de datos no esta bien especificada, y en la calculada
- se uso un polo dominante de 8 (Hz) (Que era lo que se observaba aproximadamente
- en el grafico provisto por el graficante) y en el simulado se uso el modelo
- real del LM324.
+ se uso un polo dominante de 7,5 (Hz) (Que era lo que se observaba aproximadamen
+te en el grafico provisto por el graficante) y en el simulado se uso el
+ modelo real del LM324.
 \end_layout
 
 \begin_layout Standard
@@ -536,34 +558,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/H2.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/H3.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comportamiento del circuito para los diferentes valores de impedancias
+Comportamiento del circuito para el caso 1
 \end_layout
 
 \end_inset
@@ -584,7 +582,238 @@ name "1_a_2"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/montecarlo1a_1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis montecarlo del circuito para el caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/H2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comportamiento del circuito para el caso 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_2_b"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/montecarlo1a_2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis montecarlo del circuito para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/H3.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comportamiento del circuito para el caso 3
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_2_c"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/montecarlo1a_3.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis montecarlo del circuito para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se pudo observar en las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2_b"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2_c"
+
+\end_inset
+
+, para el caso 1, el circuito se comporta como un amplificador de 20(dB),
+ hasta la frecuencia del polo, donde ya empieza a afectar el comportamiento
+ de pasabajos.
+ Un comportamiento similar tuvieron los casos 2 y 3, con la salvedad de
+ que en el caso 2 se trataba de un buffer y en el caso 3 de un atenuador
+ de 20(dB).
 \end_layout
 
 \begin_layout Subsection
@@ -778,6 +1007,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -785,7 +1022,42 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Medicion de la impedancia de entrada
+Calculo y medicion del modulo de la impedancia de entrada caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo y medicion de la fase de la impedancia de entrada caso 1
 \end_layout
 
 \end_inset
@@ -794,6 +1066,146 @@ Medicion de la impedancia de entrada
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo y medicion del modulo de la impedancia de entrada caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo y medicion de la fase de la impedancia de entrada caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm3.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo y medicion del modulo de la impedancia de entrada caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp3.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo y medicion de la fase de la impedancia de entrada caso 3
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -860,7 +1272,7 @@ reference "eq:1_a_1"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\geq2.7\sqrt{40\,10^{9}Vin^{2}-90\,10^{9}}\,\,\,Caso\,1
+V_{in}\leq1.3\cdot10^{-17}\sqrt{1\cdot10^{25}f^{2}+1.4\cdot10^{34}}\,\,\,Caso\,1
 \]
 
 \end_inset
@@ -871,7 +1283,7 @@ f\geq2.7\sqrt{40\,10^{9}Vin^{2}-90\,10^{9}}\,\,\,Caso\,1
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\geq2.7\sqrt{400\,10^{6}Vin^{2}-90\,10^{9}}\,\,\,Caso\,2
+V_{in}\leq1.3\cdot10^{-16}\sqrt{2.2\cdot10^{23}f^{2}+1.4\cdot10^{34}}\,\,\,Caso\,2
 \]
 
 \end_inset
@@ -882,7 +1294,7 @@ f\geq2.7\sqrt{400\,10^{6}Vin^{2}-90\,10^{9}}\,\,\,Caso\,2
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\geq2.7\sqrt{4\,10^{6}Vin^{2}-90\,10^{9}}\,\,\,Caso\,3
+V_{in}\leq1.3\cdot10^{-17}\sqrt{3.6\cdot10^{26}f^{2}+1.4\cdot10^{38}}\,\,\,Caso\,3
 \]
 
 \end_inset
@@ -917,6 +1329,30 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tension maxima en funcion de la frecuencia de operacion para que el circuito
+ no entre en saturacion caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename Resources1a/sat2.png
@@ -927,6 +1363,34 @@ status open
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tension maxima en funcion de la frecuencia de operacion para que el circuito
+ no entre en saturacion caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -945,11 +1409,62 @@ status open
 
 \begin_layout Plain Layout
 Tension maxima en funcion de la frecuencia de operacion para que el circuito
+ no entre en saturacion caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/sat123.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tension maxima en funcion de la frecuencia de operacion para que el circuito
  no entre en saturacion
 \end_layout
 
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_13_ggg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -986,6 +1501,13 @@ Medicion de la saturación para el caso 1 a 2(kHz)
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_13_asd"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -995,6 +1517,43 @@ Medicion de la saturación para el caso 1 a 2(kHz)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se puede ver en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_13_asd"
+
+\end_inset
+
+, el efecto de saturacion es muy evidente ya que con una entrada de 8(Vp),
+ si nos fijamos en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_21"
+
+\end_inset
+
+, para 2 (kHz), la señal de entrada se encuetra muy excedida respecto al
+ máximo valor permitido para que no sature, por lo tanto, la salida que
+ se puede ver tiene 28(Vpp), que es aproximadamente 
+\begin_inset Formula $2V_{cc}$
+\end_inset
+
+, lo cual se condice con lo predicho.
+ A su vez, como se observa en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_13_ggg"
+
+\end_inset
+
+, el efecto de saturación solo se puede notar cuando se supera un valor
+ de tensión practicamente constante para cada caso en frecuencias bajas,
+ sin embargo, en los tres casos a frecuencias altas, la tension máxima permitida
+ para que empieze a haber saturación tiende a infinito, esto se da por el
+ efecto pasabajos del circuito, como fue explicado anteriormente.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1080,7 +1639,7 @@ f\leq\frac{SR}{\left|H(f)\right|2\pi V_{p}}\label{eq:1_a_4}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\leq250SR\omega\sqrt{\frac{1}{\left(-1571R_{1}R_{2}SR+1571R_{1}R_{3}SR+1571R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)\left(1571R_{1}R_{2}SR-1571.0R_{1}R_{3}SR-1571.0R_{2}R_{3}SR+1570R_{2}R_{3}V_{p}\omega a_{0}\right)}}\left(-R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)
+V_{in}\leq\frac{6.37\times10^{-4}SR\,\sqrt{62.5\times10^{3}\omega_{p}^{2}\left(R_{1}R_{2}+R_{1}R_{3}a_{0}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}+2.5\times10^{6}f^{2}\left(R_{1}R_{2}+R_{1}R_{3}+R_{2}R_{3}\right)^{2}}}{R_{2}R_{3}\omega_{p}a_{0}f}
 \]
 
 \end_inset
@@ -1089,15 +1648,37 @@ f\leq250SR\omega\sqrt{\frac{1}{\left(-1571R_{1}R_{2}SR+1571R_{1}R_{3}SR+1571R_{2
 \end_layout
 
 \begin_layout Standard
-Para el caso donde 
-\begin_inset Formula $SR=0.5\left(\frac{V}{\mu s}\right)$
+Como se puede ver en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_13"
+
 \end_inset
 
- nos queda que para cada caso se deben cumplir las siguientes ecuaciones.
- Estas ecuaciones se pueden ver en la figura 
+, el valor de 
+\begin_inset Formula $SR=\frac{2.65225\,(V)}{4.75\,(\mu s)}=0.55836\left(\frac{V}{\mu s}\right)$
+\end_inset
+
+, por lo tanto nos queda que para cada caso se deben cumplir las siguientes
+ ecuaciones.
+ Estas ecuaciones se pueden ver en la figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "1_a_4"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_15"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_16"
 
 \end_inset
 
@@ -1107,7 +1688,7 @@ reference "1_a_4"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{16}}}}{\sqrt{7.9\cdot10^{18}Vp+7.9\cdot10^{16}}}\,\,\,Caso\,1
+V_{in}\leq\frac{7.5\cdot10^{-14}\sqrt{1.1\cdot10^{25}f^{2}+1.4\cdot10^{34}}}{f}\,\,\,Caso\,1
 \]
 
 \end_inset
@@ -1118,7 +1699,7 @@ f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{16}}}}{\s
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{17}Vp-7.9\cdot10^{16}}}}{\sqrt{7.9\cdot10^{17}Vp+7.9\cdot10^{16}}}\,\,\,Caso\,2
+V_{in}\leq\frac{7.5\cdot10^{-13}\sqrt{2.2\cdot10^{23}f^{2}+1.4\cdot10^{34}}}{f}\,\,\,Caso\,2
 \]
 
 \end_inset
@@ -1129,7 +1710,7 @@ f\leq\frac{6.3\cdot10^{22}\sqrt{\frac{1}{7.9\cdot10^{17}Vp-7.9\cdot10^{16}}}}{\s
 \begin_layout Standard
 \begin_inset Formula 
 \[
-f\leq\frac{6.3\cdot10^{24}\sqrt{\frac{1}{7.9\cdot10^{18}Vp-7.9\cdot10^{18}}}}{\sqrt{7.9\cdot10^{18}Vp+7.9\cdot10^{18}}}\,\,\,Caso\,3
+V_{in}\leq\frac{7.5\cdot10^{-14}\sqrt{3.6\cdot10^{26}f^{2}+1.4\cdot10^{38}}}{f}\,\,\,Caso\,3
 \]
 
 \end_inset
@@ -1146,7 +1727,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Resources1a/SlewRate12.png
+	filename Resources1a/SlewRate1.png
 	lyxscale 50
 	scale 50
 
@@ -1154,6 +1735,88 @@ status open
 
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo de tension pico maxima en funcion de la frecuencia para que no haya
+ slew rate Caso 1
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/SlewRate2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo de tension pico maxima en funcion de la frecuencia para que no haya
+ slew rate Caso 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_15"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1172,7 +1835,7 @@ status open
 
 \begin_layout Plain Layout
 Calculo de tension pico maxima en funcion de la frecuencia para que no haya
- slew rate
+ slew rate Caso 3
 \end_layout
 
 \end_inset
@@ -1180,7 +1843,54 @@ Calculo de tension pico maxima en funcion de la frecuencia para que no haya
 
 \begin_inset CommandInset label
 LatexCommand label
-name "1_a_4"
+name "1_a_16"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/SlewRate123.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo de tension maxima en funcion de la frecuencia para que no haya slew
+ rate
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_18"
 
 \end_inset
 
@@ -1224,6 +1934,13 @@ Medicion de la pendiente del Slew Rate
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_13"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1233,6 +1950,28 @@ Medicion de la pendiente del Slew Rate
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se puede observar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_18"
+
+\end_inset
+
+, los efectos del 
+\emph on
+slew Rate 
+\emph default
+comienzan a hacerse muy significativos a altas frecuencías, lo cual se condice
+ con lo explicado en la teoría.
+ Sin embargo, los valores picos a la entrada del circuito para frecuencias
+ bajas, si bien son finitos, son extremadamente grandes comparado con los
+ valores máximos para la saturación, por lo tanto, se deberá tener en cuenta
+ ambos efectos a la hora de aplicar una tension de entrada, para que no
+ se encuentre ninguna alinialidad en el circuito.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1421,6 +2160,244 @@ Medición de la distorsión de cruce por cero
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Para solucionar este problema, se decidió ingresar al circuito con una tensión
+ de la forma 
+\begin_inset Formula $V_{in}=A\,sin(2\pi ft)+V_{offset}$
+\end_inset
+
+, siendo, 
+\begin_inset Formula $V_{offstet}$
+\end_inset
+
+ una tensión lo suficientemente grande para que alguno de los transistores
+ BJT de la etapa push-pull se encuentre siempre polarizado.
+ Sin embargo, esta solución nos afectó posteriormente a las mediciones de
+ la transferencia, ya que como se va a explicar en la siguiente subseccion,
+ la amplitud máxima de entrada al circuito esta limitada por ciertas curvas,
+ por lo tanto, al agregarle un offset, estamos limitando todavía mas nuestro
+ circuito.
+\end_layout
+
+\begin_layout Subsubsection
+Conclusión
+\end_layout
+
+\begin_layout Standard
+En conclusion, teniendo en cuenta los efectos del Slew Rate y de la saturacion
+ para diferenctes frecuencias del espectro, los resultados para poder medir
+ la transferencia del circuito sin tener efectos alineales determinan, que
+ para cierta frecuencia elegida para medir, la amplitud maxima de la tensíon
+ de entrada al circuito deberá estar por debajo de las curvas mostradas
+ en las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_21"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_24"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_25"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/AmplMaxVsFreq1.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitud máxima de entrada en funcion de la frecuencia para el caso 1
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_21"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/AmplMaxVsFreq2.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitud máxima de entrada en funcion de la frecuencia para el caso 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_24"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/AmplMaxVsFreq3.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitud máxima de entrada en funcion de la frecuencia para el caso 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_25"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/AmplMaxVsFreq123.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitud máxima de entrada en funcion de la frecuencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede observar, cuando la frecuencia se hace lo suficientemente
+ grande, la aplitud de entrada se aproxima a cero, por lo tanto, en cada
+ caso, se encontrará una cierta frecuencia máxima para la cual no se podrá
+ medir la transferencia del circuito ya que la tensión de entrada al mismo
+ será del orden del ruido electromagnetico ambiente del laboratorio.
 \end_layout
 
 \begin_layout Subsection
@@ -1699,31 +2676,15 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/dcswp1sim.png
-	lyxscale 50
+	lyxscale 40
 	scale 40
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
-	filename Resources1a/dcswp2sim.png
-	lyxscale 50
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/dcswp3sim.png
-	lyxscale 50
+	filename Resources1a/DCSWEEP1MED.png
+	lyxscale 40
 	scale 40
 
 \end_inset
@@ -1735,7 +2696,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simulacion de DC Sweep para cada caso
+Simulación y mediciones del DC Sweep para el caso 1
 \end_layout
 
 \end_inset
@@ -1761,33 +2722,17 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Resources1a/DCSWEEP1MED.png
-	lyxscale 50
-	scale 50
+	filename Resources1a/dcswp2sim.png
+	lyxscale 40
+	scale 40
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Graphics
 	filename Resources1a/DCSWEEP2MED.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/DCSWEEP3MED.png
-	lyxscale 50
-	scale 50
+	lyxscale 40
+	scale 40
 
 \end_inset
 
@@ -1798,7 +2743,54 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Medición del DC Sweep
+Simulación y mediciones del DC Sweep para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/dcswp3sim.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1a/DCSWEEP3MED.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulación y mediciones del DC Sweep para el caso 3
 \end_layout
 
 \end_inset
