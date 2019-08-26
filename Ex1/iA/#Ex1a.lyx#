@@ -1030,12 +1030,51 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición del modulo de la impedancia de entrada caso
+Calculo y simulación del modulo de la impedancia de entrada para el caso
  1
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm1_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del modulo de la impedancia de entrada para el caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1074,8 +1113,47 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición de la fase de la impedancia de entrada caso
+Calculo y simulación de la fase de la impedancia de entrada para el caso
  1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp1_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 1
 \end_layout
 
 \end_inset
@@ -1122,12 +1200,51 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición del modulo de la impedancia de entrada caso
+Calculo y simulación del modulo de la impedancia de entrada para el caso
  2
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm2_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del modulo de la impedancia de entrada para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1166,12 +1283,51 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición de la fase de la impedancia de entrada caso
+Calculo y simulación de la fase de la impedancia de entrada para el caso
  2
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp2_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1210,12 +1366,51 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición del modulo de la impedancia de entrada caso
+Calculo y simulación del modulo de la impedancia de entrada para el caso
  3
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm3_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del modulo de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1254,7 +1449,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición de la fase de la impedancia de entrada caso
+Calculo y simulación de la fase de la impedancia de entrada para el caso
  3
 \end_layout
 
@@ -1266,6 +1461,53 @@ Calculo, simulación y medición de la fase de la impedancia de entrada caso
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp3_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede observar, en los casos 1 y 2, el modelo teórico calculado
+ y las simulaciones se condicen acordemente con lo medido.
+ Las diferencias en los valores se deben a la incertidumbre que genera el
+ analizador de impedancias junto con los valores que se usaron para las
+ resistencias del circuito ()
 \end_layout
 
 \begin_layout Subsection
@@ -1537,7 +1779,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/sat1med.png
-	lyxscale 50
+	lyxscale 30
 	scale 30
 
 \end_inset
@@ -1970,7 +2212,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/slewRatemed.png
-	lyxscale 50
+	lyxscale 30
 	scale 30
 
 \end_inset
@@ -2187,7 +2429,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/CrossDistmed.png
-	lyxscale 50
+	lyxscale 30
 	scale 30
 
 \end_inset
@@ -2658,8 +2900,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/r3=0.png
-	lyxscale 50
-	scale 50
+	lyxscale 30
+	scale 30
 
 \end_inset
 
@@ -2703,7 +2945,9 @@ reference "1_a_23"
 \begin_inset Formula $V_{out}=A(\omega)\,\left(v^{+}-v^{-}+v_{offset}\right)=0(v)$
 \end_inset
 
-, esat tensión de offset de entrada
+, esta tensión de offset de entrada se debe a las diferencias entre los
+ transistores de entrada, que, mediante la amplificación del amplificador
+ operacional, se pone en evidencia a la salida del circuito.
 \end_layout
 
 \begin_layout Subsection

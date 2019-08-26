@@ -1306,6 +1306,45 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+	filename Resources1a/zinpp2_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
 	filename Resources1a/zinpm3.png
 	lyxscale 50
 	scale 50
@@ -1327,12 +1366,51 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición del modulo de la impedancia de entrada caso
+Calculo y simulación del modulo de la impedancia de entrada para el caso
  3
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm3_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del modulo de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1371,7 +1449,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo, simulación y medición de la fase de la impedancia de entrada caso
+Calculo y simulación de la fase de la impedancia de entrada para el caso
  3
 \end_layout
 
@@ -1383,6 +1461,60 @@ Calculo, simulación y medición de la fase de la impedancia de entrada caso
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp3_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede observar, en los casos 1 y 2, el modelo teórico calculado
+ y las simulaciones se condicen acordemente con lo medido.
+ Las diferencias en los valores se deben a la incertidumbre que genera el
+ analizador de impedancias junto con los valores que se usaron para las
+ resistencias del circuito (los valores nominales mas cercanos), y las toleraqnc
+ias de dichas resistencias.
+ No obstante, en el caso 3 se puede ver que las diferencias entre lo teórico
+ y lo simulado, con lo medido, son bastante significativas, estas diferencias
+ se deben al comportamiento de atenuador que provee el circuito.
+ Como a altas frecuencias las tensiones y corrientes son altamente bajas,
+ las mediciones tienen un alto grado de incertidumbre debido al ruido ambiente,
+ el cual se hace comparable con las señales de entrada.
 \end_layout
 
 \begin_layout Subsection
@@ -2831,8 +2963,28 @@ DC Sweep a la entrada
 
 \begin_layout Standard
 Para probar el efecto de la saturacion, se aplico un DC Sweep a la entrada
- para observar la salida, lo que se observo se muestra en las figura , y
- lo simulado en la figura .
+ para observar la salida, lo que se observo se muestra en las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_39"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_40"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_41"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2867,6 +3019,13 @@ status open
 \begin_layout Plain Layout
 Simulación y mediciones del DC Sweep para el caso 1
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_39"
 
 \end_inset
 
@@ -2918,6 +3077,13 @@ Simulación y mediciones del DC Sweep para el caso 2
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_40"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2961,6 +3127,13 @@ status open
 \begin_layout Plain Layout
 Simulación y mediciones del DC Sweep para el caso 3
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_41"
 
 \end_inset
 
