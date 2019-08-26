@@ -105,6 +105,14 @@ reference "1_a_t_1"
 \end_inset
 
 .
+ Es necesario aclarar que para realizar cualquier calculo numérico y simbolico
+ de ecuaciones se utilizo la librería 
+\emph on
+SymPy 
+\emph default
+de python, por lo tanto si no se encuentra el procedimiento para el hallazgo
+ de una ecuación en este informe, es porque se halló mediante programación
+ con variables simbólicas.
 \end_layout
 
 \begin_layout Standard
@@ -526,9 +534,9 @@ reference "1_a_2_c"
 .
  La diferencia con lo simulado se debe a que la frecuencia del polo dominante
  dada por la hoja de datos no esta bien especificada, y en la calculada
- se uso un polo dominante de 8 (Hz) (Que era lo que se observaba aproximadamente
- en el grafico provisto por el graficante) y en el simulado se uso el modelo
- real del LM324.
+ se uso un polo dominante de 7,5 (Hz) (Que era lo que se observaba aproximadamen
+te en el grafico provisto por el graficante) y en el simulado se uso el
+ modelo real del LM324.
 \end_layout
 
 \begin_layout Standard
@@ -776,6 +784,36 @@ Análisis montecarlo del circuito para el caso 3
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se pudo observar en las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2_b"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_2_c"
+
+\end_inset
+
+, para el caso 1, el circuito se comporta como un amplificador de 20(dB),
+ hasta la frecuencia del polo, donde ya empieza a afectar el comportamiento
+ de pasabajos.
+ Un comportamiento similar tuvieron los casos 2 y 3, con la salvedad de
+ que en el caso 2 se trataba de un buffer y en el caso 3 de un atenuador
+ de 20(dB).
 \end_layout
 
 \begin_layout Subsection
@@ -1234,6 +1272,13 @@ Tension maxima en funcion de la frecuencia de operacion para que el circuito
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_13_ggg"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1314,6 +1359,18 @@ reference "1_a_21"
 \end_inset
 
 , lo cual se condice con lo predicho.
+ A su vez, como se observa en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_13_ggg"
+
+\end_inset
+
+, el efecto de saturación solo se puede notar cuando se supera un valor
+ de tensión practicamente constante para cada caso en frecuencias bajas,
+ sin embargo, en los tres casos a frecuencias altas, la tension máxima permitida
+ para que empieze a haber saturación tiende a infinito, esto se da por el
+ efecto pasabajos del circuito, como fue explicado anteriormente.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1648,6 +1705,13 @@ Calculo de tension maxima en funcion de la frecuencia para que no haya slew
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_18"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1703,6 +1767,28 @@ name "1_a_13"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se puede observar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_18"
+
+\end_inset
+
+, los efectos del 
+\emph on
+slew Rate 
+\emph default
+comienzan a hacerse muy significativos a altas frecuencías, lo cual se condice
+ con lo explicado en la teoría.
+ Sin embargo, los valores picos a la entrada del circuito para frecuencias
+ bajas, si bien son finitos, son extremadamente grandes comparado con los
+ valores máximos para la saturación, por lo tanto, se deberá tener en cuenta
+ ambos efectos a la hora de aplicar una tension de entrada, para que no
+ se encuentre ninguna alinialidad en el circuito.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -1922,7 +2008,28 @@ En conclusion, teniendo en cuenta los efectos del Slew Rate y de la saturacion
  la transferencia del circuito sin tener efectos alineales determinan, que
  para cierta frecuencia elegida para medir, la amplitud maxima de la tensíon
  de entrada al circuito deberá estar por debajo de las curvas mostradas
- en las Figuras .
+ en las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_21"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_24"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_25"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1999,6 +2106,13 @@ Amplitud máxima de entrada en funcion de la frecuencia para el caso 2
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_24"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2033,6 +2147,52 @@ status open
 
 \begin_layout Plain Layout
 Amplitud máxima de entrada en funcion de la frecuencia para el caso 2
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_25"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/AmplMaxVsFreq123.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitud máxima de entrada en funcion de la frecuencia
 \end_layout
 
 \end_inset

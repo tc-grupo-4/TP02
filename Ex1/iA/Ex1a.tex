@@ -1,6 +1,6 @@
 %% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[english]{article}
+\documentclass[spanish]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{luainputenc}
 \usepackage{geometry}
@@ -20,6 +20,8 @@
 \makeatother
 
 \usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
+
 \begin{document}
 
 \section{Comportamiento de Amplificador Operacional Inversor}
@@ -27,7 +29,12 @@
 A lo largo de esta seccion se procedera a analizar el comportamiento
 ideal y real del amplificador operacional \emph{LM324 }conectado como
 se muestra en la figura \ref{1_a_1}. Considerando los valores de
-los componentes como se puede ver en la tabla \ref{1_a_t_1}.
+los componentes como se puede ver en la tabla \ref{1_a_t_1}. Es necesario
+aclarar que para realizar cualquier calculo numérico y simbolico de
+ecuaciones se utilizo la librería \emph{SymPy }de python, por lo tanto
+si no se encuentra el procedimiento para el hallazgo de una ecuación
+en este informe, es porque se halló mediante programación con variables
+simbólicas.
 
 \begin{figure}[H]
 \begin{centering}
@@ -101,9 +108,9 @@ con diferente frecuencia de corte $f_{0}$, esto se puede ver en las
 figurar \ref{1_a_2}, \ref{1_a_2_b} y \ref{1_a_2_c}. La diferencia
 con lo simulado se debe a que la frecuencia del polo dominante dada
 por la hoja de datos no esta bien especificada, y en la calculada
-se uso un polo dominante de 8 (Hz) (Que era lo que se observaba aproximadamente
-en el grafico provisto por el graficante) y en el simulado se uso
-el modelo real del LM324.
+se uso un polo dominante de 7,5 (Hz) (Que era lo que se observaba
+aproximadamente en el grafico provisto por el graficante) y en el
+simulado se uso el modelo real del LM324.
 
 \begin{figure}[H]
 \begin{centering}
@@ -153,6 +160,13 @@ el modelo real del LM324.
 \caption{Análisis montecarlo del circuito para el caso 3}
 
 \end{figure}
+
+Como se pudo observar en las Figuras \ref{1_a_2}, \ref{1_a_2_b}
+y \ref{1_a_2_c}, para el caso 1, el circuito se comporta como un
+amplificador de 20(dB), hasta la frecuencia del polo, donde ya empieza
+a afectar el comportamiento de pasabajos. Un comportamiento similar
+tuvieron los casos 2 y 3, con la salvedad de que en el caso 2 se trataba
+de un buffer y en el caso 3 de un atenuador de 20(dB).
 
 \subsection{Impedancia de entrada\label{subsec:1_a_2}}
 
@@ -284,6 +298,7 @@ circuito no entre en saturacion caso 3}
 \par\end{centering}
 \caption{Tension maxima en funcion de la frecuencia de operacion para que el
 circuito no entre en saturacion}
+\label{1_a_13_ggg}
 
 \end{figure}
 
@@ -301,7 +316,13 @@ es muy evidente ya que con una entrada de 8(Vp), si nos fijamos en
 la figura \ref{1_a_21}, para 2 (kHz), la señal de entrada se encuetra
 muy excedida respecto al máximo valor permitido para que no sature,
 por lo tanto, la salida que se puede ver tiene 28(Vpp), que es aproximadamente
-$2V_{cc}$, lo cual se condice con lo predicho.
+$2V_{cc}$, lo cual se condice con lo predicho. A su vez, como se
+observa en la Figura \ref{1_a_13_ggg}, el efecto de saturación solo
+se puede notar cuando se supera un valor de tensión practicamente
+constante para cada caso en frecuencias bajas, sin embargo, en los
+tres casos a frecuencias altas, la tension máxima permitida para que
+empieze a haber saturación tiende a infinito, esto se da por el efecto
+pasabajos del circuito, como fue explicado anteriormente.
 
 \subsubsection{Slew Rate}
 
@@ -384,6 +405,7 @@ no haya slew rate Caso 3}
 \par\end{centering}
 \caption{Calculo de tension maxima en funcion de la frecuencia para que no
 haya slew rate}
+\label{1_a_18}
 
 \end{figure}
 
@@ -395,6 +417,15 @@ haya slew rate}
 \label{1_a_13}
 
 \end{figure}
+
+Como se puede observar en la Figura \ref{1_a_18}, los efectos del
+\emph{slew Rate }comienzan a hacerse muy significativos a altas frecuencías,
+lo cual se condice con lo explicado en la teoría. Sin embargo, los
+valores picos a la entrada del circuito para frecuencias bajas, si
+bien son finitos, son extremadamente grandes comparado con los valores
+máximos para la saturación, por lo tanto, se deberá tener en cuenta
+ambos efectos a la hora de aplicar una tension de entrada, para que
+no se encuentre ninguna alinialidad en el circuito. 
 
 \subsubsection{Crossover distortion}
 
@@ -456,7 +487,8 @@ saturacion para diferenctes frecuencias del espectro, los resultados
 para poder medir la transferencia del circuito sin tener efectos alineales
 determinan, que para cierta frecuencia elegida para medir, la amplitud
 maxima de la tensíon de entrada al circuito deberá estar por debajo
-de las curvas mostradas en las Figuras .
+de las curvas mostradas en las Figuras \ref{1_a_21}, \ref{1_a_24}
+y \ref{1_a_25}.
 
 \begin{figure}[H]
 \begin{centering}
@@ -474,6 +506,7 @@ de las curvas mostradas en las Figuras .
 \par\end{centering}
 \caption{Amplitud máxima de entrada en funcion de la frecuencia para el caso
 2}
+\label{1_a_24}
 
 \end{figure}
 
@@ -483,6 +516,7 @@ de las curvas mostradas en las Figuras .
 \par\end{centering}
 \caption{Amplitud máxima de entrada en funcion de la frecuencia para el caso
 2}
+\label{1_a_25}
 
 \end{figure}
 
@@ -598,7 +632,7 @@ figura , y lo simulado en la figura .
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/dcswp2sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP2MED}
+\includegraphics[scale=0.4]{Resources1a/dcswp2sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP2MED}
 \par\end{centering}
 \caption{Simulación y mediciones del DC Sweep para el caso 2}
 
@@ -606,7 +640,7 @@ figura , y lo simulado en la figura .
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/dcswp3sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP3MED}
+\includegraphics[scale=0.4]{Resources1a/dcswp3sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP3MED}
 \par\end{centering}
 \caption{Simulación y mediciones del DC Sweep para el caso 3}
 
