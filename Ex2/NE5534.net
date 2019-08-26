@@ -1,0 +1,13 @@
+* C:\Users\ohvic\Documents\ITBA\TCTP2\Ex2\NE5534.asc
+Vin N001 0 SINE(0 0.5 10k 0 0 0 20) AC 1 0
+R1 N003 0 3.9k
+R3 N002 N001 220
+XU1 N002 N003 +VCC -VCC Vout NC_01 NC_02 NE5534
+R2 Vout N003 330k
+V+ +VCC 0 15
+V- -VCC 0 -15
+;tran 2m
+.ac dec 1000 0.01G 1000T
+.lib C:\Users\ohvic\Documents\ITBA\TCTP2\Ex2\sloj049\NE5534.301
+.backanno
+.end
