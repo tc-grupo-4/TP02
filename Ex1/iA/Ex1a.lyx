@@ -1016,13 +1016,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpm1_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion del modulo de la impedancia de entrada caso 1
+Calculo, simulación y medición del modulo de la impedancia de entrada caso
+ 1
 \end_layout
 
 \end_inset
@@ -1051,13 +1060,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpp1_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion de la fase de la impedancia de entrada caso 1
+Calculo, simulación y medición de la fase de la impedancia de entrada caso
+ 1
 \end_layout
 
 \end_inset
@@ -1090,13 +1108,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpm2_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion del modulo de la impedancia de entrada caso 2
+Calculo, simulación y medición del modulo de la impedancia de entrada caso
+ 2
 \end_layout
 
 \end_inset
@@ -1125,13 +1152,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpp2_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion de la fase de la impedancia de entrada caso 2
+Calculo, simulación y medición de la fase de la impedancia de entrada caso
+ 2
 \end_layout
 
 \end_inset
@@ -1160,13 +1196,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpm3_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion del modulo de la impedancia de entrada caso 3
+Calculo, simulación y medición del modulo de la impedancia de entrada caso
+ 3
 \end_layout
 
 \end_inset
@@ -1195,13 +1240,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpp3_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion de la fase de la impedancia de entrada caso 3
+Calculo, simulación y medición de la fase de la impedancia de entrada caso
+ 3
 \end_layout
 
 \end_inset
