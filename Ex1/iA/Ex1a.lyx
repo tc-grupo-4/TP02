@@ -1214,6 +1214,46 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+	filename Resources1a/sat123.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tension maxima en funcion de la frecuencia de operacion para que el circuito
+ no entre en saturacion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
 	filename Resources1a/sat1med.png
 	lyxscale 50
 	scale 30
@@ -1564,6 +1604,46 @@ Calculo de tension pico maxima en funcion de la frecuencia para que no haya
 \begin_inset CommandInset label
 LatexCommand label
 name "1_a_16"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/SlewRate123.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Calculo de tension maxima en funcion de la frecuencia para que no haya slew
+ rate
+\end_layout
 
 \end_inset
 
@@ -1953,6 +2033,45 @@ status open
 
 \begin_layout Plain Layout
 Amplitud máxima de entrada en funcion de la frecuencia para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/AmplMaxVsFreq123.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Amplitud máxima de entrada en funcion de la frecuencia
 \end_layout
 
 \end_inset
