@@ -2703,9 +2703,7 @@ reference "1_a_23"
 \begin_inset Formula $V_{out}=A(\omega)\,\left(v^{+}-v^{-}+v_{offset}\right)=0(v)$
 \end_inset
 
-, esta tensión de offset de entrada se debe a las diferencias entre los
- transistores de entrada, que, mediante la amplificación del amplificador
- operacional, se pone en evidencia a la salida del circuito.
+, esat tensión de offset de entrada
 \end_layout
 
 \begin_layout Subsection

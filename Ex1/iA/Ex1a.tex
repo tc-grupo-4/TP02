@@ -226,7 +226,7 @@ podemos observar como esta impedancia no es afectada por $R_{4}$.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpm1}\includegraphics[scale=0.5]{Resources1a/zinpm1_sim}
+\includegraphics[scale=0.5]{Resources1a/zinpm1}\includegraphics[scale=0.4]{Resources1a/zinpm1_sim}
 \par\end{centering}
 \caption{Calculo, simulación y medición del modulo de la impedancia de entrada
 caso 1}
@@ -234,7 +234,7 @@ caso 1}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpp1}\includegraphics[scale=0.5]{Resources1a/zinpp1_sim}
+\includegraphics[scale=0.5]{Resources1a/zinpp1}\includegraphics[scale=0.4]{Resources1a/zinpp1_sim}
 \par\end{centering}
 \caption{Calculo, simulación y medición de la fase de la impedancia de entrada
 caso 1}
@@ -243,7 +243,7 @@ caso 1}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpm2}\includegraphics[scale=0.5]{Resources1a/zinpm2_sim}
+\includegraphics[scale=0.5]{Resources1a/zinpm2}\includegraphics[scale=0.4]{Resources1a/zinpm2_sim}
 \par\end{centering}
 \caption{Calculo, simulación y medición del modulo de la impedancia de entrada
 caso 2}
@@ -251,7 +251,7 @@ caso 2}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpp2}\includegraphics[scale=0.5]{Resources1a/zinpp2_sim}
+\includegraphics[scale=0.5]{Resources1a/zinpp2}\includegraphics[scale=0.4]{Resources1a/zinpp2_sim}
 \par\end{centering}
 \caption{Calculo, simulación y medición de la fase de la impedancia de entrada
 caso 2}
@@ -259,7 +259,7 @@ caso 2}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpm3}\includegraphics[scale=0.5]{Resources1a/zinpm3_sim}
+\includegraphics[scale=0.5]{Resources1a/zinpm3}\includegraphics[scale=0.4]{Resources1a/zinpm3_sim}
 \par\end{centering}
 \caption{Calculo, simulación y medición del modulo de la impedancia de entrada
 caso 3}
@@ -267,7 +267,7 @@ caso 3}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpp3}\includegraphics[scale=0.5]{Resources1a/zinpp3_sim}
+\includegraphics[scale=0.5]{Resources1a/zinpp3}\includegraphics[scale=0.4]{Resources1a/zinpp3_sim}
 \par\end{centering}
 \caption{Calculo, simulación y medición de la fase de la impedancia de entrada
 caso 3}
@@ -636,12 +636,6 @@ problemas, nos enfocaremos en procurar que la corriente de salida
 no supere la corriente máxima nominal del amplificador operacional.
 Para esto, y aproximando $i_{2}\approx0$, podemos decir que $R_{4}>\frac{V_{out}}{i_{max}}$.
 
-\begin{figure}[H]
-
-\caption{Mediciones del efecto de la resistencia R4}
-
-\end{figure}
-
 \subsubsection{Efecto de la resistencia R3}
 
 Por otro lado, podemos ver como, en la figura \ref{1_a_1}, la resistencia
@@ -654,10 +648,19 @@ ver que si $R_{3}\longrightarrow\infty$, entonces la ganancia es
 máxima.
 
 \begin{figure}[H]
-
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/r3=0}
+\par\end{centering}
 \caption{Mediciones del efecto de la resistencia R3}
-
+\label{1_a_23}
 \end{figure}
+
+Como podemos ver en la Figura \ref{1_a_23}, la tension de salida
+no es exactamente 0(V), esto se debe a la tension de offset de entrada
+de la ecuación $V_{out}=A(\omega)\,\left(v^{+}-v^{-}+v_{offset}\right)=0(v)$,
+esta tensión de offset de entrada se debe a las diferencias entre
+los transistores de entrada, que, mediante la amplificación del amplificador
+operacional, se pone en evidencia a la salida del circuito.
 
 \subsection{DC Sweep a la entrada}
 
