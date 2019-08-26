@@ -24,8 +24,8 @@ def main():
     zinp = simplify(zinp)
     mod = sqrt(re(zinp)**2 + im(zinp)**2)
     phase = tan(im(zinp)/re(zinp))
-    plotModule(mod,0)
-    plotPhase(phase,0)
+    plotModule(mod,1)
+    plotPhase(phase,1)
     return
 
 def substitute(express, case):
@@ -52,7 +52,7 @@ def substitute(express, case):
     return express
 
 def plotModule(express, case):
-    freq = np.logspace(1,6,num=100,base = 10)
+    freq = np.logspace(1,7,num=100,base = 10)
     ZinpM = []
     if case != 0:
         express = substitute(express,case)
@@ -92,7 +92,7 @@ def plotModule(express, case):
     return
 
 def plotPhase(express, case):
-    freq = np.logspace(1,6,num=100,base = 10)
+    freq = np.logspace(1,7,num=100,base = 10)
     ZinpP = []
     if case != 0:
         express = substitute(express,case)
