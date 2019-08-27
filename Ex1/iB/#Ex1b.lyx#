@@ -7,9 +7,9 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -26,10 +26,12 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,11 +55,17 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\paragraph_indentation default
-\quotes_language english
+\paragraph_indentation 0bp
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -72,6 +80,32 @@
 
 \begin_layout Section
 Circuito no inversor
+\end_layout
+
+\begin_layout Standard
+A lo largo de esta seccion se procedera a analizar el comportamiento ideal
+ y real del amplificador operacional 
+\emph on
+LM324 
+\emph default
+conectado como se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_b_1"
+
+\end_inset
+
+.
+ Considerando los valores de los componentes como se puede ver en la tabla
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_t_1"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -102,6 +136,13 @@ Circuito B
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_b_1"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -113,10 +154,55 @@ Circuito B
 
 \end_layout
 
+\begin_layout Subsection
+Transferencia
+\end_layout
+
+\begin_layout Standard
+Comenzando por el analisis ideal, se pidió calcular y graficar la relación
+ 
+\begin_inset Formula $\frac{V_{out}}{V_{in}}$
+\end_inset
+
+, esto quiere decir, considerando 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ finito y 
+\begin_inset Formula $A(\omega)$
+\end_inset
+
+ con polo dominante.
+ Considerando las siguientes ecuaciones descriptas a continuacion y operando
+ correctamente, se llega a que la relacion 
+\begin_inset Formula $\frac{V_{out}}{V_{in}}$
+\end_inset
+
+ esta dada por la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_b_1"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}-R_{4}\right)\left(R_{1}\omega_{p}a_{0}+\left(R_{1}+R_{2}\right)\left(\omega_{p}+s\right)\right)}\label{eq:1_b_1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}-R_{4}\right)\left(R_{1}\omega_{p}a_{0}+\left(R_{1}+R_{2}\right)\left(\omega_{p}+s\right)\right)}
+H(s)=\frac{414\times10^{9}}{110\times10^{3}s+47\times10^{9}}\,\,\,Caso\,1
 \]
 
 \end_inset
@@ -127,7 +213,7 @@ H(s)=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}-R_{4}\right
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{691\,10^{9}}{110\,10^{3}s+47\,10^{9}}\,\,\,Caso\,1
+H(s)=\frac{75\times10^{9}}{20\times10^{3}s+47\times10^{9}}\,\,\,Caso\,2
 \]
 
 \end_inset
@@ -138,8 +224,58 @@ H(s)=\frac{691\,10^{9}}{110\,10^{3}s+47\,10^{9}}\,\,\,Caso\,1
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{125680000000.0}{20000s+47130942600.0}
+H(s)=\frac{414\times10^{9}}{110\times10^{3}s+471\times10^{9}}\,\,\,Caso\,3
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comportamiento del circuito para el caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análisis montecarlo del caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 

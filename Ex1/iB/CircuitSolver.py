@@ -11,22 +11,90 @@ import matplotlib.pyplot as plt
 import math
 import numpy as np
 
+
+
+class circuitSolver:
+    def __init__(self):
+        self.equations = None
+        self.unknowns = None
+        self.H=None
+        self.zinp = None
+        self.zout = None
+        self.solution = None
+        self.Vi =Symbol('Vi',real = True, positive = True)
+        self.Vo = Symbol('Vo',real = True, positive = True)
+        return
+
+    def setEquations(self,equationsList):
+        self.equations = equationsList
+        return
+
+    def setUnknowns(self,unknownsList): ##Tienen que estar si o si Vi y Vo como unknowns
+        self.unknowns = unknownsList
+        return
+    
+    def solveCircuit(self):
+        self.solution = solve(self.equations,self.unknowns)
+        return
+
+    def getH(self):
+        self.h = self.solution[self.Vo]/self.solution[self.Vi]
+        self.h = simplify(self.h)
+        return self.h
+
+    def getUnknowns(self):
+        return self.solution
+
+    def calcZinp(self,inpCurr):
+        self.zinp = simplify(self.solution[self.Vi]/inpCurr)
+        return self.zinp
+        
+    def calcZout(self,outCurr):
+
+        self.zout = simplify(self.solution[self.Vo]/outCurr)
+        return self.zout
+    
+    def getZinp(self):
+        return self.zinp
+
+    def getZout(self):
+        return self.zout
+
+    def reset(self):
+        self.equations = None
+        self.unknowns = None
+        self.H=None
+        self.zinp = None
+        self.zout = None
+        self.solution = None
+        return
+
+
 def main():
-    h = getH()
-    h1 = substitute(h,3)
-    print(latex(h1))
-def getH(): 
+    
+    
+    test = circuitSolver()
     equations = []
     Aw = a0/(1+s/w)
+    
     equations.append(((Vi-Vp)/r3)-Vp/r4)
     equations.append((Vo-Vm)/r2-(Vm/r1))
     equations.append(Vo - Aw*(Vp-Vm))
-    unknowns = [Vi,Vo,Vp]
-    sol = solve(equations,unknowns)
-    h=sol[Vo]/sol[Vi]
-    h = simplify(h)
-    return h
 
+    unknowns = [Vi,Vo,Vp]
+    test.setEquations(equations)
+    test.setUnknowns(unknowns)
+    test.solveCircuit()
+    H = test.getH()
+    inpCurr = (test.getUnknowns()[Vi]-test.getUnknowns()[Vp]) / r3
+    test.calcZinp(inpCurr)
+    unknowns = [Vi,Vo,Vm]
+    test.setUnknowns(unknowns)
+    test.solveCircuit()
+    outCurr = (test.getUnknowns()[Vo]-test.getUnknowns()[Vm]) / r2
+    test.calcZout(outCurr)
+    print(substitute(test.getZinp(),3))
+    
 
 def substitute(express, case):
     express = express.subs(w,7.5* 2 * 3.142)        ##check

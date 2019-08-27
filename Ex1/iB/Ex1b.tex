@@ -1,36 +1,121 @@
 %% LyX 2.2.3 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[english]{article}
+\documentclass[spanish]{article}
 \usepackage[T1]{fontenc}
-\usepackage[latin9]{luainputenc}
+\usepackage[utf8]{luainputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=2cm}
+\setlength{\parindent}{0bp}
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
+
 \begin{document}
 
 \section{Circuito no inversor}
 
-\begin{figure}
+A lo largo de esta seccion se procedera a analizar el comportamiento
+ideal y real del amplificador operacional \emph{LM324 }conectado como
+se muestra en la figura \ref{1_b_1}. Considerando los valores de
+los componentes como se puede ver en la tabla \ref{1_a_t_1}. 
+
+\begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/circuit}
 \par\end{centering}
 \caption{Circuito B}
+\label{1_b_1}
 
 \end{figure}
 
+\subsection{Transferencia}
+
+Comenzando por el analisis ideal, se pidió calcular y graficar la
+relación $\frac{V_{out}}{V_{in}}$, esto quiere decir, considerando
+$a_{0}$ finito y $A(\omega)$ con polo dominante. Considerando las
+siguientes ecuaciones descriptas a continuacion y operando correctamente,
+se llega a que la relacion $\frac{V_{out}}{V_{in}}$ esta dada por
+la ecuación (\ref{eq:1_b_1}).
+
+\begin{equation}
+H(s)=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}-R_{4}\right)\left(R_{1}\omega_{p}a_{0}+\left(R_{1}+R_{2}\right)\left(\omega_{p}+s\right)\right)}\label{eq:1_b_1}
+\end{equation}
+
 \[
-H(s)=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}-R_{4}\right)\left(R_{1}\omega_{p}a_{0}+\left(R_{1}+R_{2}\right)\left(\omega_{p}+s\right)\right)}
+H(s)=\frac{414\times10^{9}}{110\times10^{3}s+47\times10^{9}}\,\,\,Caso\,1
 \]
 
 \[
-H(s)=\frac{414\,10^{9}}{110\,10^{3}s+47\,10^{9}}\,\,\,Caso\,1
+H(s)=\frac{75\times10^{9}}{20\times10^{3}s+47\times10^{9}}\,\,\,Caso\,2
 \]
 
 \[
-H(s)=\frac{75\,10^{9}}{20\,10^{3}s+47\,10^{9}}\,\,\,Caso\,2
+H(s)=\frac{414\times10^{9}}{110\times10^{3}s+471\times10^{9}}\,\,\,Caso\,3
+\]
+
+\begin{figure}[H]
+
+\caption{Comportamiento del circuito para el caso 1}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1b/Montecarlo1}
+\par\end{centering}
+\caption{Análisis montecarlo del caso 1}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Comportamiento del circuito para el caso 2}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1b/Montecarlo2}
+\par\end{centering}
+\caption{Análisis montecarlo del caso 2}
+\end{figure}
+
+\begin{figure}[H]
+\caption{Comportamiento del circuito para el caso 3}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1b/Montecarlo3}
+\par\end{centering}
+\caption{Análisis montecarlo del caso 3}
+\end{figure}
+
+\subsection{Impedancia de entrada}
+
+Consecuentemente, se nos instó a calcular la impedancia de entrada
+vista por el generador hacia nuestro circuito. Nuevamente, se utilizo
+el \emph{Circuit Solver }creado en Python para calcular las expresiones
+de las impedancias de entrada. La ecuacion que describe la impedancia
+de entrada se detalla en la ecuación (\ref{eq:1_b_2}).
+
+\begin{equation}
+Z_{inp}=R_{3}+R_{4}\label{eq:1_b_2}
+\end{equation}
+
+Por lo tanto, las impedancias de entrada para cada caso serán;
+
+\[
+Z_{inp}=50(k\Omega)\,\,\,Caso\,1
 \]
 
 \[
-H(s)=\frac{414\,10^{9}}{110\,10^{3}s+471\,10^{9}}\,\,\,Caso\,3
+Z_{inp}=50(k\Omega)\,\,\,Caso\,2
 \]
 
+\[
+Z_{inp}=500(k\Omega)\,\,\,Caso\,3
+\]
+
+Teniendo en cuenta estos resultado, y a diferencia de lo visto previamente
+en el análisis del circuito inversor, se puede observar como la impedancia
+de entrada permanece constante frente a cambios de frecuencia en la
+tension de entrada.
 \end{document}
