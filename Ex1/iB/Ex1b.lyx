@@ -542,7 +542,7 @@ V_{in}\leq\frac{Vcc\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq2.41112589934996\cdot10^{-12}Vcc\sqrt{48400000000\pi^{2}f^{2}+2.22172559899497\cdot10^{21}}\,\,\,Caso\,1
+V_{in}\leq2.4\cdot10^{-12}Vcc\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\cdot10^{21}}\,\,\,Caso\,1
 \]
 
 \end_inset
@@ -553,7 +553,7 @@ V_{in}\leq2.41112589934996\cdot10^{-12}Vcc\sqrt{48400000000\pi^{2}f^{2}+2.221725
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq1.32611924464248\cdot10^{-11}Vcc\sqrt{1600000000\pi^{2}f^{2}+2.22132575036449\cdot10^{21}}\,\,\,Caso\,2
+V_{in}\leq1.3\cdot10^{-11}Vcc\sqrt{1,6\times10^{9}\pi^{2}f^{2}+2.2\cdot10^{21}}\,\,\,Caso\,2
 \]
 
 \end_inset
@@ -564,7 +564,7 @@ V_{in}\leq1.32611924464248\cdot10^{-11}Vcc\sqrt{1600000000\pi^{2}f^{2}+2.2213257
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq2.41112589934996\cdot10^{-12}Vcc\sqrt{48400000000\pi^{2}f^{2}+2.22128576748057\cdot10^{23}}\,\,\,Caso\,3
+V_{in}\leq2.4\cdot10^{-12}Vcc\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\cdot10^{23}}\,\,\,Caso\,3
 \]
 
 \end_inset
@@ -738,7 +738,7 @@ V_{in}\leq\frac{SR\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\r
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq\frac{1.20556294967498\cdot10^{-12}SR\sqrt{48400000000\pi^{2}f^{2}+2.22172559899497\cdot10^{21}}}{\pi f}\,\,\,Caso\,1
+V_{in}\leq\frac{1.2\times10^{-12}SR\sqrt{48.2\times10^{9}\pi^{2}f^{2}+2.2\times10^{21}}}{\pi f}\,\,\,Caso\,1
 \]
 
 \end_inset
@@ -749,7 +749,7 @@ V_{in}\leq\frac{1.20556294967498\cdot10^{-12}SR\sqrt{48400000000\pi^{2}f^{2}+2.2
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq\frac{6.63059622321239\cdot10^{-12}SR\sqrt{1600000000\pi^{2}f^{2}+2.22132575036449\cdot10^{21}}}{\pi f}\,\,\,Caso\,2
+V_{in}\leq\frac{6.6\times10^{-12}SR\sqrt{16\times10^{9}\pi f^{2}+2.2\times10^{21}}}{\pi f}\,\,\,Caso\,2
 \]
 
 \end_inset
@@ -760,7 +760,7 @@ V_{in}\leq\frac{6.63059622321239\cdot10^{-12}SR\sqrt{1600000000\pi^{2}f^{2}+2.22
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq\frac{1.20556294967498\cdot10^{-12}SR\sqrt{48400000000\pi^{2}f^{2}+2.22128576748057\cdot10^{23}}}{\pi f}\,\,\,Caso\,3
+V_{in}\leq\frac{1.2\times10^{-12}SR\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\times10^{23}}}{\pi f}\,\,\,Caso\,3
 \]
 
 \end_inset
