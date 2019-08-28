@@ -1016,17 +1016,65 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpm1_sim.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion del modulo de la impedancia de entrada caso 1
+Calculo y simulación del modulo de la impedancia de entrada para el caso
+ 1
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm1_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del modulo de la impedancia de entrada para el caso 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1051,13 +1099,61 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpp1_sim.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion de la fase de la impedancia de entrada caso 1
+Calculo y simulación de la fase de la impedancia de entrada para el caso
+ 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp1_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 1
 \end_layout
 
 \end_inset
@@ -1090,17 +1186,65 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpm2_sim.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion del modulo de la impedancia de entrada caso 2
+Calculo y simulación del modulo de la impedancia de entrada para el caso
+ 2
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm2_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del modulo de la impedancia de entrada para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1125,17 +1269,65 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpp2_sim.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion de la fase de la impedancia de entrada caso 2
+Calculo y simulación de la fase de la impedancia de entrada para el caso
+ 2
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp2_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1160,17 +1352,65 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpm3_sim.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion del modulo de la impedancia de entrada caso 3
+Calculo y simulación del modulo de la impedancia de entrada para el caso
+ 3
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpm3_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición del modulo de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -1195,13 +1435,22 @@ status open
 \end_inset
 
 
+\begin_inset Graphics
+	filename Resources1a/zinpp3_sim.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Calculo y medicion de la fase de la impedancia de entrada caso 3
+Calculo y simulación de la fase de la impedancia de entrada para el caso
+ 3
 \end_layout
 
 \end_inset
@@ -1212,6 +1461,60 @@ Calculo y medicion de la fase de la impedancia de entrada caso 3
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/zinpp3_med.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la fase de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede observar, en los casos 1 y 2, el modelo teórico calculado
+ y las simulaciones se condicen acordemente con lo medido.
+ Las diferencias en los valores se deben a la incertidumbre que genera el
+ analizador de impedancias junto con los valores que se usaron para las
+ resistencias del circuito (los valores nominales mas cercanos), y las toleraqnc
+ias de dichas resistencias.
+ No obstante, en el caso 3 se puede ver que las diferencias entre lo teórico
+ y lo simulado, con lo medido, son bastante significativas, estas diferencias
+ se deben al comportamiento de atenuador que provee el circuito.
+ Como a altas frecuencias las tensiones y corrientes son altamente bajas,
+ las mediciones tienen un alto grado de incertidumbre debido al ruido ambiente,
+ el cual se hace comparable con las señales de entrada.
 \end_layout
 
 \begin_layout Subsection
@@ -1483,7 +1786,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/sat1med.png
-	lyxscale 50
+	lyxscale 30
 	scale 30
 
 \end_inset
@@ -1916,7 +2219,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/slewRatemed.png
-	lyxscale 50
+	lyxscale 30
 	scale 30
 
 \end_inset
@@ -2133,7 +2436,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1a/CrossDistmed.png
-	lyxscale 50
+	lyxscale 30
 	scale 30
 
 \end_inset
@@ -2544,37 +2847,6 @@ reference "subsec:1_a_2"
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Mediciones del efecto de la resistencia R4
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 Efecto de la resistencia R3
 \end_layout
@@ -2632,6 +2904,14 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/r3=0.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
 
 \end_layout
 
@@ -2645,9 +2925,12 @@ Mediciones del efecto de la resistencia R3
 \end_inset
 
 
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_23"
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
@@ -2656,14 +2939,52 @@ Mediciones del efecto de la resistencia R3
 
 \end_layout
 
+\begin_layout Standard
+Como podemos ver en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_23"
+
+\end_inset
+
+, la tension de salida no es exactamente 0(V), esto se debe a la tension
+ de offset de entrada de la ecuación 
+\begin_inset Formula $V_{out}=A(\omega)\,\left(v^{+}-v^{-}+v_{offset}\right)=0(v)$
+\end_inset
+
+, esta tensión de offset de entrada se debe a las diferencias entre los
+ transistores de entrada, que, mediante la amplificación del amplificador
+ operacional, se pone en evidencia a la salida del circuito.
+\end_layout
+
 \begin_layout Subsection
 DC Sweep a la entrada
 \end_layout
 
 \begin_layout Standard
 Para probar el efecto de la saturacion, se aplico un DC Sweep a la entrada
- para observar la salida, lo que se observo se muestra en las figura , y
- lo simulado en la figura .
+ para observar la salida, lo que se observo se muestra en las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_39"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_40"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_a_41"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2698,6 +3019,13 @@ status open
 \begin_layout Plain Layout
 Simulación y mediciones del DC Sweep para el caso 1
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_39"
 
 \end_inset
 
@@ -2749,6 +3077,13 @@ Simulación y mediciones del DC Sweep para el caso 2
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_40"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2796,6 +3131,13 @@ Simulación y mediciones del DC Sweep para el caso 3
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_a_41"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2805,6 +3147,29 @@ Simulación y mediciones del DC Sweep para el caso 3
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se puede observar, practicamente no hay diferencias entre lo calculado
+ y lo medido, las pequeñas diferencias en la 
+\begin_inset Formula $V_{sat}$
+\end_inset
+
+, se deben a que la fuente que se uso para generar una tension de 
+\begin_inset Formula $V_{cc}\,y\,-V_{cc}$
+\end_inset
+
+, tenia cierta impresicion.
+ A su vez se suma la tension 
+\begin_inset Formula $V_{pol}$
+\end_inset
+
+ de polarizacion de los transistores de la etapa push-pull, lo que genera
+ que 
+\begin_inset Formula $V_{sat}\approx V_{cc}-V_{pol}$
+\end_inset
+
+.
 \end_layout
 
 \end_body

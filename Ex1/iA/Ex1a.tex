@@ -226,46 +226,113 @@ podemos observar como esta impedancia no es afectada por $R_{4}$.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpm1}
+\includegraphics[scale=0.5]{Resources1a/zinpm1}\includegraphics[scale=0.4]{Resources1a/zinpm1_sim}
 \par\end{centering}
-\caption{Calculo y medicion del modulo de la impedancia de entrada caso 1}
+\caption{Calculo y simulación del modulo de la impedancia de entrada para el
+caso 1}
 \end{figure}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpp1}
+\includegraphics[scale=0.5]{Resources1a/zinpm1_med}
 \par\end{centering}
-\caption{Calculo y medicion de la fase de la impedancia de entrada caso 1}
+\caption{Medición del modulo de la impedancia de entrada para el caso 1}
 
 \end{figure}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpm2}
+\includegraphics[scale=0.5]{Resources1a/zinpp1}\includegraphics[scale=0.4]{Resources1a/zinpp1_sim}
 \par\end{centering}
-\caption{Calculo y medicion del modulo de la impedancia de entrada caso 2}
+\caption{Calculo y simulación de la fase de la impedancia de entrada para el
+caso 1}
+
 \end{figure}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpp2}
+\includegraphics[scale=0.5]{Resources1a/zinpp1_med}
 \par\end{centering}
-\caption{Calculo y medicion de la fase de la impedancia de entrada caso 2}
+\caption{Medición de la fase de la impedancia de entrada para el caso 1}
+
 \end{figure}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpm3}
+\includegraphics[scale=0.5]{Resources1a/zinpm2}\includegraphics[scale=0.4]{Resources1a/zinpm2_sim}
 \par\end{centering}
-\caption{Calculo y medicion del modulo de la impedancia de entrada caso 3}
+\caption{Calculo y simulación del modulo de la impedancia de entrada para el
+caso 2}
 \end{figure}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{Resources1a/zinpp3}
+\includegraphics[scale=0.5]{Resources1a/zinpm2_med}
 \par\end{centering}
-\caption{Calculo y medicion de la fase de la impedancia de entrada caso 3}
+\caption{Medición del modulo de la impedancia de entrada para el caso 2}
+
 \end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/zinpp2}\includegraphics[scale=0.4]{Resources1a/zinpp2_sim}
+\par\end{centering}
+\caption{Calculo y simulación de la fase de la impedancia de entrada para el
+caso 2}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/zinpp2_med}
+\par\end{centering}
+\caption{Medición de la fase de la impedancia de entrada para el caso 2}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/zinpm3}\includegraphics[scale=0.4]{Resources1a/zinpm3_sim}
+\par\end{centering}
+\caption{Calculo y simulación del modulo de la impedancia de entrada para el
+caso 3}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/zinpm3_med}
+\par\end{centering}
+\caption{Medición del modulo de la impedancia de entrada para el caso 3}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/zinpp3}\includegraphics[scale=0.4]{Resources1a/zinpp3_sim}
+\par\end{centering}
+\caption{Calculo y simulación de la fase de la impedancia de entrada para el
+caso 3}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/zinpp3_med}
+\par\end{centering}
+\caption{Medición de la fase de la impedancia de entrada para el caso 3}
+
+\end{figure}
+
+Como se puede observar, en los casos 1 y 2, el modelo teórico calculado
+y las simulaciones se condicen acordemente con lo medido. Las diferencias
+en los valores se deben a la incertidumbre que genera el analizador
+de impedancias junto con los valores que se usaron para las resistencias
+del circuito (los valores nominales mas cercanos), y las toleraqncias
+de dichas resistencias. No obstante, en el caso 3 se puede ver que
+las diferencias entre lo teórico y lo simulado, con lo medido, son
+bastante significativas, estas diferencias se deben al comportamiento
+de atenuador que provee el circuito. Como a altas frecuencias las
+tensiones y corrientes son altamente bajas, las mediciones tienen
+un alto grado de incertidumbre debido al ruido ambiente, el cual se
+hace comparable con las señales de entrada.
 
 \subsection{Consideraciones para utilizar un modelo lineal del OpAmp}
 
@@ -630,12 +697,6 @@ problemas, nos enfocaremos en procurar que la corriente de salida
 no supere la corriente máxima nominal del amplificador operacional.
 Para esto, y aproximando $i_{2}\approx0$, podemos decir que $R_{4}>\frac{V_{out}}{i_{max}}$.
 
-\begin{figure}[H]
-
-\caption{Mediciones del efecto de la resistencia R4}
-
-\end{figure}
-
 \subsubsection{Efecto de la resistencia R3}
 
 Por otro lado, podemos ver como, en la figura \ref{1_a_1}, la resistencia
@@ -648,22 +709,32 @@ ver que si $R_{3}\longrightarrow\infty$, entonces la ganancia es
 máxima.
 
 \begin{figure}[H]
-
+\begin{centering}
+\includegraphics[scale=0.3]{Resources1a/r3=0}
+\par\end{centering}
 \caption{Mediciones del efecto de la resistencia R3}
-
+\label{1_a_23}
 \end{figure}
+
+Como podemos ver en la Figura \ref{1_a_23}, la tension de salida
+no es exactamente 0(V), esto se debe a la tension de offset de entrada
+de la ecuación $V_{out}=A(\omega)\,\left(v^{+}-v^{-}+v_{offset}\right)=0(v)$,
+esta tensión de offset de entrada se debe a las diferencias entre
+los transistores de entrada, que, mediante la amplificación del amplificador
+operacional, se pone en evidencia a la salida del circuito.
 
 \subsection{DC Sweep a la entrada}
 
 Para probar el efecto de la saturacion, se aplico un DC Sweep a la
 entrada para observar la salida, lo que se observo se muestra en las
-figura , y lo simulado en la figura .
+Figuras \ref{1_a_39},\ref{1_a_40} y \ref{1_a_41}.
 
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.4]{Resources1a/dcswp1sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP1MED}
 \par\end{centering}
 \caption{Simulación y mediciones del DC Sweep para el caso 1}
+\label{1_a_39}
 
 \end{figure}
 
@@ -672,6 +743,7 @@ figura , y lo simulado en la figura .
 \includegraphics[scale=0.4]{Resources1a/dcswp2sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP2MED}
 \par\end{centering}
 \caption{Simulación y mediciones del DC Sweep para el caso 2}
+\label{1_a_40}
 
 \end{figure}
 
@@ -680,7 +752,14 @@ figura , y lo simulado en la figura .
 \includegraphics[scale=0.4]{Resources1a/dcswp3sim}\includegraphics[scale=0.4]{Resources1a/DCSWEEP3MED}
 \par\end{centering}
 \caption{Simulación y mediciones del DC Sweep para el caso 3}
+\label{1_a_41}
 
 \end{figure}
 
+Como se puede observar, practicamente no hay diferencias entre lo
+calculado y lo medido, las pequeñas diferencias en la $V_{sat}$,
+se deben a que la fuente que se uso para generar una tension de $V_{cc}\,y\,-V_{cc}$,
+tenia cierta impresicion. A su vez se suma la tension $V_{pol}$ de
+polarizacion de los transistores de la etapa push-pull, lo que genera
+que $V_{sat}\approx V_{cc}-V_{pol}$.
 \end{document}
