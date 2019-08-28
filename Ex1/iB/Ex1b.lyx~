@@ -1073,6 +1073,14 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+	filename Resources1b/DC Sweep1_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
 	filename Resources1b/DC Sweep1_med.png
 	lyxscale 50
 	scale 50
@@ -1112,6 +1120,14 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+	filename Resources1b/DC Sweep2_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset Graphics
 	filename Resources1b/DC Sweep2_med.png
 	lyxscale 50
 	scale 50
@@ -1146,6 +1162,14 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Graphics
+	filename Resources1b/DC Sweep3_sim.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename Resources1b/DC Sweep3_med.png
 	lyxscale 50

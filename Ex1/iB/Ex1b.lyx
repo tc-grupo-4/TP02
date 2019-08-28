@@ -1074,16 +1074,16 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1b/DC Sweep1_sim.png
-	lyxscale 50
-	scale 50
+	lyxscale 30
+	scale 30
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename Resources1b/DC Sweep1_med.png
-	lyxscale 50
-	scale 50
+	lyxscale 30
+	scale 30
 
 \end_inset
 
@@ -1102,10 +1102,6 @@ DC Sweep caso 1
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1121,16 +1117,16 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1b/DC Sweep2_sim.png
-	lyxscale 50
-	scale 50
+	lyxscale 30
+	scale 30
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename Resources1b/DC Sweep2_med.png
-	lyxscale 50
-	scale 50
+	lyxscale 30
+	scale 30
 
 \end_inset
 
@@ -1164,16 +1160,16 @@ status open
 \align center
 \begin_inset Graphics
 	filename Resources1b/DC Sweep3_sim.png
-	lyxscale 50
-	scale 50
+	lyxscale 30
+	scale 30
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename Resources1b/DC Sweep3_med.png
-	lyxscale 50
-	scale 50
+	lyxscale 30
+	scale 30
 
 \end_inset
 
