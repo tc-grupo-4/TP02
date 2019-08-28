@@ -1,0 +1,13 @@
+* C:\Users\Ian Diaz\Desktop\TP02\Ex1\iB\Spice.asc
+XU1 N002 N003 Vcc Vee N004 LM324
+V1 N001 0 SINE(0 1 1K) AC 1
+R1 N002 N001 100k
+R3 0 N003 100k
+R2 N003 N004 10k
+R4 N002 0 400k
+V2 Vcc 0 15
+V3 0 Vee 15
+.ac dec 10 10 10meg
+.lib C:\Users\Ian Diaz\Desktop\TP02\Ex1\iB\LM324.mod
+.backanno
+.end
