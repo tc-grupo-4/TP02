@@ -110,9 +110,13 @@ reference "1_a_t_1"
 \emph on
 SymPy 
 \emph default
-de python, por lo tanto si no se encuentra el procedimiento para el hallazgo
- de una ecuación en este informe, es porque se halló mediante programación
- con variables simbólicas.
+de python, donde se creo un 
+\emph on
+Circuit Solver
+\emph default
+, por lo tanto si no se encuentra el procedimiento para el hallazgo de una
+ ecuación en este informe, es porque se halló mediante programación con
+ variables simbólicas.
 \end_layout
 
 \begin_layout Standard
@@ -379,6 +383,96 @@ Valores de los componentes
 \begin_inset CommandInset label
 LatexCommand label
 name "1_a_t_1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para implementar este circuito, se utilizo el software de 
+\emph on
+Altium Designer
+\emph default
+ creando un proyecto de 
+\emph on
+Printed Cricuit Board
+\emph default
+ como se muestra en las Figuras .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/Schematic.pdf
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquematico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/PCB.pdf
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB
+\end_layout
 
 \end_inset
 
@@ -814,6 +908,54 @@ reference "1_a_2_c"
  Un comportamiento similar tuvieron los casos 2 y 3, con la salvedad de
  que en el caso 2 se trataba de un buffer y en el caso 3 de un atenuador
  de 20(dB).
+\end_layout
+
+\begin_layout Standard
+Por otro lado, en el caso 3 se puede observar un sobrepico bastante pronunciado,
+ esto se debe al efecto de las puntas del osciloscopio, sumado a las capacidades
+ parásitas intrínsecas de nuestro circuito.
+ Si simulamos nuestro circuito, teniendo en cuenta estas capacidades, podemos
+ ver que nuestra simulación es acorde a los resultados empíricos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1a/H3_para.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simulacion del comportamiento del circuito para el caso 3 considerando las
+ puntas de los osciloscopios y capacidades parásitas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

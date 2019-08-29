@@ -31,10 +31,10 @@ ideal y real del amplificador operacional \emph{LM324 }conectado como
 se muestra en la figura \ref{1_a_1}. Considerando los valores de
 los componentes como se puede ver en la tabla \ref{1_a_t_1}. Es necesario
 aclarar que para realizar cualquier calculo numérico y simbolico de
-ecuaciones se utilizo la librería \emph{SymPy }de python, por lo tanto
-si no se encuentra el procedimiento para el hallazgo de una ecuación
-en este informe, es porque se halló mediante programación con variables
-simbólicas.
+ecuaciones se utilizo la librería \emph{SymPy }de python, donde se
+creo un \emph{Circuit Solver}, por lo tanto si no se encuentra el
+procedimiento para el hallazgo de una ecuación en este informe, es
+porque se halló mediante programación con variables simbólicas.
 
 \begin{figure}[H]
 \begin{centering}
@@ -63,6 +63,28 @@ Caso & $R_{1}=R_{3}$ & $R_{2}$ & $R_{4}$\tabularnewline
 \label{1_a_t_1}
 
 \end{table}
+
+Para implementar este circuito, se utilizo el software de \emph{Altium
+Designer} creando un proyecto de \emph{Printed Cricuit Board} como
+se muestra en las Figuras \ref{1_a_sche} y \ref{1_a_pcb}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/Schematic}
+\par\end{centering}
+\caption{Esquematico}
+\label{1_a_sche}
+
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.3]{Resources1a/PCB}
+\par\end{centering}
+\caption{PCB}
+\label{1_a_pcb}
+
+\end{figure}
 
 \subsection{Transferencia\label{subsec:1_a_1}}
 
