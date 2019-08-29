@@ -1,0 +1,17 @@
+\documentclass[a4paper]{article}
+
+\include{preamble.tex}
+
+\begin{document}
+
+\begin{figure}
+	\begin{center}
+		\begin{circuitikz}
+		\draw
+		(0,0) node[ground];
+		\end{circuitikz}
+		\caption{Circuito}
+	\end{center}
+\end{figure}
+
+\end{document}
