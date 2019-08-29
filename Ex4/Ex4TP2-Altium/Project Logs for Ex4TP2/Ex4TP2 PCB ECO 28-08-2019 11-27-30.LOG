@@ -1,0 +1,84 @@
+Added Component: Designator=CDer1(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CDes1(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CDes2(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=CInt1(0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(BORNERA3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J2(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J3(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JumperDerivador1(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=JumperIntegrador1(JUMPER2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Opamp1(DIP8)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RCompDer1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RCompInt1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RDer1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RInt1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Señal de Entrada1(MOLEX2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Señal de Salida1(SIP6)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=CDes1-2
+Added Pin To Net: NetName=GND Pin=CDes2-2
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=Opamp1-2
+Added Pin To Net: NetName=GND Pin=Opamp1-6
+Added Pin To Net: NetName=GND Pin=Señal de Entrada1-1
+Added Pin To Net: NetName=GND Pin=Señal de Salida1-3
+Added Net: Name=GND
+Added Pin To Net: NetName=NetCDer1_1 Pin=CDer1-1
+Added Pin To Net: NetName=NetCDer1_1 Pin=J3-1
+Added Pin To Net: NetName=NetCDer1_1 Pin=RCompDer1-2
+Added Net: Name=NetCDer1_1
+Added Pin To Net: NetName=NetCDer1_2 Pin=CDer1-2
+Added Pin To Net: NetName=NetCDer1_2 Pin=Opamp1-5
+Added Pin To Net: NetName=NetCDer1_2 Pin=RDer1-1
+Added Net: Name=NetCDer1_2
+Added Pin To Net: NetName=NetCInt1_1 Pin=CInt1-1
+Added Pin To Net: NetName=NetCInt1_1 Pin=J2-1
+Added Pin To Net: NetName=NetCInt1_1 Pin=Opamp1-3
+Added Pin To Net: NetName=NetCInt1_1 Pin=RInt1-2
+Added Net: Name=NetCInt1_1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=RCompInt1-1
+Added Net: Name=NetJ2_2
+Added Pin To Net: NetName=NetJ3_2 Pin=J3-2
+Added Pin To Net: NetName=NetJ3_2 Pin=JumperDerivador1-2
+Added Pin To Net: NetName=NetJ3_2 Pin=RCompDer1-1
+Added Net: Name=NetJ3_2
+Added Pin To Net: NetName=NetJumperIntegrador1_2 Pin=JumperIntegrador1-2
+Added Pin To Net: NetName=NetJumperIntegrador1_2 Pin=RInt1-1
+Added Net: Name=NetJumperIntegrador1_2
+Added Pin To Net: NetName=V1 Pin=JumperDerivador1-1
+Added Pin To Net: NetName=V1 Pin=JumperIntegrador1-1
+Added Pin To Net: NetName=V1 Pin=Señal de Entrada1-2
+Added Net: Name=V1
+Added Pin To Net: NetName=Vcc+ Pin=CDes1-1
+Added Pin To Net: NetName=Vcc+ Pin=J1-3
+Added Net: Name=Vcc+
+Added Pin To Net: NetName=Vee- Pin=CDes2-1
+Added Pin To Net: NetName=Vee- Pin=J1-1
+Added Net: Name=Vee-
+Added Pin To Net: NetName=VoDer Pin=Opamp1-7
+Added Pin To Net: NetName=VoDer Pin=RDer1-2
+Added Pin To Net: NetName=VoDer Pin=Señal de Salida1-1
+Added Net: Name=VoDer
+Added Pin To Net: NetName=Vo Int Pin=CInt1-2
+Added Pin To Net: NetName=Vo Int Pin=Opamp1-1
+Added Pin To Net: NetName=Vo Int Pin=RCompInt1-2
+Added Pin To Net: NetName=Vo Int Pin=Señal de Salida1-6
+Added Net: Name=Vo Int
+Added Class: Name=Ex4TP2
+Added Room: Name=Ex4TP2
