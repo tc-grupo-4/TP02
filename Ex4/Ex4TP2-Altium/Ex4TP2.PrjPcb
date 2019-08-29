@@ -71,6 +71,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQQYUNXL
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Ex4TP2\Net Status - Ex4TP2.html
+DItemRevisionGUID=
+
 [SearchPath1]
 Path=..\..\..\..\..\milto\Documents\Altium Librerias\*.*
 IncludeSubFolders=1
@@ -377,6 +381,10 @@ OutputName2=Component Cross Reference Report
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
+Configuration2_Name1=ColumnNameFormat
+Configuration2_Item1=CaptionAsName
+Configuration2_Name2=ForceUpdateSettings
+Configuration2_Item2=False
 OutputType3=ReportHierarchy
 OutputName3=Report Project Hierarchy
 OutputDocumentPath3=
