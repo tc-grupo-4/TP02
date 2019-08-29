@@ -1,0 +1,14 @@
+Change Component Designator: Old Designator=CDer New Designator=CDer1
+Change Component Designator: Old Designator=CInt New Designator=CInt1
+Change Component Designator: Old Designator=J1 New Designator=J3
+Change Component Designator: Old Designator=J? New Designator=J1
+Change Component Designator: Old Designator=JumperDerivador New Designator=JumperDerivador1
+Change Component Designator: Old Designator=JumperIntegrador New Designator=JumperIntegrador1
+Change Component Part ID : Designator=Opamp1 Old Part ID =1 New Part ID =2
+Change Component Part ID : Designator=Opamp1 Old Part ID =2 New Part ID =1
+Change Component Designator: Old Designator=RCompDer New Designator=RCompDer1
+Change Component Designator: Old Designator=RCompInt New Designator=RCompInt1
+Change Component Designator: Old Designator=RDer New Designator=RDer1
+Change Component Designator: Old Designator=RInt New Designator=RInt1
+Change Component Designator: Old Designator=Señal de Entrada New Designator=Señal de Entrada1
+Change Component Designator: Old Designator=Señal de Salida New Designator=Señal de Salida1

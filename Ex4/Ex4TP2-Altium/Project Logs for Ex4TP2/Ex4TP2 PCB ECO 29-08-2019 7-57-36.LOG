@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=CDes1 Old Footprint=0805 New Footprint=CAP200
+Change Component Footprint: Designator=CDes2 Old Footprint=0805 New Footprint=CAP200
+Added Room: Name=Ex4TP2
