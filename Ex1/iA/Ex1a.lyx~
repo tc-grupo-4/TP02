@@ -3149,5 +3149,28 @@ name "1_a_41"
 
 \end_layout
 
+\begin_layout Standard
+Como se puede observar, practicamente no hay diferencias entre lo calculado
+ y lo medido, las pequeñas diferencias en la 
+\begin_inset Formula $V_{sat}$
+\end_inset
+
+, se deben a que la fuente que se uso para generar una tension de 
+\begin_inset Formula $V_{cc}\,y\,-V_{cc}$
+\end_inset
+
+, tenia cierta impresicion.
+ A su vez se suma la tension 
+\begin_inset Formula $V_{pol}$
+\end_inset
+
+ de polarizacion de los transistores de la etapa push-pull, lo que genera
+ que 
+\begin_inset Formula $V_{sat}\approx V_{cc}-V_{pol}$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document

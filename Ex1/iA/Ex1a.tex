@@ -168,6 +168,21 @@ a afectar el comportamiento de pasabajos. Un comportamiento similar
 tuvieron los casos 2 y 3, con la salvedad de que en el caso 2 se trataba
 de un buffer y en el caso 3 de un atenuador de 20(dB).
 
+Por otro lado, en el caso 3 se puede observar un sobrepico bastante
+pronunciado, esto se debe al efecto de las puntas del osciloscopio,
+sumado a las capacidades parásitas intrínsecas de nuestro circuito.
+Si simulamos nuestro circuito, teniendo en cuenta estas capacidades,
+podemos ver que nuestra simulación es acorde a los resultados empíricos.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.5]{Resources1a/H3_para}
+\par\end{centering}
+\caption{Simulacion del comportamiento del circuito para el caso 3 considerando
+las puntas de los osciloscopios y capacidades parásitas}
+
+\end{figure}
+
 \subsection{Impedancia de entrada\label{subsec:1_a_2}}
 
 Consecuentemente, se nos instó a calcular la impedancia de entrada

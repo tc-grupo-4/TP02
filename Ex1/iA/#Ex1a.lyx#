@@ -819,49 +819,7 @@ reference "1_a_2_c"
 \begin_layout Standard
 Por otro lado, en el caso 3 se puede observar un sobrepico bastante pronunciado,
  esto se debe al efecto de las puntas del osciloscopio, sumado a las capacidades
- parásitas intrínsecas de nuestro circuito.
- Si simulamos nuestro circuito, teniendo en cuenta estas capacidades, podemos
- ver que nuestra simulación es acorde a los resultados empíricos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Resources1a/H3_para.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Simulacion del comportamiento del circuito para el caso 3 considerando las
- puntas de los osciloscopios y capacidades parásitas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+ parásitas intrínsecas de nuestro circuito
 \end_layout
 
 \begin_layout Subsection
