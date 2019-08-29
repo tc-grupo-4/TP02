@@ -154,6 +154,92 @@ name "1_b_1"
 
 \end_layout
 
+\begin_layout Standard
+Se implementó en 
+\emph on
+Altium Designer 
+\emph default
+como se muestra en las Figuras .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1b/Schematic.pdf
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Esquemático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1b/PCB.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+PCB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Transferencia
 \end_layout
@@ -1491,6 +1577,11 @@ DC Sweep
 \end_layout
 
 \begin_layout Standard
+A continuación se procedio a realizar un DC Sweep para cada caso del circuito,
+ los resultados se muestran a continuación.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1617,6 +1708,11 @@ DC Sweep caso 3
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se puede observar no hay grandes diferencias entre lo simulado y lo
+ medido.
 \end_layout
 
 \end_body

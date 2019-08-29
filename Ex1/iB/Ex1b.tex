@@ -397,6 +397,9 @@ caso 3}
 
 \subsection{DC Sweep}
 
+A continuación se procedio a realizar un DC Sweep para cada caso del
+circuito, los resultados se muestran a continuación.
+
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[scale=0.3]{\string"Resources1b/DC Sweep1_sim\string".png}\includegraphics[scale=0.3]{\string"Resources1b/DC Sweep1_med\string".png}
@@ -418,4 +421,31 @@ caso 3}
 \caption{DC Sweep caso 3}
 \end{figure}
 
+Como se puede observar no hay grandes diferencias entre lo simulado
+y lo medido.
+
+\section{Conclusiones}
+
+Es determinante tener en cuenta las alinialidades que provoca un Amplificador
+Operacional, ya sea por saturación, \emph{Slew Rate }o por \emph{Crossover
+Distortion, }ya que es muy importante para proceder a hacer mediciones
+sobre los mismos. Estas alinialidades afectan en gran medida el comportamiento
+del Amplificador Operacional, por lo tanto, si no se las tiene en
+cuenta, es altamente probable que se cometan errores en mediciones
+y resultados esperados.
+
+Sumado a esto, es muy importante tener en cuenta los efectos de los
+instrumentos de medición, ya sea Osciloscopios, Multimetros, Analizadores
+de impedancias, etc. ya que las capacidades, inductancias y resistencias
+parásitas afectan en gran medida el comportamiento de nuestro circuito.
+
+Por último, se pudo observar que a un mismo \emph{Gain Bandwith Product
+}(GBP), podemos cambiar nuestro circuito para que trabaje mas idealmente
+a altas frecuencias. Es decir, que para un caso A con ganancia $\beta$,
+y una frecuencia de corte $f_{0}$, y un caso B con ganancia $\beta^{'}$
+y una frecuencia de corte $f_{0}^{'}$ , tenemos que $\beta^{'}\leq\beta$
+y $f_{0}\leq f_{0}^{'}$, por lo tanto, podremos en el caso B trabajar
+idealmente a mayores frecuencias, pero con menos ganancia, y por el
+contrario, en el caso A trabajaremos con mas ganancia pero a menores
+frecuencias.
 \end{document}
