@@ -190,6 +190,21 @@ reference "eq:1_b_1"
 
 \begin_layout Standard
 \begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\frac{V_{i}-V^{+}}{R_{3}}=\frac{V^{+}}{R_{4}}\\
+\frac{V_{o}-V^{-}}{R_{2}}=\frac{V^{-}}{R_{1}}\\
+V_{o}=A(\omega)(V^{+}-V^{-})
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
 \begin{equation}
 H(s)=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}-R_{4}\right)\left(R_{1}\omega_{p}a_{0}+\left(R_{1}+R_{2}\right)\left(\omega_{p}+s\right)\right)}\label{eq:1_b_1}
 \end{equation}
@@ -442,6 +457,18 @@ Análisis montecarlo del caso 3
 
 \end_layout
 
+\begin_layout Standard
+Como se puede observar, los circuitos siguen, dentro de los parámetros adecuados
+, y considerando capacidades, inductancias y resistencias parásitas, las
+ simulaciones y la transferencia calculada.
+ Las diferencias entre la transferencia calculada y la simulacón se deben
+ a las puntas de los osciloscopios, que me generan polos de 2do orden, sumados
+ a los polos de los capacitores internos a los transistores de juntura bipolar,
+ que provocan que la pendiente de atenuacion de nuestro circuito se mayor
+ a la calculada, y a su vez, que el cambio de fase no sea de 90°, sino de
+ 180°.
+\end_layout
+
 \begin_layout Subsection
 Impedancia de entrada
 \end_layout
@@ -650,6 +677,49 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+	filename Resources1b/zinp2_m_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1b/zinp2_p_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la impedancia de entrada para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
 	filename Resources1b/zinp3_sim.png
 	lyxscale 50
 	scale 50
@@ -664,6 +734,49 @@ status open
 
 \begin_layout Plain Layout
 Simulación de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1b/zinp3_m_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1b/zinp3_p_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la impedancia de entrada para el caso 3
 \end_layout
 
 \end_inset

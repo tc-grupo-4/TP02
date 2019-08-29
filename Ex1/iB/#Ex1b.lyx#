@@ -190,6 +190,21 @@ reference "eq:1_b_1"
 
 \begin_layout Standard
 \begin_inset Formula 
+\[
+\left\{ \begin{array}{c}
+\frac{V_{i}-V^{+}}{R_{3}}=\frac{V^{+}}{R_{4}}\\
+\frac{V_{o}-V^{-}}{R_{2}}=\frac{V^{-}}{R_{1}}\\
+V_{o}=A(\omega)(V^{+}-V^{-})
+\end{array}\right.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
 \begin{equation}
 H(s)=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}-R_{4}\right)\left(R_{1}\omega_{p}a_{0}+\left(R_{1}+R_{2}\right)\left(\omega_{p}+s\right)\right)}\label{eq:1_b_1}
 \end{equation}
@@ -442,6 +457,18 @@ Análisis montecarlo del caso 3
 
 \end_layout
 
+\begin_layout Standard
+Como se puede observar, los circuitos siguen, dentro de los parámetros adecuados
+, y considerando capacidades, inductancias y resistencias parásitas, las
+ simulaciones y la transferencia calculada.
+ Las diferencias entre la transferencia calculada y la simulacón se deben
+ a las puntas de los osciloscopios, que me generan polos de 2do orden, sumados
+ a los polos de los capacitores internos a los transistores de juntura bipolar,
+ que provocan que la pendiente de atenuacion de nuestro circuito se mayor
+ a la calculada, y a su vez, que el cambio de fase no sea de 90°, sino de
+ 180°.
+\end_layout
+
 \begin_layout Subsection
 Impedancia de entrada
 \end_layout
@@ -566,10 +593,19 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Resources1b/zinp1_m_med.png
-	lyxscale 50
-	scale 50
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1b/zinp1_p_med.png
+	lyxscale 40
+	scale 40
 
 \end_inset
 
@@ -641,6 +677,49 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
+	filename Resources1b/zinp2_m_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1b/zinp2_p_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la impedancia de entrada para el caso 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
 	filename Resources1b/zinp3_sim.png
 	lyxscale 50
 	scale 50
@@ -665,6 +744,86 @@ Simulación de la impedancia de entrada para el caso 3
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Resources1b/zinp3_m_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Resources1b/zinp3_p_med.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de la impedancia de entrada para el caso 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observando los graficos de las simulaciones y comparandolos con la ecuación
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_b_2"
+
+\end_inset
+
+), se puede observar como practicamente la impedancia de entrada permanece
+ constante para todas las frecuencias.
+ El hecho de que la impedancia de entrada tenga una pequeña variación en
+ modulo y fase en la simulación, se debe a que para hacer el analisis de
+ la impedancia de entrada se consideró el Amplificador operacional ideal,
+ es decir, 
+\begin_inset Formula $R_{id}\longrightarrow\infty$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{o}\longrightarrow0$
+\end_inset
+
+, por lo tanto, no se tienen en cuenta el efecto de esas resistencias, como
+ a su vez sus inductancias y capacidades intrínsecas del amplificador.
+ Sin embargo, considerando la ecuaci´on propuesta, y observando los resultados
+ simulado, se puede observar que prácticamente no hay problema en aproximar
+ la impedancia de entrada como constante en ninguno de los 3 casos (Considerando
+ un 10% de error en el ultimo caso).
+\end_layout
+
+\begin_layout Standard
+Por otro lado, si analizamos las mediciones, podemos ver que para frecuencias
+ mayores a 10(kHz), el modelo se aleja bastante de los resultados empíricos.
+ Esto se explica debido a las capacidades parásitas que se generaron a la
+ hora de medir la impedancia de entrada, que 
 \end_layout
 
 \begin_layout Subsection
