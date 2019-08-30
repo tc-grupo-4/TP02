@@ -1,3 +1,9 @@
+<html>
+<head><title>5534 Spice model</title></head>
+<body bgcolor="#aaaaaa"><pre>
+***** NE5534 Source: Texas Instruments
+* C2 added to simulate uncompensated frequency response (Uwe Beis)
+ 
 * NE5534 OPERATIONAL AMPLIFIER "MACROMODEL" SUBCIRCUIT
 * CREATED USING PARTS RELEASE 4.01 ON 04/10/89 AT 12:41
 * (REV N/A)      SUPPLY VOLTAGE: +/-15V
@@ -11,6 +17,7 @@
 .SUBCKT NE5534   1 2 3 4 5 6 7
 *
   C1   11 12 7.703E-12
+  C2    6  7 3.500E-12
   DC    5 53 DX
   DE   54  5 DX
   DLP  90 91 DX
@@ -42,4 +49,5 @@
 .MODEL DX D(IS=800.0E-18)
 .MODEL QX NPN(IS=800.0E-18 BF=132)
 .ENDS
-
+</pre><hr>
+<center><a href="5534_2.sub">[Download]</a></center></body></html>
