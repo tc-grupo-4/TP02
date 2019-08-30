@@ -159,21 +159,7 @@ Se implementó en
 \emph on
 Altium Designer 
 \emph default
-como se muestra en las Figuras 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_2"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_3"
-
-\end_inset
-
-.
+como se muestra en las Figuras .
 \end_layout
 
 \begin_layout Standard
@@ -200,13 +186,6 @@ status open
 \begin_layout Plain Layout
 Esquemático
 \end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_2"
 
 \end_inset
 
@@ -246,13 +225,6 @@ status open
 \begin_layout Plain Layout
 PCB
 \end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_3"
 
 \end_inset
 
@@ -1349,7 +1321,7 @@ reference "eq:1_b_asd"
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq\frac{SR\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\right)^{2}+\left(R_{1}\omega_{p}a_{0}+R_{1}\omega_{p}+R_{2}\omega_{p}\right)^{2}}}{2\pi R_{4}\omega_{p}a_{0}f\left(R_{1}+R_{2}\right)}
+V_{in}\leq\frac{SR\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\right)^{2}+\left(R_{1}Wa_{0}+R_{1}W+R_{2}W\right)^{2}}}{2\pi R_{4}Wa_{0}f\left(R_{1}+R_{2}\right)}
 \]
 
 \end_inset
@@ -1391,44 +1363,6 @@ V_{in}\leq\frac{1.2\times10^{-12}SR\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\times1
 \end_layout
 
 \begin_layout Standard
-Si ahora reemplazamos para cada caso 
-\begin_inset Formula $SR=0,55836\left(\frac{V}{\mu s}\right)$
-\end_inset
-
- (como fue calculado en la sección anterior para el LM324), y graficamos
- la amplitud de entrada máxima frente a la frecuencia de entrada, nos quedan
- las Figuras 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_23"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_24"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_25"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_26"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1453,13 +1387,6 @@ status open
 Tension de entrada máxima respecto de la frecuencia de entrada para que
  no ocurra Slew Rate en el caso 1
 \end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_23"
 
 \end_inset
 
@@ -1500,13 +1427,6 @@ Tension de entrada máxima respecto de la frecuencia de entrada para que
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_24"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1539,13 +1459,6 @@ status open
 Tension de entrada máxima respecto de la frecuencia de entrada para que
  no ocurra Slew Rate en el caso 3
 \end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_25"
 
 \end_inset
 
@@ -1586,13 +1499,6 @@ Tension de entrada máxima respecto de la frecuencia de entrada para que
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_26"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1602,50 +1508,6 @@ name "1_b_26"
 
 \begin_layout Subsubsection
 Conclusiones
-\end_layout
-
-\begin_layout Standard
-Por último, si tenemos en cuenta los efectos alinialies del 
-\emph on
-Slew Rate, 
-\emph default
-Saturación y 
-\emph on
-Crossover Distortion
-\emph default
- (el ultimo explicado en la sección anterior), pueden ser armadas unas figuras
- mostradas a continuación que muestran la maxima amplitud de una señal de
- entrada a el circuito para cada caso, para que no se encuentren efectos
- aliniales indeseados en las mediciones.
- Estas son las Figuras 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_27"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_28"
-
-\end_inset
-
-, 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_29"
-
-\end_inset
-
- y 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "1_b_30"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -1672,13 +1534,6 @@ status open
 \begin_layout Plain Layout
 Tensión máxima de entrada para que no ocurran alinialidades en el caso 1
 \end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_27"
 
 \end_inset
 
@@ -1722,13 +1577,6 @@ Tensión máxima de entrada para que no ocurran alinialidades en el caso 2
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_28"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1764,13 +1612,6 @@ Tensión máxima de entrada para que no ocurran alinialidades en el caso 3
 \end_inset
 
 
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_29"
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1802,13 +1643,6 @@ status open
 \begin_layout Plain Layout
 Tensión máxima de entrada para que no ocurran alinialidades
 \end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "1_b_30"
 
 \end_inset
 

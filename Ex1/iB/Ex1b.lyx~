@@ -159,7 +159,21 @@ Se implementó en
 \emph on
 Altium Designer 
 \emph default
-como se muestra en las Figuras .
+como se muestra en las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_b_2"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_b_3"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -186,6 +200,13 @@ status open
 \begin_layout Plain Layout
 Esquemático
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_b_2"
 
 \end_inset
 
@@ -225,6 +246,13 @@ status open
 \begin_layout Plain Layout
 PCB
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_b_3"
 
 \end_inset
 
@@ -1037,13 +1065,35 @@ Alinialidades
 \end_layout
 
 \begin_layout Subsubsection
-Saturacion
+Saturación y polo dominante
+\end_layout
+
+\begin_layout Standard
+Teniendo en cuenta que la salida del Amplificador Operacional no podrá ser
+ en modulo mayo a 
+\begin_inset Formula $V_{cc}$
+\end_inset
+
+, se calculó, como se explico en la sección anterior, el máximo valor de
+ la tensión de entrada dependiente de la frecuecia de entrada, para el cual
+ el circuito no satura.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq\frac{Vcc\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\right)^{2}+\left(R_{1}Wa_{0}+R_{1}W+R_{2}W\right)^{2}}}{R_{4}Wa_{0}\left(R_{1}+R_{2}\right)}
+\left|H(f)\right|\times V_{in}=\frac{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}{\left(R_{3}+R_{4}\right)\sqrt{4f^{2}\pi^{2}\left(R_{1}+R_{2}\right)^{2}+\left(R_{1}\omega_{p}a_{0}+\omega_{p}\left(R_{1}+R_{2}\right)\right)^{2}}}\times V_{in}\leq V_{cc}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{in}\leq\frac{Vcc\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\right)^{2}+\left(R_{1}\omega_{p}a_{0}+R_{1}\omega_{p}+R_{2}\omega_{p}\right)^{2}}}{R_{4}\omega_{p}a_{0}\left(R_{1}+R_{2}\right)}
 \]
 
 \end_inset
@@ -1082,6 +1132,12 @@ V_{in}\leq2.4\cdot10^{-12}Vcc\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\cdot10^{23}}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Observando estas ecuaciones, y graficandolas para cada caso, podemos que
+ en general, para grandes frecuencias, el efecto de saturación no se hace
+ presente debido al comportamiento pasabajos de el circuito analizado.
 \end_layout
 
 \begin_layout Standard
@@ -1237,9 +1293,63 @@ Slew Rate
 \end_layout
 
 \begin_layout Standard
+Por otro lado, se analizó el efecto 
+\emph on
+Slew Rate 
+\emph default
+de la misma manera que se lo hizo en la seccion anterior, es decir, 
+\begin_inset Formula $\frac{\partial V_{out}}{\partial t}\leq SR$
+\end_inset
+
+, por lo tanto, tenemos que, 
+\begin_inset Formula $v_{in}(t)=V_{p}sin(2\pi ft)$
+\end_inset
+
+, por ende, 
+\begin_inset Formula $V_{out}(t)=\left|H(f)\right|V_{p}2\pi f\,cos(2\pi ft+\phi(f))$
+\end_inset
+
+.
+ A su vez, el coseno siempre es menor a 1, por ende;
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-V_{in}\leq\frac{SR\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\right)^{2}+\left(R_{1}Wa_{0}+R_{1}W+R_{2}W\right)^{2}}}{2\pi R_{4}Wa_{0}f\left(R_{1}+R_{2}\right)}
+\frac{\partial V_{out}}{\partial t}\leq\left|H(f)\right|V_{p}2\pi f\leq SR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Rightarrow V_{p}\leq\frac{SR}{\left|H(f)\right|f2\pi}\label{eq:1_b_asd}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Reemplazando en la inecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1_b_asd"
+
+\end_inset
+
+), tenemos que;
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{in}\leq\frac{SR\left(R_{3}+R_{4}\right)\sqrt{4\pi^{2}f^{2}\left(R_{1}+R_{2}\right)^{2}+\left(R_{1}\omega_{p}a_{0}+R_{1}\omega_{p}+R_{2}\omega_{p}\right)^{2}}}{2\pi R_{4}\omega_{p}a_{0}f\left(R_{1}+R_{2}\right)}
 \]
 
 \end_inset
@@ -1281,6 +1391,44 @@ V_{in}\leq\frac{1.2\times10^{-12}SR\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\times1
 \end_layout
 
 \begin_layout Standard
+Si ahora reemplazamos para cada caso 
+\begin_inset Formula $SR=0,55836\left(\frac{V}{\mu s}\right)$
+\end_inset
+
+ (como fue calculado en la sección anterior para el LM324), y graficamos
+ la amplitud de entrada máxima frente a la frecuencia de entrada, nos quedan
+ las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_b_23"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_b_24"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_b_25"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "1_b_26"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1305,6 +1453,13 @@ status open
 Tension de entrada máxima respecto de la frecuencia de entrada para que
  no ocurra Slew Rate en el caso 1
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_b_23"
 
 \end_inset
 
@@ -1345,6 +1500,13 @@ Tension de entrada máxima respecto de la frecuencia de entrada para que
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_b_24"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1381,6 +1543,13 @@ Tension de entrada máxima respecto de la frecuencia de entrada para que
 \end_inset
 
 
+\begin_inset CommandInset label
+LatexCommand label
+name "1_b_25"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1413,6 +1582,13 @@ status open
 Tension de entrada máxima respecto de la frecuencia de entrada para que
  no ocurra Slew Rate
 \end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "1_b_26"
 
 \end_inset
 
@@ -1713,6 +1889,70 @@ DC Sweep caso 3
 \begin_layout Standard
 Como se puede observar no hay grandes diferencias entre lo simulado y lo
  medido.
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+Es determinante tener en cuenta las alinialidades que provoca un Amplificador
+ Operacional, ya sea por saturación, 
+\emph on
+Slew Rate 
+\emph default
+o por 
+\emph on
+Crossover Distortion, 
+\emph default
+ya que es muy importante para proceder a hacer mediciones sobre los mismos.
+ Estas alinialidades afectan en gran medida el comportamiento del Amplificador
+ Operacional, por lo tanto, si no se las tiene en cuenta, es altamente probable
+ que se cometan errores en mediciones y resultados esperados.
+\end_layout
+
+\begin_layout Standard
+Sumado a esto, es muy importante tener en cuenta los efectos de los instrumentos
+ de medición, ya sea Osciloscopios, Multimetros, Analizadores de impedancias,
+ etc.
+ ya que las capacidades, inductancias y resistencias parásitas afectan en
+ gran medida el comportamiento de nuestro circuito.
+\end_layout
+
+\begin_layout Standard
+Por último, se pudo observar que a un mismo 
+\emph on
+Gain Bandwith Product 
+\emph default
+(GBP), podemos cambiar nuestro circuito para que trabaje mas idealmente
+ a altas frecuencias.
+ Es decir, que para un caso A con ganancia 
+\begin_inset Formula $\beta$
+\end_inset
+
+, y una frecuencia de corte 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+, y un caso B con ganancia 
+\begin_inset Formula $\beta^{'}$
+\end_inset
+
+ y una frecuencia de corte 
+\begin_inset Formula $f_{0}^{'}$
+\end_inset
+
+ , tenemos que 
+\begin_inset Formula $\beta^{'}\leq\beta$
+\end_inset
+
+ y 
+\begin_inset Formula $f_{0}\leq f_{0}^{'}$
+\end_inset
+
+, por lo tanto, podremos en el caso B trabajar idealmente a mayores frecuencias,
+ pero con menos ganancia, y por el contrario, en el caso A trabajaremos
+ con mas ganancia pero a menores frecuencias.
 \end_layout
 
 \end_body
