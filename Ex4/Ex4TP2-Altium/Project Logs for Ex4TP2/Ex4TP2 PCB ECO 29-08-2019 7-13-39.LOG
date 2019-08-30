@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=GND Pin=Opamp1-2
+Removed Pin From Net: NetName=NetCInt1_1 Pin=Opamp1-3
+Removed Pin From Net: NetName=NetCDer1_2 Pin=Opamp1-5
+Removed Pin From Net: NetName=GND Pin=Opamp1-6
+Change Component Designator: OldDesignator=In NewDesignator=Señal de Entrada1
+Change Component Designator: OldDesignator=Out NewDesignator=Señal de Salida1
+Added Pin To Net: NetName=NetCInt1_1 Pin=Opamp1-2
+Added Pin To Net: NetName=GND Pin=Opamp1-3
+Added Pin To Net: NetName=Vee- Pin=Opamp1-4
+Added Pin To Net: NetName=GND Pin=Opamp1-5
+Added Pin To Net: NetName=NetCDer1_2 Pin=Opamp1-6
+Added Pin To Net: NetName=Vcc+ Pin=Opamp1-8
+Added Room: Name=Ex4TP2

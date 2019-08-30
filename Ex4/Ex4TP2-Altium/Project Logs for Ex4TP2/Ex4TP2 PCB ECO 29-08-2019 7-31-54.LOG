@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=CDer1 Old Footprint=0805 New Footprint=CAP200
+Change Component Footprint: Designator=CInt1 Old Footprint=0805 New Footprint=CAP200
+Change Component Designator: OldDesignator=In NewDesignator=Señal de Entrada1
+Change Component Designator: OldDesignator=JComInt NewDesignator=J2
+Change Component Designator: OldDesignator=JumDer NewDesignator=JumperDerivador1
+Change Component Designator: OldDesignator=JumInt NewDesignator=JumperIntegrador1
+Change Component Designator: OldDesignator=Output NewDesignator=Señal de Salida1
+Added Room: Name=Ex4TP2

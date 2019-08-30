@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=J1 NewDesignator=Vcc+
+Change Component Designator: OldDesignator=J2 NewDesignator=JComInt
+Change Component Designator: OldDesignator=J3 NewDesignator=JCompDer
+Change Component Designator: OldDesignator=JumperDerivador1 NewDesignator=JumDer
+Change Component Designator: OldDesignator=JumperIntegrador1 NewDesignator=JumInt
+Change Component Designator: OldDesignator=Señal de Entrada1 NewDesignator=Input
+Change Component Designator: OldDesignator=Señal de Salida1 NewDesignator=Output
+Change Net Name : Old Net Name=NetJ2_2 New Net Name=NetJComInt_2
+Change Net Name : Old Net Name=NetJ3_2 New Net Name=NetJCompDer_2
+Change Net Name : Old Net Name=NetJumperIntegrador1_2 New Net Name=NetJumInt_2

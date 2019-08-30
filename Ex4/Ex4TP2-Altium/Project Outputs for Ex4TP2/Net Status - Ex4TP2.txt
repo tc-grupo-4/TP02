@@ -1,0 +1,20 @@
+Net Status Report
+Filename     : C:\Users\milto\Documents\GitHub\TP02\Ex4\Ex4TP2-Altium\Ex4TP2.PcbDoc
+Date         : 29/08/2019
+Time         : 12:10:22
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    GND, Signal Layers Only, 200.4046mm
+    NetCDer1_1, Signal Layers Only, 11.007mm
+    NetCDer1_2, Signal Layers Only, 23.5683mm
+    NetCInt1_1, Signal Layers Only, 48.8013mm
+    NetJComInt_2, Signal Layers Only, 6.5912mm
+    NetJCompDer_2, Signal Layers Only, 13.6469mm
+    NetJumInt_2, Signal Layers Only, 2.8466mm
+    V1, Signal Layers Only, 15.1709mm
+    Vcc+, Signal Layers Only, 92.2071mm
+    Vee-, Signal Layers Only, 78.3268mm
+    Vo Int, Signal Layers Only, 39.2015mm
+    VoDer, Signal Layers Only, 23.9774mm
+count : 12

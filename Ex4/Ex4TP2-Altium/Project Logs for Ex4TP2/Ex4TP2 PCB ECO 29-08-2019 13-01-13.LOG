@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=JComDer NewDesignator=JCompDer
+Change Component Designator: OldDesignator=RComInt1 NewDesignator=RCompInt1
+Added Pin To Net: NetName=GND Pin=Output-4
+Added Room: Name=Ex4TP2
