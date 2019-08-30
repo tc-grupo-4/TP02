@@ -16,8 +16,8 @@
 
 \section{Circuito no inversor}
 
-A lo largo de esta seccion se procedera a analizar el comportamiento
-ideal y real del amplificador operacional \emph{LM324 }conectado como
+A lo largo de esta sección se procederá a analizar el comportamiento
+ideal y real del Amplificador Operacional \emph{LM324 }conectado como
 se muestra en la figura \ref{1_b_1}. Considerando los valores de
 los componentes como se puede ver en la tabla \ref{1_a_t_1}. 
 
@@ -53,11 +53,11 @@ Se implementó en \emph{Altium Designer }como se muestra en las Figuras
 
 \subsection{Transferencia}
 
-Comenzando por el analisis ideal, se pidió calcular y graficar la
+Comenzando por el análisis ideal, se pidió calcular y graficar la
 relación $\frac{V_{out}}{V_{in}}$, esto quiere decir, considerando
 $a_{0}$ finito y $A(\omega)$ con polo dominante. Considerando las
-siguientes ecuaciones descriptas a continuacion y operando correctamente,
-se llega a que la relacion $\frac{V_{out}}{V_{in}}$ esta dada por
+siguientes ecuaciones descriptas a continuación y operando correctamente,
+se llega a que la relación $\frac{V_{out}}{V_{in}}$ esta dada por
 la ecuación (\ref{eq:1_b_1}).
 
 \[
@@ -141,7 +141,7 @@ de 90\textdegree , sino de 180\textdegree .
 Consecuentemente, se nos instó a calcular la impedancia de entrada
 vista por el generador hacia nuestro circuito. Nuevamente, se utilizo
 el \emph{Circuit Solver }creado en Python para calcular las expresiones
-de las impedancias de entrada. La ecuacion que describe la impedancia
+de las impedancias de entrada. La ecuación que describe la impedancia
 de entrada se detalla en la ecuación (\ref{eq:1_b_2}).
 
 \begin{equation}
@@ -165,7 +165,7 @@ Z_{inp}=500(k\Omega)\,\,\,Caso\,3
 Teniendo en cuenta estos resultado, y a diferencia de lo visto previamente
 en el análisis del circuito inversor, se puede observar como la impedancia
 de entrada permanece constante frente a cambios de frecuencia en la
-tension de entrada.
+tensión de entrada.
 
 \begin{figure}[H]
 \begin{centering}
@@ -216,11 +216,11 @@ ecuación (\ref{eq:1_b_2}), se puede observar como practicamente la
 impedancia de entrada permanece constante para todas las frecuencias.
 El hecho de que la impedancia de entrada tenga una pequeña variación
 en modulo y fase en la simulación, se debe a que para hacer el analisis
-de la impedancia de entrada se consideró el Amplificador operacional
+de la impedancia de entrada se consideró el Amplificador Operacional
 ideal, es decir, $R_{id}\longrightarrow\infty$ y $R_{o}\longrightarrow0$,
 por lo tanto, no se tienen en cuenta el efecto de esas resistencias,
 como a su vez sus inductancias y capacidades intrínsecas del amplificador.
-Sin embargo, considerando la ecuaci´on propuesta, y observando los
+Sin embargo, considerando la ecuación propuesta, y observando los
 resultados simulado, se puede observar que prácticamente no hay problema
 en aproximar la impedancia de entrada como constante en ninguno de
 los 3 casos (Considerando un 10\% de error en el ultimo caso).
@@ -265,7 +265,7 @@ capacidad parásita de 10(pF)}
 \subsubsection{Saturación y polo dominante}
 
 Teniendo en cuenta que la salida del Amplificador Operacional no podrá
-ser en modulo mayo a $V_{cc}$, se calculó, como se explico en la
+ser en modulo mayor a $V_{cc}$, se calculó, como se explico en la
 sección anterior, el máximo valor de la tensión de entrada dependiente
 de la frecuecia de entrada, para el cual el circuito no satura.
 
@@ -298,7 +298,7 @@ analizado.
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/sat1}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
 que no ocurra saturación en el caso 1}
 
 \end{figure}
@@ -307,7 +307,7 @@ que no ocurra saturación en el caso 1}
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/sat2}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
 que no ocurra saturación en el caso 2}
 \end{figure}
 
@@ -315,7 +315,7 @@ que no ocurra saturación en el caso 2}
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/sat3}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
 que no ocurra saturación en el caso 3}
 \end{figure}
 
@@ -323,7 +323,7 @@ que no ocurra saturación en el caso 3}
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/sat123}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
 que no ocurra saturación}
 \end{figure}
 
@@ -370,8 +370,8 @@ quedan las Figuras \ref{1_b_23}, \ref{1_b_24}, \ref{1_b_25} y \ref{1_b_26}.
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/slewRate1}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
-que no ocurra Slew Rate en el caso 1}
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
+que no ocurra \emph{Slew Rate} en el caso 1}
 \label{1_b_23}
 \end{figure}
 
@@ -379,8 +379,8 @@ que no ocurra Slew Rate en el caso 1}
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/slewRate2}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
-que no ocurra Slew Rate en el caso 2}
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
+que no ocurra \emph{Slew Rate} en el caso 2}
 \label{1_b_24}
 \end{figure}
 
@@ -388,8 +388,8 @@ que no ocurra Slew Rate en el caso 2}
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/slewRate3}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
-que no ocurra Slew Rate en el caso 3}
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
+que no ocurra \emph{Slew Rate} en el caso 3}
 \label{1_b_25}
 \end{figure}
 
@@ -397,8 +397,8 @@ que no ocurra Slew Rate en el caso 3}
 \begin{centering}
 \includegraphics[scale=0.5]{Resources1b/slewRate123}
 \par\end{centering}
-\caption{Tension de entrada máxima respecto de la frecuencia de entrada para
-que no ocurra Slew Rate}
+\caption{Tensión de entrada máxima respecto de la frecuencia de entrada para
+que no ocurra \emph{Slew Rate}}
 \label{1_b_26}
 \end{figure}
 
@@ -407,7 +407,7 @@ que no ocurra Slew Rate}
 Por último, si tenemos en cuenta los efectos alinialies del \emph{Slew
 Rate, }Saturación y \emph{Crossover Distortion} (el ultimo explicado
 en la sección anterior), pueden ser armadas unas figuras mostradas
-a continuación que muestran la maxima amplitud de una señal de entrada
+a continuación que muestran la máxima amplitud de una señal de entrada
 a el circuito para cada caso, para que no se encuentren efectos aliniales
 indeseados en las mediciones. Estas son las Figuras \ref{1_b_27},
 \ref{1_b_28}, \ref{1_b_29} y \ref{1_b_30}.
