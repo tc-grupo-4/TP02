@@ -79,7 +79,7 @@
 \begin_body
 
 \begin_layout Section
-Circuito no inversor
+Comportamiento del Amplificador Operacional no Inversor
 \end_layout
 
 \begin_layout Standard
@@ -1628,7 +1628,7 @@ Saturación y
 Crossover Distortion
 \emph default
  (el ultimo explicado en la sección anterior), pueden ser armadas unas figuras
- mostradas a continuación que muestran la maxima amplitud de una señal de
+ mostradas a continuación que muestran la máxima amplitud de una señal de
  entrada a el circuito para cada caso, para que no se encuentren efectos
  aliniales indeseados en las mediciones.
  Estas son las Figuras 

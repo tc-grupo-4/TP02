@@ -1691,7 +1691,7 @@ as de dichas resistencias.
 \end_layout
 
 \begin_layout Subsection
-Consideraciones para utilizar un modelo lineal del OpAmp
+Consideraciones para utilizar un modelo lineal del Amplificador Operacional
 \end_layout
 
 \begin_layout Standard
@@ -2791,7 +2791,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Amplitud máxima de entrada en funcion de la frecuencia para el caso 2
+Amplitud máxima de entrada en función de la frecuencia para el caso 2
 \end_layout
 
 \end_inset
@@ -2837,7 +2837,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Amplitud máxima de entrada en funcion de la frecuencia para el caso 2
+Amplitud máxima de entrada en función de la frecuencia para el caso 2
 \end_layout
 
 \end_inset
@@ -2883,7 +2883,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Amplitud máxima de entrada en funcion de la frecuencia
+Amplitud máxima de entrada en función de la frecuencia
 \end_layout
 
 \end_inset
