@@ -1,0 +1,4 @@
+Circuit: * C:\Users\ohvic\Documents\ITBA\TCTP2\Ex2\NE5534\Draft1.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu1 n002 n003 +vcc -vcc vout opamp2
