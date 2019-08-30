@@ -25,28 +25,9 @@ def main():
     test.solveCircuit()
     outCurr = (test.getUnknowns()[Vo]-test.getUnknowns()[Vm]) / r2
     test.calcZout(outCurr)
-
-    expressSat = simplify(saturation(test.getMod(),Vi,Vcc))
-    expressSat = expressSat.subs(s,I*2*pi*f)
-    #expressSat = substitute(expressSat,3)
-
-    expressSR = simplify(slewRate(test.getMod(),SR,Vi,f))
-    expressSR = expressSR.subs(s,I*2*pi*f)
-    #expressSR = substitute(expressSR,3)
-    plotVinMaxInFreq(expressSat,1)
-    plotVinMaxInFreq(expressSat,2)
-    plotVinMaxInFreq(expressSat,3)
-    plotVinMaxInFreq(expressSat,0)
-
-    plotVinMaxInFreq(expressSR,1)
-    plotVinMaxInFreq(expressSR,2)
-    plotVinMaxInFreq(expressSR,3)
-    plotVinMaxInFreq(expressSR,0)
-    
-    plotVinMaxInFreqTotal(expressSR,expressSat,1)
-    plotVinMaxInFreqTotal(expressSR,expressSat,2)
-    plotVinMaxInFreqTotal(expressSR,expressSat,3)
-    plotVinMaxInFreqTotal(expressSR,expressSat,0)
+    mod = simplify(sqrt(re(H)**2+im(H)**2))
+    mod = mod.subs(s,I*2*p*f)
+    print(latex(slewRate(H,SR,Vi,f)))
 
 def substitute(express, case):
     express = express.subs(w,7.5* 2 * 3.142)        ##check
@@ -198,4 +179,6 @@ Vm = Symbol('Vm',real = True, positive = True)
 Vcc = Symbol('Vcc',real = True, positive = True)
 SR = Symbol('SR',real = True, positive = True)
 s = Symbol('s')
+p = Symbol('pi',real = True, positive = True) 
+#s = I*2*pi*f
 main()
