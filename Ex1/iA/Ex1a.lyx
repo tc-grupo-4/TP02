@@ -1691,7 +1691,7 @@ as de dichas resistencias.
 \end_layout
 
 \begin_layout Subsection
-Consideraciones para utilizar un modelo lineal del OpAmp
+Consideraciones para utilizar un modelo lineal del Amplificador Operacional
 \end_layout
 
 \begin_layout Standard
@@ -2909,7 +2909,7 @@ Como se puede observar, cuando la frecuencia se hace lo suficientemente
 \end_layout
 
 \begin_layout Subsection
-Otros fenomenos que afectan el comportamiento del OpAmp
+Otros fenomenos que afectan el comportamiento del Amplificador Operacional
 \end_layout
 
 \begin_layout Subsubsection
