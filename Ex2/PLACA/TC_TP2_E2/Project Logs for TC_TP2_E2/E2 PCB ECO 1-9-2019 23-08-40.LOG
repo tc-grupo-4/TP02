@@ -1,0 +1,76 @@
+Added Component: Designator=C1(CAP100)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C2(CAP100)
+Add component. Clean all parameters for all variants
+Added Component: Designator=J1(BORNERA3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1a(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2a(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3a(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U1(DIP8)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U2(DIP8)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Vin(MOLEX2)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+VCC Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=-VCC Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=-VCC Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=+VCC Pin=J1-3
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R1a-1
+Added Pin To Net: NetName=VoN Pin=R2-2
+Added Pin To Net: NetName=VoL Pin=R2a-1
+Added Pin To Net: NetName=Vin Pin=R3-1
+Added Pin To Net: NetName=Vin Pin=R3a-1
+Added Pin To Net: NetName=-VCC Pin=U1-4
+Added Pin To Net: NetName=VoN Pin=U1-6
+Added Pin To Net: NetName=+VCC Pin=U1-7
+Added Pin To Net: NetName=VoL Pin=U2-1
+Added Pin To Net: NetName=-VCC Pin=U2-4
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=+VCC Pin=U2-8
+Added Pin To Net: NetName=GND Pin=Vin-1
+Added Pin To Net: NetName=Vin Pin=Vin-2
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=R2-1
+Added Pin To Net: NetName=NetR1_2 Pin=U1-2
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=NetR1a_2 Pin=R1a-2
+Added Pin To Net: NetName=NetR1a_2 Pin=R2a-2
+Added Pin To Net: NetName=NetR1a_2 Pin=U2-2
+Added Net: Name=NetR1a_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=U1-3
+Added Net: Name=NetR3_2
+Added Pin To Net: NetName=NetR3a_2 Pin=R3a-2
+Added Pin To Net: NetName=NetR3a_2 Pin=U2-3
+Added Net: Name=NetR3a_2
+Added Pin To Net: NetName=NetU2_6 Pin=U2-6
+Added Pin To Net: NetName=NetU2_6 Pin=U2-7
+Added Net: Name=NetU2_6
+Added Member To Class: ClassName=E2 Member=Component C1 100nF
+Added Member To Class: ClassName=E2 Member=Component C2 100nF
+Added Member To Class: ClassName=E2 Member=Component J1 BORNERA 3
+Added Member To Class: ClassName=E2 Member=Component R1a 3.9k
+Added Member To Class: ClassName=E2 Member=Component R1 3.9k
+Added Member To Class: ClassName=E2 Member=Component R2a 330k
+Added Member To Class: ClassName=E2 Member=Component R2 330k
+Added Member To Class: ClassName=E2 Member=Component R3a 220k
+Added Member To Class: ClassName=E2 Member=Component R3 220k
+Added Member To Class: ClassName=E2 Member=Component U1 NE5534
+Added Member To Class: ClassName=E2 Member=Component U2 LM833N
+Added Member To Class: ClassName=E2 Member=Component Vin MOLEX2
+Added Room: Name=E2
