@@ -1,7 +1,7 @@
 Net Status Report
 Filename     : C:\Users\ohvic\Documents\ITBA\TCTP2\Ex2\PLACA\TC_TP2_E2\E2.PcbDoc
 Date         : 2/9/2019
-Time         : 00:18:38
+Time         : 00:21:30
 Time Elapsed : 00:00:00
 
 Nets, Layer, Length

@@ -1,0 +1,10 @@
+Output: Report Project Hierarchy
+Type  : ReportHierarchy
+From  : Variant [[No Variations]] of Project [TC_TP2_E2.PrjPcb]
+   Generated File[E2.REP]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 00:21:22 On 2/9/2019
