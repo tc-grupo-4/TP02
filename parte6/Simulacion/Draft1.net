@@ -1,0 +1,23 @@
+* G:\Mi unidad\Facultad\ITBA\Teoria de Circuito\Trabajos Practicos\TP02\parte 6\Simulacion\Draft1.asc
+R1 N001 Vt 1k
+R2 N002 N001 25k
+RA N003 N002 5k
+RB N003 Voff 2k
+RF Vout N003 10k
+V1 +Vcc 0 20
+V2 0 -Vcc 20
+V3 Voff 0 3.5
+V4 Vt 0 1
+D1 0 N004 KDZ6_2B
+XU1 0 N001 +Vcc -Vcc N002 TL082
+XU2 0 N003 +Vcc -Vcc Vout TL082
+D2 Vout N004 1N5819
+D3 N006 N005 1N5819
+D4 N005 Vout 1N5819
+D5 0 N006 1N5819
+.model D D
+.lib C:\Users\lisan\Documents\LTspiceXVII\lib\cmp\standard.dio
+.dc V4 150m 750m 10m
+.include G:\Mi unidad\Facultad\ITBA\Teoria de Circuito\Trabajos Practicos\TP02\parte 6\Simulacion\TL082.301
+.backanno
+.end

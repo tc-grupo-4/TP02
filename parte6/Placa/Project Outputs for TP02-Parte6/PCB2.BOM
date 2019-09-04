@@ -1,0 +1,16 @@
+Bill of Material for 
+On 22/8/2019 at 12:55:38
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ 10k                 RES400           2    R2, RF                                            
+ 1k                  RES400           5    R1, RA1, RA2, RB1, RB2                            
+ CAP                 CAP200           2    C+Vcc, C-Vcc                                      
+ CON2                SIP2             3    Voff_Out, Vout_Out, Vt_Out                        
+ DIODO ZENER         DO41             1    DZ1                                               
+ JUMPER              JUMPER3          2    Voff_Jumper, Vt_Jumper                            
+ LM35DZ              *TO127P254X495-3P    1    LM35                         ?0.5?C Temperature Sensor with Analog Output with 30V Capability 3-TO-92 
+ MOLEX2              MOLEX2           2    Voff_In, Vt_In                                    
+ MOLEX3              MOLEX3           1    POWER                                             
+ PRESET              PRESET V         1    ROff                                              
+ TL082ACP            TI-P8            1    TL082                        JFET-Input Operational Amplifier, 7 to 36 V, 0 to 70 degC, 8-pin DIP (P8), Pb-Free (RoHS) 

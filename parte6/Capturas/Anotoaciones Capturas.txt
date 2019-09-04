@@ -1,0 +1,2 @@
+scope_11: Circuito calibrado. Input 350 a 540 mV con generador de funciones
+scope_12: Circuio calibrado. Inpur 350 a 500 mV con generador de funciones

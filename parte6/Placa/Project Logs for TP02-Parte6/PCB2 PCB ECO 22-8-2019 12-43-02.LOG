@@ -1,0 +1,6 @@
+Change Component Comment : Designator=R1 Old Comment=RES New Comment=1k
+Change Component Comment : Designator=R2 Old Comment=RES New Comment=10k
+Change Component Comment : Designator=RF Old Comment=RES New Comment=10k
+Added Pin To Net: NetName=Out1 Pin=RA1-1
+Added Pin To Net: NetName=Voff Pin=RB1-1
+Added Room: Name=Sheet1

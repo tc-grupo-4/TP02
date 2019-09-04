@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=-Vcc Pin=POWER-2
+Removed Pin From Net: NetName=GND Pin=POWER-3
+Change Component Designator: OldDesignator=Voff_J NewDesignator=Voff_Jumper
+Added Pin To Net: NetName=GND Pin=POWER-2
+Added Pin To Net: NetName=-Vcc Pin=POWER-3
+Added Room: Name=Sheet1

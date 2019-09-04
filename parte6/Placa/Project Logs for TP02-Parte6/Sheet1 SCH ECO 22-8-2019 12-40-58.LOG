@@ -1,0 +1,5 @@
+Remove Pin=RA1-1 From Net=Out1
+Remove Pin=RB1-1 From Net=Voff
+Change Component Comment: Designator=R1 Old Comment=1k New Comment=RES
+Change Component Comment: Designator=R2 Old Comment=10k New Comment=RES
+Change Component Comment: Designator=RF Old Comment=10k New Comment=RES

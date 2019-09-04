@@ -1,0 +1,12 @@
+Board Information Report
+Filename     : G:\Mi unidad\Facultad\ITBA\Teoria de Circuito\Trabajos Practicos\TP02\parte 6\Placa\PCB2.PcbDoc
+Date         : 22/8/2019
+Time         : 12:51:27
+Time Elapsed : 00:00:00
+
+Routing Information
+    Routing completion, 100,00%
+    Connections, 45
+    Connections routed, 45
+    Connections remaining, 0
+count : 4
