@@ -89,3 +89,12 @@ syms r2;
 w0 = sqrt(wp*(1+Ao)/c/(r+r2));
 xi = w0/2*(c*(r+r2*(1+Ao))+1/wp)/(1+Ao);
 r2 = eval(solve(xi == 0.707, r2));
+
+%SIMBOLICO%
+syms R AVOL BWP WP Z1 Z2 S R C
+Z1 = 1/(S*C);
+Z2=R;
+G=-Z2/Z1
+G= -AVOL*Z2/(Z2+(AVOL+1)*Z1)
+AVOLW = AVOL/(1+(S/WP));
+G = -AVOLW*Z2/(Z2+(AVOLW+1)*Z1)

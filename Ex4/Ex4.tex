@@ -8,7 +8,7 @@
 	Se nos pidió realizar dos circuitos, el circuito derivador e integrador, que como sus nombres indican se encargan de mostrar a la salida la derivada  o integral respectivamente de su señal de entrada.
 	Como se indica por consigna se utilizó el amplificador operacional LM833 y el valor comercial más cercano al pedido tanto de resistencia como de capacitor, estos son $R \ = \ 39k \Omega$ y $C \ = \ 2.7 nF$.
 
-$R=40k\sigma -> 39k$
+$R=40k\Omega -> 39k \Omega$
 $C = 2.5 nF -> 2.7 nF$
 \section{Cálculo de $\frac{V_{out}}{V_{in}}$}
 Mientras en uno de los dos circuitos la resistencia y la impedancia tienen una disposición, para el otro se intercambian de lugar, por lo que los siguientes cálculos se realizaron con impedancias $Z_1$ y $Z_2 $ como se muestra en la Figura \ref{circconz1z2} y luego se reemplazó con el valor correspondiente al circuito al que se hizo mención.
@@ -66,6 +66,15 @@ Si recordamos lo siguiente podemos obtener el valor de $w_p$.
 BWP = A_{vol} \ . \ w_p \Rightarrow w_p= 2 \ . \pi \ \frac{BWP}{A_{vol}}= 2 \ . \ \pi \ \frac{15x10^6}{10^{\frac{110}{20}}} = 2 \ . \ \pi \ . \ 47,4342 \ Hz
 \end{equation}
 
+\section{Impedancias de entrada teóricas}
+\subsubsection{Primer Caso}
+\begin{equation}
+	Z_{in}=Z_1
+\end{equation}
+\subsubsection{Segundo Caso}
+
+\subsubsection{Tercer Caso}
+
 \section{Circuito Derivador}
 
 \begin{figure}[h!]
@@ -97,7 +106,7 @@ v_{out} (t) = - \ R \ . \ C \ . \ \dfrac{\partial v_{in}(t)}{\partial t}
 \end{equation}
 Donde se observa que la función a la salida es la derivada de la función a la entrada multiplicada por una constante que es $- R C$.
 
-\subsection{Avol finito}
+\subsection{$\mathrm{A_{vol}}$ finito}
 \begin{equation}
 H(s) = - \dfrac{A_{vol} \ . \ C \ . \ R \ . \ s}{A_{vol} + C \ . \ R \ . \ s +1 } 
 = -
@@ -115,7 +124,7 @@ Se observa que se agrega en este caso un polo en $f = \dfrac{1}{2 \ . \ \pi} \ .
 	\end{center}
 \end{figure}
 
-\subsection{$A{vol}(w)$ con polo dominante}
+\subsection{$\mathrm{A{vol}(w)}$ con polo dominante}
 
 \begin{equation}
 H(s) = - \left( \dfrac{A_{vol} \ . \ C \ . \ R}{A_{vol} + 1} \right) \ . \ \dfrac{s}{ \dfrac{s^2}{\dfrac{(A_{vol}+1)}{C \ . \ R}} + \dfrac{1+ C \ . \ R \ . \ w_p}{(A_{vol} + 1) \ . \ w_p} \ . \ s + 1} 
@@ -141,20 +150,32 @@ A partir de los $100 \ kHz$ se puede notar que comienza a afectar el polo domina
 		\caption{Superposición de los tres casos.}
 	\end{center}
 \end{figure}
-Viendo el gráfico se notó que a frecuencias menores a aproximadamente $70 \ kHz$ tanto la amplitud como la fase de las tres funciones se comportan de forma idéntica, por lo que si trabajamos con frecuencias menores a $70 \ kHz$ el circuito debe cumplir con el propósito de su diseño, el de derivar.
+Viendo el gráfico se notó que a frecuencias menores a aproximadamente $80 \ kHz$ tanto la amplitud como la fase de las tres funciones se comportan de forma idéntica, por lo que si trabajamos con frecuencias menores a $80 \ kHz$ el circuito debe cumplir con el propósito de su diseño, el de derivar.
 
 \subsection{Simulación LTSpice}
 
 \subsection{Medición}
 
-\section{Impedancias de entrada teóricas}
-\subsubsection{Primer Caso}
-\begin{equation}
-	Z_{in}=Z_1
-\end{equation}
-\subsubsection{Segundo Caso}
+\section{Circuito Integrador}
 
-\subsubsection{Tercer Caso}
+\subsection{Ganancia ideal}
+\begin{equation}
+G_I=-\dfrac{1}{C\,R\,S}
+\end{equation}
+
+\subsection{$\mathrm{A_{vol}}$ finito}
+\begin{equation}
+H(s)=- \dfrac{\mathrm{A_{vol}}}{C\,s\,\left(R\,\left(\mathrm{A_{vol}}+1 \right) + \frac{1}{C\,S}\right)} = -\dfrac{\mathrm{A_{vol}}}{R\,C\,\left( \mathrm{A_{vol}} + 1 \right)\,s + 1}
+\end{equation}
+
+\subsection{$\mathrm{A{vol}(w)}$ con polo dominante}
+\begin{equation}
+H(s)= -\frac{\mathrm{A_{vol}}}{C\,s\,\left(\frac{s}{\mathrm{w_p}}+1\right)\,\left(\dfrac{1}{C\,s}+R\,\left(\dfrac{\mathrm{A_{vol}}}{\dfrac{s}{\mathrm{w_p}}+1}+1\right)\right)}
+= - \dfrac{\mathrm{A_{vol}}}{C\,R\,s^2+(C\,R\,w_p+C\,R\,w_p\,\mathrm{A_{vol}}+1)s+w_p}
+\end{equation}
+
+
+
 \section{Conclusión}
 
 \end{document}

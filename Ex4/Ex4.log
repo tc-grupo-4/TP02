@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.15)  2 SEP 2019 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.15)  4 SEP 2019 11:28
 entering extended mode
 **./Ex4.tex
 (Ex4.tex
@@ -849,7 +849,7 @@ See the caption package documentation for explanation.
 
 LaTeX Warning: Reference `circconz1z2' on page 1 undefined on input line 14.
 
-<circconz1z2.png, id=79, 263.48438pt x 159.59625pt>
+<circconz1z2.png, id=95, 263.48438pt x 159.59625pt>
 File: circconz1z2.png Graphic file (type png)
 <use circconz1z2.png>
 Package pdftex.def Info: circconz1z2.png  used on input line 18.
@@ -889,89 +889,124 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Font Info:    Font shape `OT1/xcmss/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/xcmss/m/sl' tried instead on input line 63.
 
-<circuitoderivador.png, id=103, 258.9675pt x 158.84344pt>
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 70.
+
+<circuitoderivador.png, id=119, 258.9675pt x 158.84344pt>
 File: circuitoderivador.png Graphic file (type png)
 <use circuitoderivador.png>
-Package pdftex.def Info: circuitoderivador.png  used on input line 73.
+Package pdftex.def Info: circuitoderivador.png  used on input line 82.
 (pdftex.def)             Requested size: 129.48341pt x 79.42152pt.
-<Derivador-CasoIdeal.png, id=104, 1028.34187pt x 309.40594pt>
+<Derivador-CasoIdeal.png, id=120, 1028.34187pt x 309.40594pt>
 File: Derivador-CasoIdeal.png Graphic file (type png)
 <use Derivador-CasoIdeal.png>
-Package pdftex.def Info: Derivador-CasoIdeal.png  used on input line 88.
+Package pdftex.def Info: Derivador-CasoIdeal.png  used on input line 97.
 (pdftex.def)             Requested size: 597.50787pt x 179.78133pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [2 <./circuitoderivador.png>]
 
-Package caption Warning: \label without proper reference on input line 113.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package caption Warning: \label without proper reference on input line 122.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `avolfinitoderivador' on page 3 undefined on input lin
-e 107.
+e 116.
 
-<Derivador-AvolfinitoBodeAutomatico.png, id=119, 1028.34187pt x 315.42844pt>
+<Derivador-AvolfinitoBodeAutomatico.png, id=134, 1028.34187pt x 315.42844pt>
 File: Derivador-AvolfinitoBodeAutomatico.png Graphic file (type png)
 <use Derivador-AvolfinitoBodeAutomatico.png>
 Package pdftex.def Info: Derivador-AvolfinitoBodeAutomatico.png  used on input 
-line 112.
+line 121.
 (pdftex.def)             Requested size: 597.50787pt x 183.28072pt.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 118.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 118.
-
-[3 <./Derivador-CasoIdeal.png (PNG copy)> <./Derivador-AvolfinitoBodeAutomatico
-.png (PNG copy)>]
-<Derivador-Avol(w)conpolodominante.png, id=127, 1028.34187pt x 320.69812pt>
-File: Derivador-Avol(w)conpolodominante.png Graphic file (type png)
-<use Derivador-Avol(w)conpolodominante.png>
-Package pdftex.def Info: Derivador-Avol(w)conpolodominante.png  used on input l
-ine 128.
-(pdftex.def)             Requested size: 597.50787pt x 186.34268pt.
-<BodesSuperpuestos.png, id=128, 1028.34187pt x 347.04657pt>
-File: BodesSuperpuestos.png Graphic file (type png)
-<use BodesSuperpuestos.png>
-Package pdftex.def Info: BodesSuperpuestos.png  used on input line 139.
-(pdftex.def)             Requested size: 597.50787pt x 201.65253pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 151.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 127.
 
-[4 <./Derivador-Avol(w)conpolodominante.png (PNG copy)>] [5 <./BodesSuperpuesto
-s.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 127.
+
+[3 <./Derivador-CasoIdeal.png (PNG copy)>]
+<Derivador-Avol(w)conpolodominante.png, id=144, 1028.34187pt x 320.69812pt>
+File: Derivador-Avol(w)conpolodominante.png Graphic file (type png)
+<use Derivador-Avol(w)conpolodominante.png>
+Package pdftex.def Info: Derivador-Avol(w)conpolodominante.png  used on input l
+ine 137.
+(pdftex.def)             Requested size: 597.50787pt x 186.34268pt.
+<BodesSuperpuestos.png, id=145, 1028.34187pt x 347.04657pt>
+File: BodesSuperpuestos.png Graphic file (type png)
+<use BodesSuperpuestos.png>
+Package pdftex.def Info: BodesSuperpuestos.png  used on input line 148.
+(pdftex.def)             Requested size: 597.50787pt x 201.65253pt.
+ [4 <./Derivador-AvolfinitoBodeAutomatico.png (PNG copy)> <./Derivador-Avol(w)c
+onpolodominante.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 171.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 171.
+
+
+Overfull \hbox (16.37032pt too wide) detected at line 175
+\OML/cmssm/m/it/10.95 H\OT1/cmsmf/m/n/10.95 (\OML/cmssm/m/it/10.95 s\OT1/cmsmf/
+m/n/10.95 ) = \OMS/cmsssy/m/n/10.95  [] \OT1/cmsmf/m/n/10.95 = \OMS/cmsssy/m/n/
+10.95  []
+ []
+
+[5 <./BodesSuperpuestos.png (PNG copy)>] [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (Ex4.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `Ex4.out' has not changed.
-(rerunfilecheck)             Checksum: 756EC59DE900CC6E7732C3E205C466B7;1205.
+(rerunfilecheck)             Checksum: 2EAD73AD3B2EAB18209F4A676EB7E398;1473.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 18822 strings out of 492895
- 346972 string characters out of 3133479
- 432779 words of memory out of 3000000
- 22334 multiletter control sequences out of 15000+200000
+ 18834 strings out of 492895
+ 347127 string characters out of 3133479
+ 431790 words of memory out of 3000000
+ 22338 multiletter control sequences out of 15000+200000
  24507 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,48p,441b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,12n,48p,441b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
@@ -986,9 +1021,9 @@ hfonts/cmssmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfont
 s/cmssmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfonts/cms
 ssy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfonts/cmsssy8
 .pfb>
-Output written on Ex4.pdf (5 pages, 312921 bytes).
+Output written on Ex4.pdf (6 pages, 320059 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 187 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
