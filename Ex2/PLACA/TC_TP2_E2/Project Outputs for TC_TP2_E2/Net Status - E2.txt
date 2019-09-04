@@ -1,0 +1,19 @@
+Net Status Report
+Filename     : C:\Users\ohvic\Documents\ITBA\TCTP2\Ex2\PLACA\TC_TP2_E2\E2.PcbDoc
+Date         : 2/9/2019
+Time         : 00:21:30
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    +VCC, Signal Layers Only, 54.4432mm
+    -VCC, Signal Layers Only, 36.8268mm
+    GND, Signal Layers Only, 170.0575mm
+    NetU2_6, Signal Layers Only, 2.54mm
+    Vin, Signal Layers Only, 35.2945mm
+    Vout, Signal Layers Only, 40.0184mm
+    Vouta, Signal Layers Only, 36.9821mm
+    v+, Signal Layers Only, 6.1545mm
+    v+a, Signal Layers Only, 5.4474mm
+    v-, Signal Layers Only, 13.7592mm
+    v-a, Signal Layers Only, 11.6379mm
+count : 11
