@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.15)  28 AUG 2019 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.15)  4 SEP 2019 11:28
 entering extended mode
 **./Ex4.tex
 (Ex4.tex
@@ -657,7 +657,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \mathdisplay@stack=\toks36
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
-))
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\bm.sty"
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
@@ -665,6 +665,14 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup6
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count139
+\float@exts=\toks37
+\float@box=\box42
+\@float@everytoks=\toks38
+\@floatcapt=\box43
 ) (Ex4.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -752,9 +760,10 @@ LaTeX Info: Redefining \% on input line 4.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box42
+\AtBeginShipoutBox=\box44
 Package hyperref Info: Link coloring ON on input line 4.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -762,7 +771,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count139
+\c@section@level=\count140
 )
 LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
@@ -775,17 +784,17 @@ LaTeX Info: Redefining \nameref on input line 4.
  ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
+\scratchcounter=\count141
 \scratchdimen=\dimen186
-\scratchbox=\box43
-\nofMPsegments=\count141
-\nofMParguments=\count142
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count143
+\scratchbox=\box45
+\nofMPsegments=\count142
+\nofMParguments=\count143
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count144
 \MPscratchDim=\dimen187
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks38
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
+\everyMPtoPDFconversion=\toks40
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -799,89 +808,222 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OT1+cmsmf on input line 10
-.
+LaTeX Font Info:    Try loading font information for OT1+cmsmf on input line 9.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/sansmathfonts\ot1cmsmf.fd"
 File: ot1cmsmf.fd 2019/04/04
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 12.
+(hyperref)                removing `math shift' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 12.
+(hyperref)                removing `\begingroup' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempa' on input line 12.
+(hyperref)                removing `subscript' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 12.
+(hyperref)                removing `\endgroup' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@tempb' on input line 12.
+(hyperref)                removing `\@@over' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 12.
+(hyperref)                removing `subscript' on input line 13.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 12.
+(hyperref)                removing `math shift' on input line 13.
+
+
+Package caption Warning: \label without proper reference on input line 19.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `circconz1z2' on page 1 undefined on input line 14.
+
+<circconz1z2.png, id=95, 263.48438pt x 159.59625pt>
+File: circconz1z2.png Graphic file (type png)
+<use circconz1z2.png>
+Package pdftex.def Info: circconz1z2.png  used on input line 18.
+(pdftex.def)             Requested size: 131.74185pt x 79.79791pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 12.
+(hyperref)                removing `subscript' on input line 29.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 14.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 14.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 14.
+(hyperref)                removing `math shift' on input line 29.
 
 [1
 
-{C:/Users/milto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 21.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 21.
+{C:/Users/milto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./circconz1
+z2.png>]
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 50.
+
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 52.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 52.
+
+LaTeX Font Info:    Font shape `OT1/xcmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/xcmss/m/sl' tried instead on input line 63.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 70.
+
+<circuitoderivador.png, id=119, 258.9675pt x 158.84344pt>
+File: circuitoderivador.png Graphic file (type png)
+<use circuitoderivador.png>
+Package pdftex.def Info: circuitoderivador.png  used on input line 82.
+(pdftex.def)             Requested size: 129.48341pt x 79.42152pt.
+<Derivador-CasoIdeal.png, id=120, 1028.34187pt x 309.40594pt>
+File: Derivador-CasoIdeal.png Graphic file (type png)
+<use Derivador-CasoIdeal.png>
+Package pdftex.def Info: Derivador-CasoIdeal.png  used on input line 97.
+(pdftex.def)             Requested size: 597.50787pt x 179.78133pt.
+[2 <./circuitoderivador.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package caption Warning: \label without proper reference on input line 122.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `avolfinitoderivador' on page 3 undefined on input lin
+e 116.
+
+<Derivador-AvolfinitoBodeAutomatico.png, id=134, 1028.34187pt x 315.42844pt>
+File: Derivador-AvolfinitoBodeAutomatico.png Graphic file (type png)
+<use Derivador-AvolfinitoBodeAutomatico.png>
+Package pdftex.def Info: Derivador-AvolfinitoBodeAutomatico.png  used on input 
+line 121.
+(pdftex.def)             Requested size: 597.50787pt x 183.28072pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 127.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 127.
+
+[3 <./Derivador-CasoIdeal.png (PNG copy)>]
+<Derivador-Avol(w)conpolodominante.png, id=144, 1028.34187pt x 320.69812pt>
+File: Derivador-Avol(w)conpolodominante.png Graphic file (type png)
+<use Derivador-Avol(w)conpolodominante.png>
+Package pdftex.def Info: Derivador-Avol(w)conpolodominante.png  used on input l
+ine 137.
+(pdftex.def)             Requested size: 597.50787pt x 186.34268pt.
+<BodesSuperpuestos.png, id=145, 1028.34187pt x 347.04657pt>
+File: BodesSuperpuestos.png Graphic file (type png)
+<use BodesSuperpuestos.png>
+Package pdftex.def Info: BodesSuperpuestos.png  used on input line 148.
+(pdftex.def)             Requested size: 597.50787pt x 201.65253pt.
+ [4 <./Derivador-AvolfinitoBodeAutomatico.png (PNG copy)> <./Derivador-Avol(w)c
+onpolodominante.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 171.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 171.
+
+
+Overfull \hbox (16.37032pt too wide) detected at line 175
+\OML/cmssm/m/it/10.95 H\OT1/cmsmf/m/n/10.95 (\OML/cmssm/m/it/10.95 s\OT1/cmsmf/
+m/n/10.95 ) = \OMS/cmsssy/m/n/10.95  [] \OT1/cmsmf/m/n/10.95 = \OMS/cmsssy/m/n/
+10.95  []
+ []
+
+[5 <./BodesSuperpuestos.png (PNG copy)>] [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (Ex4.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 21.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 21.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `Ex4.out' has not changed.
-(rerunfilecheck)             Checksum: 6F4CBC0E41724F39E95CF810E7D13BD4;291.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 21.
+(rerunfilecheck)             Checksum: 2EAD73AD3B2EAB18209F4A676EB7E398;1473.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 18658 strings out of 492895
- 344239 string characters out of 3133479
- 424874 words of memory out of 3000000
- 22225 multiletter control sequences out of 15000+200000
- 20620 words of font info for 73 fonts, out of 3000000 for 9000
+ 18834 strings out of 492895
+ 347127 string characters out of 3133479
+ 431790 words of memory out of 3000000
+ 22338 multiletter control sequences out of 15000+200000
+ 24507 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,48p,430b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,12n,48p,441b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/sansmathfonts/cmssbx12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/sansmathfonts/cmssbx17.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/sansmathfonts/cmssmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/sansmathfonts/cmssmi8.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/sansmathfonts/cmsssy10.pfb>
-Output written on Ex4.pdf (1 page, 71508 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/sansmathfonts/cmssbx12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/sansmathfonts/cmssbx17.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/sansmathfonts/cmsscsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/sansmathfonts/cmssex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/san
+smathfonts/cmssmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmat
+hfonts/cmssmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfont
+s/cmssmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfonts/cms
+ssy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfonts/cmsssy8
+.pfb>
+Output written on Ex4.pdf (6 pages, 320059 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
