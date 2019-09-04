@@ -1,0 +1,11 @@
+Added Component: Designator=Cc(CAP200)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=COMP-BAL Pin=Cc-1
+Added Pin To Net: NetName=COMP-BAL Pin=U1-8
+Added Net: Name=COMP-BAL
+Added Pin To Net: NetName=COMP Pin=Cc-2
+Added Pin To Net: NetName=COMP Pin=U1-5
+Added Net: Name=COMP
+Added Member To Class: ClassName=E2 Member=Component Cc 22pF
+Added Member To Class: ClassName=E2 Member=Component Jo MOLEX2
+Added Room: Name=E2
