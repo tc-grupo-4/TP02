@@ -1,28 +1,4 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[siunitx,american]{circuitikz}
-\usepackage{pgfplots}
-\usepackage[margin=0.5in]{geometry}
-\usepackage{textcomp}
-\usepackage[spanish, es-tabla]{babel}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage{amsmath}
-\usepackage{tikz}
-\usepackage{booktabs}
-\usetikzlibrary{arrows}
 
-
-\usepackage{parskip}
-\usepackage{fancyhdr}
-\usepackage{vmargin}
-\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
-
-
-\pgfplotsset{compat=1.15}
-
-\begin{document}
 \section{Ejercicio 3}
 \subsection{Introducción}
 
@@ -33,11 +9,10 @@ circuito. A continuación, se muestra el modelo del amplificador operacional rea
 
 %modelo del opamp ideal
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.4\textwidth, height=5cm]{Figuras/fig_0.png}
+    \centering\includegraphics[width=0.4\textwidth, height=5cm]{../Ex3/Figuras/fig_0.png}
      \caption{Modelo del amplificador operacional}
      \label{fig_0}
      \end{figure}
-
 
 
 Como se puede observar, se trata del modelo ideal del amplificador operacional con dos fuentes de corrientes adicionales y una fuente de tensión.
@@ -49,7 +24,7 @@ amplificador $OA_2$ que se puede ver en la Figura \ref{circuito_medicion}
 
 
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.8\textwidth, height=5cm]{Figuras/circuito_medicion.png}
+    \centering\includegraphics[width=0.8\textwidth, height=5cm]{../Ex3/Figuras/circuito_medicion.png}
      \caption{Circuito de medición de corrientes y tensiones offset}
      \label{circuito_medicion}
      \end{figure}
@@ -71,7 +46,7 @@ Para comenzar el análisis, primero se extrae el amplificador operacional $OA_2$
 
 %Circuito 1
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.5\textwidth, height=5cm]{Figuras/fig_1.png}
+    \centering\includegraphics[width=0.5\textwidth, height=5cm]{../Ex3/Figuras/fig_1.png}
      \caption{Amplificador operacional en configuración inversora}
      \label{inverter}
      \end{figure}
@@ -92,7 +67,7 @@ Figura \ref{fig_2}.
 
 %3
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.5\textwidth, height=5cm]{Figuras/fig_2.png}
+    \centering\includegraphics[width=0.5\textwidth, height=5cm]{../Ex3/Figuras/fig_2.png}
      \caption{Circuito considerando $I_N$ y $I_P$}
      \label{fig_2}
      \end{figure}
@@ -109,7 +84,7 @@ Si ahora se considera la existencia de $V_{OS}$, sin considerar  ni $I_{N}$ ni $
  
 
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.5\textwidth, height=5cm]{Figuras/fig_3.png}
+    \centering\includegraphics[width=0.5\textwidth, height=5cm]{../Ex3/Figuras/fig_3.png}
     \caption{Circuito considerando $V_{OS}$}
     \label{fig_3}
     \end{figure}
@@ -142,7 +117,7 @@ de LF356 y TL081. La tabla \ref{hoja_datos} muestra los valores tipicos y maximo
     \label{hoja_datos}
 
     \begin{tabular}{@{}lcc@{}}
-        & \multicolumn{1}{l}{Texas Instruments TL081} & \multicolumn{1}{r}{National Semiconductor LF356} \\ \midrule
+    & \multicolumn{1}{l}{Texas Instruments TL081} & \multicolumn{1}{r}{National Semiconductor LF356} \\
     \textbf{$V_{OS}$} & Tip: 3mV Max: 10mV      & Tip:3mV Max:10mV             \\
     \textbf{$I_B$}  & Tip: 20pA Max: 400pA    & Tip: 30pA Max:200pA          \\
     \textbf{$I_{OS}$} & Tip: 5pA Max: 100pA     & Tpi: 3nA Max: 50pA          
@@ -151,14 +126,12 @@ de LF356 y TL081. La tabla \ref{hoja_datos} muestra los valores tipicos y maximo
 
     
 
-
-
 Si se evaluá \ref{error_3} con los valores típicos de TL081. La señal es muy pequeña para poder ser medida, por lo que se necesita un amplificador de señal. Esto es la funcion de la segunda etapa del circuito que contiene a 
 $OA_1$. El objetivo del amplificador operacional $OA_1$ es amplificar la señal de entrada del $OA_2$ para aumentar la precision en la medición de las corrientes y tensiones de offset. La Figura \ref{fig_4} muestra la configuración del amplificador operacional de la segunda etapa.
 
 %4
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.5\textwidth, height=5cm]{Figuras/fig_4.png}
+    \centering\includegraphics[width=0.5\textwidth, height=5cm]{../Ex3/Figuras/fig_4.png}
      \caption{Amplificador operacional en configuración integradora}
      \label{fig_4}
      \end{figure}
@@ -176,7 +149,7 @@ un inconveniente. Notese que a este amplificador operacional se lo toma como ide
 Al comprender el funcionamiento de ambas etapas del circuito es posible proseguir al circuito de medición completo. Nuevamente se muestra a continuación.
 
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.8\textwidth]{Figuras/circuito_medicion.png}
+    \centering\includegraphics[width=0.8\textwidth]{../Ex3/Figuras/circuito_medicion.png}
      \caption{Circuito de medición de corrientes y tensiones offset}
      \end{figure}
 
@@ -190,7 +163,7 @@ Teniendo esto en cuenta se le agrega al circuito todas las consideraciones vista
 %5
 %circuito de medicion real (le agrego al de medicion, las corrientes de offset y tension de offset)
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.8\textwidth]{Figuras/fig_8.png}
+    \centering\includegraphics[width=0.8\textwidth]{../Ex3/Figuras/fig_8.png}
      \caption{Circuito de medición real}
      \label{medicion_real}
      \end{figure}
@@ -237,7 +210,7 @@ A continuación se analiza con mayor profundidad el comportamiento del feedback 
 por separado. Si ahora los consideramos juntos, con la apropiada realimentacion positiva, se puede armar el diagrama de la Figura \ref{diagrama}.
 
 \begin{figure}[h!]                                                       
-    \centering\includegraphics[width=0.8\textwidth]{Figuras/diagrama.png}
+    \centering\includegraphics[width=0.8\textwidth]{../Ex3/Figuras/diagrama.png}
      \caption{Diagrama del circuito}
      \label{diagrama}
      \end{figure}
@@ -310,7 +283,7 @@ Para medir $V_{OS}$ se debe cerrar $SW_1$ y $SW_2$ como se determino anteriormen
     \label{table2}
     \begin{tabular}{@{}ccccc@{}}
     
-    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{out}(mV)$} & \textbf{$V_{os}$} \\ \midrule
+    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{out}(mV)$} & \textbf{$V_{os}$} \\
     \textbf{Medición 1} & LF356          & LF356          & -179              &  0.149            \\
     \textbf{Medición 2} & LF356          & TL081          & -184              &  0.153            \\
     \textbf{Medición 3} & TL081          & LF356          & 382,2             &  -0.318            \\
@@ -337,7 +310,7 @@ Teniendo todo esto en consideración y con el uso de la \ref{ecuacion_Ip} se obt
     \caption{Mediciones con $SW_1$ cerrado y $SW_2$ abierto}
     \label{table3}
     \begin{tabular}{@{}ccccc@{}}
-    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{out} (mV)$} & \textbf{$I_P$ (pA)} \\ \midrule
+    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{out} (mV)$} & \textbf{$I_P$ (pA)} \\ 
     \textbf{Medición 1} & LF356          & LF356          & -130              & -40.799             \\
     \textbf{Medición 2} & LF356          & TL081          & -142              &  -34.970            \\
     \textbf{Medición 3} & TL081          & LF356          & 260              &  101.498            \\
@@ -350,12 +323,10 @@ Cabe aclarar que la Tabla \ref{table2} tiene los resultados con el nuevo capacit
 En la Figura \ref{medicion} se puede observar la oscilación anteriormente mencionada al abrir $SW_1$. 
 
 \begin{figure}[h!]                                                       
-    %\centering\includegraphics[width=0.8\textwidth]{circuito1_ej3.png}
+    %\centering\includegraphics[width=0.8\textwidth]{../Ex3/Figuras/medicion.png}
      \caption{$V_{out}$ al abrir $SW_1$}
      \label{medicion}
      \end{figure}
-
-
 
 \subsubsection{Medicion de $I_{N}$}
 
@@ -368,7 +339,7 @@ Los resultados fueron los siguientes:
     \caption{Mediciones con $SW_1$ abierto y $SW_2$ cerrado}
     \label{table4}
     \begin{tabular}{@{}ccccc@{}}
-    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{out}$} & \textbf{$I_N$} \\ \midrule
+    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{out}$} & \textbf{$I_N$} \\ 
     \textbf{Medición 1} & LF356          & LF356          & -159              &  -16.652            \\
     \textbf{Medición 2} & LF356          & TL081          & -160              &  -19.983            \\
     \textbf{Medición 3} & TL081          & LF356          & 356,6              &  26.3114            \\
@@ -387,7 +358,7 @@ Con los resultados obtenidos en las tablas \ref{table2}, \ref{table3}, \ref{tabl
     \caption{$V_{OS}$,$I_{OS}$ y $I_B$ obtenidos}
     \label{table5}
     \begin{tabular}{@{}cccccc@{}}
-    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{OS} (mV)$}   & \textbf{$I_{OS} (pA)$} & \textbf{$I_B (pA)$} \\ \midrule
+    \textbf{}           & \textbf{$OA_2$} & \textbf{$OA_1$} & \textbf{$V_{OS} (mV)$}   & \textbf{$I_{OS} (pA)$} & \textbf{$I_B (pA)$} \\ 
     \textbf{Medición 1} & LF356          & LF356      & 0.149                          & 24.146                 & 28.726             \\
     \textbf{Medición 2} & LF356          & TL081      & 0.153                          & 14.987                 & 27.477                  \\
     \textbf{Medición 3} & TL081          & LF356      & -0.318                         & 75.187                 & 63.905                  \\
@@ -407,7 +378,7 @@ El objetivo de esta seccion es investigar los circuitos de compensacion externos
 Para comenzar con el LF356, segun la hoja de datos el cicuito externo de compensacion es el siguiente: 
 
 \begin{figure}[ht]                                                       
-    \centering\includegraphics[width=0.5\textwidth, height=5cm]{Figuras/fig_6.png}
+    \centering\includegraphics[width=0.5\textwidth, height=5cm]{../Ex3/Figuras/fig_6.png}
      \caption{Circuito de compensación de LF356}
      \label{compensacion_LF356}
      \end{figure}
@@ -417,15 +388,12 @@ de la Figura \ref{compensacion_LT081}.
 
 
 \begin{figure}[h!]                                                       
-    \centering\includegraphics[width=0.5\textwidth, height=6cm]{Figuras/fig_7.png}
+    \centering\includegraphics[width=0.5\textwidth, height=6cm]{../Ex3/Figuras/fig_7.png}
 
     \caption{Circuito de compensación de LT081}
      \label{compensacion_LT081}
      \end{figure}
 
  
-
 El circuito muestra, que a diferencia del LF356, el fabricante recomienda un preset de $100k\Omega$ conectado a $-V_{CC}$
-
-\end{document}
 
