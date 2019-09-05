@@ -79,7 +79,7 @@ Este ultimo circuito se puede resolver utilizando el principio de superposición
 \begin{displaymath} V_{out2} = I_N R_2 \end{displaymath}
 \begin{displaymath} V_{out} = E_{out} = V_{out1} + V_{out2} \end{displaymath}
 
-Nótese que la tension de salida es llamada $E_{out}$ para ser énfasis que se trata de un error ya que la $V_{out}$ debería ser $0V$. 
+Nótese que la tensión de salida es llamada $E_{out}$ para ser énfasis que se trata de un error ya que la $V_{out}$ debería ser $0V$. 
 Si ahora se considera la existencia de $V_{OS}$, sin considerar  ni $I_{N}$ ni $I_{P}$. El circuito resulta ser el de la Figura \ref{fig_3}.
  
 
@@ -107,8 +107,8 @@ Con este cambio el error queda:
 \begin{equation} V_{out} = E_{out} = (1+\frac{R_2}{R_1})(\frac{R_1R_2}{R_1+R_2})I_{OS} + (1+\frac{R_2}{R_1})V_{OS}  \label{error_3}\end{equation}
 
 
-Gracias a las ecuaciones \ref{error_3} se tiene una relación  de $I_B$, $V_{os}$ y $I_{os}$ con $V_{out}$. Para comprender la magnitud de estos parametros se muestran los valores provistos por los fabricantes
-de LF356 y TL081. La tabla \ref{hoja_datos} muestra los valores tipicos y maximos de $I_B$, $V_{os}$ y $I_{os}$.
+Gracias a las ecuaciones \ref{error_3} se tiene una relación  de $I_B$, $V_{os}$ y $I_{os}$ con $V_{out}$. Para comprender la magnitud de estos parámetros se muestran los valores provistos por los fabricantes
+de LF356 y TL081. La tabla \ref{hoja_datos} muestra los valores típicos y máximos de $I_B$, $V_{os}$ y $I_{os}$.
 
 %METO TABLA
 \begin{table}[h!]
@@ -143,8 +143,8 @@ Como se puede observar, el amplificador operacional esta configurado como integr
 
 La función de este amblificador operacional es amplificar la componente DC de la señal de salida $E_{out}$ de $OA_2$ que tiene $f=0Hz$. Entonces, la ecuación 
 \ref{ganancia_opamp_1} tiende a estar en configuración a lazo abierto. A $0Hz$ el capacitor $C_{1}$ va a actuar como un circuito abierto, bloqueando cualquier realimentacion
-proveniente de la salida de $V_{out}$ cuya frecuencia sea mayor a $f=0Hz$. En esta configuracion, el amplificador operacional es llevado a la saturacion, pero en el caso de configurarlo como en el circuito de medicion en estudio (Figura \ref{circuito_medicion}), esto no es 
-un inconveniente. Notese que a este amplificador operacional se lo toma como ideal y no se ve afectado por las corrientes propias de bias ni la su tension de offset. Esta condicion se mantiene a lo largo de toda la seccion. 
+proveniente de la salida de $V_{out}$ cuya frecuencia sea mayor a $f=0Hz$. En esta configuración, el amplificador operacional es llevado a la saturación, pero en el caso de configurarlo como en el circuito de medicion en estudio (Figura \ref{circuito_medicion}), esto no es 
+un inconveniente. Nótese que a este amplificador operacional se lo toma como ideal y no se ve afectado por las corrientes propias de bias ni la su tensión de offset. Esta condición se mantiene a lo largo de toda la seccion. 
 
 Al comprender el funcionamiento de ambas etapas del circuito es posible proseguir al circuito de medición completo. Nuevamente se muestra a continuación.
 
@@ -155,7 +155,7 @@ Al comprender el funcionamiento de ambas etapas del circuito es posible prosegui
 
 Lo primero que se destaca es que hay una realimentacion desde la segunda etapa a la primera mediante una resistencia $R_3 = 12k\Omega$. Esta realimentacion fuerza la salida de $OA_1$ a tierra e impide la situación de saturación que se destaco
 anteriormente.  $OA_2$ tiene conectado a su entrada inversora las resistencias $R_1$ de $10\Omega$ y $R_5$. El circuito cuenta con el switch $SW_1$ que permite poner en corto a $R_5$. Por otro lado,
-a la entrada no inversora estan conectados $R_2$ de $10\Omega$, la realimentacion (vista anteriormente) y $R_6$. Como en el caso de $R_5$, $R_6$ también puede
+a la entrada no inversora están conectados $R_2$ de $10\Omega$, la realimentacion (vista anteriormente) y $R_6$. Como en el caso de $R_5$, $R_6$ también puede
 ponerse en corto circuito mediante un el switch $SW_2$. Los valores de $R_5$ y $R_6$ se definirán mas adelante. 
 
 Teniendo esto en cuenta se le agrega al circuito todas las consideraciones vistas anteriormente. El circuito resultante es el de la Figura \ref{medicion_real}.
@@ -174,7 +174,7 @@ mediante el divisor resistivo, se puede obtener una expresión para $V_{out}$
 
 \begin{equation} V_{out1} = -(1 + \frac{R_3}{R_2})V_{OS} \label{ecuacion_Vout_1}\end{equation}
 
-A continuación, se pasiva $V_{OS}$ y $I_N$, se consideran $SW_1$ cerrada y $SW_2$ abierta. También, como en el caso anterior, se desprecia la caída de tension en $R_1$. 
+A continuación, se pasiva $V_{OS}$ y $I_N$, se consideran $SW_1$ cerrada y $SW_2$ abierta. También, como en el caso anterior, se desprecia la caída de tensión en $R_1$. 
 Entonces, si se tiene en cuenta $R_6$ y $I_P$:
 
 \begin{displaymath} V_{N} = 0 \end{displaymath}
@@ -183,7 +183,7 @@ Entonces, si se tiene en cuenta $R_6$ y $I_P$:
 \begin{equation}  V_{out2} = - [1+\frac{R_3}{R_2}] R_6 I_P \label{ecuacion_Vout_2}\end{equation}
  
 
-Nótese que si se considera $V_{OS}$ (no se pasiva) la ecuacion \ref{ecuacion_Vout_1} se suma a la ecuacion \ref{ecuacion_Vout_2} y el resultado es:
+Nótese que si se considera $V_{OS}$ (no se pasiva) la ecuación \ref{ecuacion_Vout_1} se suma a la ecuación \ref{ecuacion_Vout_2} y el resultado es:
 
 \begin{equation} V_{out1} + V_{out2} = -[1 + \frac{R_3}{R_2}]V_{OS} - [1 + \frac{R_3}{R_2}]R_6I_P \label{ecuacion_Vout_3}\end{equation}
 
@@ -196,7 +196,7 @@ Sin embargo, ahora hay una resistencia $R_5$ en serie con $R_1$. Nuevamente se c
 
 Nótese que sucede lo mismo que en caso anterior, si considera $V_{OS}$ (no se pasiva) la ecuación \ref{ecuacion_Vout_1} se suma a la ecuación \ref{ecuacion_Vout_4} y el resultado es:
 
-\begin{equation} V_{out1} + V_{out3} = [1 + \frac{R_3}{R_2}] [+R_5 I_N ]  - [1 + \frac{R_3}{R_2}]V_{OS} \label{ecuacion_Vout_5}\end{equation} %R_5 va con menos ??
+\begin{equation} V_{out1} + V_{out3} = [1 + \frac{R_3}{R_2}] [-R_5 I_N ]  - [1 + \frac{R_3}{R_2}]V_{OS} \label{ecuacion_Vout_5}\end{equation} %R_5 va con menos ??
 
 Este resultado implica que se puede calcular $I_N$ pasivando a $I_P$, siempre y cuando se mantengan las condiciones fijadas anteriormente.
 
@@ -234,7 +234,7 @@ $\beta$ es la ganancia de realimentacion del circuito y como se vio en \ref{ecua
 
 \begin{equation} \beta =  \frac{1}{1+ \frac{R_3}{R_2}} = \frac{1}{1201} \label{beta}  \end{equation}
 
-\ref{transferencia_sistema_3} permite analizar el sistema en AC. Como se puede obtervar, la expresion de la trasferencia del sistema se asemeja a la de un pasa bajos. Donde:
+\ref{transferencia_sistema_3} permite analizar el sistema en AC. Como se puede observar, la expresión de la trasferencia del sistema se asemeja a la de un pasa bajos. Donde:
 
 
 \begin{displaymath} \omega_0 = \sqrt{\frac{\omega_P A_{0} \beta}{R_4 C_1}} \end{displaymath}
@@ -244,15 +244,15 @@ Y sus polos son:
 \begin{displaymath} S_1 = -\omega_0 \epsilon + \sqrt{\epsilon^2 + 1} \end{displaymath}
 \begin{displaymath} S_2 = -\omega_0 \epsilon - \sqrt{\epsilon^2 + 1} \end{displaymath}
 
-Si se evaluan estas expresione con los valores de las frecuencias de corte $f_0$ que proveen los fabricantes de ambos amplificadores operacionales (del orden de los $\Omega$ ) se llega a la conculusion que los polos 
+Si se evalúan estas expresiones con los valores de las frecuencias de corte $f_0$ que proveen los fabricantes de ambos amplificadores operacionales (del orden de los $\Omega$ ) se llega a la conclusión que los polos 
 se ubican en el simiplano negativo por lo que el sistema es estable. 
 
-Se puede hacer el mismo analisis con las terminales de los amplificadores operacionales invertidos. Por supuesto que la funcion trasferencia del sistema tendra cambios. Si se invierte $OA_1$, la ganancia a lazo abierto del sistema $A_{OL}$ y la ganancia del feedback $\beta$ son:
+Se puede hacer el mismo análisis con las terminales de los amplificadores operacionales invertidos. Por supuesto que la función trasferencia del sistema tendrá cambios. Si se invierte $OA_1$, la ganancia a lazo abierto del sistema $A_{OL}$ y la ganancia del feedback $\beta$ son:
 
 \begin{displaymath}  A_{OL}= \frac{+A_{vol}^2}{1-SRC A_{vol}}  \end{displaymath}
 \begin{displaymath}  \beta =  \frac{1}{1+ \frac{R_3}{R_2}} = \frac{1}{1201}  \end{displaymath}
 
-Si tambien se invierten las terminales del $OA_2$, el feedback sera negativo y los resultados son:
+Si también se invierten las terminales del $OA_2$, el feedback sera negativo y los resultados son:
 \begin{displaymath}  A_{OL}= \frac{+A_{vol}^2}{1-SRC A_{vol}}  \end{displaymath}
 \begin{displaymath}  \beta =  -\frac{1}{1+ \frac{R_3}{R_2}} = \frac{1}{1201}  \end{displaymath}
 
@@ -331,7 +331,7 @@ En la Figura \ref{medicion} se puede observar la oscilación anteriormente menci
 \subsubsection{Medicion de $I_{N}$}
 
 
-Finalmente se calculo $I_N$ abriendo $SW_1$ y cerrando $SW_2$. El inconveniente de oscilación también se vio replicado en esta medicion, se prosiguió de la misma manera que al medir $I_P$.  
+Finalmente se calculo $I_N$ abriendo $SW_1$ y cerrando $SW_2$. El inconveniente de oscilación también se vio replicado en esta medición, se prosiguió de la misma manera que al medir $I_P$.  
 Los resultados fueron los siguientes:
 
 \begin{table}[ht]
@@ -374,8 +374,8 @@ que los valores obtenidos de $V_{OS}$ esta por debajo de los valores típicos. E
 los valores provistos por el fabricante son medidos en un ambiente controlado a $25 °C$. Esta condición no fue cumplida al momento de obtener las mediciones y esa es otra razón por la cual las mediciones de $V_{OS}$ no entran en los rangos deseados.   
 
 \subsection{Circuito de compensación externo}
-El objetivo de esta seccion es investigar los circuitos de compensacion externos del LT081 y LF356 para reducir la tension de offset de dichos amplificadores operacioneales.
-Para comenzar con el LF356, segun la hoja de datos el cicuito externo de compensacion es el siguiente: 
+El objetivo de esta sección es investigar los circuitos de compensación externos del LT081 y LF356 para reducir la tension de offset de dichos amplificadores operacionales.
+Para comenzar con el LF356, según la hoja de datos el circuito externo de compensación es el siguiente: 
 
 \begin{figure}[ht]                                                       
     \centering\includegraphics[width=0.5\textwidth, height=5cm]{../Ex3/Figuras/fig_6.png}
@@ -383,7 +383,7 @@ Para comenzar con el LF356, segun la hoja de datos el cicuito externo de compens
      \label{compensacion_LF356}
      \end{figure}
 
-Como se puede observar, el circuito cuenta con un preset de $25K\Omega$ conectado a $+V_{CC}$. El circuito de compensacion del TL081 es el 
+Como se puede observar, el circuito cuenta con un preset de $25K\Omega$ conectado a $+V_{CC}$. El circuito de compensación del TL081 es el 
 de la Figura \ref{compensacion_LT081}.
 
 
