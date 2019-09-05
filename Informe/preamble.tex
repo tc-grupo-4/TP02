@@ -8,6 +8,7 @@
 \usepackage{textcomp}
 \usepackage{amstext}
 \usepackage{graphicx}
+\usepackage{xpatch}
 
 \makeatletter
 
@@ -19,3 +20,10 @@
 
 \usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
+
+\makeatletter
+\@addtoreset{section}{part}
+\xpatchcmd{\@part}{\normalfont}{\normalfont\centering}{}{}
+\xpatchcmd{\@part}{\Large}{\LARGE}{}{}
+\renewcommand\partname{Topic}
+\makeatother

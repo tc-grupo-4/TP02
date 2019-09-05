@@ -2074,5 +2074,61 @@ Gain Bandwidth Product
  con mas ganancia pero a menores frecuencias.
 \end_layout
 
+\begin_layout Standard
+Teniendo en cuenta los factores anteriores, si se quiere trabajar con señales
+ cuadradas de 
+\begin_inset Formula $1V_{pp}$
+\end_inset
+
+ de frecuencia variante entre 
+\begin_inset Formula $0.3(MHz)\,a\,2(MHz)$
+\end_inset
+
+, sera imposible utilizar un LM324 para realizar dicha tarea, ya que para
+ el GBP dado y el 
+\begin_inset Formula $a_{vol}$
+\end_inset
+
+ del datasheet, a esas frecuencias, el amplificador no podrá operar debido
+ al ruido ambiente y al 
+\emph on
+Slew Rate.
+ 
+\emph default
+Una buena opción para realizar una tarea como esta, puede ser el amplificador
+ operacional TL082, que posee un GBP lo suficientemente grande como para
+ poder operar en ese rango de frecuencias y un 
+\emph on
+Slew Rate 
+\emph default
+de aproximadamente 
+\begin_inset Formula $13\left(\frac{V}{\mu s}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Otra opción podria ser el LM833, ya que posee un valor de 
+\begin_inset Formula $SR=7\left(\frac{V}{\mu s}\right)$
+\end_inset
+
+ y un 
+\begin_inset Formula $GBP=15(MHz)$
+\end_inset
+
+.
+ Por ultimo, el amplificador opercaional TL084 es otra buena opcion ya que
+ 
+\begin_inset Formula $SR=13\left(\frac{V}{\mu s}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $GBP=3(MHz)$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
