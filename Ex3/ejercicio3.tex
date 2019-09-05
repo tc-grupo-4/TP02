@@ -1,6 +1,6 @@
 
-\section{Ejercicio 3}
-\subsection{Introducción}
+\part{Corrientes de Bias}
+\section{Introducción}
 
 En esta sección se estudian las corrientes y tensiones de offset de un amplificador operacional. Dichas corrientes no existen en un amplificador operacional
 ideal ya que este tiene impedancia infinita de entrada por lo que no fluyen corrientes en sus respectivas entradas. Sin embargo, en un amplificador operacional real 
@@ -36,7 +36,7 @@ amplificadores operacionales LF356 y TL081 en el circuito de medición para pode
 \begin{equation} I_{B} = \frac{I_P+I_N}{2} \label{corriente_bias}\end{equation}
 \begin{equation} I_{OS} = I_P - I_N \label{corriente_offset}\end{equation}
 
-\subsection{Análisis teórico del circuito}
+\section{Análisis teórico del circuito}
 
 
 En primer lugar se estudia teóricamente el circuito de la Figura \ref{circuito_medicion} para comprender como esta compuesto y porque se puede utilizar para medir $I_B$, 
@@ -256,12 +256,12 @@ Si también se invierten las terminales del $OA_2$, el feedback sera negativo y 
 \begin{displaymath}  A_{OL}= \frac{+A_{vol}^2}{1-SRC A_{vol}}  \end{displaymath}
 \begin{displaymath}  \beta =  -\frac{1}{1+ \frac{R_3}{R_2}} = \frac{1}{1201}  \end{displaymath}
 
-\subsection{Mediciones}
+\section{Mediciones}
 Las mediciones se realizaron con el osciloscopio sobre una placa PSB tomando $R_5 = 1M\Omega$ y $R_6 = 1M\Omega$. Se utilizaron capacitares de desacople de $100nF$ y las resistencias indicadas en el circuito de la Figura \ref{circuito_medicion}.
 Cabe destacar que para las mediciones se realizaron cuatro combinaciones. Es decir, se alternaron los amplificadores operacionales en las posiciones $OA_1$ y $OA_2$ para analizar como se comportan. 
 
 
-\subsubsection{Medicion de $V_{OS}$}
+\subsection{Medicion de $V_{OS}$}
 
 Antes de realizar la correspondiente medición de $V_{OS}$, se calcula la respectiva propagación de errores.  A continuación se muestra su desarrollo:
 
@@ -292,7 +292,7 @@ Para medir $V_{OS}$ se debe cerrar $SW_1$ y $SW_2$ como se determino anteriormen
 \end{table}
 
 
-\subsubsection{Medicion de $I_{P}$}
+\subsection{Medicion de $I_{P}$}
 
 Para calcular $I_{P}$ se debe abrir $SW_2$ y mantener cerrado $SW_1$  Al realizar esta acción se observo una oscilación en el circuito impidiendo poder obtener una medición. Esta oscilación es el ruido de linea de 50 Hz que es amplificado por la configuración del circuito.
 Esta amplificación del ruido se superpone con $V_{out} = V_{out1} + V_{out2}$ y resulta ser un problema. Para solucionarlo se decidió cambiar al capacitor por uno mas grande. 
@@ -328,7 +328,7 @@ En la Figura \ref{medicion} se puede observar la oscilación anteriormente menci
      \label{medicion}
      \end{figure}
 
-\subsubsection{Medicion de $I_{N}$}
+\subsection{Medicion de $I_{N}$}
 
 
 Finalmente se calculo $I_N$ abriendo $SW_1$ y cerrando $SW_2$. El inconveniente de oscilación también se vio replicado en esta medición, se prosiguió de la misma manera que al medir $I_P$.  
@@ -348,7 +348,7 @@ Los resultados fueron los siguientes:
 \end{table}
 
 
-\subsubsection{Calculo de $I_{OS}$ y $I_B$}
+\subsection{Calculo de $I_{OS}$ y $I_B$}
 
 Con los resultados obtenidos en las tablas \ref{table2}, \ref{table3}, \ref{table4} se puede calcular $I_{OS}$ y $I_B$ siguiendo las ecuaciones \ref{corriente_offset} y \ref{corriente_bias} respectivamente. La siguiente tabla muestra dichos resultados:
 
@@ -367,13 +367,13 @@ Con los resultados obtenidos en las tablas \ref{table2}, \ref{table3}, \ref{tabl
 \end{table}
 
 
-\subsubsection{Analisis de resultados}
+\subsection{Análisis de resultados}
 Si se comparan los resultados obtenidos en la tabla \ref{table5} con los datos provistos por los fabricantes (ver Tabla \ref{hoja_datos}), se pueden sacar las siguientes conclusiones. Se puede decir que, a pesar de 
 ser un circuito dificultoso para medir, los resultados fueron satisfactorios. En las cuatro mediciones realizadas, los valores de $I_{OS}$ y $I_B$ entraron en los rangos deseados (entre el valor típico y máximo) mientras 
 que los valores obtenidos de $V_{OS}$ esta por debajo de los valores típicos. Esto se puede deber a varias razones. En primer lugar, al medir $V_{out}$ con la herramienta del osciloscopio average, el error se incrementa. También, cabe destacar, que
 los valores provistos por el fabricante son medidos en un ambiente controlado a $25 °C$. Esta condición no fue cumplida al momento de obtener las mediciones y esa es otra razón por la cual las mediciones de $V_{OS}$ no entran en los rangos deseados.   
 
-\subsection{Circuito de compensación externo}
+\section{Circuito de compensación externo}
 El objetivo de esta sección es investigar los circuitos de compensación externos del LT081 y LF356 para reducir la tension de offset de dichos amplificadores operacionales.
 Para comenzar con el LF356, según la hoja de datos el circuito externo de compensación es el siguiente: 
 
