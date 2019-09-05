@@ -79,12 +79,12 @@
 \begin_body
 
 \begin_layout Section
-Comportamiento del Amplificador Operacional no inversor
+Comportamiento del amplificador operacional no inversor
 \end_layout
 
 \begin_layout Standard
 A lo largo de esta sección se procederá a analizar el comportamiento ideal
- y real del Amplificador Operacional 
+ y real del amplificador operacional 
 \emph on
 LM324 
 \emph default
@@ -96,7 +96,7 @@ reference "1_b_1"
 \end_inset
 
 .
- Considerando los valores de los componentes como se puede ver en la tabla
+ Considerando los valores de los componentes como se observa en la tabla
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -159,7 +159,7 @@ Se implementó en
 \emph on
 Altium Designer 
 \emph default
-como se muestra en las Figuras 
+como se muestra en las figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "1_b_2"
@@ -198,7 +198,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Esquemático
+Esquemático del circuito implementado
 \end_layout
 
 \end_inset
@@ -244,7 +244,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-PCB
+PCB del circuito implementado
 \end_layout
 
 \end_inset
@@ -269,7 +269,7 @@ name "1_b_3"
 \end_layout
 
 \begin_layout Subsection
-Transferencia
+Análisis de la transferencia
 \end_layout
 
 \begin_layout Standard
@@ -287,12 +287,12 @@ Comenzando por el análisis ideal, se pidió calcular y graficar la relación
 \end_inset
 
  con polo dominante.
- Considerando las siguientes ecuaciones descriptas a continuación y operando
- correctamente, se llega a que la relación 
+ Considerando las ecuaciones descriptas a continuación y operando correctamente,
+ se llega a que la relación 
 \begin_inset Formula $\frac{V_{out}}{V_{in}}$
 \end_inset
 
- esta dada por la ecuación (
+ está dada por la ecuación (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:1_b_1"
@@ -418,7 +418,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Análisis montecarlo del caso 1
+Análisis Montecarlo del caso 1
 \end_layout
 
 \end_inset
@@ -488,7 +488,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Análisis montecarlo del caso 2
+Análisis Montecarlo del caso 2
 \end_layout
 
 \end_inset
@@ -558,7 +558,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Análisis montecarlo del caso 3
+Análisis Montecarlo del caso 3
 \end_layout
 
 \end_inset
@@ -572,24 +572,27 @@ Análisis montecarlo del caso 3
 \end_layout
 
 \begin_layout Standard
-Como se puede observar, los circuitos siguen, dentro de los parámetros adecuados
-, y considerando capacidades, inductancias y resistencias parásitas, las
- simulaciones y la transferencia calculada.
- Las diferencias entre la transferencia calculada y la simulacón se deben
- a las puntas de los osciloscopios, que me generan polos de 2do orden, sumados
- a los polos de los capacitores internos a los transistores de juntura bipolar,
- que provocan que la pendiente de atenuacion de nuestro circuito se mayor
- a la calculada, y a su vez, que el cambio de fase no sea de 90°, sino de
- 180°.
+Como se puede observar, los circuitos siguen dentro de los parámetros adecuados,
+ y considerando capacidades, inductancias y resistencias parásitas, las
+ simulaciones y la transferencias calculadas.
+ Las diferencias entre la transferencia calculada y la simulación se deben
+ a las puntas de los osciloscopios, que generan polos de 
+\begin_inset Formula $2^{do}$
+\end_inset
+
+ orden, sumados a los polos de los capacitores internos a los transistores
+ de juntura bipolar, que provocan que la pendiente de atenuacion del circuito
+ se mayor a la calculada, y a su vez, que el cambio de fase no sea de 90°,
+ sino de 180°.
 \end_layout
 
 \begin_layout Subsection
-Impedancia de entrada
+Análisis de la impedancia de entrada
 \end_layout
 
 \begin_layout Standard
-Consecuentemente, se nos instó a calcular la impedancia de entrada vista
- por el generador hacia nuestro circuito.
+Consecuentemente, se instó a calcular la impedancia de entrada vista por
+ el generador hacia el circuito.
  Nuevamente, se utilizo el 
 \emph on
 Circuit Solver 
@@ -618,7 +621,7 @@ Z_{inp}=R_{3}+R_{4}\label{eq:1_b_2}
 \end_layout
 
 \begin_layout Standard
-Por lo tanto, las impedancias de entrada para cada caso serán;
+Por lo tanto, las impedancias de entrada para cada caso serán:
 \end_layout
 
 \begin_layout Standard
@@ -655,7 +658,7 @@ Z_{inp}=500(k\Omega)\,\,\,Caso\,3
 \end_layout
 
 \begin_layout Standard
-Teniendo en cuenta estos resultado, y a diferencia de lo visto previamente
+Teniendo en cuenta estos resultados, y a diferencia de lo visto previamente
  en el análisis del circuito inversor, se puede observar como la impedancia
  de entrada permanece constante frente a cambios de frecuencia en la tensión
  de entrada.
@@ -904,7 +907,7 @@ Medición de la impedancia de entrada para el caso 3
 \end_layout
 
 \begin_layout Standard
-Observando los graficos de las simulaciones y comparandolos con la ecuación
+Observando los gráficos de las simulaciones y comparandolos con las ecuación
  (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -912,11 +915,11 @@ reference "eq:1_b_2"
 
 \end_inset
 
-), se puede observar como practicamente la impedancia de entrada permanece
+), se puede observar como prácticamente la impedancia de entrada permanece
  constante para todas las frecuencias.
  El hecho de que la impedancia de entrada tenga una pequeña variación en
- modulo y fase en la simulación, se debe a que para hacer el analisis de
- la impedancia de entrada se consideró el Amplificador Operacional ideal,
+ módulo y fase en la simulación se debe a que para hacer el análisis de
+ la impedancia de entrada se consideró el amplificador operacional ideal,
  es decir, 
 \begin_inset Formula $R_{id}\longrightarrow\infty$
 \end_inset
@@ -925,27 +928,27 @@ reference "eq:1_b_2"
 \begin_inset Formula $R_{o}\longrightarrow0$
 \end_inset
 
-, por lo tanto, no se tienen en cuenta el efecto de esas resistencias, como
+ por lo tanto, no se tienen en cuenta el efecto de esas resistencias, como
  a su vez sus inductancias y capacidades intrínsecas del amplificador.
  Sin embargo, considerando la ecuación propuesta, y observando los resultados
- simulado, se puede observar que prácticamente no hay problema en aproximar
- la impedancia de entrada como constante en ninguno de los 3 casos (Considerando
- un 10% de error en el ultimo caso).
+ simulados, se puede observar que prácticamente no hay problema en aproximar
+ la impedancia de entrada como constante en ninguno de los tres casos (considera
+ndo un 10% de error en el ultimo caso).
 \end_layout
 
 \begin_layout Standard
-Por otro lado, si analizamos las mediciones, podemos ver que para frecuencias
+Por otro lado, si se analizan las mediciones, se puede ver que para frecuencias
  mayores a 10(kHz), el modelo se aleja bastante de los resultados empíricos.
  Esto se explica debido a las capacidades parásitas que se generaron a la
  hora de medir la impedancia de entrada, que considerando a 
 \begin_inset Formula $Z_{inp}=R_{3}+R_{4}$
 \end_inset
 
-, me generan un circuito pasabajos de primer orden, obteniendo así los resultado
-s vistos en las mediciones.
- Si simulamos nuestro circuito, considerando las capacidades parásitas,
- comienza a ser observable el efecto pasabajos que se genera, y se pone
- en evidencia los resultados empíricos.
+ generan un circuito pasabajos de primer orden, obteniendo así los resultados
+ vistos en las mediciones.
+ Si se simula el circuito, considerando las capacidades parásitas, comienza
+ a ser observable el efecto pasabajos que se genera, y se pone en evidencia
+ los resultados empíricos.
 \end_layout
 
 \begin_layout Standard
@@ -967,6 +970,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1007,6 +1011,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1043,6 +1048,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1061,21 +1067,21 @@ Simulación de impedancia de entrada para el caso 3, considerando una capacidad
 \end_layout
 
 \begin_layout Subsection
-Alinialidades
+Análisis de alinealidades
 \end_layout
 
 \begin_layout Subsubsection
-Saturación y polo dominante
+Análisis de saturación y polo dominante
 \end_layout
 
 \begin_layout Standard
-Teniendo en cuenta que la salida del Amplificador Operacional no podrá ser
- en modulo mayor a 
+Teniendo en cuenta que la salida del amplificador operacional no podrá ser
+ en módulo mayor a 
 \begin_inset Formula $V_{cc}$
 \end_inset
 
 , se calculó, como se explico en la sección anterior, el máximo valor de
- la tensión de entrada dependiente de la frecuecia de entrada, para el cual
+ la tensión de entrada dependiente de la frecuencia de entrada para el cual
  el circuito no satura.
 \end_layout
 
@@ -1135,9 +1141,9 @@ V_{in}\leq2.4\cdot10^{-12}Vcc\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\cdot10^{23}}
 \end_layout
 
 \begin_layout Standard
-Observando estas ecuaciones, y graficandolas para cada caso, podemos que
- en general, para grandes frecuencias, el efecto de saturación no se hace
- presente debido al comportamiento pasabajos de el circuito analizado.
+Observando estas ecuaciones y graficandolas para cada caso, se puede ver
+ que en general, para grandes frecuencias, el efecto de saturación no se
+ hace presente debido al comportamiento pasabajos del circuito analizado.
 \end_layout
 
 \begin_layout Standard
@@ -1159,6 +1165,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1199,6 +1206,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1235,6 +1243,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1271,6 +1280,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1289,6 +1299,8 @@ Tensión de entrada máxima respecto de la frecuencia de entrada para que
 \end_layout
 
 \begin_layout Subsubsection
+Análisis de 
+\emph on
 Slew Rate
 \end_layout
 
@@ -1310,7 +1322,7 @@ de la misma manera que se lo hizo en la seccion anterior, es decir,
 \end_inset
 
 .
- A su vez, el coseno siempre es menor a 1, por ende;
+ A su vez, el coseno siempre es menor a 1, por ende:
 \end_layout
 
 \begin_layout Standard
@@ -1343,7 +1355,7 @@ reference "eq:1_b_asd"
 
 \end_inset
 
-), tenemos que;
+), se tiene que;
 \end_layout
 
 \begin_layout Standard
@@ -1391,11 +1403,11 @@ V_{in}\leq\frac{1.2\times10^{-12}SR\sqrt{48,4\times10^{9}\pi^{2}f^{2}+2.2\times1
 \end_layout
 
 \begin_layout Standard
-Si ahora reemplazamos para cada caso 
+Ahora reemplazando para cada caso 
 \begin_inset Formula $SR=0,55836\left(\frac{V}{\mu s}\right)$
 \end_inset
 
- (como fue calculado en la sección anterior para el LM324), y graficamos
+ (como fue calculado en la sección anterior para el LM324), y se grafica
  la amplitud de entrada máxima frente a la frecuencia de entrada, nos quedan
  las Figuras 
 \begin_inset CommandInset ref
@@ -1447,11 +1459,12 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Tensión de entrada máxima respecto de la frecuencia de entrada para que
- no ocurra 
+ no ocurra el efecto de 
 \emph on
 Slew Rate
 \emph default
@@ -1494,11 +1507,12 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Tensión de entrada máxima respecto de la frecuencia de entrada para que
- no ocurra 
+ no ocurra el efecto de 
 \emph on
 Slew Rate
 \emph default
@@ -1541,11 +1555,12 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Tensión de entrada máxima respecto de la frecuencia de entrada para que
- no ocurra 
+ no ocurra el efecto de 
 \emph on
 Slew Rate
 \emph default
@@ -1588,11 +1603,12 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Tensión de entrada máxima respecto de la frecuencia de entrada para que
- no ocurra 
+ no ocurra el efecto de 
 \emph on
 Slew Rate
 \end_layout
@@ -1619,19 +1635,19 @@ Conclusiones
 \end_layout
 
 \begin_layout Standard
-Por último, si tenemos en cuenta los efectos alinialies del 
+Por último, si se tiene en cuenta los efectos alinealies del 
 \emph on
 Slew Rate, 
 \emph default
-Saturación y 
+saturación y 
 \emph on
 Crossover Distortion
 \emph default
- (el ultimo explicado en la sección anterior), pueden ser armadas unas figuras
+ (el último explicado en la sección anterior), pueden ser armadas unas figuras
  mostradas a continuación que muestran la máxima amplitud de una señal de
- entrada a el circuito para cada caso, para que no se encuentren efectos
- aliniales indeseados en las mediciones.
- Estas son las Figuras 
+ entrada al circuito para cada caso, para que no se encuentren efectos alineales
+ indeseados en las mediciones.
+ Estas son las figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "1_b_27"
@@ -1684,7 +1700,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tensión máxima de entrada para que no ocurran alinialidades en el caso 1
+Tensión máxima de entrada para que no ocurran alinealidades en el caso 1
 \end_layout
 
 \end_inset
@@ -1730,7 +1746,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tensión máxima de entrada para que no ocurran alinialidades en el caso 2
+Tensión máxima de entrada para que no ocurran alinealidades en el caso 2
 \end_layout
 
 \end_inset
@@ -1772,7 +1788,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tensión máxima de entrada para que no ocurran alinialidades en el caso 3
+Tensión máxima de entrada para que no ocurran alinealidades en el caso 3
 \end_layout
 
 \end_inset
@@ -1814,7 +1830,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tensión máxima de entrada para que no ocurran alinialidades
+Tensión máxima de entrada para que no ocurran alinealidades
 \end_layout
 
 \end_inset
@@ -1835,12 +1851,17 @@ name "1_b_30"
 \end_layout
 
 \begin_layout Subsection
-DC Sweep
+Análisis del DC 
+\emph on
+Sweep
 \end_layout
 
 \begin_layout Standard
-A continuación se procedio a realizar un DC Sweep para cada caso del circuito,
- los resultados se muestran a continuación.
+A continuación se procede a realizar un DC 
+\emph on
+Sweep
+\emph default
+ para cada caso del circuito, los resultados se muestran a continuación.
 \end_layout
 
 \begin_layout Standard
@@ -1873,7 +1894,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DC Sweep caso 1
+DC 
+\emph on
+Sweep
+\emph default
+ caso 1
 \end_layout
 
 \end_inset
@@ -1916,7 +1941,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DC Sweep caso 2
+DC 
+\emph on
+Sweep
+\emph default
+ caso 2
 \end_layout
 
 \end_inset
@@ -1959,7 +1988,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-DC Sweep caso 3
+DC 
+\emph on
+Sweep
+\emph default
+ caso 3
 \end_layout
 
 \end_inset
@@ -1982,24 +2015,24 @@ Conclusiones
 \end_layout
 
 \begin_layout Standard
-Es determinante tener en cuenta las alinialidades que provoca un Amplificador
- Operacional, ya sea por saturación, 
+Es determinante tener en cuenta las alinealidades que provoca un amplificador
+ operacional, ya sea por saturación, 
 \emph on
 Slew Rate 
 \emph default
-o por 
+o 
 \emph on
 Crossover Distortion, 
 \emph default
 ya que es muy importante para proceder a hacer mediciones sobre los mismos.
- Estas alinialidades afectan en gran medida el comportamiento del Amplificador
- Operacional, por lo tanto, si no se las tiene en cuenta, es altamente probable
+ Estas alinealidades afectan en gran medida el comportamiento del amplificador
+ operacional, por lo tanto, si no se las tiene en cuenta, es altamente probable
  que se cometan errores en mediciones y resultados esperados.
 \end_layout
 
 \begin_layout Standard
 Sumado a esto, es muy importante tener en cuenta los efectos de los instrumentos
- de medición, ya sea Osciloscopios, Multimetros, Analizadores de impedancias,
+ de medición, ya sea osciloscopios, multimetros, analizadores de impedancias,
  etc.
  ya que las capacidades, inductancias y resistencias parásitas afectan en
  gran medida el comportamiento de nuestro circuito.
@@ -2008,11 +2041,11 @@ Sumado a esto, es muy importante tener en cuenta los efectos de los instrumentos
 \begin_layout Standard
 Por último, se pudo observar que a un mismo 
 \emph on
-Gain Bandwith Product 
+Gain Bandwidth Product 
 \emph default
-(GBP), podemos cambiar nuestro circuito para que trabaje mas idealmente
- a altas frecuencias.
- Es decir, que para un caso A con ganancia 
+(GBP), podemos cambiar el circuito para que trabaje más idealmente a altas
+ frecuencias.
+ Es decir que para un caso A con ganancia 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -2028,7 +2061,7 @@ Gain Bandwith Product
 \begin_inset Formula $f_{0}^{'}$
 \end_inset
 
- , tenemos que 
+ , se tiene que 
 \begin_inset Formula $\beta^{'}\leq\beta$
 \end_inset
 
@@ -2036,8 +2069,8 @@ Gain Bandwith Product
 \begin_inset Formula $f_{0}\leq f_{0}^{'}$
 \end_inset
 
-, por lo tanto, podremos en el caso B trabajar idealmente a mayores frecuencias,
- pero con menos ganancia, y por el contrario, en el caso A trabajaremos
+, por lo tanto, se podrá en el caso B trabajar idealmente a mayores frecuencias,
+ pero con menos ganancia, y por el contrario, en el caso A se trabajará
  con mas ganancia pero a menores frecuencias.
 \end_layout
 

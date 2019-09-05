@@ -1,25 +1,35 @@
 \select@language {spanish}
 \contentsline {part}{I\hspace {1em}Comportamiento de Amplificadores Operacionales}{2}
-\contentsline {section}{\numberline {1}Comportamiento de Amplificador Operacional Inversor}{2}
-\contentsline {subsection}{\numberline {1.1}Transferencia}{3}
-\contentsline {subsection}{\numberline {1.2}Impedancia de entrada}{7}
-\contentsline {subsection}{\numberline {1.3}Consideraciones para utilizar un modelo lineal del Amplificador Operacional}{13}
-\contentsline {subsubsection}{\numberline {1.3.1}Saturaci\IeC {\'o}n y polo dominante}{13}
-\contentsline {subsubsection}{\numberline {1.3.2}Slew Rate}{15}
-\contentsline {subsubsection}{\numberline {1.3.3}Crossover distortion}{17}
+\contentsline {section}{\numberline {1}Comportamiento de amplificador operacional inversor}{2}
+\contentsline {subsection}{\numberline {1.1}An\IeC {\'a}lisis de la transferencia}{3}
+\contentsline {subsection}{\numberline {1.2}An\IeC {\'a}lisis de impedancia de entrada}{7}
+\contentsline {subsection}{\numberline {1.3}Consideraciones para utilizar un modelo lineal del amplificador operacional}{13}
+\contentsline {subsubsection}{\numberline {1.3.1}An\IeC {\'a}lisis de saturaci\IeC {\'o}n y polo dominante}{13}
+\contentsline {subsubsection}{\numberline {1.3.2}An\IeC {\'a}lisis de \emph {Slew Rate}}{15}
+\contentsline {subsubsection}{\numberline {1.3.3}An\IeC {\'a}lisis de \emph {crossover distortion}}{17}
 \contentsline {subsubsection}{\numberline {1.3.4}Conclusi\IeC {\'o}n}{18}
-\contentsline {subsection}{\numberline {1.4}Otros fenomenos que afectan el comportamiento del Amplificador Operacional}{20}
-\contentsline {subsubsection}{\numberline {1.4.1}Corriente de BIAS y Offset de entrada}{20}
-\contentsline {subsection}{\numberline {1.5}Aplicaciones y caracer\IeC {\'\i }sticas}{20}
+\contentsline {subsection}{\numberline {1.4}Otros fen\IeC {\'o}menos que afectan el comportamiento del Amplificador Operacional}{20}
+\contentsline {subsubsection}{\numberline {1.4.1}Corriente de BIAS y offset de entrada}{20}
+\contentsline {subsection}{\numberline {1.5}Aplicaciones y caracter\IeC {\'\i }sticas}{20}
 \contentsline {subsubsection}{\numberline {1.5.1}Efecto de la resistencia R4 en el circuito inversor}{20}
 \contentsline {subsubsection}{\numberline {1.5.2}Efecto de la resistencia R3}{21}
-\contentsline {subsection}{\numberline {1.6}DC Sweep a la entrada}{21}
-\contentsline {section}{\numberline {2}Comportamiento del Amplificador Operacional no inversor}{22}
-\contentsline {subsection}{\numberline {2.1}Transferencia}{23}
-\contentsline {subsection}{\numberline {2.2}Impedancia de entrada}{27}
-\contentsline {subsection}{\numberline {2.3}Alinialidades}{31}
-\contentsline {subsubsection}{\numberline {2.3.1}Saturaci\IeC {\'o}n y polo dominante}{31}
-\contentsline {subsubsection}{\numberline {2.3.2}Slew Rate}{33}
+\contentsline {subsection}{\numberline {1.6}An\IeC {\'a}lisis de DC Sweep a la entrada}{21}
+\contentsline {section}{\numberline {2}Comportamiento del amplificador operacional no inversor}{22}
+\contentsline {subsection}{\numberline {2.1}An\IeC {\'a}lisis de la transferencia}{23}
+\contentsline {subsection}{\numberline {2.2}An\IeC {\'a}lisis de la impedancia de entrada}{27}
+\contentsline {subsection}{\numberline {2.3}An\IeC {\'a}lisis de alinealidades}{31}
+\contentsline {subsubsection}{\numberline {2.3.1}An\IeC {\'a}lisis de saturaci\IeC {\'o}n y polo dominante}{31}
+\contentsline {subsubsection}{\numberline {2.3.2}An\IeC {\'a}lisis de \emph {Slew Rate}}{33}
 \contentsline {subsubsection}{\numberline {2.3.3}Conclusiones}{35}
-\contentsline {subsection}{\numberline {2.4}DC Sweep}{37}
+\contentsline {subsection}{\numberline {2.4}An\IeC {\'a}lisis del DC \emph {Sweep}}{37}
 \contentsline {section}{\numberline {3}Conclusiones}{37}
+\contentsline {section}{\numberline {4}Ejercicio 3}{38}
+\contentsline {subsection}{\numberline {4.1}Introducci\IeC {\'o}n}{38}
+\contentsline {subsection}{\numberline {4.2}An\IeC {\'a}lisis te\IeC {\'o}rico del circuito}{39}
+\contentsline {subsection}{\numberline {4.3}Mediciones}{44}
+\contentsline {subsubsection}{\numberline {4.3.1}Medicion de $V_{OS}$}{44}
+\contentsline {subsubsection}{\numberline {4.3.2}Medicion de $I_{P}$}{45}
+\contentsline {subsubsection}{\numberline {4.3.3}Medicion de $I_{N}$}{45}
+\contentsline {subsubsection}{\numberline {4.3.4}Calculo de $I_{OS}$ y $I_B$}{45}
+\contentsline {subsubsection}{\numberline {4.3.5}Analisis de resultados}{45}
+\contentsline {subsection}{\numberline {4.4}Circuito de compensaci\IeC {\'o}n externo}{46}
