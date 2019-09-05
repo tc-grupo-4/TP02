@@ -76,7 +76,7 @@ A partir de la expresión (\ref{eq:e2_GBW}) se obtiene el polo del circuito ampl
 
 \subsection{Amplificador LM833N}
 A partir de la hoja de datos del amplificador, se utilizó la siguiente información:
-
+ 
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{||c|c||}
@@ -97,8 +97,8 @@ Dado que en la hoja de datos no se encuentra un valor para la resistencia de ent
 Como la ganancia a lazo abierto del amplificador es mucho más alta que la de el circuito ($110 dB \gg 38.4 dB$), se puede utilizar la expresión (\ref{eq:e2_GBW}) para calcular la frecuencia del polo del circuito amplificador completo:
 
 \begin{equation}
-f_B= \frac{9 MHz}{83.1} = 108.3 kHz
-\label{val:e2_fB}
+f_B= \frac{9 MHz}{83.1} \approx 108.3 kHz
+\label{val:e2_fB_lm}
 \end{equation}
 
 Como se mencionó anteriormente, a frecuencias menores a $f_B$ se debería observar una ganancia similar a la ideal.
@@ -124,4 +124,10 @@ A partir de la hoja de datos del amplificador, se utilizó la siguiente informac
 \label{tab:e2_info_ne}
 \end{table}
 
-Se puede observar la primera diferencia con el amplificador anterior que la resistencia de entrada es de un valor del mismo orden, incluso menor, a la resistencia $R_3$ colocada en la entrada del operacional.
+Se puede observar la primera diferencia con el amplificador anterior que la resistencia de entrada es de un valor del mismo orden, incluso menor, a la resistencia $R_3$ colocada en la entrada del operacional. Esto tendrá efectos que se discutirán más adelante.
+Aún así, las demás condiciones son similares al del $LM833N$ donde la ganancia del amplificador es mucho mayor a la del circuito completo; por lo tanto, se utiliza la misma expresión (\ref{eq:e2_GBW}) para obtener la frecuencia del polo del circuito:
+
+\begin{equation}
+f_B= \frac{10 MHz}{83.1} \approx 120.3 kHz
+\label{val:e2_fB_ne}
+\end{equation}
