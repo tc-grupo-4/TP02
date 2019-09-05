@@ -29,7 +29,7 @@ Los valores de las resistencias fueron los mostrados en el Cuadro \ref{tab:e2_re
 	\hline
 	Componente	&	Valor por Consigna	&	Valor Comercial ($\pm 5 \%)$)	& Valor Medido \\
 	\hline
-	$R_1$	&	$4 k\Omega$	&	$3.9 k\Omega$	&	$3.96 k\Omega$\\	
+	$R_1$	&	$4 k\Omega$	&	$3.9 k\Omega$	&	$3.89 k\Omega$\\	
 	$R_2$	&	$320 k\Omega$	&	$330 k\Omega$	&	$325 k\Omega $\\
 	$R_3$	&	$220 k\Omega$	&	$220 k\Omega$	&	$212.3 k\Omega$\\
 	\hline
@@ -131,3 +131,54 @@ Aún así, las demás condiciones son similares al del $LM833N$ donde la gananci
 f_B= \frac{10 MHz}{83.1} \approx 120.3 kHz
 \label{val:e2_fB_ne}
 \end{equation}
+
+\section{Método de Medición}
+
+En primer lugar se construyó el circuito sobre una \textit{protoboard}. Con una fuente de tensión de directa se alimentó el operacional con $\pm 15 Vcc$ en sus terminales respectivas. Para la señal de entrada del circuito se utilizó un generador de señales. Se conectaron dos puntas $\times 1$: el canal 1 sobre la salida del generador de señales y el canal 2 sobre la tensión de salida del operacional.
+
+A pesar de que la consigna indica exitar el circuito con una señal de $1 V_{PP}$, en las frecuencias más bajas fue necesario utilizar tensiones menores para evitar que el operacional sature, dando mediciones utilizables.
+
+Como los polos de los circuitos se encontraron en el orden de los $100 kHz$ el rango de frecuencias medidas fue $f\in[10 kHz , 1 MHz]$. En cada frecuencia se midieron la razón y la fase entre las señales de salida y entrada para medir la respuesta en frecuencia.
+
+Por otro lado, para medir la impedancia de entrada vista por el generador, se colocó una resistencia de $1.8 k\Omega$ entre la alimentación y el resto del circuito. Luego, se colocó la punta del canal 1 en la salida del generador de señales y la punta del canal 2 al otro extremo de la resistencia. Con la resta entre ambas señales se obtuvo la caída de tensión sobre esta resistencia y con eso la corriente a la entrada del circuito. Finalmente se calculó el cociente entre la tensión y la corriente para obtener la magnitud de la impedancia de entrada.
+
+\section{Análisis de Resultados}
+
+\subsection{Respuesta en Frecuencia}
+Superponiendo los resultados de las mediciones, la simulación de los circuitos a travéz de \textit{LTSpice} y la transferencia de la expresión (\ref{eq:e2_A_real})
+
+En primer lugar se puede observar de las Figuras \ref{fig:e2_lm_10k} y \ref{fig:e2_ne_10k} cómo a una década antes de la singularidad la ganancia es cercana a la calculada teóricamente con ambos amplificadores operacionales.
+
+Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frecuencia de corte es cercana a la calculada teóricamente con el amplificador $LM833N$, no es el caso con el $NE5534P$, cuya frecuencia de corte parece ser el doble a la calculada.
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=10cm]{./rsc/lm_0.png}
+\caption{Medición de la tensión de salida a $10 kHz$ con el $LM833N$}
+\label{fig:e2_lm_10k}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=10cm]{./rsc/lm_1.png}
+\caption{Medición de la transferencia en la frecuencia de corte con el $LM833N$}
+\label{fig:e2_lm_fB}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=10cm]{./rsc/ne_0.png}
+\caption{Medición de la tensión de salida a $10 kHz$ con el $NE5534P$}
+\label{fig:e2_ne_10k}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=10cm]{./rsc/ne_1.png}
+\caption{Medición de la transferencia en la frecuencia de corte con el $NE5534P$}
+\label{fig:e2_ne_fB}
+\end{center}
+\end{figure}
