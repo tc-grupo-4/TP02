@@ -103,8 +103,6 @@ f_B= \frac{9 MHz}{84.5} \approx 106.5 kHz
 
 Como se mencionó anteriormente, a frecuencias menores a $f_B$ se debería observar una ganancia similar a la ideal.
 
-\newpage
-
 \subsection{Amplificador NE5534P}
 A partir de la hoja de datos del amplificador, se utilizó la siguiente información:
 
@@ -142,8 +140,6 @@ Como los polos de los circuitos se encontraron en el orden de los $100 kHz$ el r
 
 Por otro lado, para medir la impedancia de entrada vista por el generador, se colocó una resistencia de $1.8 k\Omega$ entre la alimentación y el resto del circuito. Luego, se colocó la punta del canal 1 en la salida del generador de señales y la punta del canal 2 al otro extremo de la resistencia. Con la resta entre ambas señales se obtuvo la caída de tensión sobre esta resistencia y con eso la corriente a la entrada del circuito. Finalmente se calculó el cociente entre la tensión y la corriente para obtener la magnitud de la impedancia de entrada.
 
-\newpage
-
 \section{Análisis de Resultados}
 
 \subsection{Respuesta en Frecuencia}
@@ -155,7 +151,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=10cm]{./rsc/lm_0.png}
+\includegraphics[height=10cm]{../Ex2/Informe/rsc/lm_0.png}
 \caption{Medición de la tensión de salida a $10 kHz$ con el $LM833N$}
 \label{fig:e2_lm_10k}
 \end{center}
@@ -163,7 +159,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=10cm]{./rsc/lm_1.png}
+\includegraphics[height=10cm]{../Ex2/Informe/rsc/lm_1.png}
 \caption{Medición de la transferencia en $f=106.5 kHz$ con el $LM833N$}
 \label{fig:e2_lm_fB}
 \end{center}
@@ -171,7 +167,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=10cm]{./rsc/ne_0.png}
+\includegraphics[height=10cm]{../Ex2/Informe/rsc/ne_0.png}
 \caption{Medición de la tensión de salida a $10 kHz$ con el $NE5534P$}
 \label{fig:e2_ne_10k}
 \end{center}
@@ -179,7 +175,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=10cm]{./rsc/ne_1.png}
+\includegraphics[height=10cm]{../Ex2/Informe/rsc/ne_1.png}
 \caption{Medición de la transferencia en la frecuencia de corte con el $NE5534P$}
 \label{fig:e2_ne_fB}
 \end{center}
@@ -187,7 +183,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=10cm]{./rsc/lm_bode_proto.png}
+\includegraphics[height=10cm]{../Ex2/Informe/rsc/lm_bode_proto.png}
 \caption{Respuestas en frecuencia del $LM883N$}
 \label{fig:e2_lm_bode}
 \end{center}
@@ -195,7 +191,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-\includegraphics[height=10cm]{./rsc/ne_bode_proto.png}
+\includegraphics[height=10cm]{../Ex2/Informe/rsc/ne_bode_proto.png}
 \caption{Respuestas en frecuencia del $NE5534P$}
 \label{fig:e2_ne_bode}
 \end{center}
@@ -220,7 +216,7 @@ Por otro lado, deberá tener en cuenta que el sobrepico presentado por el circui
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[height=6cm]{./rsc/lm_proto_zin.png}
+\includegraphics[height=6cm]{../Ex2/Informe/rsc/lm_proto_zin.png}
 \caption{Impedancia de entrada del $LM833N$}
 \label{fig:e2_lm_proto_zin}
 \end{center}
@@ -228,7 +224,7 @@ Por otro lado, deberá tener en cuenta que el sobrepico presentado por el circui
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[height=6cm]{./rsc/ne_proto_zin.png}
+\includegraphics[height=6cm]{../Ex2/Informe/rsc/ne_proto_zin.png}
 \caption{Impedancia de entrada del $NE5534P$}
 \label{fig:e2_ne_proto_zin}
 \end{center}
