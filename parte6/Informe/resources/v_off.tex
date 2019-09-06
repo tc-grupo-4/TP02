@@ -1,0 +1,8 @@
+\begin{circuitikz}
+
+	\node [label=left:$+V_{cc}$](Vcc) at (0,0){};
+	\node [ground, below = 2cm of Vcc](GND){};
+	
+	\draw (Vcc) to[american potentiometer,n=mypot, o-] (GND);
+	\draw (mypot.wiper) to[short,-o] ++(1,0) node[label=right:$V_{off}$](){};
+\end{circuitikz}

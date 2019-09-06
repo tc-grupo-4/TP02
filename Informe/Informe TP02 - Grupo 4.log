@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.30)  4 SEP 2019 02:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.30)  5 SEP 2019 22:27
 entering extended mode
 **"./Informe TP02 - Grupo 4.tex"
 ("Informe TP02 - Grupo 4.tex"
@@ -263,6 +263,373 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/circuitikz\circuitikz.sty"
+Package: circuitikz 2019/07/13{} The CircuiTikz circuit drawing package version
+ 0.9.3
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/frontendlayer\tikz.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen114
+\pgfutil@tempdimb=\dimen115
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common-lists.te
+x")) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-latex.def"
+\pgfutil@abb=\box29
+("C:\Program Files\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfrcs.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf\pgf.revision.tex")
+Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
+))
+Package: pgf 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgfcore.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/systemlayer\pgfsys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys.code.tex"
+Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeysfiltered.code.te
+x"
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen116
+\pgf@y=\dimen117
+\pgf@xa=\dimen118
+\pgf@ya=\dimen119
+\pgf@xb=\dimen120
+\pgf@yb=\dimen121
+\pgf@xc=\dimen122
+\pgf@yc=\dimen123
+\pgf@xd=\dimen124
+\pgf@yd=\dimen125
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count92
+\c@pgf@countb=\count93
+\c@pgf@countc=\count94
+\c@pgf@countd=\count95
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count96
+ ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf.cfg"
+File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+"
+File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.t
+ex"
+File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfsyssoftpath@smallbuffer@items=\count97
+\pgfsyssoftpath@bigbuffer@items=\count98
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsysprotocol.code.t
+ex"
+File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcore.code.tex"
+Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcalc.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathutil.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen126
+\pgfmath@count=\count99
+\pgfmath@box=\box30
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.code.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.basic.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.trigonometr
+ic.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.random.code
+.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.comparison.
+code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.base.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.round.code.
+tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.misc.code.t
+ex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.integerarit
+hmetics.code.tex")))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count100
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfint.code.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+"
+File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@picminx=\dimen127
+\pgf@picmaxx=\dimen128
+\pgf@picminy=\dimen129
+\pgf@picmaxy=\dimen130
+\pgf@pathminx=\dimen131
+\pgf@pathmaxx=\dimen132
+\pgf@pathminy=\dimen133
+\pgf@pathmaxy=\dimen134
+\pgf@xx=\dimen135
+\pgf@xy=\dimen136
+\pgf@yx=\dimen137
+\pgf@yy=\dimen138
+\pgf@zx=\dimen139
+\pgf@zy=\dimen140
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathconstruct.c
+ode.tex"
+File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@path@lastx=\dimen141
+\pgf@path@lasty=\dimen142
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathusage.code.
+tex"
+File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@shorten@end@additional=\dimen143
+\pgf@shorten@start@additional=\dimen144
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+"
+File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count101
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoregraphicstate.co
+de.tex"
+File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgflinewidth=\dimen145
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransformations
+.code.tex"
+File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@pt@x=\dimen146
+\pgf@pt@y=\dimen147
+\pgf@pt@temp=\dimen148
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreobjects.code.te
+x"
+File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathprocessing.
+code.tex"
+File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+"
+File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfarrowsep=\dimen149
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@max=\dimen150
+\pgf@sys@shading@range@num=\count102
+\pgf@shadingcount=\count103
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreimage.code.te
+x"
+File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreexternal.code.t
+ex"
+File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfexternal@startupbox=\box34
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+"
+File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransparency.co
+de.tex"
+File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepatterns.code.t
+ex"
+File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
+File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
+))) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleshapes.code.
+tex"
+File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfnodeparttextbox=\box35
+) ("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-0-65.
+sty"
+Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
+\pgf@nodesepstart=\dimen151
+\pgf@nodesepend=\dimen152
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-1-18.
+sty"
+Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
+)) ("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex"))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/utilities\pgffor.code.tex"
+Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")
+\pgffor@iter=\dimen153
+\pgffor@skip=\dimen154
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
+Package: tikz 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplothandlers.
+code.tex"
+File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@plot@mark@count=\count104
+\pgfplotmarksize=\dimen155
+)
+\tikz@lastx=\dimen156
+\tikz@lasty=\dimen157
+\tikz@lastxsaved=\dimen158
+\tikz@lastysaved=\dimen159
+\tikzleveldistance=\dimen160
+\tikzsiblingdistance=\dimen161
+\tikz@figbox=\box36
+\tikz@figbox@bg=\box37
+\tikz@tempbox=\box38
+\tikz@tempbox@bg=\box39
+\tikztreelevel=\count105
+\tikznumberofchildren=\count106
+\tikznumberofcurrentchild=\count107
+\tikz@fig@count=\count108
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfmatrixcurrentrow=\count109
+\pgfmatrixcurrentcolumn=\count110
+\pgf@matrix@numberofcolumns=\count111
+)
+\tikz@expandcount=\count112
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikz
+librarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)))
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikz
+librarycalc.code.tex"
+File: tikzlibrarycalc.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.meta.c
+ode.tex"
+File: pgflibraryarrows.meta.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfarrowinset=\dimen162
+\pgfarrowlength=\dimen163
+\pgfarrowwidth=\dimen164
+\pgfarrowlinewidth=\dimen165
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikz
+librarybending.code.tex"
+File: tikzlibrarybending.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulebending.code.tex
+"
+File: pgfmodulebending.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulenonlineartransfo
+rmations.code.tex"
+File: pgfmodulenonlineartransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgftransformnonlinearflatness=\dimen166
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibrarycurvilinear.c
+ode.tex"
+File: pgflibrarycurvilinear.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@curvilinear@time@a=\dimen167
+\pgf@curvilinear@length@a=\dimen168
+\pgf@curvilinear@length@b=\dimen169
+\pgf@curvilinear@length@c=\dimen170
+\pgf@curvilinear@length@d=\dimen171
+)
+\pgf@arrows@the@rigidity=\dimen172
+))
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcirc.defines.tex"
+\pgf@circ@count@a=\count113
+\pgf@circ@count@b=\count114
+\pgf@circ@count@c=\count115
+\pgf@circ@res@up=\dimen173
+\pgf@circ@res@down=\dimen174
+\pgf@circ@res@zero=\dimen175
+\pgf@circ@res@left=\dimen176
+\pgf@circ@res@right=\dimen177
+\pgf@circ@res@other=\dimen178
+\pgf@circ@res@step=\dimen179
+\pgf@circ@res@temp=\dimen180
+\pgfstartlinewidth=\dimen181
+\pgf@circ@Rlen=\dimen182
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircutils.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircshapes.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircmonopoles.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircbipoles.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcirctripoles.tex"
+\pgf@circ@res@count=\count116
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircquadpoles.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircmultipoles.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcirclabel.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircvoltage.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcirccurrent.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircflow.tex")
+("C:\Program Files\MiKTeX 2.9\tex/generic/circuitikz\pgfcircpath.tex")
+
+Package circuitikz Warning: You did not specify one of the voltage directions:
+(circuitikz)                  oldvoltagedirection, nooldvoltagedirection, 
+(circuitikz)                  RPvoltages or EFvoltages 
+(circuitikz)                Default directions may have changed, 
+(circuitikz)                please check the manual.
+
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikz
+librarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
 Package: babel 2019/04/03 3.29 The Babel package
 
@@ -281,14 +648,14 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2019/04/03 3.29 Babel common definitions
-\babel@savecnt=\count92
-\U@D=\dimen114
+\babel@savecnt=\count117
+\U@D=\dimen183
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count93
+\bbl@dirlevel=\count118
 )
-\es@quottoks=\toks21
-\es@quotdepth=\count94
+\es@quottoks=\toks33
+\es@quotdepth=\count119
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -296,15 +663,15 @@ Package babel Info: Making > an active character on input line 707.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/titlesec\titlesec.sty"
 Package: titlesec 2019/07/16 v2.11 Sectioning titles
-\ttl@box=\box29
+\ttl@box=\box40
 \beforetitleunit=\skip43
 \aftertitleunit=\skip44
-\ttl@plus=\dimen115
-\ttl@minus=\dimen116
-\ttl@toksa=\toks22
-\titlewidth=\dimen117
-\titlewidthlast=\dimen118
-\titlewidthfirst=\dimen119
+\ttl@plus=\dimen184
+\ttl@minus=\dimen185
+\ttl@toksa=\toks34
+\titlewidth=\dimen186
+\titlewidthlast=\dimen187
+\titlewidthfirst=\dimen188
 ))
 ("Informe TP02 - Grupo 4.aux"
 LaTeX Info: Redefining \. on input line 6.
@@ -372,17 +739,17 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count95
-\scratchdimen=\dimen120
-\scratchbox=\box30
-\nofMPsegments=\count96
-\nofMParguments=\count97
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count98
-\MPscratchDim=\dimen121
-\MPnumerator=\count99
-\makeMPintoPDFobject=\count100
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count120
+\scratchdimen=\dimen189
+\scratchbox=\box41
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen190
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -422,11 +789,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+ABD: EveryShipout initializing macros
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
-
-(Caratula.tex
-<resources/itba.png, id=1, 813.0375pt x 508.14844pt>
+ (Caratula.tex
+<resources/itba.png, id=4, 813.0375pt x 508.14844pt>
 File: resources/itba.png Graphic file (type png)
 <use resources/itba.png>
 Package pdftex.def Info: resources/itba.png  used on input line 34.
@@ -438,16 +805,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/lisan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./resources
-/itba.png>]) ("Informe TP02 - Grupo 4.toc"
+/itba.png>])
+("Informe TP02 - Grupo 4.toc"
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@toc=\write3
-\openout3 = `"Informe TP02 - Grupo 4.toc"'.
+\tf@toc=\write4
+\openout4 = `"Informe TP02 - Grupo 4.toc"'.
 
- [1]
-(../Ex1/iA/Ex1a.tex
-<../Ex1/iA/Resources1a/Circuito1a.png, id=21, 335.00156pt x 139.27031pt>
+ [1] (../Ex1/iA/Ex1a.tex
+<../Ex1/iA/Resources1a/Circuito1a.png, id=26, 335.00156pt x 139.27031pt>
 File: ../Ex1/iA/Resources1a/Circuito1a.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/Circuito1a.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/Circuito1a.png  used on input li
@@ -457,7 +824,7 @@ ne 17.
 
 pdfTeX warning: pdflatex (file ../Ex1/iA/Resources1a/Schematic.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<../Ex1/iA/Resources1a/Schematic.pdf, id=22, 845.04686pt x 597.50786pt>
+<../Ex1/iA/Resources1a/Schematic.pdf, id=27, 845.04686pt x 597.50786pt>
 File: ../Ex1/iA/Resources1a/Schematic.pdf Graphic file (type pdf)
 <use ../Ex1/iA/Resources1a/Schematic.pdf>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/Schematic.pdf  used on input lin
@@ -467,18 +834,18 @@ e 49.
 
 pdfTeX warning: pdflatex (file ../Ex1/iA/Resources1a/PCB.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<../Ex1/iA/Resources1a/PCB.pdf, id=30, 845.04686pt x 597.50786pt>
+<../Ex1/iA/Resources1a/PCB.pdf, id=34, 845.04686pt x 597.50786pt>
 File: ../Ex1/iA/Resources1a/PCB.pdf Graphic file (type pdf)
 <use ../Ex1/iA/Resources1a/PCB.pdf>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/PCB.pdf  used on input line 58.
 (pdftex.def)             Requested size: 253.516pt x 179.25374pt.
 [3 <../Ex1/iA/Resources1a/Schematic.pdf> <../Ex1/iA/Resources1a/PCB.pdf>]
-<../Ex1/iA/Resources1a/H1.png, id=50, 560.0925pt x 425.6703pt>
+<../Ex1/iA/Resources1a/H1.png, id=53, 560.0925pt x 425.6703pt>
 File: ../Ex1/iA/Resources1a/H1.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/H1.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/H1.png  used on input line 115.
 (pdftex.def)             Requested size: 280.04556pt x 212.83463pt.
-<../Ex1/iA/Resources1a/montecarlo1a_1.png, id=51, 544.28343pt x 421.575pt>
+<../Ex1/iA/Resources1a/montecarlo1a_1.png, id=54, 544.28343pt x 421.575pt>
 File: ../Ex1/iA/Resources1a/montecarlo1a_1.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/montecarlo1a_1.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/montecarlo1a_1.png  used on inpu
@@ -486,31 +853,31 @@ t line 123.
 (pdftex.def)             Requested size: 272.14105pt x 210.78697pt.
 
 [4 <../Ex1/iA/Resources1a/H1.png>]
-<../Ex1/iA/Resources1a/H2.png, id=59, 560.0925pt x 425.6703pt>
+<../Ex1/iA/Resources1a/H2.png, id=62, 560.0925pt x 425.6703pt>
 File: ../Ex1/iA/Resources1a/H2.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/H2.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/H2.png  used on input line 131.
 (pdftex.def)             Requested size: 280.04556pt x 212.83463pt.
-<../Ex1/iA/Resources1a/montecarlo1a_2.png, id=60, 542.77782pt x 423.08063pt>
+<../Ex1/iA/Resources1a/montecarlo1a_2.png, id=63, 542.77782pt x 423.08063pt>
 File: ../Ex1/iA/Resources1a/montecarlo1a_2.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/montecarlo1a_2.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/montecarlo1a_2.png  used on inpu
 t line 139.
 (pdftex.def)             Requested size: 271.38824pt x 211.5398pt.
  [5 <../Ex1/iA/Resources1a/montecarlo1a_1.png> <../Ex1/iA/Resources1a/H2.png>]
-<../Ex1/iA/Resources1a/H3.png, id=65, 560.0925pt x 426.393pt>
+<../Ex1/iA/Resources1a/H3.png, id=68, 560.0925pt x 426.393pt>
 File: ../Ex1/iA/Resources1a/H3.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/H3.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/H3.png  used on input line 147.
 (pdftex.def)             Requested size: 280.04556pt x 213.19597pt.
-<../Ex1/iA/Resources1a/montecarlo1a_3.png, id=66, 546.54187pt x 416.30531pt>
+<../Ex1/iA/Resources1a/montecarlo1a_3.png, id=69, 546.54187pt x 416.30531pt>
 File: ../Ex1/iA/Resources1a/montecarlo1a_3.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/montecarlo1a_3.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/montecarlo1a_3.png  used on inpu
 t line 156.
 (pdftex.def)             Requested size: 273.27026pt x 208.15215pt.
  [6 <../Ex1/iA/Resources1a/montecarlo1a_2.png> <../Ex1/iA/Resources1a/H3.png>]
-<../Ex1/iA/Resources1a/H3_para.png, id=72, 555.57562pt x 423.08063pt>
+<../Ex1/iA/Resources1a/H3_para.png, id=75, 555.57562pt x 423.08063pt>
 File: ../Ex1/iA/Resources1a/H3_para.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/H3_para.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/H3_para.png  used on input line 
@@ -518,50 +885,50 @@ Package pdftex.def Info: ../Ex1/iA/Resources1a/H3_para.png  used on input line
 (pdftex.def)             Requested size: 277.78712pt x 211.5398pt.
  [7 <../Ex1/iA/Resources1a/montecarlo1a_3.png> <../Ex1/iA/Resources1a/H3_para.p
 ng>]
-<../Ex1/iA/Resources1a/zinpm.png, id=76, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpm.png, id=79, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpm.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm.png  used on input line 23
 0.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpp.png, id=77, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpp.png, id=80, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpp.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp.png  used on input line 23
 3.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpm1.png, id=78, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpm1.png, id=81, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpm1.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm1.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm1.png  used on input line 2
 42.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpm1_sim.png, id=79, 529.22719pt x 399.74344pt>
+<../Ex1/iA/Resources1a/zinpm1_sim.png, id=82, 529.22719pt x 399.74344pt>
 File: ../Ex1/iA/Resources1a/zinpm1_sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm1_sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm1_sim.png  used on input li
 ne 242.
 (pdftex.def)             Requested size: 211.68712pt x 159.89453pt.
  [8 <../Ex1/iA/Resources1a/zinpm.png> <../Ex1/iA/Resources1a/zinpp.png>]
-<../Ex1/iA/Resources1a/zinpm1_med.png, id=86, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/zinpm1_med.png, id=89, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/zinpm1_med.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm1_med.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm1_med.png  used on input li
 ne 250.
 (pdftex.def)             Requested size: 301.12425pt x 186.19516pt.
-<../Ex1/iA/Resources1a/zinpp1.png, id=87, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpp1.png, id=90, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpp1.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp1.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp1.png  used on input line 2
 58.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpp1_sim.png, id=88, 529.22719pt x 399.74344pt>
+<../Ex1/iA/Resources1a/zinpp1_sim.png, id=91, 529.22719pt x 399.74344pt>
 File: ../Ex1/iA/Resources1a/zinpp1_sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp1_sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp1_sim.png  used on input li
 ne 258.
 (pdftex.def)             Requested size: 211.68712pt x 159.89453pt.
-<../Ex1/iA/Resources1a/zinpp1_med.png, id=89, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/zinpp1_med.png, id=92, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/zinpp1_med.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp1_med.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp1_med.png  used on input li
@@ -570,31 +937,31 @@ ne 267.
  [9 <../Ex1/iA/Resources1a/zinpm1.png> <../Ex1/iA/Resources1a/zinpm1_sim.png> <
 ../Ex1/iA/Resources1a/zinpm1_med.png> <../Ex1/iA/Resources1a/zinpp1.png> <../Ex
 1/iA/Resources1a/zinpp1_sim.png>]
-<../Ex1/iA/Resources1a/zinpm2.png, id=96, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpm2.png, id=99, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpm2.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm2.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm2.png  used on input line 2
 75.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpm2_sim.png, id=97, 529.22719pt x 399.74344pt>
+<../Ex1/iA/Resources1a/zinpm2_sim.png, id=100, 529.22719pt x 399.74344pt>
 File: ../Ex1/iA/Resources1a/zinpm2_sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm2_sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm2_sim.png  used on input li
 ne 275.
 (pdftex.def)             Requested size: 211.68712pt x 159.89453pt.
-<../Ex1/iA/Resources1a/zinpm2_med.png, id=98, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/zinpm2_med.png, id=101, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/zinpm2_med.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm2_med.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm2_med.png  used on input li
 ne 283.
 (pdftex.def)             Requested size: 301.12425pt x 186.19516pt.
-<../Ex1/iA/Resources1a/zinpp2.png, id=99, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpp2.png, id=102, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpp2.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp2.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp2.png  used on input line 2
 91.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpp2_sim.png, id=100, 529.22719pt x 399.74344pt>
+<../Ex1/iA/Resources1a/zinpp2_sim.png, id=103, 529.22719pt x 399.74344pt>
 File: ../Ex1/iA/Resources1a/zinpp2_sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp2_sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp2_sim.png  used on input li
@@ -602,25 +969,25 @@ ne 291.
 (pdftex.def)             Requested size: 211.68712pt x 159.89453pt.
  [10 <../Ex1/iA/Resources1a/zinpp1_med.png> <../Ex1/iA/Resources1a/zinpm2.png> 
 <../Ex1/iA/Resources1a/zinpm2_sim.png> <../Ex1/iA/Resources1a/zinpm2_med.png>]
-<../Ex1/iA/Resources1a/zinpp2_med.png, id=107, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/zinpp2_med.png, id=110, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/zinpp2_med.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp2_med.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp2_med.png  used on input li
 ne 299.
 (pdftex.def)             Requested size: 301.12425pt x 186.19516pt.
-<../Ex1/iA/Resources1a/zinpm3.png, id=108, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpm3.png, id=111, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpm3.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm3.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm3.png  used on input line 3
 07.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpm3_sim.png, id=109, 529.22719pt x 399.74344pt>
+<../Ex1/iA/Resources1a/zinpm3_sim.png, id=112, 529.22719pt x 399.74344pt>
 File: ../Ex1/iA/Resources1a/zinpm3_sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm3_sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm3_sim.png  used on input li
 ne 307.
 (pdftex.def)             Requested size: 211.68712pt x 159.89453pt.
-<../Ex1/iA/Resources1a/zinpm3_med.png, id=110, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/zinpm3_med.png, id=113, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/zinpm3_med.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpm3_med.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpm3_med.png  used on input li
@@ -629,19 +996,19 @@ ne 315.
  [11 <../Ex1/iA/Resources1a/zinpp2.png> <../Ex1/iA/Resources1a/zinpp2_sim.png> 
 <../Ex1/iA/Resources1a/zinpp2_med.png> <../Ex1/iA/Resources1a/zinpm3.png> <../E
 x1/iA/Resources1a/zinpm3_sim.png>]
-<../Ex1/iA/Resources1a/zinpp3.png, id=117, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/zinpp3.png, id=120, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/zinpp3.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp3.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp3.png  used on input line 3
 23.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/zinpp3_sim.png, id=118, 529.22719pt x 399.74344pt>
+<../Ex1/iA/Resources1a/zinpp3_sim.png, id=121, 529.22719pt x 399.74344pt>
 File: ../Ex1/iA/Resources1a/zinpp3_sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp3_sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp3_sim.png  used on input li
 ne 323.
 (pdftex.def)             Requested size: 211.68712pt x 159.89453pt.
-<../Ex1/iA/Resources1a/zinpp3_med.png, id=119, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/zinpp3_med.png, id=122, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/zinpp3_med.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/zinpp3_med.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/zinpp3_med.png  used on input li
@@ -649,32 +1016,32 @@ ne 331.
 (pdftex.def)             Requested size: 301.12425pt x 186.19516pt.
  [12 <../Ex1/iA/Resources1a/zinpm3_med.png> <../Ex1/iA/Resources1a/zinpp3.png> 
 <../Ex1/iA/Resources1a/zinpp3_sim.png> <../Ex1/iA/Resources1a/zinpp3_med.png>]
-<../Ex1/iA/Resources1a/sat1.png, id=127, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/sat1.png, id=130, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/sat1.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/sat1.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/sat1.png  used on input line 390
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/sat2.png, id=128, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/sat2.png, id=131, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/sat2.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/sat2.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/sat2.png  used on input line 398
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [13 <../Ex1/iA/Resources1a/sat1.png>]
-<../Ex1/iA/Resources1a/sat3.png, id=133, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/sat3.png, id=136, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/sat3.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/sat3.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/sat3.png  used on input line 407
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/sat123.png, id=134, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/sat123.png, id=137, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/sat123.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/sat123.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/sat123.png  used on input line 4
 16.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/sat1med.png, id=135, 770.88pt x 535.2497pt>
+<../Ex1/iA/Resources1a/sat1med.png, id=138, 770.88pt x 535.2497pt>
 File: ../Ex1/iA/Resources1a/sat1med.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/sat1med.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/sat1med.png  used on input line 
@@ -682,26 +1049,26 @@ Package pdftex.def Info: ../Ex1/iA/Resources1a/sat1med.png  used on input line
 (pdftex.def)             Requested size: 231.26578pt x 160.57614pt.
  [14 <../Ex1/iA/Resources1a/sat2.png> <../Ex1/iA/Resources1a/sat3.png> <../Ex1/
 iA/Resources1a/sat123.png>]
-<../Ex1/iA/Resources1a/SlewRate1.png, id=142, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/SlewRate1.png, id=145, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/SlewRate1.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/SlewRate1.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/SlewRate1.png  used on input lin
 e 493.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [15 <../Ex1/iA/Resources1a/sat1med.png>]
-<../Ex1/iA/Resources1a/SlewRate2.png, id=146, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/SlewRate2.png, id=149, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/SlewRate2.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/SlewRate2.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/SlewRate2.png  used on input lin
 e 503.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/SlewRate3.png, id=147, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/SlewRate3.png, id=150, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/SlewRate3.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/SlewRate3.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/SlewRate3.png  used on input lin
 e 513.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/SlewRate123.png, id=148, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/SlewRate123.png, id=151, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/SlewRate123.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/SlewRate123.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/SlewRate123.png  used on input l
@@ -709,13 +1076,13 @@ ine 523.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [16 <../Ex1/iA/Resources1a/SlewRate1.png> <../Ex1/iA/Resources1a/SlewRate2.png
 > <../Ex1/iA/Resources1a/SlewRate3.png>]
-<../Ex1/iA/Resources1a/slewRatemed.png, id=155, 770.88pt x 529.98pt>
+<../Ex1/iA/Resources1a/slewRatemed.png, id=158, 770.88pt x 529.98pt>
 File: ../Ex1/iA/Resources1a/slewRatemed.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/slewRatemed.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/slewRatemed.png  used on input l
 ine 533.
 (pdftex.def)             Requested size: 231.26578pt x 158.99521pt.
-<../Ex1/iA/Resources1a/push-pull.png, id=156, 246.9225pt x 225.84375pt>
+<../Ex1/iA/Resources1a/push-pull.png, id=159, 246.9225pt x 225.84375pt>
 File: ../Ex1/iA/Resources1a/push-pull.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/push-pull.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/push-pull.png  used on input lin
@@ -723,19 +1090,19 @@ e 571.
 (pdftex.def)             Requested size: 123.46094pt x 112.92159pt.
  [17 <../Ex1/iA/Resources1a/SlewRate123.png> <../Ex1/iA/Resources1a/slewRatemed
 .png>]
-<../Ex1/iA/Resources1a/crossover.png, id=161, 312.41719pt x 275.52937pt>
+<../Ex1/iA/Resources1a/crossover.png, id=164, 312.41719pt x 275.52937pt>
 File: ../Ex1/iA/Resources1a/crossover.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/crossover.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/crossover.png  used on input lin
 e 579.
 (pdftex.def)             Requested size: 156.2082pt x 137.76434pt.
-<../Ex1/iA/Resources1a/CrossDistmed.png, id=162, 770.88pt x 529.98pt>
+<../Ex1/iA/Resources1a/CrossDistmed.png, id=165, 770.88pt x 529.98pt>
 File: ../Ex1/iA/Resources1a/CrossDistmed.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/CrossDistmed.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/CrossDistmed.png  used on input 
 line 587.
 (pdftex.def)             Requested size: 231.26578pt x 158.99521pt.
-<../Ex1/iA/Resources1a/AmplMaxVsFreq1.png, id=163, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/AmplMaxVsFreq1.png, id=166, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/AmplMaxVsFreq1.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/AmplMaxVsFreq1.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/AmplMaxVsFreq1.png  used on inpu
@@ -743,19 +1110,19 @@ t line 615.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [18 <../Ex1/iA/Resources1a/push-pull.png> <../Ex1/iA/Resources1a/crossover.png
 > <../Ex1/iA/Resources1a/CrossDistmed.png>]
-<../Ex1/iA/Resources1a/AmplMaxVsFreq2.png, id=169, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/AmplMaxVsFreq2.png, id=172, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/AmplMaxVsFreq2.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/AmplMaxVsFreq2.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/AmplMaxVsFreq2.png  used on inpu
 t line 625.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/AmplMaxVsFreq3.png, id=170, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/AmplMaxVsFreq3.png, id=173, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/AmplMaxVsFreq3.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/AmplMaxVsFreq3.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/AmplMaxVsFreq3.png  used on inpu
 t line 635.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iA/Resources1a/AmplMaxVsFreq123.png, id=171, 462.528pt x 346.896pt>
+<../Ex1/iA/Resources1a/AmplMaxVsFreq123.png, id=174, 462.528pt x 346.896pt>
 File: ../Ex1/iA/Resources1a/AmplMaxVsFreq123.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/AmplMaxVsFreq123.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/AmplMaxVsFreq123.png  used on in
@@ -764,31 +1131,31 @@ put line 645.
  [19 <../Ex1/iA/Resources1a/AmplMaxVsFreq1.png> <../Ex1/iA/Resources1a/AmplMaxV
 sFreq2.png> <../Ex1/iA/Resources1a/AmplMaxVsFreq3.png>] [20 <../Ex1/iA/Resource
 s1a/AmplMaxVsFreq123.png>]
-<../Ex1/iA/Resources1a/r3=0.png, id=182, 770.88pt x 504.38437pt>
+<../Ex1/iA/Resources1a/r3=0.png, id=185, 770.88pt x 504.38437pt>
 File: ../Ex1/iA/Resources1a/r3=0.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/r3=0.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/r3=0.png  used on input line 729
 .
 (pdftex.def)             Requested size: 231.26578pt x 151.31647pt.
-<../Ex1/iA/Resources1a/dcswp1sim.png, id=183, 562.35094pt x 389.95688pt>
+<../Ex1/iA/Resources1a/dcswp1sim.png, id=186, 562.35094pt x 389.95688pt>
 File: ../Ex1/iA/Resources1a/dcswp1sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/dcswp1sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/dcswp1sim.png  used on input lin
 e 750.
 (pdftex.def)             Requested size: 224.93639pt x 155.97998pt.
-<../Ex1/iA/Resources1a/DCSWEEP1MED.png, id=184, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/DCSWEEP1MED.png, id=187, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/DCSWEEP1MED.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/DCSWEEP1MED.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/DCSWEEP1MED.png  used on input l
 ine 750.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
-<../Ex1/iA/Resources1a/dcswp2sim.png, id=185, 505.89pt x 403.5075pt>
+<../Ex1/iA/Resources1a/dcswp2sim.png, id=188, 505.89pt x 403.5075pt>
 File: ../Ex1/iA/Resources1a/dcswp2sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/dcswp2sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/dcswp2sim.png  used on input lin
 e 759.
 (pdftex.def)             Requested size: 202.3524pt x 161.40013pt.
-<../Ex1/iA/Resources1a/DCSWEEP2MED.png, id=186, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/DCSWEEP2MED.png, id=189, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/DCSWEEP2MED.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/DCSWEEP2MED.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/DCSWEEP2MED.png  used on input l
@@ -797,20 +1164,20 @@ ine 759.
 
 [21 <../Ex1/iA/Resources1a/r3=0.png> <../Ex1/iA/Resources1a/dcswp1sim.png> <../
 Ex1/iA/Resources1a/DCSWEEP1MED.png>]
-<../Ex1/iA/Resources1a/dcswp3sim.png, id=191, 505.89pt x 403.5075pt>
+<../Ex1/iA/Resources1a/dcswp3sim.png, id=194, 505.89pt x 403.5075pt>
 File: ../Ex1/iA/Resources1a/dcswp3sim.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/dcswp3sim.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/dcswp3sim.png  used on input lin
 e 768.
 (pdftex.def)             Requested size: 202.3524pt x 161.40013pt.
-<../Ex1/iA/Resources1a/DCSWEEP3MED.png, id=192, 602.25pt x 372.39125pt>
+<../Ex1/iA/Resources1a/DCSWEEP3MED.png, id=195, 602.25pt x 372.39125pt>
 File: ../Ex1/iA/Resources1a/DCSWEEP3MED.png Graphic file (type png)
 <use ../Ex1/iA/Resources1a/DCSWEEP3MED.png>
 Package pdftex.def Info: ../Ex1/iA/Resources1a/DCSWEEP3MED.png  used on input l
 ine 768.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
 ) (../Ex1/iB/Ex1b.tex
-<../Ex1/iB/Resources1b/circuit.png, id=193, 433.62pt x 222.07968pt>
+<../Ex1/iB/Resources1b/circuit.png, id=196, 433.62pt x 222.07968pt>
 File: ../Ex1/iB/Resources1b/circuit.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/circuit.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/circuit.png  used on input line 
@@ -820,7 +1187,7 @@ Package pdftex.def Info: ../Ex1/iB/Resources1b/circuit.png  used on input line
 
 pdfTeX warning: pdflatex (file ../Ex1/iB/Resources1b/Schematic.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<../Ex1/iB/Resources1b/Schematic.pdf, id=194, 845.04686pt x 597.50786pt>
+<../Ex1/iB/Resources1b/Schematic.pdf, id=197, 845.04686pt x 597.50786pt>
 File: ../Ex1/iB/Resources1b/Schematic.pdf Graphic file (type pdf)
 <use ../Ex1/iB/Resources1b/Schematic.pdf>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/Schematic.pdf  used on input lin
@@ -832,18 +1199,18 @@ g> <../Ex1/iA/Resources1a/dcswp3sim.png> <../Ex1/iA/Resources1a/DCSWEEP3MED.png
 
 pdfTeX warning: pdflatex (file ../Ex1/iB/Resources1b/PCB.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<../Ex1/iB/Resources1b/PCB.pdf, id=200, 845.04686pt x 597.50786pt>
+<../Ex1/iB/Resources1b/PCB.pdf, id=203, 845.04686pt x 597.50786pt>
 File: ../Ex1/iB/Resources1b/PCB.pdf Graphic file (type pdf)
 <use ../Ex1/iB/Resources1b/PCB.pdf>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/PCB.pdf  used on input line 31.
 (pdftex.def)             Requested size: 253.516pt x 179.25374pt.
 [23 <../Ex1/iB/Resources1b/Schematic.pdf> <../Ex1/iB/Resources1b/PCB.pdf>]
-<../Ex1/iB/Resources1b/H1b.png, id=218, 560.0925pt x 426.393pt>
+<../Ex1/iB/Resources1b/H1b.png, id=221, 560.0925pt x 426.393pt>
 File: ../Ex1/iB/Resources1b/H1b.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/H1b.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/H1b.png  used on input line 73.
 (pdftex.def)             Requested size: 280.04556pt x 213.19597pt.
-<../Ex1/iB/Resources1b/Montecarlo1.png, id=219, 542.77782pt x 420.06938pt>
+<../Ex1/iB/Resources1b/Montecarlo1.png, id=222, 542.77782pt x 420.06938pt>
 File: ../Ex1/iB/Resources1b/Montecarlo1.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/Montecarlo1.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/Montecarlo1.png  used on input l
@@ -851,63 +1218,63 @@ ine 80.
 (pdftex.def)             Requested size: 271.38824pt x 210.03418pt.
 
 [24 <../Ex1/iB/Resources1b/H1b.png>]
-<../Ex1/iB/Resources1b/H2b.png, id=227, 560.0925pt x 425.6703pt>
+<../Ex1/iB/Resources1b/H2b.png, id=230, 560.0925pt x 425.6703pt>
 File: ../Ex1/iB/Resources1b/H2b.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/H2b.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/H2b.png  used on input line 87.
 (pdftex.def)             Requested size: 280.04556pt x 212.83463pt.
-<../Ex1/iB/Resources1b/Montecarlo2.png, id=228, 542.77782pt x 420.06938pt>
+<../Ex1/iB/Resources1b/Montecarlo2.png, id=231, 542.77782pt x 420.06938pt>
 File: ../Ex1/iB/Resources1b/Montecarlo2.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/Montecarlo2.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/Montecarlo2.png  used on input l
 ine 94.
 (pdftex.def)             Requested size: 271.38824pt x 210.03418pt.
  [25 <../Ex1/iB/Resources1b/Montecarlo1.png> <../Ex1/iB/Resources1b/H2b.png>]
-<../Ex1/iB/Resources1b/H3b.png, id=233, 560.0925pt x 425.6703pt>
+<../Ex1/iB/Resources1b/H3b.png, id=236, 560.0925pt x 425.6703pt>
 File: ../Ex1/iB/Resources1b/H3b.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/H3b.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/H3b.png  used on input line 101.
 
 (pdftex.def)             Requested size: 280.04556pt x 212.83463pt.
-<../Ex1/iB/Resources1b/Montecarlo3.png, id=234, 542.77782pt x 420.06938pt>
+<../Ex1/iB/Resources1b/Montecarlo3.png, id=237, 542.77782pt x 420.06938pt>
 File: ../Ex1/iB/Resources1b/Montecarlo3.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/Montecarlo3.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/Montecarlo3.png  used on input l
 ine 108.
 (pdftex.def)             Requested size: 271.38824pt x 210.03418pt.
  [26 <../Ex1/iB/Resources1b/Montecarlo2.png> <../Ex1/iB/Resources1b/H3b.png>]
-<../Ex1/iB/Resources1b/zinp1_sim.png, id=239, 533.74406pt x 380.92313pt>
+<../Ex1/iB/Resources1b/zinp1_sim.png, id=242, 533.74406pt x 380.92313pt>
 File: ../Ex1/iB/Resources1b/zinp1_sim.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp1_sim.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp1_sim.png  used on input lin
 e 156.
 (pdftex.def)             Requested size: 266.87137pt x 190.46109pt.
  [27 <../Ex1/iB/Resources1b/Montecarlo3.png>]
-<../Ex1/iB/Resources1b/zinp1_m_med.png, id=243, 602.25pt x 372.39125pt>
+<../Ex1/iB/Resources1b/zinp1_m_med.png, id=246, 602.25pt x 372.39125pt>
 File: ../Ex1/iB/Resources1b/zinp1_m_med.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp1_m_med.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp1_m_med.png  used on input l
 ine 164.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
-<../Ex1/iB/Resources1b/zinp1_p_med.png, id=244, 602.25pt x 372.39125pt>
+<../Ex1/iB/Resources1b/zinp1_p_med.png, id=247, 602.25pt x 372.39125pt>
 File: ../Ex1/iB/Resources1b/zinp1_p_med.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp1_p_med.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp1_p_med.png  used on input l
 ine 164.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
-<../Ex1/iB/Resources1b/zinp2_sim.png, id=245, 533.74406pt x 380.92313pt>
+<../Ex1/iB/Resources1b/zinp2_sim.png, id=248, 533.74406pt x 380.92313pt>
 File: ../Ex1/iB/Resources1b/zinp2_sim.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp2_sim.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp2_sim.png  used on input lin
 e 172.
 (pdftex.def)             Requested size: 266.87137pt x 190.46109pt.
-<../Ex1/iB/Resources1b/zinp2_m_med.png, id=246, 602.25pt x 372.39125pt>
+<../Ex1/iB/Resources1b/zinp2_m_med.png, id=249, 602.25pt x 372.39125pt>
 File: ../Ex1/iB/Resources1b/zinp2_m_med.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp2_m_med.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp2_m_med.png  used on input l
 ine 179.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
-<../Ex1/iB/Resources1b/zinp2_p_med.png, id=247, 602.25pt x 372.39125pt>
+<../Ex1/iB/Resources1b/zinp2_p_med.png, id=250, 602.25pt x 372.39125pt>
 File: ../Ex1/iB/Resources1b/zinp2_p_med.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp2_p_med.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp2_p_med.png  used on input l
@@ -917,19 +1284,19 @@ ine 179.
 [28 <../Ex1/iB/Resources1b/zinp1_sim.png> <../Ex1/iB/Resources1b/zinp1_m_med.pn
 g> <../Ex1/iB/Resources1b/zinp1_p_med.png> <../Ex1/iB/Resources1b/zinp2_sim.png
 >]
-<../Ex1/iB/Resources1b/zinp3_sim.png, id=253, 533.74406pt x 380.92313pt>
+<../Ex1/iB/Resources1b/zinp3_sim.png, id=256, 533.74406pt x 380.92313pt>
 File: ../Ex1/iB/Resources1b/zinp3_sim.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp3_sim.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp3_sim.png  used on input lin
 e 186.
 (pdftex.def)             Requested size: 266.87137pt x 190.46109pt.
-<../Ex1/iB/Resources1b/zinp3_m_med.png, id=254, 602.25pt x 372.39125pt>
+<../Ex1/iB/Resources1b/zinp3_m_med.png, id=257, 602.25pt x 372.39125pt>
 File: ../Ex1/iB/Resources1b/zinp3_m_med.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp3_m_med.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp3_m_med.png  used on input l
 ine 193.
 (pdftex.def)             Requested size: 240.89572pt x 148.95386pt.
-<../Ex1/iB/Resources1b/zinp3_p_med.png, id=255, 602.25pt x 372.39125pt>
+<../Ex1/iB/Resources1b/zinp3_p_med.png, id=258, 602.25pt x 372.39125pt>
 File: ../Ex1/iB/Resources1b/zinp3_p_med.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp3_p_med.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp3_p_med.png  used on input l
@@ -938,19 +1305,19 @@ ine 193.
  [29 <../Ex1/iB/Resources1b/zinp2_m_med.png> <../Ex1/iB/Resources1b/zinp2_p_med
 .png> <../Ex1/iB/Resources1b/zinp3_sim.png> <../Ex1/iB/Resources1b/zinp3_m_med.
 png> <../Ex1/iB/Resources1b/zinp3_p_med.png>]
-<../Ex1/iB/Resources1b/zinp1_sim_para.png, id=263, 545.78906pt x 423.08063pt>
+<../Ex1/iB/Resources1b/zinp1_sim_para.png, id=266, 545.78906pt x 423.08063pt>
 File: ../Ex1/iB/Resources1b/zinp1_sim_para.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp1_sim_para.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp1_sim_para.png  used on inpu
 t line 224.
 (pdftex.def)             Requested size: 272.89386pt x 211.5398pt.
-<../Ex1/iB/Resources1b/zinp2_sim_para.png, id=264, 545.78906pt x 423.08063pt>
+<../Ex1/iB/Resources1b/zinp2_sim_para.png, id=267, 545.78906pt x 423.08063pt>
 File: ../Ex1/iB/Resources1b/zinp2_sim_para.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp2_sim_para.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp2_sim_para.png  used on inpu
 t line 233.
 (pdftex.def)             Requested size: 272.89386pt x 211.5398pt.
-<../Ex1/iB/Resources1b/zinp3_sim_para.png, id=265, 545.78906pt x 423.08063pt>
+<../Ex1/iB/Resources1b/zinp3_sim_para.png, id=268, 545.78906pt x 423.08063pt>
 File: ../Ex1/iB/Resources1b/zinp3_sim_para.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/zinp3_sim_para.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/zinp3_sim_para.png  used on inpu
@@ -958,26 +1325,26 @@ t line 241.
 (pdftex.def)             Requested size: 272.89386pt x 211.5398pt.
  [30 <../Ex1/iB/Resources1b/zinp1_sim_para.png> <../Ex1/iB/Resources1b/zinp2_si
 m_para.png>]
-<../Ex1/iB/Resources1b/sat1.png, id=270, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/sat1.png, id=273, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/sat1.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/sat1.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/sat1.png  used on input line 283
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [31 <../Ex1/iB/Resources1b/zinp3_sim_para.png>]
-<../Ex1/iB/Resources1b/sat2.png, id=274, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/sat2.png, id=277, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/sat2.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/sat2.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/sat2.png  used on input line 292
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iB/Resources1b/sat3.png, id=275, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/sat3.png, id=278, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/sat3.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/sat3.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/sat3.png  used on input line 300
 .
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iB/Resources1b/sat123.png, id=276, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/sat123.png, id=279, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/sat123.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/sat123.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/sat123.png  used on input line 3
@@ -985,26 +1352,26 @@ Package pdftex.def Info: ../Ex1/iB/Resources1b/sat123.png  used on input line 3
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [32 <../Ex1/iB/Resources1b/sat1.png> <../Ex1/iB/Resources1b/sat2.png> <../Ex1/
 iB/Resources1b/sat3.png>]
-<../Ex1/iB/Resources1b/slewRate1.png, id=283, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/slewRate1.png, id=286, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/slewRate1.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/slewRate1.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/slewRate1.png  used on input lin
 e 355.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [33 <../Ex1/iB/Resources1b/sat123.png>]
-<../Ex1/iB/Resources1b/slewRate2.png, id=288, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/slewRate2.png, id=291, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/slewRate2.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/slewRate2.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/slewRate2.png  used on input lin
 e 364.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iB/Resources1b/slewRate3.png, id=289, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/slewRate3.png, id=292, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/slewRate3.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/slewRate3.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/slewRate3.png  used on input lin
 e 373.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iB/Resources1b/slewRate123.png, id=290, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/slewRate123.png, id=293, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/slewRate123.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/slewRate123.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/slewRate123.png  used on input l
@@ -1012,13 +1379,13 @@ ine 382.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [34 <../Ex1/iB/Resources1b/slewRate1.png> <../Ex1/iB/Resources1b/slewRate2.png
 > <../Ex1/iB/Resources1b/slewRate3.png>]
-<../Ex1/iB/Resources1b/AmplMaxVsFreq1.png, id=297, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/AmplMaxVsFreq1.png, id=300, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/AmplMaxVsFreq1.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/AmplMaxVsFreq1.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/AmplMaxVsFreq1.png  used on inpu
 t line 401.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iB/Resources1b/AmplMaxVsFreq2.png, id=298, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/AmplMaxVsFreq2.png, id=301, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/AmplMaxVsFreq2.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/AmplMaxVsFreq2.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/AmplMaxVsFreq2.png  used on inpu
@@ -1026,25 +1393,25 @@ t line 411.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
  [35 <../Ex1/iB/Resources1b/slewRate123.png> <../Ex1/iB/Resources1b/AmplMaxVsFr
 eq1.png>]
-<../Ex1/iB/Resources1b/AmplMaxVsFreq3.png, id=304, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/AmplMaxVsFreq3.png, id=307, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/AmplMaxVsFreq3.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/AmplMaxVsFreq3.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/AmplMaxVsFreq3.png  used on inpu
 t line 420.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<../Ex1/iB/Resources1b/AmplMaxVsFreq123.png, id=305, 462.528pt x 346.896pt>
+<../Ex1/iB/Resources1b/AmplMaxVsFreq123.png, id=308, 462.528pt x 346.896pt>
 File: ../Ex1/iB/Resources1b/AmplMaxVsFreq123.png Graphic file (type png)
 <use ../Ex1/iB/Resources1b/AmplMaxVsFreq123.png>
 Package pdftex.def Info: ../Ex1/iB/Resources1b/AmplMaxVsFreq123.png  used on in
 put line 429.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<"../Ex1/iB/Resources1b/DC Sweep1_sim".png, id=306, 551.81157pt x 320.69812pt>
+<"../Ex1/iB/Resources1b/DC Sweep1_sim".png, id=309, 551.81157pt x 320.69812pt>
 File: "../Ex1/iB/Resources1b/DC Sweep1_sim".png Graphic file (type png)
 <use "../Ex1/iB/Resources1b/DC Sweep1_sim".png>
 Package pdftex.def Info: "../Ex1/iB/Resources1b/DC Sweep1_sim".png  used on inp
 ut line 442.
 (pdftex.def)             Requested size: 165.54474pt x 96.21017pt.
-<"../Ex1/iB/Resources1b/DC Sweep1_med".png, id=307, 602.25pt x 372.39125pt>
+<"../Ex1/iB/Resources1b/DC Sweep1_med".png, id=310, 602.25pt x 372.39125pt>
 File: "../Ex1/iB/Resources1b/DC Sweep1_med".png Graphic file (type png)
 <use "../Ex1/iB/Resources1b/DC Sweep1_med".png>
 Package pdftex.def Info: "../Ex1/iB/Resources1b/DC Sweep1_med".png  used on inp
@@ -1052,65 +1419,151 @@ ut line 442.
 (pdftex.def)             Requested size: 180.67639pt x 111.71823pt.
  [36 <../Ex1/iB/Resources1b/AmplMaxVsFreq2.png> <../Ex1/iB/Resources1b/AmplMaxV
 sFreq3.png> <../Ex1/iB/Resources1b/AmplMaxVsFreq123.png>]
-<"../Ex1/iB/Resources1b/DC Sweep2_sim".png, id=315, 551.81157pt x 320.69812pt>
+<"../Ex1/iB/Resources1b/DC Sweep2_sim".png, id=318, 551.81157pt x 320.69812pt>
 File: "../Ex1/iB/Resources1b/DC Sweep2_sim".png Graphic file (type png)
 <use "../Ex1/iB/Resources1b/DC Sweep2_sim".png>
 Package pdftex.def Info: "../Ex1/iB/Resources1b/DC Sweep2_sim".png  used on inp
 ut line 449.
 (pdftex.def)             Requested size: 165.54474pt x 96.21017pt.
-<"../Ex1/iB/Resources1b/DC Sweep2_med".png, id=316, 602.25pt x 372.39125pt>
+<"../Ex1/iB/Resources1b/DC Sweep2_med".png, id=319, 602.25pt x 372.39125pt>
 File: "../Ex1/iB/Resources1b/DC Sweep2_med".png Graphic file (type png)
 <use "../Ex1/iB/Resources1b/DC Sweep2_med".png>
 Package pdftex.def Info: "../Ex1/iB/Resources1b/DC Sweep2_med".png  used on inp
 ut line 449.
 (pdftex.def)             Requested size: 180.67639pt x 111.71823pt.
-<"../Ex1/iB/Resources1b/DC Sweep3_sim".png, id=317, 551.81157pt x 320.69812pt>
+<"../Ex1/iB/Resources1b/DC Sweep3_sim".png, id=320, 551.81157pt x 320.69812pt>
 File: "../Ex1/iB/Resources1b/DC Sweep3_sim".png Graphic file (type png)
 <use "../Ex1/iB/Resources1b/DC Sweep3_sim".png>
 Package pdftex.def Info: "../Ex1/iB/Resources1b/DC Sweep3_sim".png  used on inp
 ut line 456.
 (pdftex.def)             Requested size: 165.54474pt x 96.21017pt.
-<"../Ex1/iB/Resources1b/DC Sweep3_med".png, id=318, 602.25pt x 372.39125pt>
+<"../Ex1/iB/Resources1b/DC Sweep3_med".png, id=321, 602.25pt x 372.39125pt>
 File: "../Ex1/iB/Resources1b/DC Sweep3_med".png Graphic file (type png)
 <use "../Ex1/iB/Resources1b/DC Sweep3_med".png>
 Package pdftex.def Info: "../Ex1/iB/Resources1b/DC Sweep3_med".png  used on inp
 ut line 456.
 (pdftex.def)             Requested size: 180.67639pt x 111.71823pt.
-) (../parte6/Informe_Latex/parte6.tex
+) (../parte6/Informe/parte6.tex
 [37 <../Ex1/iB/Resources1b/DC Sweep1_sim.png> <../Ex1/iB/Resources1b/DC Sweep1_
 med.png> <../Ex1/iB/Resources1b/DC Sweep2_sim.png> <../Ex1/iB/Resources1b/DC Sw
 eep2_med.png> <../Ex1/iB/Resources1b/DC Sweep3_sim.png> <../Ex1/iB/Resources1b/
-DC Sweep3_med.png>] [38]
-<../parte6/Informe_Latex/reources/inverting_opamp_diagram.png, id=328, 728.1202
-5pt x 425.1885pt>
-File: ../parte6/Informe_Latex/reources/inverting_opamp_diagram.png Graphic file
- (type png)
-<use ../parte6/Informe_Latex/reources/inverting_opamp_diagram.png>
-Package pdftex.def Info: ../parte6/Informe_Latex/reources/inverting_opamp_diagr
-am.png  used on input line 43.
+DC Sweep3_med.png>] [38] (../parte6/Informe/resources/signal_diagram.tex)
+[39] (../parte6/Informe/resources/fase1.tex)
+(../parte6/Informe/resources/fase2.tex) [40]
+<../parte6/Informe/resources/inverting_opamp_diagram.png, id=337, 728.12025pt x
+ 425.1885pt>
+File: ../parte6/Informe/resources/inverting_opamp_diagram.png Graphic file (typ
+e png)
+<use ../parte6/Informe/resources/inverting_opamp_diagram.png>
+Package pdftex.def Info: ../parte6/Informe/resources/inverting_opamp_diagram.pn
+g  used on input line 109.
 (pdftex.def)             Requested size: 218.43776pt x 127.55753pt.
-<../parte6/Informe_Latex/reources/adder_opamp_diagram.png, id=329, 624.53325pt 
-x 388.45125pt>
-File: ../parte6/Informe_Latex/reources/adder_opamp_diagram.png Graphic file (ty
-pe png)
-<use ../parte6/Informe_Latex/reources/adder_opamp_diagram.png>
-Package pdftex.def Info: ../parte6/Informe_Latex/reources/adder_opamp_diagram.p
-ng  used on input line 53.
-(pdftex.def)             Requested size: 187.36142pt x 116.53627pt.
- [39] [40 <../parte6/Informe_Latex/reources/inverting_opamp_diagram.png> <../pa
-rte6/Informe_Latex/reources/adder_opamp_diagram.png>])
-[41] ("Informe TP02 - Grupo 4.aux"
+<../parte6/Informe/resources/adder_opamp_diagram.png, id=338, 624.53325pt x 388
+.45125pt>
+File: ../parte6/Informe/resources/adder_opamp_diagram.png Graphic file (type pn
+g)
+<use ../parte6/Informe/resources/adder_opamp_diagram.png>
+Package pdftex.def Info: ../parte6/Informe/resources/adder_opamp_diagram.png  u
+sed on input line 129.
+(pdftex.def)             Requested size: 249.80887pt x 155.37773pt.
+<../parte6/Informe/resources/esquematico_opamps.png, id=339, 872.058pt x 360.74
+776pt>
+File: ../parte6/Informe/resources/esquematico_opamps.png Graphic file (type png
+)
+<use ../parte6/Informe/resources/esquematico_opamps.png>
+Package pdftex.def Info: ../parte6/Informe/resources/esquematico_opamps.png  us
+ed on input line 149.
+(pdftex.def)             Requested size: 348.81702pt x 144.29654pt.
+ [41 <../parte6/Informe/resources/inverting_opamp_diagram.png> <../parte6/Infor
+me/resources/adder_opamp_diagram.png>]
+<../parte6/Informe/resources/grafica_analitica.png, id=343, 722.7pt x 452.892pt
+>
+File: ../parte6/Informe/resources/grafica_analitica.png Graphic file (type png)
+
+<use ../parte6/Informe/resources/grafica_analitica.png>
+Package pdftex.def Info: ../parte6/Informe/resources/grafica_analitica.png  use
+d on input line 176.
+(pdftex.def)             Requested size: 433.62334pt x 271.73729pt.
+ [42 <../parte6/Informe/resources/esquematico_opamps.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 181.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 181.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 181.
+
+(../parte6/Informe/resources/v_off.tex)
+<../parte6/Informe/resources/esquematico_opamps_diodos.png, id=348, 926.86275pt
+ x 348.70274pt>
+File: ../parte6/Informe/resources/esquematico_opamps_diodos.png Graphic file (t
+ype png)
+<use ../parte6/Informe/resources/esquematico_opamps_diodos.png>
+Package pdftex.def Info: ../parte6/Informe/resources/esquematico_opamps_diodos.
+png  used on input line 197.
+(pdftex.def)             Requested size: 463.43024pt x 174.35094pt.
+ [43 <../parte6/Informe/resources/grafica_analitica.png>]
+<../parte6/Informe/resources/grafica_simulacion.png, id=354, 692.5875pt x 440.8
+47pt>
+File: ../parte6/Informe/resources/grafica_simulacion.png Graphic file (type png
+)
+<use ../parte6/Informe/resources/grafica_simulacion.png>
+Package pdftex.def Info: ../parte6/Informe/resources/grafica_simulacion.png  us
+ed on input line 211.
+(pdftex.def)             Requested size: 346.2929pt x 220.42296pt.
+ [44 <../parte6/Informe/resources/esquematico_opamps_diodos.png> <../parte6/Inf
+orme/resources/grafica_simulacion.png>]
+<../parte6/Informe/resources/montecarlo_R1.png, id=358, 1140.6615pt x 233.07076
+pt>
+File: ../parte6/Informe/resources/montecarlo_R1.png Graphic file (type png)
+<use ../parte6/Informe/resources/montecarlo_R1.png>
+Package pdftex.def Info: ../parte6/Informe/resources/montecarlo_R1.png  used on
+ input line 230.
+(pdftex.def)             Requested size: 456.25652pt x 93.22664pt.
+<../parte6/Informe/resources/montecarlo_RA.png, id=359, 1140.6615pt x 233.07076
+pt>
+File: ../parte6/Informe/resources/montecarlo_RA.png Graphic file (type png)
+<use ../parte6/Informe/resources/montecarlo_RA.png>
+Package pdftex.def Info: ../parte6/Informe/resources/montecarlo_RA.png  used on
+ input line 237.
+(pdftex.def)             Requested size: 456.25652pt x 93.22664pt.
+<../parte6/Informe/resources/montecarlo_RF.png, id=360, 1140.6615pt x 233.07076
+pt>
+File: ../parte6/Informe/resources/montecarlo_RF.png Graphic file (type png)
+<use ../parte6/Informe/resources/montecarlo_RF.png>
+Package pdftex.def Info: ../parte6/Informe/resources/montecarlo_RF.png  used on
+ input line 244.
+(pdftex.def)             Requested size: 456.25652pt x 93.22664pt.
+ [45 <../parte6/Informe/resources/montecarlo_R1.png> <../parte6/Informe/resourc
+es/montecarlo_RA.png> <../parte6/Informe/resources/montecarlo_RF.png>]
+<../parte6/Informe/resources/grafica_input_medicion.png, id=364, 572.73975pt x 
+357.7365pt>
+File: ../parte6/Informe/resources/grafica_input_medicion.png Graphic file (type
+ png)
+<use ../parte6/Informe/resources/grafica_input_medicion.png>
+Package pdftex.def Info: ../parte6/Informe/resources/grafica_input_medicion.png
+  used on input line 265.
+(pdftex.def)             Requested size: 280.64493pt x 175.2924pt.
+<../parte6/Informe/resources/grafica_contraste_ruido.png, id=365, 708.246pt x 4
+31.211pt>
+File: ../parte6/Informe/resources/grafica_contraste_ruido.png Graphic file (typ
+e png)
+<use ../parte6/Informe/resources/grafica_contraste_ruido.png>
+Package pdftex.def Info: ../parte6/Informe/resources/grafica_contraste_ruido.pn
+g  used on input line 274.
+(pdftex.def)             Requested size: 283.29338pt x 172.48134pt.
+ [46 <../parte6/Informe/resources/grafica_input_medicion.png> <../parte6/Inform
+e/resources/grafica_contraste_ruido.png>]) [47] ("Informe TP02 - Grupo 4.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 4565 strings out of 492902
- 73245 string characters out of 3133550
- 137295 words of memory out of 3000000
- 8295 multiletter control sequences out of 15000+200000
- 16094 words of font info for 33 fonts, out of 3000000 for 9000
+ 25508 strings out of 492902
+ 615311 string characters out of 3133550
+ 779304 words of memory out of 3000000
+ 28924 multiletter control sequences out of 15000+200000
+ 18830 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,31p,385b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,10n,68p,498b,1025s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\lisan\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 \tcrm1000.pk> <C:\Users\lisan\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
 /ec/dpi600\ecti1000.pk> <C:\Users\lisan\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
@@ -1127,16 +1580,18 @@ ur/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\lisan\AppData\Local\MiKTeX\2.9\fon
 ts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Informe TP02 - Grupo 4.pdf" (42 pages, 2136901 bytes).
+fonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy7.pfb>
+Output written on "Informe TP02 - Grupo 4.pdf" (48 pages, 2366906 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
+ 827 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 481 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 words of extra memory for PDF output out of 10000 (max. 10000000)
 
