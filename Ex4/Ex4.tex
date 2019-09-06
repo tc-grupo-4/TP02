@@ -238,6 +238,22 @@ La salida oscila hasta estabilizarse y esto se deba al hecho de que estamos ante
 
 A esta frecuencia el circuito ya no tiene el tiempo suficiente para estabilizarse y se observa solamente la respuesta transitoria.
 
+\subsection{Impedancia de entrada}
+Se utilizó el analizador de impedancias para poder realizar las mediciones que procedieron a volcarse en la Figura \ref{fig:zinsuperDERivador} donde se superponen la impedancia de entrada simulada con LTSpice y la medida.
+
+
+\begin{figure}[H]
+	\begin{center}
+		\makebox[\textwidth]{\includegraphics[width=0.8\textwidth]{ZinBodeDERivadorSINcompensarSUPERpuestos.png}}
+		\caption{Impedancia de entrada del derivador sin compensar}
+		\label{fig:zinsuperDERivador}
+	\end{center}
+\end{figure}
+
+El valor de las resistencias se logró medir eficazmente pero no se puede decir lo mismo de la fase, esta misma hasta antes de los $20 \, kHz$ coincide con la simulada y tiene una caída de $90º$ a $-90º$ que no es abrupta como en la simulación sino que va bajando durante la década siguiente a $20 \, kHz$.
+
+
+
 
 
 \section{Circuito Derivador Compensado}
@@ -314,8 +330,16 @@ A $50 \, kHz$ el circuito sigue cumpliendo con su función de derivar, a diferen
 
 Ahora también es apreciable la derivada de una señal cuadrada la cual son pulsos, como puede verse en la Figura \ref{fig:derivCUAdradaCOMP}.
 
+\subsection{Impedancia de entrada}
+\begin{figure}[H]
+	\begin{center}
+		\makebox[\textwidth]{\includegraphics[width=0.8\textwidth]{ZinBodeDERivadorCOMpensadoSUPERpuestos.png}}
+		\caption{Impedancia de entrada del derivador compensado}
+		\label{fig:zinsuperDERivadorCompensado}
+	\end{center}
+\end{figure}
 
-
+Similar al caso anterior, el valor de la impedancia de entrada logro medirse de forma eficaz mientras que la fase sigue siendo válida pero sólo para frecuencias menores a $20 \, kHz$.
 
 
 
@@ -390,7 +414,7 @@ H(s)= -\frac{\mathrm{A_{vol}}}{C\,s\,\left(\frac{s}{\mathrm{w_p}}+1\right)\,\lef
 
 En este caso se tienen dos polos simples en $f \sim 5 \, mHz$ y $f \sim 15 \, MHz$ pero en ninguno de ellos es posible medir ya que en el primer caso la frecuencia es muy pequeña y tiene una ganancia de $110 \, dB$ y en el otro caso la atenuación es tanta que necesitaríamos más de los $20 V_{pp}$ que nos puede ofrecer el instrumental del laboratorio para poder medir.
 
-\subsection{Comparación de los 3 casos}	\label{sub:comparaciondelos3casos}
+\subsection{Comparación de los 3 casos}
 \begin{figure}[H]
 	\begin{center}
 		\makebox[\textwidth]{\includegraphics[width=\paperwidth]{BodesSuperpuestosIntegrador.png}}
@@ -432,9 +456,16 @@ En los rangos de frecuencia en los que se pudo medir la respuesta en frecuencia 
 
 Observando la Figura \ref{fig:IntegralNOcomp500Hz} y la Figura \ref{fig:IntegralNOcomp1kHz} se puede ver que a frecuencias bajas el integrador se encuentra cumpliendo su propósito ya que está integrando la señal de entrada cuadrada amarilla en una señal triangular en la señal de salida. Notar que la amplitud de la tension de entrada es de $2 \, V_{pp}$ y que la de la señal de salida en $500 \,Hz$ es de $8,7 \,V$ y la de $1 \,kHz$ es de $4,25 \,$, pudiendo así notar como la amplitud de la señal de salida va disminuyendo a medida que la frecuencia de la señal de entrada es más alta.
 
+\subsection{Impedancia de entrada}
+\begin{figure}[H]
+	\begin{center}
+		\makebox[\textwidth]{\includegraphics[width=0.8\textwidth]{ZinBodeINTegraadorCOMpensadoSUPERpuestos.png}}
+		\caption{Impedancia de entrada del integrador sin compensar}
+		\label{fig:zinsuperINTegrador}
+	\end{center}
+\end{figure}
 
-
-
+En este caso mientras el valor de la impedancia de entrada coincide hasta apróximadamente $400 \, kHz$ la fase no coincide en ningún punto.
 
 
 \section{Circuito Integrador Compensado}
@@ -476,6 +507,10 @@ Se puede observar que el circuito a la frecuencia de $1 \, Hz$ no se encuentra c
 
 A $10 \, kHz$ de frecuencia es posible ver como con la señal cuadrada amarilla que es la señal de entrada del circuito se obtiene la señal triangular verde que sería la señal integrada y multiplicada por aquel factor negativo como se vio en el caso anterior del derivador.
 
+\subsection{Impedancia de entrada}
+La impedancia de entrada en este caso da un valor constante de $39 \, k \Omega$ y una fase de $180º$.
+
 \section{Conclusión}
+Se logró diseñar los circuitos pedidos que derivan o integran señales en un rango de frecuencias determinado, se conocieron sus limitaciones debido a comportamientos no deseados y se busco la forma de compensarlos para poder tener un mejor rango de frecuencias en el cual poder utilizarlos.
 
 \end{document}

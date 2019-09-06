@@ -12,15 +12,19 @@
 \BOOKMARK [2][-]{subsection.3.6}{Medici\363n}{section.3}% 12
 \BOOKMARK [2][-]{subsection.3.7}{Medici\363n vs. simulaci\363n vs. te\363rico}{section.3}% 13
 \BOOKMARK [2][-]{subsection.3.8}{Comportamiento ante se\361ales no senoidales}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{Circuito Derivador Compensado}{}% 15
-\BOOKMARK [2][-]{subsection.4.1}{Comportamiento ante se\361ales no senoidales}{section.4}% 16
-\BOOKMARK [1][-]{section.5}{Circuito Integrador}{}% 17
-\BOOKMARK [2][-]{subsection.5.1}{Ganancia ideal}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.2}{Avol finito}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.3}{Avol\(w\) con polo dominante}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.4}{Comparaci\363n de los 3 casos}{section.5}% 21
-\BOOKMARK [2][-]{subsection.5.5}{Medici\363n vs. simulaci\363n vs. te\363rico}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.6}{Comportamiento ante se\361ales no senoidales}{section.5}% 23
-\BOOKMARK [1][-]{section.6}{Circuito Integrador Compensado}{}% 24
-\BOOKMARK [2][-]{subsection.6.1}{Comportamiento ante se\361ales no senoidales}{section.6}% 25
-\BOOKMARK [1][-]{section.7}{Conclusi\363n}{}% 26
+\BOOKMARK [2][-]{subsection.3.9}{Impedancia de entrada}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Circuito Derivador Compensado}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Comportamiento ante se\361ales no senoidales}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Impedancia de entrada}{section.4}% 18
+\BOOKMARK [1][-]{section.5}{Circuito Integrador}{}% 19
+\BOOKMARK [2][-]{subsection.5.1}{Ganancia ideal}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.2}{Avol finito}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.3}{Avol\(w\) con polo dominante}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.4}{Comparaci\363n de los 3 casos}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.5}{Medici\363n vs. simulaci\363n vs. te\363rico}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.6}{Comportamiento ante se\361ales no senoidales}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.7}{Impedancia de entrada}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{Circuito Integrador Compensado}{}% 27
+\BOOKMARK [2][-]{subsection.6.1}{Comportamiento ante se\361ales no senoidales}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.2}{Impedancia de entrada}{section.6}% 29
+\BOOKMARK [1][-]{section.7}{Conclusi\363n}{}% 30

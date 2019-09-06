@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.15)  6 SEP 2019 05:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.8.15)  6 SEP 2019 06:45
 entering extended mode
 **./Ex4.tex
 (Ex4.tex
@@ -845,7 +845,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 13.
 
-<circconz1z2.png, id=111, 225.09094pt x 153.57375pt>
+<circconz1z2.png, id=119, 225.09094pt x 153.57375pt>
 File: circconz1z2.png Graphic file (type png)
 <use circconz1z2.png>
 Package pdftex.def Info: circconz1z2.png  used on input line 18.
@@ -885,12 +885,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Font Info:    Font shape `OT1/xcmss/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/xcmss/m/sl' tried instead on input line 65.
 
-<circuitoderivador.png, id=139, 226.59656pt x 168.63pt>
+<circuitoderivador.png, id=147, 226.59656pt x 168.63pt>
 File: circuitoderivador.png Graphic file (type png)
 <use circuitoderivador.png>
 Package pdftex.def Info: circuitoderivador.png  used on input line 89.
 (pdftex.def)             Requested size: 113.29799pt x 84.31479pt.
-<Derivador-CasoIdeal.png, id=141, 1028.34187pt x 309.40594pt>
+<Derivador-CasoIdeal.png, id=149, 1028.34187pt x 309.40594pt>
 File: Derivador-CasoIdeal.png Graphic file (type png)
 <use Derivador-CasoIdeal.png>
 Package pdftex.def Info: Derivador-CasoIdeal.png  used on input line 105.
@@ -924,7 +924,7 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 126
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 126
 .
 
-<Derivador-AvolfinitoBodeAutomatico.png, id=154, 1028.34187pt x 315.42844pt>
+<Derivador-AvolfinitoBodeAutomatico.png, id=162, 1028.34187pt x 315.42844pt>
 File: Derivador-AvolfinitoBodeAutomatico.png Graphic file (type png)
 <use Derivador-AvolfinitoBodeAutomatico.png>
 Package pdftex.def Info: Derivador-AvolfinitoBodeAutomatico.png  used on input 
@@ -939,7 +939,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 138.
 
-<Derivador-Avol(w)conpolodominante.png, id=163, 1028.34187pt x 320.69812pt>
+<Derivador-Avol(w)conpolodominante.png, id=171, 1028.34187pt x 320.69812pt>
 File: Derivador-Avol(w)conpolodominante.png Graphic file (type png)
 <use Derivador-Avol(w)conpolodominante.png>
 Package pdftex.def Info: Derivador-Avol(w)conpolodominante.png  used on input l
@@ -957,25 +957,25 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 154
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 154
 .
 
-<BodesSuperpuestos.png, id=164, 1028.34187pt x 347.04657pt>
+<BodesSuperpuestos.png, id=172, 1028.34187pt x 347.04657pt>
 File: BodesSuperpuestos.png Graphic file (type png)
 <use BodesSuperpuestos.png>
 Package pdftex.def Info: BodesSuperpuestos.png  used on input line 159.
 (pdftex.def)             Requested size: 597.50787pt x 201.65253pt.
 [4 <./Derivador-AvolfinitoBodeAutomatico.png (PNG copy)> <./Derivador-Avol(w)co
 npolodominante.png (PNG copy)>]
-<BodeDerivadorLTSpiceGUI.png, id=171, 539.8569pt x 400.3758pt>
+<BodeDerivadorLTSpiceGUI.png, id=179, 539.8569pt x 400.3758pt>
 File: BodeDerivadorLTSpiceGUI.png Graphic file (type png)
 <use BodeDerivadorLTSpiceGUI.png>
 Package pdftex.def Info: BodeDerivadorLTSpiceGUI.png  used on input line 170.
 (pdftex.def)             Requested size: 358.50836pt x 265.88611pt.
-<BodeDerivadorMEdidoGUI.png, id=172, 539.8569pt x 400.3758pt>
+<BodeDerivadorMEdidoGUI.png, id=180, 539.8569pt x 400.3758pt>
 File: BodeDerivadorMEdidoGUI.png Graphic file (type png)
 <use BodeDerivadorMEdidoGUI.png>
 Package pdftex.def Info: BodeDerivadorMEdidoGUI.png  used on input line 179.
 (pdftex.def)             Requested size: 358.50836pt x 265.88611pt.
  [5 <./BodesSuperpuestos.png (PNG copy)> <./BodeDerivadorLTSpiceGUI.png>]
-<BodesSuperpuestosDERivadorARREGLARFASE.pdf, id=180, 824.60072pt x 502.27649pt>
+<BodesSuperpuestosDERivadorARREGLARFASE.pdf, id=188, 824.60072pt x 502.27649pt>
 
 File: BodesSuperpuestosDERivadorARREGLARFASE.pdf Graphic file (type pdf)
 <use BodesSuperpuestosDERivadorARREGLARFASE.pdf>
@@ -983,201 +983,242 @@ Package pdftex.def Info: BodesSuperpuestosDERivadorARREGLARFASE.pdf  used on in
 put line 191.
 (pdftex.def)             Requested size: 597.50787pt x 363.96103pt.
  [6 <./BodeDerivadorMEdidoGUI.png>]
-<DerivTriang10HzNOComp.png, id=189, 770.12718pt x 504.38437pt>
+<DerivTriang10HzNOComp.png, id=197, 770.12718pt x 504.38437pt>
 File: DerivTriang10HzNOComp.png Graphic file (type png)
 <use DerivTriang10HzNOComp.png>
 Package pdftex.def Info: DerivTriang10HzNOComp.png  used on input line 203.
 (pdftex.def)             Requested size: 364.19667pt x 238.52298pt.
  [7 <./BodesSuperpuestosDERivadorARREGLARFASE.pdf>]
-<DerivTriang100HzNOComp.png, id=220, 770.12718pt x 505.89pt>
+<DerivTriang100HzNOComp.png, id=228, 770.12718pt x 505.89pt>
 File: DerivTriang100HzNOComp.png Graphic file (type png)
 <use DerivTriang100HzNOComp.png>
 Package pdftex.def Info: DerivTriang100HzNOComp.png  used on input line 213.
 (pdftex.def)             Requested size: 364.19667pt x 239.23499pt.
  [8 <./DerivTriang10HzNOComp.png> <./DerivTriang100HzNOComp.png>]
-<DerivTriang10kHzNOComp.png, id=231, 770.12718pt x 505.13719pt>
+<DerivTriang10kHzNOComp.png, id=239, 770.12718pt x 505.13719pt>
 File: DerivTriang10kHzNOComp.png Graphic file (type png)
 <use DerivTriang10kHzNOComp.png>
 Package pdftex.def Info: DerivTriang10kHzNOComp.png  used on input line 223.
 (pdftex.def)             Requested size: 364.19667pt x 238.87898pt.
-<DerivTriang20kHzNOComp.png, id=232, 769.37437pt x 505.89pt>
+<DerivTriang20kHzNOComp.png, id=240, 769.37437pt x 505.89pt>
 File: DerivTriang20kHzNOComp.png Graphic file (type png)
 <use DerivTriang20kHzNOComp.png>
 Package pdftex.def Info: DerivTriang20kHzNOComp.png  used on input line 233.
 (pdftex.def)             Requested size: 364.19667pt x 239.47427pt.
  [9 <./DerivTriang10kHzNOComp.png> <./DerivTriang20kHzNOComp.png>]
-<BodesSuperpuestosDERivadorCOMPensado.png, id=241, 793.5246pt x 492.8814pt>
+<ZinBodeDERivadorSINcompensarSUPERpuestos.png, id=250, 560.0925pt x 425.6703pt>
+
+File: ZinBodeDERivadorSINcompensarSUPERpuestos.png Graphic file (type png)
+<use ZinBodeDERivadorSINcompensarSUPERpuestos.png>
+Package pdftex.def Info: ZinBodeDERivadorSINcompensarSUPERpuestos.png  used on 
+input line 247.
+(pdftex.def)             Requested size: 364.19667pt x 276.79932pt.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 253
+.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 253
+.
+
+<BodesSuperpuestosDERivadorCOMPensado.png, id=251, 793.5246pt x 492.8814pt>
 File: BodesSuperpuestosDERivadorCOMPensado.png Graphic file (type png)
 <use BodesSuperpuestosDERivadorCOMPensado.png>
 Package pdftex.def Info: BodesSuperpuestosDERivadorCOMPensado.png  used on inpu
-t line 251.
+t line 267.
 (pdftex.def)             Requested size: 597.50787pt x 371.1342pt.
-<DerivCOMPTriang10Hz.png, id=243, 768.62157pt x 618.81187pt>
+[10 <./ZinBodeDERivadorSINcompensarSUPERpuestos.png>]
+<DerivCOMPTriang10Hz.png, id=259, 768.62157pt x 618.81187pt>
 File: DerivCOMPTriang10Hz.png Graphic file (type png)
 <use DerivCOMPTriang10Hz.png>
-Package pdftex.def Info: DerivCOMPTriang10Hz.png  used on input line 263.
+Package pdftex.def Info: DerivCOMPTriang10Hz.png  used on input line 279.
 (pdftex.def)             Requested size: 364.19667pt x 293.22108pt.
- [10 <./BodesSuperpuestosDERivadorCOMPensado.png>]
-<DerivCOMPTriang100Hz.png, id=250, 768.62157pt x 504.38437pt>
+ [11 <./BodesSuperpuestosDERivadorCOMPensado.png>]
+<DerivCOMPTriang100Hz.png, id=266, 768.62157pt x 504.38437pt>
 File: DerivCOMPTriang100Hz.png Graphic file (type png)
 <use DerivCOMPTriang100Hz.png>
-Package pdftex.def Info: DerivCOMPTriang100Hz.png  used on input line 271.
+Package pdftex.def Info: DerivCOMPTriang100Hz.png  used on input line 287.
 (pdftex.def)             Requested size: 318.66948pt x 209.1232pt.
-<DerivCOMPTriang10kHz.png, id=253, 768.62157pt x 504.38437pt>
+<DerivCOMPTriang10kHz.png, id=269, 768.62157pt x 504.38437pt>
 File: DerivCOMPTriang10kHz.png Graphic file (type png)
 <use DerivCOMPTriang10kHz.png>
-Package pdftex.def Info: DerivCOMPTriang10kHz.png  used on input line 281.
+Package pdftex.def Info: DerivCOMPTriang10kHz.png  used on input line 297.
 (pdftex.def)             Requested size: 318.66948pt x 209.1232pt.
- [11 <./DerivCOMPTriang10Hz.png> <./DerivCOMPTriang100Hz.png>]
-<DerivCOMPTriang20kHz.png, id=262, 767.86874pt x 504.38437pt>
+ [12 <./DerivCOMPTriang10Hz.png> <./DerivCOMPTriang100Hz.png>]
+<DerivCOMPTriang20kHz.png, id=278, 767.86874pt x 504.38437pt>
 File: DerivCOMPTriang20kHz.png Graphic file (type png)
 <use DerivCOMPTriang20kHz.png>
-Package pdftex.def Info: DerivCOMPTriang20kHz.png  used on input line 289.
+Package pdftex.def Info: DerivCOMPTriang20kHz.png  used on input line 305.
 (pdftex.def)             Requested size: 318.66948pt x 209.3233pt.
-<DerivCOMPTriang50kHz.png, id=267, 769.37437pt x 502.87875pt>
+<DerivCOMPTriang50kHz.png, id=283, 769.37437pt x 502.87875pt>
 File: DerivCOMPTriang50kHz.png Graphic file (type png)
 <use DerivCOMPTriang50kHz.png>
-Package pdftex.def Info: DerivCOMPTriang50kHz.png  used on input line 299.
+Package pdftex.def Info: DerivCOMPTriang50kHz.png  used on input line 315.
 (pdftex.def)             Requested size: 318.66948pt x 208.29178pt.
- [12 <./DerivCOMPTriang10kHz.png> <./DerivCOMPTriang20kHz.png>]
-<DerivCOMPCuadrada.png, id=276, 767.86874pt x 502.87875pt>
+ [13 <./DerivCOMPTriang10kHz.png> <./DerivCOMPTriang20kHz.png>]
+<DerivCOMPCuadrada.png, id=293, 767.86874pt x 502.87875pt>
 File: DerivCOMPCuadrada.png Graphic file (type png)
 <use DerivCOMPCuadrada.png>
-Package pdftex.def Info: DerivCOMPCuadrada.png  used on input line 309.
+Package pdftex.def Info: DerivCOMPCuadrada.png  used on input line 325.
 (pdftex.def)             Requested size: 318.66948pt x 208.69846pt.
-<circuitointegrador.png, id=280, 225.09094pt x 153.57375pt>
+<ZinBodeDERivadorCOMpensadoSUPERpuestos.png, id=295, 560.0925pt x 425.6703pt>
+File: ZinBodeDERivadorCOMpensadoSUPERpuestos.png Graphic file (type png)
+<use ZinBodeDERivadorCOMpensadoSUPERpuestos.png>
+Package pdftex.def Info: ZinBodeDERivadorCOMpensadoSUPERpuestos.png  used on in
+put line 336.
+(pdftex.def)             Requested size: 364.19667pt x 276.79932pt.
+ [14 <./DerivCOMPTriang50kHz.png> <./DerivCOMPCuadrada.png>]
+<circuitointegrador.png, id=306, 225.09094pt x 153.57375pt>
 File: circuitointegrador.png Graphic file (type png)
 <use circuitointegrador.png>
-Package pdftex.def Info: circuitointegrador.png  used on input line 332.
+Package pdftex.def Info: circuitointegrador.png  used on input line 356.
 (pdftex.def)             Requested size: 112.54518pt x 76.78668pt.
- [13 <./DerivCOMPTriang50kHz.png> <./DerivCOMPCuadrada.png>]
-<Integrador-CasoIdeal.png, id=291, 1028.34187pt x 323.70938pt>
+ [15 <./ZinBodeDERivadorCOMpensadoSUPERpuestos.png> <./circuitointegrador.png>]
+<Integrador-CasoIdeal.png, id=315, 1028.34187pt x 323.70938pt>
 File: Integrador-CasoIdeal.png Graphic file (type png)
 <use Integrador-CasoIdeal.png>
-Package pdftex.def Info: Integrador-CasoIdeal.png  used on input line 348.
+Package pdftex.def Info: Integrador-CasoIdeal.png  used on input line 372.
 (pdftex.def)             Requested size: 597.50787pt x 188.09239pt.
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 359
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 383
 .
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 362.
+(hyperref)                removing `math shift' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 362.
+(hyperref)                removing `subscript' on input line 386.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 362.
+(hyperref)                removing `math shift' on input line 386.
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 367
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 391
 .
 
 
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 367
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 391
 .
 
-[14 <./circuitointegrador.png> <./Integrador-CasoIdeal.png (PNG copy)>]
-<Integrador-AvolfinitoBodeAutomatico.png, id=301, 1028.34187pt x 355.3275pt>
+<Integrador-AvolfinitoBodeAutomatico.png, id=317, 1028.34187pt x 355.3275pt>
 File: Integrador-AvolfinitoBodeAutomatico.png Graphic file (type png)
 <use Integrador-AvolfinitoBodeAutomatico.png>
 Package pdftex.def Info: Integrador-AvolfinitoBodeAutomatico.png  used on input
- line 371.
+ line 395.
 (pdftex.def)             Requested size: 597.50787pt x 206.46419pt.
+[16 <./Integrador-CasoIdeal.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 401.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 377.
+(hyperref)                removing `math shift' on input line 401.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 377.
-
-
-Overfull \hbox (16.37032pt too wide) detected at line 381
+Overfull \hbox (16.37032pt too wide) detected at line 405
 \OML/cmssm/m/it/10.95 H\OT1/cmsmf/m/n/10.95 (\OML/cmssm/m/it/10.95 s\OT1/cmsmf/
 m/n/10.95 ) = \OMS/cmsssy/m/n/10.95  [] \OT1/cmsmf/m/n/10.95 = \OMS/cmsssy/m/n/
 10.95  []
  []
 
-<Integrador-Avol(w)conpolodominanteHasta11MHz.png, id=302, 1028.34187pt x 361.3
+<Integrador-Avol(w)conpolodominanteHasta11MHz.png, id=327, 1028.34187pt x 361.3
 5pt>
 File: Integrador-Avol(w)conpolodominanteHasta11MHz.png Graphic file (type png)
 <use Integrador-Avol(w)conpolodominanteHasta11MHz.png>
 Package pdftex.def Info: Integrador-Avol(w)conpolodominanteHasta11MHz.png  used
- on input line 385.
+ on input line 409.
 (pdftex.def)             Requested size: 597.50787pt x 209.9636pt.
-[15 <./Integrador-AvolfinitoBodeAutomatico.png (PNG copy)>]
-<BodesSuperpuestosIntegrador.png, id=310, 1028.34187pt x 329.73187pt>
+[17 <./Integrador-AvolfinitoBodeAutomatico.png (PNG copy)> <./Integrador-Avol(w
+)conpolodominanteHasta11MHz.png (PNG copy)>]
+<BodesSuperpuestosIntegrador.png, id=334, 1028.34187pt x 329.73187pt>
 File: BodesSuperpuestosIntegrador.png Graphic file (type png)
 <use BodesSuperpuestosIntegrador.png>
-Package pdftex.def Info: BodesSuperpuestosIntegrador.png  used on input line 39
-6.
+Package pdftex.def Info: BodesSuperpuestosIntegrador.png  used on input line 42
+0.
 (pdftex.def)             Requested size: 597.50787pt x 191.59177pt.
-<BodesSuperpuestosINTegradorSINCOMPensar.pdf, id=311, 824.60072pt x 502.27649pt
+<BodesSuperpuestosINTegradorSINCOMPensar.pdf, id=335, 824.60072pt x 502.27649pt
 >
 File: BodesSuperpuestosINTegradorSINCOMPensar.pdf Graphic file (type pdf)
 <use BodesSuperpuestosINTegradorSINCOMPensar.pdf>
 Package pdftex.def Info: BodesSuperpuestosINTegradorSINCOMPensar.pdf  used on i
-nput line 407.
+nput line 431.
 (pdftex.def)             Requested size: 597.50787pt x 363.96103pt.
- [16 <./Integrador-Avol(w)conpolodominanteHasta11MHz.png (PNG copy)> <./BodesSu
-perpuestosIntegrador.png (PNG copy)>]
-<Integrador500Hz.png, id=319, 1027.84pt x 825.0825pt>
+ [18 <./BodesSuperpuestosIntegrador.png (PNG copy)>]
+<Integrador500Hz.png, id=342, 1027.84pt x 825.0825pt>
 File: Integrador500Hz.png Graphic file (type png)
 <use Integrador500Hz.png>
-Package pdftex.def Info: Integrador500Hz.png  used on input line 419.
+Package pdftex.def Info: Integrador500Hz.png  used on input line 443.
 (pdftex.def)             Requested size: 364.19667pt x 292.35869pt.
- [17 <./BodesSuperpuestosINTegradorSINCOMPensar.pdf>]
-<Integrador1kHz.png, id=341, 1027.84pt x 825.0825pt>
+ [19 <./BodesSuperpuestosINTegradorSINCOMPensar.pdf>]
+<Integrador1kHz.png, id=365, 1027.84pt x 825.0825pt>
 File: Integrador1kHz.png Graphic file (type png)
 <use Integrador1kHz.png>
-Package pdftex.def Info: Integrador1kHz.png  used on input line 427.
+Package pdftex.def Info: Integrador1kHz.png  used on input line 451.
 (pdftex.def)             Requested size: 364.19667pt x 292.35869pt.
- [18 <./Integrador500Hz.png (PNG copy)>]
-<BodesSuperpuestosINTegradorCOMPensado.png, id=349, 793.5246pt x 492.8814pt>
+ [20 <./Integrador500Hz.png (PNG copy)>]
+<ZinBodeINTegraadorCOMpensadoSUPERpuestos.png, id=373, 560.0925pt x 426.393pt>
+File: ZinBodeINTegraadorCOMpensadoSUPERpuestos.png Graphic file (type png)
+<use ZinBodeINTegraadorCOMpensadoSUPERpuestos.png>
+Package pdftex.def Info: ZinBodeINTegraadorCOMpensadoSUPERpuestos.png  used on 
+input line 462.
+(pdftex.def)             Requested size: 364.19667pt x 277.26927pt.
+ [21 <./Integrador1kHz.png (PNG copy)>]
+<BodesSuperpuestosINTegradorCOMPensado.png, id=379, 793.5246pt x 492.8814pt>
 File: BodesSuperpuestosINTegradorCOMPensado.png Graphic file (type png)
 <use BodesSuperpuestosINTegradorCOMPensado.png>
 Package pdftex.def Info: BodesSuperpuestosINTegradorCOMPensado.png  used on inp
-ut line 449.
+ut line 480.
 (pdftex.def)             Requested size: 597.50787pt x 371.1342pt.
- [19 <./Integrador1kHz.png (PNG copy)>]
+ [22 <./ZinBodeINTegraadorCOMpensadoSUPERpuestos.png>]
 File: Integrador1kHz.png Graphic file (type png)
 <use Integrador1kHz.png>
-Package pdftex.def Info: Integrador1kHz.png  used on input line 461.
+Package pdftex.def Info: Integrador1kHz.png  used on input line 492.
 (pdftex.def)             Requested size: 364.19667pt x 292.35869pt.
- [20 <./BodesSuperpuestosINTegradorCOMPensado.png>]
-<Integrador10kHz.png, id=364, 1027.84pt x 825.0825pt>
+ [23 <./BodesSuperpuestosINTegradorCOMPensado.png>]
+<Integrador10kHz.png, id=395, 1027.84pt x 825.0825pt>
 File: Integrador10kHz.png Graphic file (type png)
 <use Integrador10kHz.png>
-Package pdftex.def Info: Integrador10kHz.png  used on input line 471.
+Package pdftex.def Info: Integrador10kHz.png  used on input line 502.
 (pdftex.def)             Requested size: 364.19667pt x 292.35869pt.
- [21] [22 <./Integrador10kHz.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 481.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 481.
+ [24]
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 511
+.
+
+[25 <./Integrador10kHz.png (PNG copy)>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 516.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 516.
  (Ex4.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 481.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 481.
-Package rerunfilecheck Info: File `Ex4.out' has not changed.
-(rerunfilecheck)             Checksum: 5A37614DEEBBACA92EDFC43FF4CAB511;1880.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 516.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 516.
 
+
+Package rerunfilecheck Warning: File `Ex4.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Ex4.out':
+(rerunfilecheck)             Before: 331A90DC89B21F0A72A236D4D88A1C3B;2024
+(rerunfilecheck)             After:  F93F044D9690C30386594F76356F6EEC;2168.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 481.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
  ) 
 Here is how much of TeX's memory you used:
- 19035 strings out of 492895
- 352487 string characters out of 3133479
- 433988 words of memory out of 3000000
- 22469 multiletter control sequences out of 15000+200000
+ 19065 strings out of 492895
+ 353430 string characters out of 3133479
+ 434151 words of memory out of 3000000
+ 22486 multiletter control sequences out of 15000+200000
  24519 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,12n,48p,635b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1197,9 +1238,9 @@ ssmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfonts/cmssmi
 /Program Files/MiKTeX 2.9/fonts/type1/public/sansmathfonts/cmsssy8.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on Ex4.pdf (22 pages, 1078912 bytes).
+Output written on Ex4.pdf (25 pages, 1162185 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 371 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 477 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
+ 402 words of extra memory for PDF output out of 10000 (max. 10000000)
 
