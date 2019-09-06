@@ -142,6 +142,8 @@ Como los polos de los circuitos se encontraron en el orden de los $100 kHz$ el r
 
 Por otro lado, para medir la impedancia de entrada vista por el generador, se colocó una resistencia de $1.8 k\Omega$ entre la alimentación y el resto del circuito. Luego, se colocó la punta del canal 1 en la salida del generador de señales y la punta del canal 2 al otro extremo de la resistencia. Con la resta entre ambas señales se obtuvo la caída de tensión sobre esta resistencia y con eso la corriente a la entrada del circuito. Finalmente se calculó el cociente entre la tensión y la corriente para obtener la magnitud de la impedancia de entrada.
 
+\newpage
+
 \section{Análisis de Resultados}
 
 \subsection{Respuesta en Frecuencia}
@@ -185,7 +187,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-%\includegraphics[height=10cm]{./rsc/ne_1.png}
+\includegraphics[height=10cm]{./rsc/lm_bode_proto.png}
 \caption{Respuestas en frecuencia del $LM883N$}
 \label{fig:e2_lm_bode}
 \end{center}
@@ -193,13 +195,41 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 
 \begin{figure}
 \begin{center}
-%\includegraphics[height=10cm]{./rsc/ne_1.png}
+\includegraphics[height=10cm]{./rsc/ne_bode_proto.png}
 \caption{Respuestas en frecuencia del $NE5534P$}
 \label{fig:e2_ne_bode}
 \end{center}
 \end{figure}
 
 La primera diferencia observable en ambos circuitos es la presencia de un polo de segundo orden en las mediciones donde debería encontrarse un polo de primer orden, como indica el análisis teórico. Dado el sobrepico observado, se puede deducir que estos dos polos son complejos y conjugados.
-Esto puede deberse a que dentro del operacional puede existir una capacitancia no contemplada en la hoja de datos, o la capacitancia inducida por las puntas del osciloscopio están agregando otro polo.
+Esto puede deberse a que dentro del operacional puede existir una capacitancia no contemplada en la hoja de datos, o la capacitancia inducida por las puntas del osciloscopio están agregando otro polo. Además, las capacitancias inducidas por el \textit{protoboard} también pueden estar afectando al circuito en general.
+
+La presencia de este segundo polo es más apreciable en la respuesta en frecuencia de la fase cuando se utiliza el amplificador $NE534P$, la cual en la simulación y el modelo teórico desciende sólo hasta los $90^{\text{o}}$ en el rango de frecuencias medido.
+
+La diferencia en la ganancia del circuito medido con la ganancia del circuito simulado se debe a que se utilizaron resistencias diferentes en ambos casos: en el primero una resistencia de $100k\Omega$ y en el segundo la resistencia de $220k\Omega$ indicada en la consigna. Esta diferencia en la magnitud de amplificación se debe a que existe una caída de tensión en $R_3$ comparable; por lo tanto el circuito amplifica una tensión menor a la ingresada, lo que es percibido como una ganancia total menor a la ideal.
+
+Estas diferencias indican que hay elementos del modelo real que no se están contemplando en el análisis teórico ideal de los circuitos en cuestión.
 
 \subsection{Impedancia de Entrada}
+Se observa que la impedancia de Entrada del circuito decrece a medida que se aumenta la frecuencia.
+
+\section{Conclusión}
+Si bien los modelos teóricos y los modelos simulados sirven para predecir hasta cierto punto el comportamiento de un circuito amplificador, estos pueden llegar a no tener en cuenta o predecir cuestiones como el sobrepico encontrado en ambos casos de los circuitos.
+Observando las distintas respuestas en frecuencias de ambos circuitos, se puede sugerir que si uno necesita utilizar un amplificador no inversor, aquel construido con un operacional $NE5534P$ conservará su nivel de amplificación en frecuencias más altas que el $LM833N$, peró deberá tener cuidado de utilizar resistencias que se aproximen a la resistencia de entrada del amplificador ya que puede tener una ganancia menor a la deseada si solo sela calcula con el modelo ideal.
+Por otro lado, deberá tener en cuenta que el sobrepico presentado por el circuito construido con el $NE5543P$ alcanza una ganancia menor a la del construido con el $LM833N$, reduciendo el riesgo de quemar otras partes de la aplicación de este circuito.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[height=6cm]{./rsc/lm_proto_zin.png}
+\caption{Impedancia de entrada del $LM833N$}
+\label{fig:e2_lm_proto_zin}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[height=6cm]{./rsc/ne_proto_zin.png}
+\caption{Impedancia de entrada del $NE5534P$}
+\label{fig:e2_ne_proto_zin}
+\end{center}
+\end{figure}
