@@ -23,13 +23,13 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Conclusiones}{35}
 \contentsline {subsection}{\numberline {2.4}An\IeC {\'a}lisis del DC \emph {Sweep}}{37}
 \contentsline {section}{\numberline {3}Conclusiones}{37}
-\contentsline {section}{\numberline {4}Ejercicio 3}{38}
-\contentsline {subsection}{\numberline {4.1}Introducci\IeC {\'o}n}{38}
-\contentsline {subsection}{\numberline {4.2}An\IeC {\'a}lisis te\IeC {\'o}rico del circuito}{39}
-\contentsline {subsection}{\numberline {4.3}Mediciones}{44}
-\contentsline {subsubsection}{\numberline {4.3.1}Medicion de $V_{OS}$}{44}
-\contentsline {subsubsection}{\numberline {4.3.2}Medicion de $I_{P}$}{45}
-\contentsline {subsubsection}{\numberline {4.3.3}Medicion de $I_{N}$}{45}
-\contentsline {subsubsection}{\numberline {4.3.4}Calculo de $I_{OS}$ y $I_B$}{45}
-\contentsline {subsubsection}{\numberline {4.3.5}Analisis de resultados}{45}
-\contentsline {subsection}{\numberline {4.4}Circuito de compensaci\IeC {\'o}n externo}{46}
+\contentsline {part}{II\hspace {1em}Corrientes de Bias}{38}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{38}
+\contentsline {section}{\numberline {2}An\IeC {\'a}lisis te\IeC {\'o}rico del circuito}{39}
+\contentsline {section}{\numberline {3}Mediciones}{44}
+\contentsline {subsection}{\numberline {3.1}Medici\IeC {\'o}n de $V_{OS}$}{44}
+\contentsline {subsection}{\numberline {3.2}Medici\IeC {\'o}n de $I_{P}$}{45}
+\contentsline {subsection}{\numberline {3.3}Medici\IeC {\'o}n de $I_{N}$}{45}
+\contentsline {subsection}{\numberline {3.4}Calculo de $I_{OS}$ y $I_B$}{46}
+\contentsline {subsection}{\numberline {3.5}An\IeC {\'a}lisis de resultados}{46}
+\contentsline {section}{\numberline {4}Circuito de compensaci\IeC {\'o}n externo}{46}
