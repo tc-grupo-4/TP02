@@ -97,7 +97,7 @@ Dado que en la hoja de datos no se encuentra un valor para la resistencia de ent
 Como la ganancia a lazo abierto del amplificador es mucho más alta que la de el circuito ($110 dB \gg 38.4 dB$), se puede utilizar la expresión (\ref{eq:e2_GBW}) para calcular la frecuencia del polo del circuito amplificador completo:
 
 \begin{equation}
-f_B= \frac{9 MHz}{83.1} \approx 108.3 kHz
+f_B= \frac{9 MHz}{84.5} \approx 106.5 kHz
 \label{val:e2_fB_lm}
 \end{equation}
 
@@ -128,7 +128,7 @@ Se puede observar la primera diferencia con el amplificador anterior que la resi
 Aún así, las demás condiciones son similares al del $LM833N$ donde la ganancia del amplificador es mucho mayor a la del circuito completo; por lo tanto, se utiliza la misma expresión (\ref{eq:e2_GBW}) para obtener la frecuencia del polo del circuito:
 
 \begin{equation}
-f_B= \frac{10 MHz}{83.1} \approx 120.3 kHz
+f_B= \frac{10 MHz}{84.5} \approx 118.3 kHz
 \label{val:e2_fB_ne}
 \end{equation}
 
@@ -162,7 +162,7 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 \begin{figure}
 \begin{center}
 \includegraphics[height=10cm]{./rsc/lm_1.png}
-\caption{Medición de la transferencia en la frecuencia de corte con el $LM833N$}
+\caption{Medición de la transferencia en $f=106.5 kHz$ con el $LM833N$}
 \label{fig:e2_lm_fB}
 \end{center}
 \end{figure}
@@ -182,3 +182,23 @@ Sin embargo, mientras que en la Figura \ref{fig:e2_lm_fB} se observa que la frec
 \label{fig:e2_ne_fB}
 \end{center}
 \end{figure}
+
+\begin{figure}
+\begin{center}
+%\includegraphics[height=10cm]{./rsc/ne_1.png}
+\caption{Respuestas en frecuencia del $LM883N$}
+\label{fig:e2_lm_bode}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+%\includegraphics[height=10cm]{./rsc/ne_1.png}
+\caption{Respuestas en frecuencia del $NE5534P$}
+\label{fig:e2_ne_bode}
+\end{center}
+\end{figure}
+
+La primera diferencia observable en ambos circuitos es la presencia de un polo de segundo orden en las mediciones donde debería encontrarse un polo de primer orden, como indica el análisis teórico. Dado el sobrepico observado, se puede deducir que estos dos polos son complejos y conjugados.
+
+\subsection{Impedancia de Entrada}
