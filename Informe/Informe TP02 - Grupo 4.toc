@@ -1,0 +1,115 @@
+\babel@toc {spanish}{}
+\contentsline {part}{I\hspace {1em}Comportamiento de Amplificadores Operacionales}{4}% 
+\contentsline {section}{\numberline {1}Comportamiento de amplificador operacional inversor}{4}% 
+\contentsline {subsection}{\numberline {1.1}An\IeC {\'a}lisis de la transferencia}{5}% 
+\contentsline {subsection}{\numberline {1.2}An\IeC {\'a}lisis de impedancia de entrada}{9}% 
+\contentsline {subsection}{\numberline {1.3}Consideraciones para utilizar un modelo lineal del amplificador operacional}{15}% 
+\contentsline {subsubsection}{\numberline {1.3.1}An\IeC {\'a}lisis de saturaci\IeC {\'o}n y polo dominante}{15}% 
+\contentsline {subsubsection}{\numberline {1.3.2}An\IeC {\'a}lisis de \emph {Slew Rate}}{17}% 
+\contentsline {subsubsection}{\numberline {1.3.3}An\IeC {\'a}lisis de \emph {crossover distortion}}{19}% 
+\contentsline {subsubsection}{\numberline {1.3.4}Conclusi\IeC {\'o}n}{20}% 
+\contentsline {subsection}{\numberline {1.4}Otros fen\IeC {\'o}menos que afectan el comportamiento del Amplificador Operacional}{22}% 
+\contentsline {subsubsection}{\numberline {1.4.1}Corriente de BIAS y offset de entrada}{22}% 
+\contentsline {subsection}{\numberline {1.5}Aplicaciones y caracter\IeC {\'\i }sticas}{22}% 
+\contentsline {subsubsection}{\numberline {1.5.1}Efecto de la resistencia R4 en el circuito inversor}{22}% 
+\contentsline {subsubsection}{\numberline {1.5.2}Efecto de la resistencia R3}{23}% 
+\contentsline {subsection}{\numberline {1.6}An\IeC {\'a}lisis de DC Sweep a la entrada}{23}% 
+\contentsline {section}{\numberline {2}Comportamiento del amplificador operacional no inversor}{24}% 
+\contentsline {subsection}{\numberline {2.1}An\IeC {\'a}lisis de la transferencia}{25}% 
+\contentsline {subsection}{\numberline {2.2}An\IeC {\'a}lisis de la impedancia de entrada}{28}% 
+\contentsline {subsection}{\numberline {2.3}An\IeC {\'a}lisis de alinealidades}{32}% 
+\contentsline {subsubsection}{\numberline {2.3.1}An\IeC {\'a}lisis de saturaci\IeC {\'o}n y polo dominante}{32}% 
+\contentsline {subsubsection}{\numberline {2.3.2}An\IeC {\'a}lisis de \emph {Slew Rate}}{34}% 
+\contentsline {subsubsection}{\numberline {2.3.3}Conclusiones}{36}% 
+\contentsline {subsection}{\numberline {2.4}An\IeC {\'a}lisis del DC \emph {Sweep}}{38}% 
+\contentsline {section}{\numberline {3}Conclusiones}{39}% 
+\contentsline {part}{II\hspace {1em}Caracterizaci\IeC {\'o}n de Amplificadores Operacionales}{40}% 
+\contentsline {section}{\numberline {1}Construcci\IeC {\'o}n del circuito}{40}% 
+\contentsline {subsection}{\numberline {1.1}Caso Ideal}{40}% 
+\contentsline {subsection}{\numberline {1.2}Amplificador LM833N}{41}% 
+\contentsline {subsection}{\numberline {1.3}Amplificador NE5534P}{41}% 
+\contentsline {section}{\numberline {2}M\IeC {\'e}todo de Medici\IeC {\'o}n}{42}% 
+\contentsline {section}{\numberline {3}An\IeC {\'a}lisis de Resultados}{42}% 
+\contentsline {subsection}{\numberline {3.1}Respuesta en Frecuencia}{42}% 
+\contentsline {subsection}{\numberline {3.2}Impedancia de Entrada}{45}% 
+\contentsline {section}{\numberline {4}Conclusi\IeC {\'o}n}{45}% 
+\contentsline {part}{III\hspace {1em}Corrientes de Bias}{47}% 
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{47}% 
+\contentsline {section}{\numberline {2}An\IeC {\'a}lisis te\IeC {\'o}rico del circuito}{48}% 
+\contentsline {section}{\numberline {3}Mediciones}{53}% 
+\contentsline {subsection}{\numberline {3.1}Medici\IeC {\'o}n de $V_{OS}$}{53}% 
+\contentsline {subsection}{\numberline {3.2}Medici\IeC {\'o}n de $I_{P}$}{54}% 
+\contentsline {subsection}{\numberline {3.3}Medici\IeC {\'o}n de $I_{N}$}{54}% 
+\contentsline {subsection}{\numberline {3.4}Calculo de $I_{OS}$ y $I_B$}{54}% 
+\contentsline {subsection}{\numberline {3.5}An\IeC {\'a}lisis de resultados}{55}% 
+\contentsline {section}{\numberline {4}Circuito de compensaci\IeC {\'o}n externo}{55}% 
+\contentsline {part}{IV\hspace {1em}Ejercicio 4}{57}% 
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{57}% 
+\contentsline {section}{\numberline {2}C\IeC {\'a}lculo de $\frac {V_{out}}{V_{in}}$}{57}% 
+\contentsline {subsection}{\numberline {2.1}Idealidad}{57}% 
+\contentsline {subsection}{\numberline {2.2}Con $A_{vol}$ finito}{57}% 
+\contentsline {subsection}{\numberline {2.3}Con $A_{vol}(w)$ con polo dominante}{58}% 
+\contentsline {section}{\numberline {3}Circuito Derivador}{58}% 
+\contentsline {subsection}{\numberline {3.1}Ganancia Ideal}{58}% 
+\contentsline {subsection}{\numberline {3.2}$\mathrm {A_{vol}}$ finito}{59}% 
+\contentsline {subsection}{\numberline {3.3}$\mathrm {A{vol}(w)}$ con polo dominante}{60}% 
+\contentsline {subsection}{\numberline {3.4}Comparaci\IeC {\'o}n de los 3 casos}{61}% 
+\contentsline {subsection}{\numberline {3.5}Simulaci\IeC {\'o}n LTSpice}{61}% 
+\contentsline {subsection}{\numberline {3.6}Medici\IeC {\'o}n}{62}% 
+\contentsline {subsection}{\numberline {3.7}Medici\IeC {\'o}n vs. simulaci\IeC {\'o}n vs. te\IeC {\'o}rico}{63}% 
+\contentsline {subsection}{\numberline {3.8}Comportamiento ante se\IeC {\~n}ales no senoidales}{64}% 
+\contentsline {subsection}{\numberline {3.9}Impedancia de entrada}{66}% 
+\contentsline {section}{\numberline {4}Circuito Derivador Compensado}{67}% 
+\contentsline {subsection}{\numberline {4.1}Comportamiento ante se\IeC {\~n}ales no senoidales}{69}% 
+\contentsline {subsection}{\numberline {4.2}Impedancia de entrada}{72}% 
+\contentsline {section}{\numberline {5}Circuito Integrador}{72}% 
+\contentsline {subsection}{\numberline {5.1}Ganancia ideal}{72}% 
+\contentsline {subsection}{\numberline {5.2}$\mathrm {A_{vol}}$ finito}{73}% 
+\contentsline {subsection}{\numberline {5.3}$\mathrm {A{vol}(w)}$ con polo dominante}{74}% 
+\contentsline {subsection}{\numberline {5.4}Comparaci\IeC {\'o}n de los 3 casos}{75}% 
+\contentsline {subsection}{\numberline {5.5}Medici\IeC {\'o}n vs. simulaci\IeC {\'o}n vs. te\IeC {\'o}rico}{76}% 
+\contentsline {subsection}{\numberline {5.6}Comportamiento ante se\IeC {\~n}ales no senoidales}{77}% 
+\contentsline {subsection}{\numberline {5.7}Impedancia de entrada}{79}% 
+\contentsline {section}{\numberline {6}Circuito Integrador Compensado}{79}% 
+\contentsline {subsection}{\numberline {6.1}Comportamiento ante se\IeC {\~n}ales no senoidales}{81}% 
+\contentsline {subsection}{\numberline {6.2}Impedancia de entrada}{82}% 
+\contentsline {section}{\numberline {7}Conclusi\IeC {\'o}n}{82}% 
+\contentsline {part}{V\hspace {1em}Pedal de distorsi\IeC {\'o}n}{83}% 
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{83}% 
+\contentsline {section}{\numberline {2}Circuito propuesto por la c\IeC {\'a}tedra}{83}% 
+\contentsline {subsection}{\numberline {2.1}Etapa de entrada y fuente de cont\IeC {\'\i }nua}{83}% 
+\contentsline {subsection}{\numberline {2.2}Etapa de amplificador operacional}{84}% 
+\contentsline {subsection}{\numberline {2.3}Etapa de recorte}{84}% 
+\contentsline {subsection}{\numberline {2.4}Etapa de salida}{84}% 
+\contentsline {section}{\numberline {3}Cambios propuestos al circuito}{84}% 
+\contentsline {subsection}{\numberline {3.1}Etapa 1: fuente de cont\IeC {\'\i }nua}{84}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Mejoras propuestas}{85}% 
+\contentsline {subsection}{\numberline {3.2}Etapa 2: amplificador operacional}{85}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Mejoras propuestas}{86}% 
+\contentsline {subsubsection}{\numberline {3.2.2}C\IeC {\'a}lculo de la impedancia de entrada de la etapa}{86}% 
+\contentsline {subsubsection}{\numberline {3.2.3}C\IeC {\'a}lculo de la ganancia de la etapa}{86}% 
+\contentsline {subsection}{\numberline {3.3}Etapa 3: recorte}{87}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Mejoras propuestas}{88}% 
+\contentsline {subsection}{\numberline {3.4}Etapa 4: control de tono}{88}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Funcionamiento de la etapa en frecuencias}{88}% 
+\contentsline {section}{\numberline {4}Comportamiento del circuito}{89}% 
+\contentsline {subsection}{\numberline {4.1}A la salida del amplificador operacional}{89}% 
+\contentsline {subsection}{\numberline {4.2}A la salida de audio}{90}% 
+\contentsline {section}{\numberline {5}Conclusi\IeC {\'o}n}{91}% 
+\contentsline {part}{VI\hspace {1em}Circuito de Aplicaci\IeC {\'o}n: Sensor de Temperatura}{92}% 
+\contentsline {section}{\numberline {1}Dise\IeC {\~n}o del Circuito}{92}% 
+\contentsline {subsection}{\numberline {1.1}LM35}{92}% 
+\contentsline {subsection}{\numberline {1.2}Linealidad de la salida: Implementaci\IeC {\'o}n con amplificadores operacionales}{92}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Dagrama de se\IeC {\~n}al y c\IeC {\'a}lculo de par\IeC {\'a}metros}{93}% 
+\contentsline {subsubsection}{\numberline {1.2.2}Primera Fase: Amplificador Inversor}{93}% 
+\contentsline {subsubsection}{\numberline {1.2.3}Segunda Fase: Sumador Ponderado Inversor}{94}% 
+\contentsline {subsection}{\numberline {1.3}Fases amplificadoras en cascada}{95}% 
+\contentsline {subsection}{\numberline {1.4}Generaci\IeC {\'o}n de $V_{off}$}{96}% 
+\contentsline {subsection}{\numberline {1.5}Limitaci\IeC {\'o}n de tension de salida}{96}% 
+\contentsline {section}{\numberline {2}Simulaciones}{97}% 
+\contentsline {subsubsection}{\numberline {2.0.1}Se\IeC {\~n}al de salida}{97}% 
+\contentsline {subsubsection}{\numberline {2.0.2}Sensibilidades y calibraci\IeC {\'o}n}{98}% 
+\contentsline {section}{\numberline {3}Mediciones}{99}% 
+\contentsline {subsubsection}{\numberline {3.0.1}Se\IeC {\~n}al de salida}{99}% 
+\contentsline {subsubsection}{\numberline {3.0.2}Impedancia de entrada}{99}% 
+\contentsline {section}{\numberline {4}Hoja de datos}{100}% 
