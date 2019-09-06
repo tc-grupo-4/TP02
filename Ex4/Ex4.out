@@ -1,22 +1,26 @@
-\BOOKMARK [0][-]{part.1}{I Ejercicio 1}{}% 1
-\BOOKMARK [1][-]{section.1}{Introcucci\363n}{part.1}% 2
-\BOOKMARK [1][-]{section.2}{C\341lculo de VoutVin}{part.1}% 3
-\BOOKMARK [2][-]{subsection.2.1}{Idealidad}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Con Avol finito}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Con Avol\(w\) con polo dominante}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Impedancias de entrada te\363ricas}{part.1}% 7
-\BOOKMARK [2][-]{subsubsection.3.0.1}{Primer Caso}{section.3}% 8
-\BOOKMARK [3][-]{subsubsection.3.0.2}{Segundo Caso}{subsubsection.3.0.1}% 9
-\BOOKMARK [3][-]{subsubsection.3.0.3}{Tercer Caso}{subsubsection.3.0.1}% 10
-\BOOKMARK [1][-]{section.4}{Circuito Derivador}{part.1}% 11
-\BOOKMARK [2][-]{subsection.4.1}{Ganancia Ideal}{section.4}% 12
-\BOOKMARK [2][-]{subsection.4.2}{Avol finito}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.3}{Avol\(w\) con polo dominante}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.4}{Comparaci\363n de los 3 casos}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.5}{Simulaci\363n LTSpice}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.6}{Medici\363n}{section.4}% 17
-\BOOKMARK [1][-]{section.5}{Circuito Integrador}{part.1}% 18
-\BOOKMARK [2][-]{subsection.5.1}{Ganancia ideal}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.2}{Avol finito}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.3}{Avol\(w\) con polo dominante}{section.5}% 21
-\BOOKMARK [1][-]{section.6}{Conclusi\363n}{part.1}% 22
+\BOOKMARK [1][-]{section.1}{Introcucci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{C\341lculo de VoutVin}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Idealidad}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Con Avol finito}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Con Avol\(w\) con polo dominante}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Circuito Derivador}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Ganancia Ideal}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Avol finito}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Avol\(w\) con polo dominante}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.4}{Comparaci\363n de los 3 casos}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.5}{Simulaci\363n LTSpice}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.6}{Medici\363n}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.7}{Medici\363n vs. simulaci\363n vs. te\363rico}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.8}{Comportamiento ante se\361ales no senoidales}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Circuito Derivador Compensado}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Comportamiento ante se\361ales no senoidales}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Circuito Integrador}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Ganancia ideal}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Avol finito}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{Avol\(w\) con polo dominante}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.4}{Comparaci\363n de los 3 casos}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.5}{Medici\363n vs. simulaci\363n vs. te\363rico}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.6}{Comportamiento ante se\361ales no senoidales}{section.5}% 23
+\BOOKMARK [1][-]{section.6}{Circuito Integrador Compensado}{}% 24
+\BOOKMARK [2][-]{subsection.6.1}{Comportamiento ante se\361ales no senoidales}{section.6}% 25
+\BOOKMARK [1][-]{section.7}{Conclusi\363n}{}% 26
