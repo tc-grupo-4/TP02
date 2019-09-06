@@ -1,0 +1,133 @@
+\part{Caracterización de Amplificadores Operacionales}
+
+\section{Construcción del circuito}
+
+Uno de los objetivos de este trabajo fue analizar las características de los amplificadores operacionales (\textit{opamps}) y contrastarlos. En este caso, se los analizó en el contexto de un circuito amplificador no inversor (Figura \ref{fig:e2_ninv}).
+
+\begin{figure}[ht]
+	\begin{center}
+		\begin{circuitikz}[american voltages]
+		\draw
+		(6,7) node[op amp, noinv input up] (opamp) {}
+		(opamp.+) to [R, l_=$R_3$] ++(-2,0) to [sinusoidal voltage source=$V_{in}$] ++(0,-5) node [ground] {}
+		(opamp.out) to (9,7) node[right] {$v_{out}$}
+		(opamp.-) to ++(0,-2) coordinate(tmp)
+		(tmp) to[R=$R_1$,*-] ++(0,-2) node[ground] {}
+		(tmp) to[R=$R_2$] ++(3,0) to [short,-*] ++(0,2.5)
+		;
+	\end{circuitikz}
+	\caption{Circuito Amplificador No Inversor}
+	\label{fig:e2_ninv}
+	\end{center}
+\end{figure}
+
+Los valores de las resistencias fueron los mostrados en el Cuadro \ref{tab:e2_res_val} 
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{||c|c|c|c||}
+	\hline
+	Componente	&	Valor por Consigna	&	Valor Comercial ($\pm 5 \%)$)	& Valor Medido \\
+	\hline
+	$R_1$	&	$4 k\Omega$	&	$3.9 k\Omega$	&	$3.96 k\Omega$\\	
+	$R_2$	&	$320 k\Omega$	&	$330 k\Omega$	&	$325 k\Omega $\\
+	$R_3$	&	$220 k\Omega$	&	$220 k\Omega$	&	$212.3 k\Omega$\\
+	\hline
+\end{tabular}
+
+\end{center}
+\caption{Valores de las Resistencias}
+\label{tab:e2_res_val}
+\end{table}
+
+Los \textit{opamps} utilizados fueron el $LM833N$ y el $NE5534P$, ambos alimentados con $\pm15 VCC$. Los circuitos fueron construidos sobre una \textit{protoboard}.
+
+\subsection{Caso Ideal}
+En un modelo teórico ideal el \textit{opamp} tendría una impedancia de entrada con magnitud infinita, y por lo tanto no fluiría corriente a travéz de las terminales del \textit{opamp}, lo cual permite asumir que no hay caída de tensión a travéz de $R_3$. De esta manera se obtienen las siguientes expresiones:
+
+\begin{equation}
+\begin{cases}
+	v_{out}=a\cdot v_d = a \cdot (v^+ - v^-)\\
+	v^+= V_{in}\\
+	v^-= v_{out} \cdot \frac{R_1}{R_1 + R_2}\\
+\end{cases}
+\label{eq:e2_v+v-}
+\end{equation}
+
+A partir de la expresión en (\ref{eq:e2_v+v-}) y conociendo que el circuito es un amplificador no inversor, se conocen las siguientes expresiónes:
+\begin{equation}
+A_{ideal}=1+\frac{R_2}{R_1} \approx 38.4 dB
+\label{eq:e2_A_ideal}
+\end{equation}
+
+Además, se conoce que los \textit{opamps} tienen una compensasión interna para estabilizarse contra oscilaciones no deseadas. Esto se debe a que a altas frecuencias, la transferencia de un circuito amplificador puede causar que oscile incontrolablemente; por lo tanto, los amplificadores son fabricados con polos de baja frecuencia para evitar estos casos. A esta frecuencia se la denomina "polo dominante". Debido a esto la ganancia del circuito amplificador corresponde a la expresión (\ref{eq:e2_A_real}).
+
+\begin{equation}
+A(\$)=A_{ideal} \cdot \frac{1}{1+\frac{1}{w_B}\cdot\$}
+\label{eq:e2_A_real}
+\end{equation}
+
+\begin{equation}
+A_{ideal} \cdot f_B = GBW = f_t
+\label{eq:e2_GBW}
+\end{equation}
+
+A partir de la expresión (\ref{eq:e2_GBW}) se obtiene el polo del circuito amplificador, siendo $f_t$ el valor de la frecuencia donde el \textit{opamp} tiene ganancia unitaria o de $0 dB$ indicada en la hoja de datos de cada \textit{opamp} correspondiente. Cuando $ f \ll f_B$ la ganancia del circuito será la ganancia ideal.
+
+\subsection{Amplificador LM833N}
+A partir de la hoja de datos del amplificador, se utilizó la siguiente información:
+ 
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{||c|c||}
+\hline
+	Dato	&	Valor		\\
+	\hline
+	$a_0$	&	$110 dB$	\\
+	$f_U$	&	$9 MHz$		\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Información de la Hoja de Datos del LM833N}
+\label{tab:e2_info_lm}
+\end{table}
+
+Dado que en la hoja de datos no se encuentra un valor para la resistencia de entrada, se considera que esta es demasiado alta como para considerar que existe un flujo de corriente entre las terminales diferenciales del \textit{opamp} y por lo tanto se continúa utilizando la aproximación anterior.
+
+Como la ganancia a lazo abierto del amplificador es mucho más alta que la de el circuito ($110 dB \gg 38.4 dB$), se puede utilizar la expresión (\ref{eq:e2_GBW}) para calcular la frecuencia del polo del circuito amplificador completo:
+
+\begin{equation}
+f_B= \frac{9 MHz}{83.1} \approx 108.3 kHz
+\label{val:e2_fB_lm}
+\end{equation}
+
+Como se mencionó anteriormente, a frecuencias menores a $f_B$ se debería observar una ganancia similar a la ideal.
+
+\newpage
+
+\subsection{Amplificador NE5534P}
+A partir de la hoja de datos del amplificador, se utilizó la siguiente información:
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{||c|c||}
+\hline
+	Dato	&	Valor		\\
+	\hline
+	$A_{VD}$	&	$100 V/mV = 100 dB$	\\
+	$B_1$	&	$10 MHz$		\\
+	$r_i$	&	$100 k\Omega$	\\
+\hline
+\end{tabular}
+\end{center}
+\caption{Información de la Hoja de Datos del NE5534}
+\label{tab:e2_info_ne}
+\end{table}
+
+Se puede observar la primera diferencia con el amplificador anterior que la resistencia de entrada es de un valor del mismo orden, incluso menor, a la resistencia $R_3$ colocada en la entrada del operacional. Esto tendrá efectos que se discutirán más adelante.
+Aún así, las demás condiciones son similares al del $LM833N$ donde la ganancia del amplificador es mucho mayor a la del circuito completo; por lo tanto, se utiliza la misma expresión (\ref{eq:e2_GBW}) para obtener la frecuencia del polo del circuito:
+
+\begin{equation}
+f_B= \frac{10 MHz}{83.1} \approx 120.3 kHz
+\label{val:e2_fB_ne}
+\end{equation}

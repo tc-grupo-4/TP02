@@ -12,3 +12,32 @@
 [0829/123633:ERROR:ipc_channel_win.cc(217)] pipe error: 109
 [0829/123711:ERROR:ipc_channel_win.cc(217)] pipe error: 109
 [0829/123901:ERROR:ipc_channel_win.cc(217)] pipe error: 109
+[0830/233534:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0830/233535:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165740:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165746:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165751:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165756:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165801:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165806:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165811:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165816:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165821:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165826:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165831:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165836:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165841:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165846:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165851:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165856:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165901:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165906:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165911:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165916:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165921:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165926:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165931:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165936:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165941:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165946:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
+[0831/165951:WARNING:dns_config_service_win.cc(665)] Failed to read DnsConfig.
