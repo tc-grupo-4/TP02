@@ -8,7 +8,9 @@
 \usepackage{textcomp}
 \usepackage{amstext}
 \usepackage{graphicx}
-\usepackage{xpatch}
+\usepackage{circuitikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{calc}
 
 \makeatletter
 
@@ -21,9 +23,8 @@
 \usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>}}
 
+\usepackage{titlesec}
+
 \makeatletter
 \@addtoreset{section}{part}
-\xpatchcmd{\@part}{\normalfont}{\normalfont\centering}{}{}
-\xpatchcmd{\@part}{\Large}{\LARGE}{}{}
-\renewcommand\partname{Topic}
 \makeatother

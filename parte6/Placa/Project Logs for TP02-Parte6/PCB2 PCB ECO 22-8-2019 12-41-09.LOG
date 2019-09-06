@@ -1,0 +1,25 @@
+Added Component: Designator=RA1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RA2(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RB1(RES400)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RB2(RES400)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetRA1_2 Pin=RA1-2
+Added Pin To Net: NetName=NetRA1_2 Pin=RA2-1
+Added Net: Name=NetRA1_2
+Added Pin To Net: NetName=NetRA2_2 Pin=RA2-2
+Added Pin To Net: NetName=NetRA2_2 Pin=RB2-2
+Added Pin To Net: NetName=NetRA2_2 Pin=RF-1
+Added Pin To Net: NetName=NetRA2_2 Pin=TL082-6
+Added Net: Name=NetRA2_2
+Added Pin To Net: NetName=NetRB1_2 Pin=RB1-2
+Added Pin To Net: NetName=NetRB1_2 Pin=RB2-1
+Added Net: Name=NetRB1_2
+Added Member To Class: ClassName=Sheet1 Member=Component R1 RES
+Added Member To Class: ClassName=Sheet1 Member=Component RA1 1k
+Added Member To Class: ClassName=Sheet1 Member=Component RA2 1k
+Added Member To Class: ClassName=Sheet1 Member=Component RB1 1k
+Added Member To Class: ClassName=Sheet1 Member=Component RB2 1k
+Added Room: Name=Sheet1

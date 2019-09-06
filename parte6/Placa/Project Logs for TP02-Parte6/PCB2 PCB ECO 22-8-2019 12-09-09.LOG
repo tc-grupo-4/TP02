@@ -1,0 +1,6 @@
+Added Component: Designator=R1(RES400)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Vt Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Member To Class: ClassName=Sheet1 Member=Component R1 RES
+Added Room: Name=Sheet1

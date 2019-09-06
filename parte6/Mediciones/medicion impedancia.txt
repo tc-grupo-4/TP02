@@ -1,0 +1,4 @@
+CH1: input
+CH2: tension en otra pata de R=1k
+CH3 = CH1-CH2
+

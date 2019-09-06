@@ -1,0 +1,8 @@
+\begin{circuitikz}
+
+	\node [label=left:$v_{in}$](Vin) at (0,0){};
+	\node [right = 3cm of Vin,label=right:$-k_1 v_{in}$](V2){};
+	
+	\draw (Vin) to[twoport,t=$-k_1$,o-o] (V2);
+
+\end{circuitikz}

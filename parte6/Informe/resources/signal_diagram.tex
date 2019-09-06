@@ -1,0 +1,27 @@
+\begin{circuitikz}
+
+	\node [label=left:$v_{in}$](Vin) at (0,0){};
+	\node [right = 3cm of Vin](V2){};
+	\node [label=left:$V_{off}$,below = 2cm of V2](Voff){};
+	\node [right = 3cm of V2](V3){};
+	\node [below = 2cm of V3](V4){};
+	\node [adder](sum) at ($(V3)!0.5!(V4)$){};
+	\node [mixer,label={[label distance=0.5cm]270:$-1$},right = 1cm of sum](mix){};
+	\node [right = 1cm of mix,label=right:$v_{out}$](Vout){};
+	
+	
+	\draw (Vin) to[twoport,t=$-k_1$,o-o] (V2);
+	\draw (V2) to[twoport,t=$k_A$,o-] (V3);
+	\draw (Voff) to[twoport,t=$k_B$,o-] (V4);
+	
+	\draw (V3) to[short] (sum.4);
+	\draw (sum.4) node[inputarrow,rotate=270]{};
+	
+	\draw (V4) to[short] (sum.2);
+	\draw (sum.2) node[inputarrow,rotate=90]{};
+	
+	\draw (sum.3) to[short] (mix.1);
+	\draw (mix.1) node[inputarrow]{};	
+	
+	\draw (mix.3) to[short,-o] (Vout);
+\end{circuitikz}
