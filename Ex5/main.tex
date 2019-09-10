@@ -14,9 +14,9 @@ En lo que sigue se explicará el circuito inicial, luego las mejoras propuestas,
 \section{Circuito propuesto por la cátedra}
 Se propuso como guía un circuito básico de distorsión por recorte. Este se puede observar, con sus etapas señaladas, en la Figura \ref{fig:circuitopropuesto}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{circuitopropuesto}
+    \includegraphics[width=\textwidth]{../Ex5/circuitopropuesto}
     \caption{Circuito propuesto por la cátedra}
     \label{fig:circuitopropuesto}
 \end{figure}
@@ -48,9 +48,9 @@ Se propuso como guía un circuito básico de distorsión por recorte. Este se pu
 El circuito final está compuesto por cuatro etapas: la etapa de fuente de contínua, la de amplificador operacional, la de recorte, y la de tono y salida. Estas se presentan detalladamente a continuación con los cambios propuestos y se realizan los cálculos pertinentes a la designación de los valores de los componentes.
 \subsection{Etapa 1: fuente de contínua}
 Esta etapa alimenta al pedal de corriente contínua. El esquemático se puede observar en la Figura \ref{fig:circuitofuentecontinua}.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{circuitofuentecontinua}
+    \includegraphics[width=0.5\textwidth]{../Ex5/circuitofuentecontinua}
     \caption{Circuito final: etapa de fuente de contínua}
     \label{fig:circuitofuentecontinua}
 \end{figure}
@@ -62,9 +62,9 @@ A los componentes anteriormente señalados, se agrega:
     \end{itemize}
 \subsection{Etapa 2: amplificador operacional}
 Se filtra y amplifica la señal de entrada con una ganancia considerable. Se observa el diseño final de esta etapa en la Figura \ref{fig:circuitoopamp}.
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{circuitoopamp}
+    \includegraphics[width=0.8\textwidth]{../Ex5/circuitoopamp}
     \caption{Circuito final: etapa de amplificador operacional}
     \label{fig:circuitoopamp}
 \end{figure}
@@ -101,9 +101,9 @@ lo cual nos indica una $G_{max}=46,6dB$ y una $G_{min}=6dB$.
 
 El análisis en frecuencia de la ganancia de esta etapa para distintos valores de U3 puede observarse en la Figura \ref{fig:bodeamppote}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{bodeamppote}
+    \includegraphics[width=\textwidth]{../Ex5/bodeamppote}
     \caption{Diagrama de Bode de la etapa 2 para distintos valores de U3}
     \label{fig:bodeamppote}
 \end{figure}
@@ -111,9 +111,9 @@ El análisis en frecuencia de la ganancia de esta etapa para distintos valores d
 Con estos valores, el filtro pasa-altos descripto en la sección \ref{opampcircoriginal} tendrá para $G_{max}$ una frecuencia de corte $f_{0}=\frac{1}{2\pi*4,7k\Omega*C5}=720.5Hz$, y para $G_{min}$ una frecuencia de corte $f_{0}=\frac{1}{2\pi*(1M\Omega+4,7k\Omega)*C5}=3.37Hz$.
  \subsection{Etapa 3: recorte}
  La etapa de recorte es, en conjunto con la de amplificación, la más importante en el pedal. Aquí se recorta mediante diodos conectados a tierra la señal previamente amplificada para generar el efecto de distorsión. El diseño se observa en la Figura \ref{fig:circuitorecorte}.
- \begin{figure}[h]
+ \begin{figure}[H]
      \centering
-     \includegraphics[width=0.7\textwidth]{circuitorecorte}
+     \includegraphics[width=0.7\textwidth]{../Ex5/circuitorecorte}
      \caption{Circuito final: etapa de recorte}
      \label{fig:circuitorecorte}
  \end{figure}
@@ -128,9 +128,9 @@ Como los diodos se conectan a tierra, el efecto que se produce se conoce como di
 Se agrega al pedal una etapa para regular el tono del pedal. Esta incluye un potenciómetro para control de tono y a su vez uno para control de volumen de salida. El esquemático se puede observar en la Figura \ref{fig:circuitotono}.
 
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{circuitotono}
+    \includegraphics[width=0.7\textwidth]{../Ex5/circuitotono}
     \caption{Circuito final: etapa de control de tono}
     \label{fig:circuitotono}
 \end{figure}
@@ -142,9 +142,9 @@ La segunda parte consta de un potenciómetro de control de volumen (también lin
 \subsubsection{Funcionamiento de la etapa en frecuencias}\label{frecuenciatono}
 En la Figura \ref{fig:bodetono} se muestra la respuesta de la etapa simulada en \emph{LTSpice} para distintas frecuencias de entrada y para distintos valores de TONE. Se puede observar en verde la curva de ganancia para cuando el circuito funciona como un pasa-bajos, es decir, cuando TONE está al mínimo, y en azul la curva para cuando TONE está al máximo y la etapa es un pasa-altos. Las curvas restantes representan la salida para valores intermedios del potenciómetro.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{bodetono}
+    \includegraphics[width=\textwidth]{../Ex5/bodetono}
     \caption{Diagrama de Bode para la etapa 4 para distintos valores de TONE}
     \label{fig:bodetono}
 \end{figure}
@@ -161,9 +161,9 @@ Se tiene en cuenta que para el análisis en frecuencias de un circuito lineal (i
 \subsection{A la salida del amplificador operacional}
 En la Figura \ref{fig:bodeopamp} se puede observar la ganancia de la etapa de amplificador operacional para distintas frecuencias de entrada. Si bien el rango analizado excede el espectro de audio, resulta interesante analizar el comportamiento más allá del mismo.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{bodeopamp}
+    \includegraphics[width=0.8\textwidth]{../Ex5/bodeopamp}
     \caption{Diagrama de Bode para la etapa de Op-Amp}
     \label{fig:bodeopamp}
 \end{figure}
@@ -173,9 +173,9 @@ Se puede observar que se presenta la máxima ganancia de 46,5dB mencionada para 
 \subsection{A la salida de audio}
 En la Figura \ref{fig:bodepedal} se puede observar la ganancia del pedal completo para distintas frecuencias de entrada.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{bodepedal}
+    \includegraphics[width=0.8\textwidth]{../Ex5/bodepedal}
     \caption{Diagrama de Bode para el pedal completo}
     \label{fig:bodepedal}
 \end{figure}
@@ -195,5 +195,3 @@ Se diseñó, simuló, construyó y midió un pedal de distorsión para guitarra.
 Se investigaron también los distintos tipos de diodos, y se encontró uno que se adaptó al uso que se le quería dar.
 
 Se analizó el funcionamiento del producto final y se lo encontró apto para el uso al que se destina.
-
-\end{document}

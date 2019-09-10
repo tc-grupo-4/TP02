@@ -98,3 +98,12 @@ G=-Z2/Z1
 G= -AVOL*Z2/(Z2+(AVOL+1)*Z1)
 AVOLW = AVOL/(1+(S/WP));
 G = -AVOLW*Z2/(Z2+(AVOLW+1)*Z1)
+
+
+H = tf([1 0.1 7.5],[1 0.12 9 0 0]);
+w_v = [10:10:100]*2*pi;                                 % Vector Of Radian Frequencies
+[mag,phs,RadianFrequency] = bode(H, w_v);
+Magnitude = squeeze(mag);
+Phase = squeeze(phs);
+T = table(RadianFrequency,Magnitude,Phase);
+writetable=(T,.xlsx);
